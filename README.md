@@ -6,4 +6,4 @@ Software to track attendance of students with an unconventional schedule - aimed
 * NTML
 * CSS
 * JavaScript
-* BootStraps
+* BootStrap
