@@ -31,7 +31,7 @@ namespace _5051.Controllers
         {
             ViewBag.Message = "Admin Area";
 
-            return Admin();
+            return View();
         }
     }
 }
