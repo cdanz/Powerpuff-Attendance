@@ -26,5 +26,12 @@ namespace _5051.Controllers
 
             return View();
         }
+
+        public ActionResult Admin()
+        {
+            ViewBag.Message = "Admin Area";
+
+            return Admin();
+        }
     }
 }
