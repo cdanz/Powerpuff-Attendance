@@ -1,0 +1,72 @@
+:root {
+    --PPRed: #af1a17;
+    --PPGreen: #10a020;
+    --PPBlue: #2d58a8;
+    --PPblack: #0e0e0e;
+    --PPWhite: white;
+    --PPGrey: #939393;
+    --StudBack1: #FF5353;
+    --StudBack2: #FFB253;
+    --StudBack3: #FFEA53;
+    --StudBack4: #5378FF;
+    --StudBack5: #9453FF;
+    --StudBack6: #60EBAB;
+    --StudBack7: #FF5353;
+}
+
+.avatar {
+    float: left;
+    margin: 0;
+    height: 3rem;
+    width: 3rem;
+    color: var(--PPblack);
+    font-size: 95%;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: center;
+    background-color: var(--PPWhite);
+    border-width: 0;
+    border-radius: 50%;
+}
+
+.addNew {
+    float: left;
+    margin: 2rem;
+    height: 4rem;
+    width: 4rem;
+    color: var(--PPwhite);
+    font-size: 3.5rem;
+    text-align: center;
+    vertical-align: center;
+    background-color: #FF5353;
+    border-width: 0;
+    border-radius: 50%;
+}
+
+#stud1 {
+    background-color: var(--StudBack1);
+}
+
+#stud2 {
+    background-color: var(--StudBack2);
+}
+
+#stud3 {
+    background-color: var(--StudBack3);
+}
+
+#stud4 {
+    background-color: var(--StudBack4);
+}
+
+#stud5 {
+    background-color: var(--StudBack5);
+}
+
+#stud6 {
+    background-color: var(--StudBack6);
+}
+
+#stud7 {
+    background-color: var(--StudBack7);
+}
