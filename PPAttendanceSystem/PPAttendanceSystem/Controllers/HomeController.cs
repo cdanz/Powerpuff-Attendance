@@ -9,6 +9,13 @@ namespace _5051.Controllers
     public class HomeController : Controller
     {
 
+        public ActionResult Home()
+        {
+            ViewBag.Message = "Home Page";
+
+            return View();
+        }
+
         public ActionResult Student_Dashboard()
         {
             ViewBag.Message = "Student Dashboard.";
