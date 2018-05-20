@@ -43,5 +43,12 @@ namespace _5051.Controllers
 
             return View();
         }
+
+        public ActionResult Admin_Reports()
+        {
+            ViewBag.Message = "Admin Reports";
+
+            return View();
+        }
     }
 }
