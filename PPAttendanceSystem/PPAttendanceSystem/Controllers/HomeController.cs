@@ -15,7 +15,7 @@ namespace _5051.Controllers
 
 
 
-        public ActionResult Dashboard()
+        public ActionResult Student_Dashboard()
         {
             ViewBag.Message = "Student Dashboard.";
 
@@ -25,6 +25,13 @@ namespace _5051.Controllers
         public ActionResult Admin_Login()
         {
             ViewBag.Message = "Admin Login";
+
+            return View();
+        }
+
+        public ActionResult Admin_Main()
+        {
+            ViewBag.Message = "Admin Main";
 
             return View();
         }
