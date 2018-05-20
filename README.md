@@ -3,7 +3,7 @@ Software to track attendance of students with an unconventional schedule - aimed
 
 ## Technologies
 * ASP.NET MVC
-* NTML
+* HTML
 * CSS
 * JavaScript
 * BootStrap
