@@ -279,6 +279,9 @@
     <Content Include="Views\Home\Admin_Main.cshtml" />
     <Content Include="Views\Home\Admin_Edits.cshtml" />
     <Content Include="Views\Home\Admin_Reports.cshtml" />
+    <Content Include="Views\Home\Student_New.cshtml" />
+    <Content Include="Views\Home\Puzzle.cshtml" />
+    <Content Include="Views\Home\Student_Report.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
