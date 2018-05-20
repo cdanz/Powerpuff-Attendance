@@ -1,39 +1,55 @@
 ﻿@{
-    ViewBag.Title = "Student Dashboard";
+	ViewBag.Title = "Student Dashboard";
 }
 
 
-<p>Main page is a student dashboard.</p>
+<h2>Student Dashboard</h2>
 <div class="container">
-    <div class="row">
-        <div class="col-md-3" id="stud1">
-            student 1
-        </div>
-        <div class="col-md-3" id="stud2">
-            student 2
-        </div>
-        <div class="col-md-3" id="stud3">
-            student 3
-        </div>
-    </div>
+	<div class="row">
+		<div class="col-md-3" id="stud1">
+			William
+			<br />
+			<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Sign-In</button>
+		</div>
+		<div class="col-md-3" id="stud1">
+			Kate
+			<br />
+			<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Sign-In</button>
+		</div>
+		<div class="col-md-3" id="stud2">
+			Meghan
+			<br />
+			<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Sign-In</button>
+		</div>
+		<div class="col-md-3" id="stud3">
+			Harry
+			<br />
+			<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Sign-In</button>
+		</div>
+	</div>
 </div>
 
-<div class="container">
-    <div class="row">
-        <div class="container">
-            student 1
-            <div class="row">
-                <div class="btn-group">
-                    <button class="btn"><img src="~/Content/images/face1.png" alt="Most Sad"></button>
-                    <button class="btn"><img src="~/Content/images/face2.png" alt="Some Sad"></button>
-                    <button class="btn"><img src="~/Content/images/face3.png" alt="Not Sad Not Happy"></button>
-                    <button class="btn"><img src="~/Content/images/face4.png" alt="Some Happy"></button>
-                    <button class="btn"><img src="~/Content/images/face5.png" alt="Most Happy"></button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">Puzzle Goes Here</div>
+<!-- Mood Pop-up -->
+<div id="myModal" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+
+		<!-- Mood Selector-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">Today I'm feeling...</h4>
+			</div>
+			<div class="modal-body">
+				<button class="btn"><img src="~/Content/images/face1.png" alt="Sad"></button>
+				<button class="btn"><img src="~/Content/images/face2.png" alt="Somewhat Sad"></button>
+				<button class="btn"><img src="~/Content/images/face3.png" alt="Okay"></button>
+				<button class="btn"><img src="~/Content/images/face4.png" alt="Somewhat Happy"></button>
+				<button class="btn"><img src="~/Content/images/face5.png" alt="Happy"></button>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Sign-in</button>
+				<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+			</div>
+		</div>
+	</div>
 </div>
-    <p>Wireframe:</p>
-    <img src="~/Content/wireframes/dashboard.png" alt="Student Dashboard">
