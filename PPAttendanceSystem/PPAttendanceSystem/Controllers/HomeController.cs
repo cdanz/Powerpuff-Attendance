@@ -9,7 +9,7 @@ namespace _5051.Controllers
     public class HomeController : Controller
     {
 
-        public ActionResult Home()
+        public ActionResult Index()
         {
             ViewBag.Message = "Home Page";
 
