@@ -222,6 +222,13 @@
     <Content Include="Content\wireframes\landing_page.png" />
     <Content Include="Content\wireframes\student_individual_report.png" />
     <Content Include="Content\wireframes\student_login.png" />
+    <Content Include="Content\wireframes\wk6-admin_login.png" />
+    <Content Include="Content\wireframes\wk6-admin_metrics.png" />
+    <Content Include="Content\wireframes\wk6-Admin_Settings.png" />
+    <Content Include="Content\wireframes\wk6-homeOrLandingPage.png" />
+    <Content Include="Content\wireframes\wk6-puzzle.png" />
+    <Content Include="Content\wireframes\wk6-Student_Dashboard.png" />
+    <Content Include="Content\wireframes\wk6-Student_Dash_no_current_students.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
