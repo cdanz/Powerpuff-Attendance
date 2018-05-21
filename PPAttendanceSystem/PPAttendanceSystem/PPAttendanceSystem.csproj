@@ -222,6 +222,7 @@
     <Content Include="Content\wireframes\landing_page.png" />
     <Content Include="Content\wireframes\student_individual_report.png" />
     <Content Include="Content\wireframes\student_login.png" />
+    <Content Include="Content\wireframes\wk6-add_Student.png" />
     <Content Include="Content\wireframes\wk6-admin_login.png" />
     <Content Include="Content\wireframes\wk6-admin_metrics.png" />
     <Content Include="Content\wireframes\wk6-Admin_Settings.png" />
