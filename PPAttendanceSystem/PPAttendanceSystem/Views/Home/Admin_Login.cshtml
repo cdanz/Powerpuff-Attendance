@@ -1,9 +1,7 @@
 ﻿@{
     ViewBag.Title = "Admin Login";
 }
-<div class="container">
-    <img src="~/Content/wireframes/wk6-admin_login.png" class="img-responsive" alt="Admin Login">
-</div>
+
 <p></br><span style="background-color:yellow;">Above: Wireframe --- Below: Work In Progress</span></span></p>
 
 <div class="container">
@@ -23,7 +21,7 @@
                         </div>
                         <div class="form-group last">
                             <div class="col-sm-offset-3 col-sm-9">
-                                <button type="submit" class="btn btn-default" jsf:action="#{loginBean.login()}" jsf:id="submit" jsf:actionlistener="#{loginBean.updateId}">Submit</button>
+								<button type="submit" class="btn btn-default" jsf:action="#{loginBean.login()}" jsf:id="submit" jsf:actionlistener="#{loginBean.updateId}">@Html.ActionLink("Submit", "Admin_Main", "Home")</button>
                             </div>
                         </div>
                     </form>

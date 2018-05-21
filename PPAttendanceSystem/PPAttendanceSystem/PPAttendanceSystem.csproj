@@ -218,6 +218,7 @@
     <Content Include="Content\wireframes\admin_student_report.png" />
     <Content Include="Content\wireframes\admin_view.png" />
     <Content Include="Content\wireframes\dashboard.png" />
+    <Content Include="Content\wireframes\Dashboard_Admin.png" />
     <Content Include="Content\wireframes\dashboard_w_active_student.png" />
     <Content Include="Content\wireframes\landing_page.png" />
     <Content Include="Content\wireframes\student_individual_report.png" />
