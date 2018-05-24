@@ -293,9 +293,11 @@
     <Content Include="Views\Home\Student_New.cshtml" />
     <Content Include="Views\Home\Puzzle.cshtml" />
     <Content Include="Views\Student\StudentReport.cshtml" />
-    <Content Include="Views\Student\StudentLogin.cshtml" />
+    <Content Include="Views\Home\StudentLogin.cshtml" />
     <Content Include="Views\Student\StudentEditProfile.cshtml" />
     <Content Include="Views\Student\StudentHome.cshtml" />
+    <Content Include="Views\Student\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_StudentLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
