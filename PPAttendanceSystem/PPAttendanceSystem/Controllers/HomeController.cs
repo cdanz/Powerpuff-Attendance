@@ -30,13 +30,6 @@ namespace _5051.Controllers
             return View();
         }
 
-        public ActionResult Student_Report()
-        {
-            ViewBag.Message = "Student Report";
-
-            return View();
-        }
-
         public ActionResult Puzzle()
         {
             ViewBag.Message = "Puzzle";

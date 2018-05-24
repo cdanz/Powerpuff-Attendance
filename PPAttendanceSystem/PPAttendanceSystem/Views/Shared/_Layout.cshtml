@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>PUZLR - @ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 	<style>
@@ -36,6 +36,7 @@
 			border: none;
 		}
 
+		/* Remove underscore on links */
 		.dropbtn a:hover {
 			text-decoration: none;
 		}
@@ -80,8 +81,16 @@
 		}
 	</style>
 </head>
+
 <body>
-    <div class="navbar navbar-light navbar-fixed-top" style="background-color: #ffffff">
+	<style>
+		body {
+			/*background-image: url("paper.gif");*/
+			background-color: #cccccc;
+		}
+	</style>
+
+	<div class="navbar navbar-light navbar-fixed-top" style="background-color: #ffffff">
 		<div class="container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -102,24 +111,21 @@
 			<div class="dropdown">
 				<button class="dropbtn">Student</button>
 				<div class="dropdown-content">
-					@Html.ActionLink("Dashboard", "Student_Dashboard", "Home")
-					@Html.ActionLink("Weekly Puzzle", "Puzzle", "Home")
-					@Html.ActionLink("Add a Student", "Student_New", "Home")
-                    @Html.ActionLink("Student Report", "Student_Report", "Home")
+					@Html.ActionLink("Student Login", "StudentLogin", "Student")
 				</div>
 			</div>
 		</div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Team Powerpuff Girls</p>
-        </footer>
-    </div>
+	</div>
+	<div class="container body-content">
+		@RenderBody()
+		<hr />
+		<footer>
+			<p>&copy; @DateTime.Now.Year - Team Powerpuff Girls</p>
+		</footer>
+	</div>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+	@Scripts.Render("~/bundles/jquery")
+	@Scripts.Render("~/bundles/bootstrap")
+	@RenderSection("scripts", required: false)
 </body>
 </html>
