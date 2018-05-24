@@ -286,11 +286,11 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Home\Admin\Admin_Login.cshtml" />
+    <Content Include="Views\Home\Admin_Login.cshtml" />
     <Content Include="Views\Home\Student_Dashboard.cshtml" />
-    <Content Include="Views\Home\Admin\AdminDashboard.cshtml" />
-    <Content Include="Views\Home\Admin\ClassSettings.cshtml" />
-    <Content Include="Views\Home\Admin\CustomReport.cshtml" />
+    <Content Include="Views\Admin\AdminDashboard.cshtml" />
+    <Content Include="Views\Admin\ClassSettings.cshtml" />
+    <Content Include="Views\Admin\CustomReport.cshtml" />
     <Content Include="Views\Home\Student_New.cshtml" />
     <Content Include="Views\Home\Puzzle.cshtml" />
     <Content Include="Views\Student\StudentReport.cshtml" />
@@ -299,7 +299,8 @@
     <Content Include="Views\Student\StudentHome.cshtml" />
     <Content Include="Views\Student\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_StudentLayout.cshtml" />
-    <Content Include="Views\Home\Admin\ClassRoster.cshtml" />
+    <Content Include="Views\Admin\ClassRoster.cshtml" />
+    <Content Include="Views\Shared\_AdminLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
