@@ -203,6 +203,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Dropdown.css" />
+    <Content Include="Content\images\DummyAvatar_1.jpg" />
+    <Content Include="Content\images\DummyAvatar_2.jpg" />
+    <Content Include="Content\images\DummyAvatar_3.jpg" />
+    <Content Include="Content\images\DummyAvatar_4.jpg" />
+    <Content Include="Content\images\DummyAvatar_5.jpg" />
     <Content Include="Content\PPcustom.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -211,6 +216,7 @@
     <Content Include="Content\images\face3.png" />
     <Content Include="Content\images\face4.png" />
     <Content Include="Content\images\face5.png" />
+    <Content Include="Content\StudentDashBoard.css" />
     <Content Include="Content\wireframes\add_student.png" />
     <Content Include="Content\wireframes\admin_login.png" />
     <Content Include="Content\wireframes\admin_main.png" />
@@ -251,6 +257,7 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\studentDashboard.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
