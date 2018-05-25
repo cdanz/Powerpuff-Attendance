@@ -192,6 +192,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\StudentController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -287,9 +288,9 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\Admin_Login.cshtml" />
     <Content Include="Views\Home\Student_Dashboard.cshtml" />
-    <Content Include="Views\Home\Admin_Main.cshtml" />
-    <Content Include="Views\Home\Admin_Edits.cshtml" />
-    <Content Include="Views\Home\Admin_Reports.cshtml" />
+    <Content Include="Views\Admin\AdminDashboard.cshtml" />
+    <Content Include="Views\Admin\ClassSettings.cshtml" />
+    <Content Include="Views\Admin\CustomReport.cshtml" />
     <Content Include="Views\Home\Student_New.cshtml" />
     <Content Include="Views\Home\Puzzle.cshtml" />
     <Content Include="Views\Student\StudentReport.cshtml" />
@@ -298,6 +299,8 @@
     <Content Include="Views\Student\StudentHome.cshtml" />
     <Content Include="Views\Student\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_StudentLayout.cshtml" />
+    <Content Include="Views\Admin\ClassRoster.cshtml" />
+    <Content Include="Views\Shared\_AdminLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
