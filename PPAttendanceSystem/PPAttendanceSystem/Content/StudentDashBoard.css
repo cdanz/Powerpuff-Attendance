@@ -1,0 +1,105 @@
+﻿/*CSS code for the student Dashboard Page*/
+.student-card {
+    padding: 10px 15px 10px 15px;
+    border-radius: 5px;
+    margin: 15px 5px 15px 5px;
+}
+
+.student-card:hover {
+    box-shadow: 0 0 10px yellow;
+}
+
+.student-card img {
+    margin-right: 15px;
+}
+
+.student-card span {
+    color: white;
+    font-size: 17px;
+}
+
+.student-card-add {
+    background: #0026ff;
+    padding-top: 25px;
+    border-radius: 5px;
+    margin: 15px 5px 15px 5px;
+    text-align: center;
+    height: 80px;
+    vertical-align: middle;
+}
+
+.student-card-add span {
+     color: white;
+     font-size: 17px;
+}
+
+.check-in-box {
+    background-color: #202529;
+    padding: 10px 15px 10px 15px;
+    border-radius: 5px;
+    margin: 15px 5px 15px 5px;
+    color: white;
+}
+
+.student-card-info {
+    padding-left: 15px;
+}
+
+.student-card-info > img {
+    margin-right: 15px;
+}
+
+.student-card-info > span {
+    min-width: 355px;
+    display: inline-block;
+    font-size: 17px;
+}
+
+.emoticon {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.emoticon img {
+    padding: 0px 10px 0px 10px;
+}
+
+.emoticon btn {
+    background-color: #202529;
+}
+
+.add-student-card {
+    padding: 10px 15px 10px 15px;
+    text-align: center;
+    margin: 15px 5px 15px 5px;
+}
+
+.add-student-btn {
+    border-radius: 100%;
+}
+
+.check-in-popup {
+    visibility: hidden;
+}
+
+    .check-in-popup.active {
+        visibility: visible;
+    }
+
+.puzzle-box {
+    background: url("https://www.destructoid.com//ul/404672-DeathSquared.jpg");
+    background-size: 100% 100%;
+    margin-top: 15px;
+    padding-top: 104px;
+    padding-bottom: 104px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.puzzle-box span {
+    background-color: #202529;
+    padding: 5px;
+    border-radius: 3px;
+}
