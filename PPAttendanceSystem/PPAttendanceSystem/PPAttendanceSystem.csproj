@@ -191,7 +191,10 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LandingController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\StudentController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -224,6 +227,7 @@
     <Content Include="Content\wireframes\admin_student_report.png" />
     <Content Include="Content\wireframes\admin_view.png" />
     <Content Include="Content\wireframes\dashboard.png" />
+    <Content Include="Content\wireframes\Dashboard_Admin.png" />
     <Content Include="Content\wireframes\dashboard_w_active_student.png" />
     <Content Include="Content\wireframes\landing_page.png" />
     <Content Include="Content\wireframes\student_individual_report.png" />
@@ -292,12 +296,22 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\Admin_Login.cshtml" />
     <Content Include="Views\Home\Student_Dashboard.cshtml" />
-    <Content Include="Views\Home\Admin_Main.cshtml" />
-    <Content Include="Views\Home\Admin_Edits.cshtml" />
-    <Content Include="Views\Home\Admin_Reports.cshtml" />
+    <Content Include="Views\Admin\AdminDashboard.cshtml" />
+    <Content Include="Views\Admin\ClassSettings.cshtml" />
+    <Content Include="Views\Admin\CustomReport.cshtml" />
     <Content Include="Views\Home\Student_New.cshtml" />
     <Content Include="Views\Home\Puzzle.cshtml" />
-    <Content Include="Views\Home\Student_Report.cshtml" />
+    <Content Include="Views\Student\StudentReport.cshtml" />
+    <Content Include="Views\Home\StudentLogin.cshtml" />
+    <Content Include="Views\Student\StudentEditProfile.cshtml" />
+    <Content Include="Views\Student\StudentHome.cshtml" />
+    <Content Include="Views\Student\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_StudentLayout.cshtml" />
+    <Content Include="Views\Admin\ClassRoster.cshtml" />
+    <Content Include="Views\Shared\_AdminLayout.cshtml" />
+    <Content Include="Views\Landing\Home.cshtml" />
+    <Content Include="Views\Landing\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_LandingLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

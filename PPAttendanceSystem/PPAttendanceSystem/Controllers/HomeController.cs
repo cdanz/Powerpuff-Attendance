@@ -16,6 +16,14 @@ namespace _5051.Controllers
             return View();
         }
 
+        // GET: Student profile login page
+        public ActionResult StudentLogin()
+        {
+            ViewBag.Message = "Student Login";
+
+            return View();
+        }
+
         public ActionResult Student_Dashboard()
         {
             ViewBag.Message = "Student Dashboard";
@@ -26,13 +34,6 @@ namespace _5051.Controllers
         public ActionResult Student_New()
         {
             ViewBag.Message = "Student New";
-
-            return View();
-        }
-
-        public ActionResult Student_Report()
-        {
-            ViewBag.Message = "Student Report";
 
             return View();
         }
@@ -51,23 +52,29 @@ namespace _5051.Controllers
             return View();
         }
 
-        public ActionResult Admin_Main()
+        public ActionResult AdminDashboard()
         {
-            ViewBag.Message = "Admin Main";
+            ViewBag.Message = "Admin Dashboard";
 
             return View();
         }
 
-        public ActionResult Admin_Edits()
+        public ActionResult ClassSettings()
         {
-            ViewBag.Message = "Admin Edits";
+            ViewBag.Message = "Class Settings";
 
             return View();
         }
 
-        public ActionResult Admin_Reports()
+        public ActionResult CustomReport()
         {
-            ViewBag.Message = "Admin Reports";
+            ViewBag.Message = "Build Custom Report";
+
+            return View();
+        }
+        public ActionResult ClassRoster()
+        {
+            ViewBag.Message = "Class Roster";
 
             return View();
         }
