@@ -30,7 +30,7 @@
     <table style="width:100%;">
         <tr>
             <td style="width:15%; font-weight:bold;">Student</td>
-            <td style="width:17%;"><button onclick="dayView(Monday)" name="Monday" value="Monday">Monday</button></td><!-- TODO Needs serious work, the days of the week should no longer be visible and get replaced by the day of the week, I was aiming to change the innerhtml of the display name "Week of 6/4/2018" but I should change the day of the week headings.  -->
+            <td style="width:17%;"><button class="btn btn-default" onclick="dayView(Monday)" name="Monday" value="Monday">Monday</button></td><!-- TODO Needs serious work, the days of the week should no longer be visible and get replaced by the day of the week, I was aiming to change the innerhtml of the display name "Week of 6/4/2018" but I should change the day of the week headings.  -->
             <td style="width:17%;">Tuesday<!--TODO Make these all linkable so that javascript can bring up a single day view--></td>
             <td style="width:17%;">Wednesday<!--TODO Make these all linkable so that javascript can bring up a single day view--></td>
             <td style="width:17%;">Thursday<!--TODO Make these all linkable so that javascript can bring up a single day view--></td>
@@ -40,7 +40,7 @@
     <table style="width:100%;">
         <tr>
             <td style="width:15%;">
-                <div class="row"></br>Student 1<!--TODO Should link to student individual report--></br></div>
+                <div class="row"></br>@Html.ActionLink("Student 1", "StudentReport", "Student", null, new { @class = "btn btn-default" })</br></div>
                 <div class="row"></br>Student 2<!--TODO Should link to student individual report--></br></div>
                 <div class="row"></br>Student 3<!--TODO Should link to student individual report--></br></div>
                 <div class="row"></br>Student 4<!--TODO Should link to student individual report--></br></div>
