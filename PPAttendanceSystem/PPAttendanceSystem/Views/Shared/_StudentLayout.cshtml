@@ -101,8 +101,8 @@
 				</button>
 				@Html.ActionLink("Middle College HS", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
 			</div>
-			<div class="dropdown">
-				<button class="dropbtn">@Html.ActionLink("Kiosk", "Student_Dashboard", "Home")</button>
+			<div class="navbar-header">
+				@Html.ActionLink("Kiosk", "Student_Dashboard", "Home", new { area = "" }, new { @class = "navbar-brand" })
 			</div>
 			<div class="dropdown">
 				<button class="dropbtn">Admin</button>
