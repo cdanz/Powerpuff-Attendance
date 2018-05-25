@@ -43,3 +43,12 @@ textarea {
     margin-right: auto;
     margin-left: auto;
 }
+#admin_wkLog {
+    display:block;
+}
+#admin_dyLog {
+    display: none;
+}
+#admin_logDisplayName{
+
+}

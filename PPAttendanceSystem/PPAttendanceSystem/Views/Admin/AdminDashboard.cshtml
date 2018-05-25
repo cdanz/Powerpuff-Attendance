@@ -2,12 +2,26 @@
 @{
 	ViewBag.Title = "Admin Dashboard";
 }
+
+<script>
+    function weekView() {
+        document.getElementById("admin_wkLog").style.display = "block";
+        document.getElementById("admin_dyLog").style.display = "none";
+        /*document.getElementById("#admin_logDisplayName").innerHTML = "Week of 6/4/2018";    TODO MAKE THIS WORK*/
+    }
+    function dayView(dayName) {
+        document.getElementById("admin_wkLog").style.display = "none";
+        document.getElementById("admin_dyLog").style.display = "block";
+        /*document.getElementById("#admin_logDisplayName").innerHTML = dayName;  TODO MAKE THIS WORK*/ 
+    }
+</script>
+
 <div class"row" style="width:100%;">
     <table style="width:100%;">
         <tr style="width:100%;">
             <td style="width:20%;"><h1>Attendance</h1></td>
             <td style="width:40%;"></td>
-            <td style="width:20%;">Week of 5/4/2018</td>
+            <td style="width:20%;"><div id="admin_logDisplayName">Week of 6/4/2018</div></td>
             <td style="width:20%;">Previous<button>&#8678;</button><span style="font:grey;"></span><button>&#8680;</button>Next</span></td>
         </tr>
     </table>
@@ -16,7 +30,7 @@
     <table style="width:100%;">
         <tr>
             <td style="width:15%; font-weight:bold;">Student</td>
-            <td style="width:17%;">Monday<!--TODO Make these all linkable so that javascript can bring up a single day view--></td>
+            <td style="width:17%;"><button onclick="dayView(Monday)" name="Monday" value="Monday">Monday</button></td><!-- TODO Needs serious work, the days of the week should no longer be visible and get replaced by the day of the week, I was aiming to change the innerhtml of the display name "Week of 6/4/2018" but I should change the day of the week headings.  -->
             <td style="width:17%;">Tuesday<!--TODO Make these all linkable so that javascript can bring up a single day view--></td>
             <td style="width:17%;">Wednesday<!--TODO Make these all linkable so that javascript can bring up a single day view--></td>
             <td style="width:17%;">Thursday<!--TODO Make these all linkable so that javascript can bring up a single day view--></td>
@@ -35,7 +49,10 @@
                 <div class="row"></br>Student 7<!--TODO Should link to student individual report--></br></div>
                 <div class="row"></br>Student 8<!--TODO Should link to student individual report--></br></div>
             </td>
-            <td style="width:85%;">Put an image of the week report here.</td>
+            <td style="width:85%;">
+                <div id="admin_wkLog">Put an image of the week report here.</div>
+                <div id="admin_dyLog">Put an image of the day report here.<button onclick="weekView()" name="Week" value="Week">Back to week view</button></div>
+            </td>
         </tr>
     </table>
 </div>
@@ -48,85 +65,3 @@
     </div>
 
 
-<!--Code Snippets I'm bringing in for later
-    <script>
-var totalClicks = 0;
-var clickArr = [];
-var testArr = [25,30,45];
-function on() {
-  document.getElementById("overlay").style.display = "block";
-  document.getElementById("overContain").style.display = "flex";
-  document.getElementById("overWeighBecause").style.display = "block";
-}
-function off() {
-  document.getElementById("overlay").style.display = "none";
-  document.getElementById("overContain").style.display = "none";
-  document.getElementById("overWeighBecause").style.display = "none";
-  for (var i = 0; i < clickArr.length; i++) {
-    document.getElementById("buttonTest"+clickArr[i][0]).style.backgroundColor = "var(--cddbGrey)"; 
-    document.getElementById("buttonTest"+clickArr[i][0]).style.width = "1rem"; 
-    document.getElementById("buttonTest"+clickArr[i][0]).style.height = "1rem";
-    document.getElementById("buttonTest"+clickArr[i][0]).innerHTML = "";   
-  }
-  clickArr.length = 0;
-  totalClicks = 0;
-}
-function clearData() {
-  for (var i = 0; i < clickArr.length; i++) {
-    document.getElementById("buttonTest"+clickArr[i][0]).style.backgroundColor = "var(--cddbGrey)"; 
-    document.getElementById("buttonTest"+clickArr[i][0]).style.width = "1rem"; 
-    document.getElementById("buttonTest"+clickArr[i][0]).style.height = "1rem";  
-    document.getElementById("buttonTest"+clickArr[i][0]).innerHTML = "";  
-  }
-  clickArr.length = 0;
-  totalClicks = 0;
-}
-
-function updateWeighInValue() {
-  var arrayAsString = "";
-  for (var i = 0; i < clickArr.length; i++) {
-      arrayAsString = arrayAsString + clickArr[i][0] + ","; 
-      arrayAsString = arrayAsString + ((clickArr[i][1]/totalClicks)*100).toFixed(5) + ",";
-  }
-  document.getElementById("weighInWith").value = arrayAsString;
-}
-
-function clickTheButton(argID) {
-  totalClicks++;
-  var found = false;
-  var iterator = 0;
-  var foundIndex;
-  var clickRatio;
-  var clickRatioStyle;
-  while (found == false && iterator < clickArr.length) {
-    if(clickArr[iterator][0] == argID){
-      found = true;
-      clickArr[iterator][1]++;
-      foundIndex = iterator;
-    }
-    iterator++;
-  }
-  if (found == false) {
-    foundIndex = clickArr.length;
-    clickArr.push([argID,1]);  
-    document.getElementById("buttonTest"+argID).style.backgroundColor = "var(--cddbBlue)";
-  }
-  for (var i = 0; i < clickArr.length; i++) {
-    clickRatio = .7+(((clickArr[i][1])/totalClicks)*5);
-    clickRatioSyle = clickRatio + "rem";
-    clickRatioType = 2.5*(clickArr[i][1]/totalClicks);
-    clickRatioSyleType = clickRatioType + "rem";
-    percentCode = "<span style='font-size:"+clickArr[i][1]/totalClicks+"rem'>%</span>";
-    document.getElementById("buttonTest"+clickArr[i][0]).style.width = clickRatioSyle; 
-    document.getElementById("buttonTest"+clickArr[i][0]).style.height = clickRatioSyle; 
-    document.getElementById("buttonTest"+clickArr[i][0]).style.fontSize = clickRatioSyleType; 
-    if(((clickArr[i][1]/totalClicks)*100)>=20)
-      document.getElementById("buttonTest"+clickArr[i][0]).innerHTML = Math.floor((clickArr[i][1]/totalClicks)*100) + percentCode; 
-    else
-      document.getElementById("buttonTest"+clickArr[i][0]).innerHTML = ""; 
-  }
-  updateWeighInValue();
-}
-</script>
-    <button onclick="on()" class="button weighBecause" name="buttonClicked" value="weighBecause">Weigh In</button>
--->
