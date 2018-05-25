@@ -9,6 +9,7 @@ window.onload = function () {
             $(".student-card-info > img").remove();
             $(".student-card-info span").remove();
             $(".student-card-info").prepend(stuId.innerHTML);
+            $(".check-in-box").css('background-color', $(stuId).css('background-color'));
             $(".check-in-popup").addClass("active");
         }
     }

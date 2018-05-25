@@ -82,9 +82,9 @@
     visibility: hidden;
 }
 
-    .check-in-popup.active {
-        visibility: visible;
-    }
+.check-in-popup.active {
+    visibility: visible;
+}
 
 .puzzle-box {
     background: url("https://www.destructoid.com//ul/404672-DeathSquared.jpg");
