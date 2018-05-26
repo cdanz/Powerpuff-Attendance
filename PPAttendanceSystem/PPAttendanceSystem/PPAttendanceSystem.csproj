@@ -360,6 +360,7 @@
     <Content Include="Content\images\DummyAvatar_5.jpg" />
     <Content Include="Content\Landing\CanoeBG.jpg" />
     <Content Include="Content\Landing\map.png" />
+    <Content Include="Content\Landing\MCHSlogo.png" />
     <Content Include="Content\Landing\pin.png" />
     <Content Include="Content\Landing\route.png" />
     <Content Include="Content\PPcustom.css" />
