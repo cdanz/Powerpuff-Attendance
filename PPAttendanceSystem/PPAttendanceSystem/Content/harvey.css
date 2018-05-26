@@ -1,0 +1,73 @@
+﻿.harvey {
+    position: relative;
+    border: 1px solid #000;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    overflow: hidden;
+    background-color: #ffffff;
+    float: left;
+    margin: 10px;
+}
+
+.half-right {
+    background-image: linear-gradient( right, #000000, #000000 50.0%,#ffffff 50.0%);
+    background-image: -webkit-linear-gradient( right, #000000, #000000 50.0%,#ffffff 50.0%);
+    background-image: -moz-linear-gradient( right, #000000, #000000 50.0%,#ffffff 50.0%);
+    background-image: -o-linear-gradient( right, #000000, #000000 50.0%,#ffffff 50.0%);
+    background-image: -ms-linear-gradient( right, #000000, #000000 50.0%,#ffffff 50.0%);
+}
+
+.half-left {
+    background-image: linear-gradient( left, #000000, #000000 50.0%,#ffffff 50.0%);
+    background-image: -webkit-linear-gradient( left, #000000, #000000 50.0%,#ffffff 50.0%);
+    background-image: -moz-linear-gradient( left, #000000, #000000 50.0%,#ffffff 50.0%);
+    background-image: -o-linear-gradient( left, #000000, #000000 50.0%,#ffffff 50.0%);
+    background-image: -ms-linear-gradient( left, #000000, #000000 50.0%,#ffffff 50.0%);
+}
+
+.half-top {
+    background-image: linear-gradient( top, #000000, #000000 50.0%,#ffffff 50.0%);
+    background-image: -webkit-linear-gradient( top, #000000, #000000 50.0%,#ffffff 50.0%);
+    background-image: -moz-linear-gradient( top, #000000, #000000 50.0%,#ffffff 50.0%);
+    background-image: -o-linear-gradient( top, #000000, #000000 50.0%,#ffffff 50.0%);
+    background-image: -ms-linear-gradient( top, #000000, #000000 50.0%,#ffffff 50.0%);
+}
+
+.half-bottom {
+    background-image: linear-gradient( bottom, #000000, #000000 50.0%,#ffffff 50.0%);
+    background-image: -webkit-linear-gradient( bottom, #000000, #000000 50.0%,#ffffff 50.0%);
+    background-image: -moz-linear-gradient( bottom, #000000, #000000 50.0%,#ffffff 50.0%);
+    background-image: -o-linear-gradient( bottom, #000000, #000000 50.0%,#ffffff 50.0%);
+    background-image: -ms-linear-gradient( bottom, #000000, #000000 50.0%,#ffffff 50.0%);
+}
+
+.upper-right {
+    position: absolute;
+    right: 0px;
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+}
+
+.upper-left {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+}
+
+.three-quarters {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #FFF;
+}
+
+.black {
+    background-color: #000;
+}
+
+.white {
+    background-color: #FFF;
+}

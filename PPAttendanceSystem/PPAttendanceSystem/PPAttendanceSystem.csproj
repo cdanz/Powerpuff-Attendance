@@ -207,6 +207,7 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\harvey.min.css" />
     <Content Include="Content\Landing\css\colors\default-rtl.css" />
     <Content Include="Content\Landing\css\colors\default.css" />
     <Content Include="Content\Landing\css\style.css" />
@@ -374,7 +375,7 @@
     <Content Include="Content\images\face3.png" />
     <Content Include="Content\images\face4.png" />
     <Content Include="Content\images\face5.png" />
-    <Content Include="Content\HarveyBalls.css" />
+    <Content Include="Content\harvey.css" />
     <Content Include="Content\StudentDashBoard.css" />
     <Content Include="Content\Student\charticon.png" />
     <Content Include="Content\Student\profileicon.png" />

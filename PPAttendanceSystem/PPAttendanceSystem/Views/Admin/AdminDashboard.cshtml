@@ -3,7 +3,10 @@
 	ViewBag.Title = "Admin Dashboard";
 }
 
-<script>
+<link href="~/Content/harvey.min.css" rel="stylesheet" type="text/css" />
+
+
+</style><script>
 	function weekView() {
 		document.getElementById("admin_wkLog").style.display = "block";
 		document.getElementById("admin_dyLog").style.display = "none";
@@ -46,7 +49,10 @@
 				<table style="width:100%;">
 					<tr>
 						<td style="width:15%;">
-							<div class="row"></br>@Html.ActionLink("Student 1", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</br></div>
+                            <div class="row"></br>@Html.ActionLink("Student 1", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" }) 
+                            <div class="harvey"></div> 
+                            </br></div>
+
 							<div class="row"></br>Student 2<!--TODO Should link to student individual report--></br></div>
 							<div class="row"></br>Student 3<!--TODO Should link to student individual report--></br></div>
 							<div class="row"></br>Student 4<!--TODO Should link to student individual report--></br></div>
@@ -54,7 +60,9 @@
 							<div class="row"></br>Student 6<!--TODO Should link to student individual report--></br></div>
 							<div class="row"></br>Student 7<!--TODO Should link to student individual report--></br></div>
 							<div class="row"></br>Student 8<!--TODO Should link to student individual report--></br></div>
+                           
 						</td>
+                       
 						<td style="width:85%;">
 							<div id="admin_wkLog">Put an image of the week report here.</div>
 							<div id="admin_dyLog">Put an image of the day report here.</div>
@@ -70,6 +78,57 @@
 	</div>
 </section>
 
+
+
+        <!-- Large Circle -->
+        <!-- Astronomy: (Full Moon) -->
+        <div class="harvey"></div>
+
+        <!-- Circle with upper right quadrant black -->
+        <!-- Meteorology: (Almost clear sky or Somewhat overcast) -->
+        <div class="harvey"><div class="upper-right"></div></div>
+
+        <!-- Circle with right half black -->
+        <!-- Astronomy: (Last Quarter Moon), Electronics: (On/Off Switch, Television Contrast) -->
+        <div class="harvey half-right"></div>
+
+        <!-- Circle with all but upper left quadrant black -->
+        <!-- Meteorology: (Broken Clouds) -->
+        <div class="harvey black"><div class="three-quarters"></div></div>
+
+        <!-- Black Circle -->
+        <!-- Astronomy: (New Moon) -->
+        <div class="harvey black"></div>
+
+        <div class="clearfix"></div>
+
+        <!-- Lateral Inverse of above circles follows -->
+        <div class="harvey black"></div>
+
+        <div class="harvey black"><div class="upper-right white"></div></div>
+
+        <div class="harvey half-left"></div>
+
+        <div class="harvey"><div class="upper-left"></div></div>
+
+        <div class="harvey"></div>
+
+        <div class="clearfix"></div>
+
+        <!-- Circle with upper half black -->
+        <div class="harvey half-top"></div>
+
+        <!-- Circle with lower half black -->
+        <!-- Cartography: (Spring or Well), Meteorology: (Partly overcast) -->
+        <div class="harvey half-bottom"></div>
+
+        <div class="clearfix"></div>
+    </div>
+
+
+
+
+
 <!-- Footer bar-->
 <section class="footer">
 	<div class="container">
@@ -83,4 +142,12 @@
 		</div>
 	</div>
 </section>
+
+<div class="harvey"></div>
+<div class="harvey quarters quarter"></div>
+<div class="harvey quarters half"></div>
+<div class="harvey quarters three-quarters"></div>
+<div class="harvey quarters full"></div>
+<br>
+
 

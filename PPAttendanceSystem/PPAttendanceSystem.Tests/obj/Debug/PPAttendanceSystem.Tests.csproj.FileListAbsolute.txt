@@ -1,0 +1,2 @@
+P:\PPG\PPAttendanceSystem\PPAttendanceSystem.Tests\obj\Debug\PPAttendanceSystem.Tests.csprojResolveAssemblyReference.cache
+P:\PPG\PPAttendanceSystem\PPAttendanceSystem.Tests\obj\Debug\PPAttendanceSystem.Tests.csproj.CoreCompileInputs.cache
