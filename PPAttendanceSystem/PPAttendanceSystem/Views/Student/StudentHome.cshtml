@@ -2,18 +2,37 @@
 @{
 	ViewBag.Title = "Student Home";
 }
-<!-- Welcome greeting w/ name-->
-<section class="bg-dark-30 showcase-page-header module parallax-bg">
+<!-- Welcome greeting w/ rotating text-->
+<section class="home-section home-parallax home-fade home-full-height bg-dark-30" data-background="../../Content/Landing/hikerBG.JPG">
 	<div class="titan-caption">
 		<div class="caption-content">
-			<div class="font-alt mb-30 titan-title-size-1">Hello, explorer:</div>
-			<!-- UPDATE: add viewbag to grab student name-->
-			<div class="font-alt mb-40 titan-title-size-4">Zadie</div>
-			<a class="section-scroll btn btn-border-w btn-round" href="@Url.Action("StudentReport", "Student")">See your progress</a>
-			<a class="section-scroll btn btn-border-w btn-round" href="@Url.Action("StudentEditProfile", "Student")">Update your profile</a>
+			<div class="font-alt mb-30 titan-title-size-2">Hello, explorer</div>
+			<div class="font-alt mb-40 titan-title-size-3">
+				<span class="rotate">You are a trailblazer | You strive for more | You are resilient</span>
+			</div><a class="section-scroll btn btn-border-w btn-circle" href="#myprofile">How far you've come</a>
 		</div>
 	</div>
 </section>
+
+<!-- Welcome greeting w/ name-->
+<div class="main" style="margin-bottom:150px;margin-top:150px">
+	<section class="module" id="myprofile" style="margin-top:400px">
+		<div class="container">
+			<div class="row align-center">
+				<div class="col-sm-8 col-sm-offset-2">
+					<img class="card-img-top" src="~/Content/AvatarIcons/swan-icon.png" alt="SWAN" style="width:150px;height:150px;">
+					<h2 class="module-title font-alt">Hello, Zadie</h2>
+					<div class="alert alert-success" role="alert">
+						<button class="close" type="button" data-dismiss="alert" aria-hidden="true">&times;</button><i class="fa fa-diamond"></i><strong>Combo!</strong> You've arrived on time for 3+ consecutive days.
+					</div>
+					<!-- UPDATE: add viewbag to grab student name-->
+					<a class="section-scroll btn btn-g btn-round" href="@Url.Action("StudentReport", "Student")">See your progress</a>
+					<a class="section-scroll btn btn-g btn-round" href="@Url.Action("StudentEditProfile", "Student")">Update your profile</a>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
 
 <!-- Footer bar-->
 <section class="footer">
