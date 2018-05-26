@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\PPAttendanceSystem",
+    "\\PPAttendanceSystem\\PPAttendanceSystem",
+    "\\PPAttendanceSystem\\PPAttendanceSystem\\Views",
+    "\\PPAttendanceSystem\\PPAttendanceSystem\\Views\\Admin"
   ],
+  "SelectedNode": "\\PPAttendanceSystem\\PPAttendanceSystem\\Views\\Admin\\AdminDashboard.cshtml",
   "PreviewInSolutionExplorer": false
 }
