@@ -135,7 +135,8 @@
 							<div class="card-body">
 								<h4 style="margin-top: 20px;">Course Kiosk</h4>
 								<p class="card-text">Find yourself and unlock team paths by recording your time in class.</p>
-								<a href="@Url.Action("Student_Dashboard", "Home")" class="btn btn-primary" style="margin-bottom: 50px;">Go somewhere</a>
+								<!-- old button style -- <a href="" class="btn btn-primary" style="margin-bottom: 50px;">Go somewhere</a>-->
+								<a class="section-scroll btn btn-border-w btn-round" href="#kiosk">Go somewhere</a>
 							</div>
 						</div>
 					</div>
@@ -159,6 +160,27 @@
 								<a class="section-scroll btn btn-border-w btn-round" href="#student">See the journey</a>
 							</div>
 						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Kiosk login-->
+		<section class="module-medium" id="kiosk" style="margin-top: 600px;">
+			<div class="lcontainer">
+				<div class="row align-center">
+					<div class="col-sm-12 col-md-12 col-lg-12">
+						<div class="font-alt mb-30 titan-title-size-2">School Kiosk Login</div>
+						<div id="login">
+							<form action="javascript:void(0);" method="get">
+								<fieldset class="clearfix">
+									<lp><span class="fontawesome-user"></span><input type="text" value="Username" onBlur="if(this.value == '') this.value = 'Username'" onFocus="if(this.value == 'Username') this.value = ''" required></lp> <!-- JS because of IE support; better: placeholder="Username" -->
+									<lp><span class="fontawesome-lock"></span><input type="password" value="Password" onBlur="if(this.value == '') this.value = 'Password'" onFocus="if(this.value == 'Password') this.value = ''" required></lp> <!-- JS because of IE support; better: placeholder="Password" -->
+									<lp><input class="section-scroll btn btn-border-w btn-round" type="submit" value="Sign In"></lp>
+								</fieldset>
+							</form>
+							<p>Forgot password? <a href="@Url.Action("Student_Dashboard", "Home")" style="color:red">Reset it now </a><span class="fontawesome-arrow-right"></span></p>
+						</div> <!-- end login -->
 					</div>
 				</div>
 			</div>
