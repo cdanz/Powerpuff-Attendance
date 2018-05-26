@@ -1,46 +1,102 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en-US" dir="ltr">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - Admin Area</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--
+	Document Title
+	=============================================
+	-->
+	<title>Wayfinder | @ViewBag.Title</title>
 
-    <!--<link rel="icon" href="~/Content/img/avatar8.png">-->
-
+	<!--
+	Stylesheets
+	=============================================
+	-->
+	<!-- Default stylesheets-->
+	<link href="~/assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Template specific stylesheets-->
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Volkhov:400i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+	<link href="~/assets/lib/animate.css/animate.css" rel="stylesheet">
+	<link href="~/assets/lib/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="~/assets/lib/et-line-font/et-line-font.css" rel="stylesheet">
+	<link href="~/assets/lib/flexslider/flexslider.css" rel="stylesheet">
+	<link href="~/assets/lib/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
+	<link href="~/assets/lib/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
+	<link href="~/assets/lib/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
+	<link href="~/assets/lib/simple-text-rotator/simpletextrotator.css" rel="stylesheet">
+	<!-- Main stylesheet and color file-->
+	<link href="~/Content/Landing/css/style.css" rel="stylesheet">
+	<link id="color-scheme" href="~/Content/Landing/css/colors/default.css" rel="stylesheet">
 </head>
-<body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Middle College HS", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Student", "StudentLogin", "Home")</li>
-                    <li>@Html.ActionLink("Admin", "Admin_Login", "Home")</li>
-                    <li>@Html.ActionLink("Kiosk Mode", "Index", "Kiosk")</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-    </div>
 
-    <div class="container body-content">
-        <hr />
-    </div>
+<body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+	<main>
+		<!-- Loading animation-->
+		<div class="page-loader">
+			<div class="loader">Loading...</div>
+		</div>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+		<!-- Navbar-->
+		<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="@Url.Action("Home", "Landing")">Wayfinder</a>
+				</div>
+				<div class="collapse navbar-collapse" id="custom-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a class="dropdown-toggle" href="#" data-toggle="dropdown">Home</a>
+							<ul class="dropdown-menu">
+								<li>@Html.ActionLink("Course Kiosk", "Student_Dashboard", "Kiosk")</li>
+								<li>@Html.ActionLink("Student Portal", "Home", "Landing")</li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" href="#" data-toggle="dropdown">Admin</a>
+							<ul class="dropdown-menu">
+								<li>@Html.ActionLink("Admin Portal", "AdminDashboard", "Admin")</li>
+								<li>@Html.ActionLink("School Roster", "ClassRoster", "Admin")</li>
+								<li>@Html.ActionLink("Custom Metrics", "CustomReport", "Admin")</li>
+								<li>@Html.ActionLink("Settings", "ClassSettings", "Admin")</li>
+								<li>@Html.ActionLink("Logout", "Home", "Landing")</li>
+							</ul>
+						</li>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- I don't know why, but deleting this makes the CSS angry and ugly-->
+		</div>
+
+		<!-- Scroll up button-->
+		<div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
+	</main>
+
+	<!-- Also don't delete this or else MVC gets very angry-->
+	@RenderBody()
+
+	<!--
+	JavaScripts
+	=============================================
+	-->
+	<script src="~/assets/lib/jquery/dist/jquery.js"></script>
+	<script src="~/assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="~/assets/lib/wow/dist/wow.js"></script>
+	<script src="~/assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
+	<script src="~/assets/lib/isotope/dist/isotope.pkgd.js"></script>
+	<script src="~/assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>
+	<script src="~/assets/lib/flexslider/jquery.flexslider.js"></script>
+	<script src="~/assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
+	<script src="~/assets/lib/smoothscroll.js"></script>
+	<script src="~/assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
+	<script src="~/assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
+	<script src="~/assets/js/plugins.js"></script>
+	<script src="~/assets/js/main.js"></script>
 </body>
 </html>
