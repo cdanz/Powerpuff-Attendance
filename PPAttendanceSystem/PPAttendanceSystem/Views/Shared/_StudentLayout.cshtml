@@ -1,137 +1,102 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en-US" dir="ltr">
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>WAYFINDER - @ViewBag.Title</title>
-	@Styles.Render("~/Content/css")
-	@Scripts.Render("~/bundles/modernizr")
-	<style>
-		/* width */
-		::-webkit-scrollbar {
-			width: 10px;
-		}
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--
+	Document Title
+	=============================================
+	-->
+	<title>Wayfinder | Welcome</title>
 
-		/* Track */
-		::-webkit-scrollbar-track {
-			background: #f1f1f1;
-		}
-
-		/* Handle */
-		::-webkit-scrollbar-thumb {
-			background: #888;
-		}
-
-			/* Handle on hover */
-			::-webkit-scrollbar-thumb:hover {
-				background: #555;
-			}
-
-		/* Dropdown Button */
-		.dropbtn {
-			background-color: white;
-			color: dimgray;
-			padding: 16px;
-			font-size: 16px;
-			border: none;
-		}
-
-			/* Remove underscore on links */
-			.dropbtn a:hover {
-				text-decoration: none;
-			}
-
-		/* The container <div> - needed to position the dropdown content */
-		.dropdown {
-			position: relative;
-			display: inline-block;
-		}
-
-		/* Dropdown Content (Hidden by Default) */
-		.dropdown-content {
-			display: none;
-			position: absolute;
-			background-color: white;
-			min-width: 160px;
-			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-			z-index: 1;
-		}
-
-			/* Links inside the dropdown */
-			.dropdown-content a {
-				color: black;
-				padding: 12px 16px;
-				text-decoration: none;
-				display: block;
-			}
-
-				/* Change color of dropdown links on hover */
-				.dropdown-content a:hover {
-					background-color: lavenderblush
-				}
-
-		/* Show the dropdown menu on hover */
-		.dropdown:hover .dropdown-content {
-			display: block;
-		}
-
-		/* Change the background color of the dropdown button when the dropdown content is shown */
-		.dropdown:hover .dropbtn {
-			background-color: white;
-		}
-	</style>
+	<!--
+	Stylesheets
+	=============================================
+	-->
+	<!-- Default stylesheets-->
+	<link href="~/assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Template specific stylesheets-->
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Volkhov:400i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+	<link href="~/assets/lib/animate.css/animate.css" rel="stylesheet">
+	<link href="~/assets/lib/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="~/assets/lib/et-line-font/et-line-font.css" rel="stylesheet">
+	<link href="~/assets/lib/flexslider/flexslider.css" rel="stylesheet">
+	<link href="~/assets/lib/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
+	<link href="~/assets/lib/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
+	<link href="~/assets/lib/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
+	<link href="~/assets/lib/simple-text-rotator/simpletextrotator.css" rel="stylesheet">
+	<!-- Main stylesheet and color file-->
+	<link href="~/Content/Landing/css/style.css" rel="stylesheet">
+	<link id="color-scheme" href="~/Content/Landing/css/colors/default.css" rel="stylesheet">
 </head>
 
-<body>
-	<style>
-		/* Background page color */
-		body {
-			/*background-image: url("paper.gif");*/
-			background-color: #cccccc;
-		}
-	</style>
-
-	<div class="navbar navbar-light navbar-fixed-top" style="background-color: #ffffff">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				@Html.ActionLink("Middle College HS", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-			</div>
-			<div class="dropdown">
-				<button class="dropbtn">@Html.ActionLink("Kiosk", "Student_Dashboard", "Home")</button>
-			</div>
-			<div class="dropdown">
-				<button class="dropbtn">Admin</button>
-				<div class="dropdown-content">
-					@Html.ActionLink("Admin Portal", "Admin_Login", "Home")
-				</div>
-			</div>
-			<div class="dropdown">
-				<button class="dropbtn">Student</button>
-				<div class="dropdown-content">
-					@Html.ActionLink("Student Portal", "StudentHome", "Student")
-					@Html.ActionLink("Edit Profile", "StudentEditProfile", "Student")
-					@Html.ActionLink("My Progress", "StudentReport", "Student")
-					@Html.ActionLink("Logout", "StudentLogin", "Home")
-				</div>
-			</div>
+<body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+	<main>
+		<!-- Loading animation-->
+		<div class="page-loader">
+			<div class="loader">Loading...</div>
 		</div>
-	</div>
-	<div class="container body-content">
-		@RenderBody()
-		<hr />
-		<footer>
-			<p>&copy; @DateTime.Now.Year - Team Powerpuff Girls</p>
-		</footer>
-	</div>
 
-	@Scripts.Render("~/bundles/jquery")
-	@Scripts.Render("~/bundles/bootstrap")
-	@RenderSection("scripts", required: false)
+		<!-- Navbar-->
+		<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="@Url.Action("Home", "Landing")">Wayfinder</a>
+				</div>
+				<div class="collapse navbar-collapse" id="custom-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a class="dropdown-toggle" href="#" data-toggle="dropdown">Home</a>
+							<ul class="dropdown-menu">
+								<li>@Html.ActionLink("Course Kiosk", "Student_Dashboard", "Home")</li>
+								<li>@Html.ActionLink("Admin Portal", "Admin_Login", "Home")</li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" href="#" data-toggle="dropdown">Student</a>
+							<ul class="dropdown-menu">
+								<li>@Html.ActionLink("Student Portal", "StudentHome", "Student")</li>
+								<li>@Html.ActionLink("Edit Profile", "StudentEditProfile", "Student")</li>
+								<li>@Html.ActionLink("My Progress", "StudentReport", "Student")</li>
+								<li>@Html.ActionLink("Logout", "StudentLogin", "Home")</li>
+							</ul>
+						</li>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- I don't know why, but deleting this makes the CSS angry and ugly-->
+		</div>
+
+		<!-- Scroll up button-->
+		<div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
+	</main>
+
+	<!-- Also don't delete this or else MVC gets very angry-->
+	@RenderBody()
+
+	<!--
+	JavaScripts
+	=============================================
+	-->
+	<script src="~/assets/lib/jquery/dist/jquery.js"></script>
+	<script src="~/assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="~/assets/lib/wow/dist/wow.js"></script>
+	<script src="~/assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
+	<script src="~/assets/lib/isotope/dist/isotope.pkgd.js"></script>
+	<script src="~/assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>
+	<script src="~/assets/lib/flexslider/jquery.flexslider.js"></script>
+	<script src="~/assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
+	<script src="~/assets/lib/smoothscroll.js"></script>
+	<script src="~/assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
+	<script src="~/assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
+	<script src="~/assets/js/plugins.js"></script>
+	<script src="~/assets/js/main.js"></script>
 </body>
 </html>
 
