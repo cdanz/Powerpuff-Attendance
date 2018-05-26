@@ -51,16 +51,16 @@
 						<li class="dropdown">
 							<a class="dropdown-toggle" href="#" data-toggle="dropdown">Home</a>
 							<ul class="dropdown-menu">
-								<li><a href="@Url.Action("Home", "Landing")#kiosk">Course Kiosk</a></li>
 								<li><a href="@Url.Action("Home", "Landing")#admin">Admin Portal</a></li>
+								<li><a href="@Url.Action("Home", "Landing")#student">Student Portal</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
-							<a class="dropdown-toggle" href="#" data-toggle="dropdown">Student</a>
+							<a class="dropdown-toggle" href="#" data-toggle="dropdown">Kiosk</a>
 							<ul class="dropdown-menu">
-								<li>@Html.ActionLink("Student Portal", "StudentHome", "Student")</li>
-								<li>@Html.ActionLink("Edit Profile", "StudentEditProfile", "Student")</li>
-								<li>@Html.ActionLink("My Progress", "StudentReport", "Student")</li>
+								<li>@Html.ActionLink("Dashboard", "Student_Dashboard", "Kiosk")</li>
+								<li>@Html.ActionLink("Puzzle Progress", "Puzzle", "Kiosk")</li>
+								<li>@Html.ActionLink("Register Student", "Student_New", "Kiosk")</li>
 								<li>@Html.ActionLink("Logout", "Home", "Landing")</li>
 							</ul>
 						</li>
@@ -99,5 +99,3 @@
 	<script src="~/assets/js/main.js"></script>
 </body>
 </html>
-
-

@@ -51,8 +51,8 @@
 						<li class="dropdown">
 							<a class="dropdown-toggle" href="#" data-toggle="dropdown">Home</a>
 							<ul class="dropdown-menu">
-								<li>@Html.ActionLink("Course Kiosk", "Student_Dashboard", "Kiosk")</li>
-								<li>@Html.ActionLink("Student Portal", "Home", "Landing")</li>
+								<li><a href="@Url.Action("Home", "Landing")#kiosk">Course Kiosk</a></li>
+								<li><a href="@Url.Action("Home", "Landing")#student">Student Portal</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
