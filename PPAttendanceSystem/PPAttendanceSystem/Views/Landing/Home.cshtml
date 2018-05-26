@@ -1,137 +1,61 @@
-﻿<!DOCTYPE html>
-<html lang="en-US" dir="ltr">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!--
-	Document Title
-	=============================================
-	-->
-	<title>Wayfinder | Welcome</title>
-
-	<!--
-	Stylesheets
-	=============================================
-
-	-->
-	<!-- Default stylesheets-->
-	<link href="~/assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-	<!-- Template specific stylesheets-->
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Volkhov:400i" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-	<link href="~/assets/lib/animate.css/animate.css" rel="stylesheet">
-	<link href="~/assets/lib/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
-	<link href="~/assets/lib/et-line-font/et-line-font.css" rel="stylesheet">
-	<link href="~/assets/lib/flexslider/flexslider.css" rel="stylesheet">
-	<link href="~/assets/lib/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
-	<link href="~/assets/lib/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
-	<link href="~/assets/lib/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
-	<link href="~/assets/lib/simple-text-rotator/simpletextrotator.css" rel="stylesheet">
-	<!-- Main stylesheet and color file-->
-	<link href="~/Content/Landing/css/style.css" rel="stylesheet">
-	<link id="color-scheme" href="~/Content/Landing/css/colors/default.css" rel="stylesheet">
-</head>
-<body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
-	<main>
-		<div class="page-loader">
-			<div class="loader">Loading...</div>
+﻿<!-- Landing page background and welcome text-->
+<section class="bg-dark-30 showcase-page-header module parallax-bg" data-background="../../Content/Landing/CanoeBG.jpg">
+	<div class="titan-caption">
+		<div class="caption-content">
+			<div class="font-alt mb-30 titan-title-size-1">Chart your course. We'll help you navigate.</div>
+			<div class="font-alt mb-40 titan-title-size-4">Wayfinder</div><a class="section-scroll btn btn-border-w btn-round" href="#begin">Set Destination</a>
 		</div>
-		<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-			<div class="container">
-				<div class="navbar-header">
-					<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="~/Landing/Home">Wayfinder</a>
-				</div>
-				<div class="collapse navbar-collapse" id="custom-collapse">
-					<ul class="nav navbar-nav navbar-right">
-						<li class="dropdown">
-							<a class="dropdown-toggle" href="#" data-toggle="dropdown">Home</a>
-							<ul class="dropdown-menu">
-								<li>@Html.ActionLink("Course Kiosk", "Student_Dashboard", "Home")</li>
-								<li>@Html.ActionLink("Admin Portal", "Admin_Login", "Home")</li>
-								<li>@Html.ActionLink("Student Portal", "StudentLogin", "Home")</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-		<section class="bg-dark-30 showcase-page-header module parallax-bg" data-background="../../Content/Landing/CanoeBG.jpg">
-			<div class="titan-caption">
-				<div class="caption-content">
-					<div class="font-alt mb-30 titan-title-size-1">Chart your course. We'll help you navigate.</div>
-					<div class="font-alt mb-40 titan-title-size-4">Wayfinder</div><a class="section-scroll btn btn-border-w btn-round" href="#begin">Set Destination</a>
-				</div>
-			</div>
+	</div>
 
-			<section class="module-medium" id="begin" style="margin-top: 1000px;">
-				<div class="container">
-					<div class="row multi-columns-row align-center">
-						<div class="col-md-4 col-sm-6 col-xs-12">
-							<div class="card" style="width: 30rem;">
-								<img class="card-img-top" src="~/Content/Landing/map.png" alt="Course Kiosk" style="width:300px;height:170px;">
-								<div class="card-body">
-									<h4 style="margin-top: 20px;">Course Kiosk</h4>
-									<p class="card-text">Find yourself and unlock team paths by recording your time in class.</p>
-									<a href="@Url.Action("Student_Dashboard", "Home")" class="btn btn-primary" style="margin-bottom: 50px;">Go somewhere</a>
-								</div>
-							</div>
-						</div>
-						<br>
-						<div class="col-md-4 col-sm-6 col-xs-12">
-							<div class="card" style="width: 30rem;">
-								<img class="card-img-top" src="~/Content/Landing/pin.png" alt="Admin Portal" style="width:150px;height:150px;">
-								<div class="card-body">
-									<h4 style="margin-top: 20px;">Administrators</h4>
-									<p class="card-text">Use our compass tools to map out where everyone is in their trek.</p>
-									<a href="@Url.Action("Admin_Login", "Home")" class="btn btn-primary" style="margin-bottom: 50px;">Guide the way</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12">
-							<div class="card" style="width: 30rem;">
-								<img class="card-img-top" src="~/Content/Landing/route.png" alt="Student Portal" style="width:150px;height:150px;">
-								<div class="card-body">
-									<h4 style="margin-top: 20px;">Students</h4>
-									<p class="card-text">Observe where you began and where you are headed with your personal profile.</p>
-									<a href="@Url.Action("StudentLogin", "Home")" class="btn btn-primary" style="margin-bottom: 50px;">See the journey</a>
-								</div>
-							</div>
+	<!-- Trio of options directing to login pages-->
+	<section class="module-medium" id="begin" style="margin-top: 1000px;">
+		<div class="container">
+			<div class="row multi-columns-row align-center">
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<div class="card" style="width: 30rem;">
+						<img class="card-img-top" src="~/Content/Landing/map.png" alt="Course Kiosk" style="width:300px;height:170px;">
+						<div class="card-body">
+							<h4 style="margin-top: 20px;">Course Kiosk</h4>
+							<p class="card-text">Find yourself and unlock team paths by recording your time in class.</p>
+							<a href="@Url.Action("Student_Dashboard", "Home")" class="btn btn-primary" style="margin-bottom: 50px;">Go somewhere</a>
 						</div>
 					</div>
 				</div>
-			</section>
-				<section class="footer">
-					<div class="container">
-						<div class="row">
-							<div class="col-sm-6 col-md-8 col-lg-9">
-								<div class="callout-text font-alt">
-									<p style="margin-bottom: 0px;">2018 Team Powerpuff</p>
-								</div>
-							</div>
+				<br>
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<div class="card" style="width: 30rem;">
+						<img class="card-img-top" src="~/Content/Landing/pin.png" alt="Admin Portal" style="width:150px;height:150px;">
+						<div class="card-body">
+							<h4 style="margin-top: 20px;">Administrators</h4>
+							<p class="card-text">Use our compass tools to map out where everyone is in their trek.</p>
+							<a href="@Url.Action("Admin_Login", "Home")" class="btn btn-primary" style="margin-bottom: 50px;">Guide the way</a>
 						</div>
 					</div>
-				</section>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<div class="card" style="width: 30rem;">
+						<img class="card-img-top" src="~/Content/Landing/route.png" alt="Student Portal" style="width:150px;height:150px;">
+						<div class="card-body">
+							<h4 style="margin-top: 20px;">Students</h4>
+							<p class="card-text">Observe where you began and where you are headed with your personal profile.</p>
+							<a href="@Url.Action("StudentLogin", "Home")" class="btn btn-primary" style="margin-bottom: 50px;">See the journey</a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
-	</main>
-	<!--
-	JavaScripts
-	=============================================
-	-->
-	<script src="~/assets/lib/jquery/dist/jquery.js"></script>
-	<script src="~/assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script src="~/assets/lib/wow/dist/wow.js"></script>
-	<script src="~/assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
-	<script src="~/assets/lib/isotope/dist/isotope.pkgd.js"></script>
-	<script src="~/assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>
-	<script src="~/assets/lib/flexslider/jquery.flexslider.js"></script>
-	<script src="~/assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
-	<script src="~/assets/lib/smoothscroll.js"></script>
-	<script src="~/assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
-	<script src="~/assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
-	<script src="~/assets/js/plugins.js"></script>
-	<script src="~/assets/js/main.js"></script>
-</body>
-</html>
+	</section>
+
+	<!-- Footer bar-->
+	<section class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-md-8 col-lg-9">
+					<div class="callout-text font-alt">
+						<p style="margin-bottom: 0px;">2018 Team Powerpuff</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
