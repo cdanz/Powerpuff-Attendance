@@ -146,7 +146,7 @@
 							<div class="card-body">
 								<h4 style="margin-top: 20px;">Administrators</h4>
 								<p class="card-text">Use our compass tools to map out where everyone is in their trek.</p>
-								<a href="@Url.Action("Admin_Login", "Home")" class="btn btn-primary" style="margin-bottom: 50px;">Guide the way</a>
+								<a class="section-scroll btn btn-border-w btn-round" href="#admin">Guide the way</a>
 							</div>
 						</div>
 					</div>
@@ -159,6 +159,27 @@
 								<a class="section-scroll btn btn-border-w btn-round" href="#student">See the journey</a>
 							</div>
 						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Admin login-->
+		<section class="module-medium" id="admin" style="margin-top: 600px;">
+			<div class="lcontainer">
+				<div class="row align-center">
+					<div class="col-sm-12 col-md-12 col-lg-12">
+						<div class="font-alt mb-30 titan-title-size-2">Administrator Profile Login</div>
+						<div id="login">
+							<form action="javascript:void(0);" method="get">
+								<fieldset class="clearfix">
+									<lp><span class="fontawesome-user"></span><input type="text" value="Username" onBlur="if(this.value == '') this.value = 'Username'" onFocus="if(this.value == 'Username') this.value = ''" required></lp> <!-- JS because of IE support; better: placeholder="Username" -->
+									<lp><span class="fontawesome-lock"></span><input type="password" value="Password" onBlur="if(this.value == '') this.value = 'Password'" onFocus="if(this.value == 'Password') this.value = ''" required></lp> <!-- JS because of IE support; better: placeholder="Password" -->
+									<lp><input class="section-scroll btn btn-border-w btn-round" type="submit" value="Sign In"></lp>
+								</fieldset>
+							</form>
+							<p>Forgot password? <a href="@Url.Action("AdminDashboard", "Admin")" style="color:red">Reset it now </a><span class="fontawesome-arrow-right"></span></p>
+						</div> <!-- end login -->
 					</div>
 				</div>
 			</div>
@@ -183,7 +204,7 @@
 					</div>
 				</div>
 			</div>
-	</section>
+		</section>
 
 		<!-- Footer bar-->
 		<section class="footer">
