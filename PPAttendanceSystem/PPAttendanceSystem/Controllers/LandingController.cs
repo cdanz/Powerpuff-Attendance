@@ -15,12 +15,5 @@ namespace _5051.Controllers
             return View();
         }
 
-        // GET: Student profile login page
-        public ActionResult StudentLogin()
-        {
-            ViewBag.Message = "Student Login";
-
-            return View();
-        }
     }
 }

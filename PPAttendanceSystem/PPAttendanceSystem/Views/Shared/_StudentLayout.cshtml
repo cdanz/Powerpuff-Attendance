@@ -51,8 +51,8 @@
 						<li class="dropdown">
 							<a class="dropdown-toggle" href="#" data-toggle="dropdown">Home</a>
 							<ul class="dropdown-menu">
-								<li>@Html.ActionLink("Course Kiosk", "Student_Dashboard", "Home")</li>
-								<li>@Html.ActionLink("Admin Portal", "Admin_Login", "Home")</li>
+								<li>@Html.ActionLink("Course Kiosk", "Student_Dashboard", "Kiosk")</li>
+								<li>@Html.ActionLink("Admin Portal", "Home", "Landing")</li>
 							</ul>
 						</li>
 						<li class="dropdown">
@@ -61,7 +61,7 @@
 								<li>@Html.ActionLink("Student Portal", "StudentHome", "Student")</li>
 								<li>@Html.ActionLink("Edit Profile", "StudentEditProfile", "Student")</li>
 								<li>@Html.ActionLink("My Progress", "StudentReport", "Student")</li>
-								<li>@Html.ActionLink("Logout", "StudentLogin", "Home")</li>
+								<li>@Html.ActionLink("Logout", "Home", "Landing")</li>
 							</ul>
 						</li>
 						</li>
