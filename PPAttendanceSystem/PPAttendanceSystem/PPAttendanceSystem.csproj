@@ -372,6 +372,8 @@
     <Content Include="Content\images\face4.png" />
     <Content Include="Content\images\face5.png" />
     <Content Include="Content\StudentDashBoard.css" />
+    <Content Include="Content\Student\charticon.png" />
+    <Content Include="Content\Student\profileicon.png" />
     <Content Include="Content\wireframes\add_student.png" />
     <Content Include="Content\wireframes\admin_login.png" />
     <Content Include="Content\wireframes\admin_main.png" />

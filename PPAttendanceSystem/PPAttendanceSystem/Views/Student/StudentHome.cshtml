@@ -2,8 +2,18 @@
 @{
 	ViewBag.Title = "Student Home";
 }
-
-<h2>Add student profile landing page mockup here</h2>
+<!-- Welcome greeting w/ name-->
+<section class="bg-dark-30 showcase-page-header module parallax-bg">
+	<div class="titan-caption">
+		<div class="caption-content">
+			<div class="font-alt mb-30 titan-title-size-1">Hello, explorer:</div>
+			<!-- UPDATE: add viewbag to grab student name-->
+			<div class="font-alt mb-40 titan-title-size-4">Zadie</div>
+			<a class="section-scroll btn btn-border-w btn-round" href="@Url.Action("StudentReport", "Student")">See your progress</a>
+			<a class="section-scroll btn btn-border-w btn-round" href="@Url.Action("StudentEditProfile", "Student")">Update your profile</a>
+		</div>
+	</div>
+</section>
 
 <!-- Footer bar-->
 <section class="footer">
