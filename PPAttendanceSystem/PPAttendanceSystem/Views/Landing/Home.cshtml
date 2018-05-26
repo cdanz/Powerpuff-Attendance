@@ -20,6 +20,7 @@
 			}
 
 		input {
+			margin: auto;
 			border: none;
 			font-family: 'Open Sans', Arial, sans-serif;
 			font-size: 14px;
@@ -53,10 +54,12 @@
 
 		/* ---------- LOGIN ---------- */
 		#login {
+			margin: auto;
 			width: 280px;
 		}
 
 			#login form span {
+				margin: auto;
 				background-color: #363b41;
 				border-radius: 3px 0px 0px 3px;
 				color: #606468;
@@ -69,10 +72,12 @@
 			}
 
 			#login form input {
+				margin: auto;
 				height: 50px;
 			}
 
 				#login form input[type="text"], input[type="password"] {
+					margin: auto;
 					background-color: #3b4148;
 					border-radius: 0px 3px 3px 0px;
 					color: #606468;
@@ -82,8 +87,10 @@
 				}
 
 				#login form input[type="submit"] {
+					margin: auto;
 					font-weight: bold;
 					margin-bottom: 2em;
+					margin-top: 2em;
 					width: 280px;
 					border-radius: 0;
 					font-family: "Roboto Condensed", sans-serif;
@@ -119,7 +126,7 @@
 		</div>
 
 		<!-- Trio of options directing to login pages-->
-		<section class="module-medium" id="begin" style="margin-top: 1000px;">
+		<section class="module-medium" id="begin" style="margin-top: 600px;">
 			<div class="container">
 				<div class="row multi-columns-row align-center">
 					<div class="col-md-4 col-sm-6 col-xs-12">
@@ -158,20 +165,25 @@
 		</section>
 
 		<!-- Student login-->
-		<section class="module-medium" id="student" style="margin-top: 1000px;">
+		<section class="module-medium" id="student" style="margin-top: 600px;">
 			<div class="lcontainer">
-				<div id="login">
-					<form action="javascript:void(0);" method="get">
-						<fieldset class="clearfix">
-							<lp><span class="fontawesome-user"></span><input type="text" value="Username" onBlur="if(this.value == '') this.value = 'Username'" onFocus="if(this.value == 'Username') this.value = ''" required></lp> <!-- JS because of IE support; better: placeholder="Username" -->
-							<lp><span class="fontawesome-lock"></span><input type="password" value="Password" onBlur="if(this.value == '') this.value = 'Password'" onFocus="if(this.value == 'Password') this.value = ''" required></lp> <!-- JS because of IE support; better: placeholder="Password" -->
-							<lp><input class="section-scroll btn btn-border-w btn-round" type="submit" value="Sign In"></lp>
-						</fieldset>
-					</form>
-					<p>Forgot password? <a href="@Url.Action("StudentHome", "Student")" style="color:red">Reset it now </a><span class="fontawesome-arrow-right"></span></p>
-				</div> <!-- end login -->
+				<div class="row align-center">
+					<div class="col-sm-12 col-md-12 col-lg-12">
+						<div class="font-alt mb-30 titan-title-size-2">Student Profile Login</div>
+						<div id="login">
+							<form action="javascript:void(0);" method="get">
+								<fieldset class="clearfix">
+									<lp><span class="fontawesome-user"></span><input type="text" value="Username" onBlur="if(this.value == '') this.value = 'Username'" onFocus="if(this.value == 'Username') this.value = ''" required></lp> <!-- JS because of IE support; better: placeholder="Username" -->
+									<lp><span class="fontawesome-lock"></span><input type="password" value="Password" onBlur="if(this.value == '') this.value = 'Password'" onFocus="if(this.value == 'Password') this.value = ''" required></lp> <!-- JS because of IE support; better: placeholder="Password" -->
+									<lp><input class="section-scroll btn btn-border-w btn-round" type="submit" value="Sign In"></lp>
+								</fieldset>
+							</form>
+							<p>Forgot password? <a href="@Url.Action("StudentHome", "Student")" style="color:red">Reset it now </a><span class="fontawesome-arrow-right"></span></p>
+						</div> <!-- end login -->
+					</div>
+				</div>
 			</div>
-		</section>
+	</section>
 
 		<!-- Footer bar-->
 		<section class="footer">
