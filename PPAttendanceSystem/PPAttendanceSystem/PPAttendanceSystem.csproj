@@ -364,6 +364,7 @@
     <Content Include="Content\images\DummyAvatar_4.jpg" />
     <Content Include="Content\images\DummyAvatar_5.jpg" />
     <Content Include="Content\Landing\CanoeBG.jpg" />
+    <Content Include="Content\Landing\hikerBG.JPG" />
     <Content Include="Content\Landing\map.png" />
     <Content Include="Content\Landing\MCHSlogo.png" />
     <Content Include="Content\Landing\mountainBG.jpg" />
