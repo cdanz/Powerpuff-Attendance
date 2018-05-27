@@ -1,0 +1,114 @@
+﻿@{
+	ViewBag.Title = "Student Dashboard";
+}
+<!-- JQuery and JavaScript-->
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/studentDashboard")
+
+<!-- Add custom css-->>
+<link href="@Url.Content("~/Content/StudentDashBoard.css")" rel="stylesheet" type="text/css">
+
+<div class="container" style="max-width:1028px;">
+	<img src="~/Content/wireframes/wk6-Student_Dashboard.png" class="img-responsive" alt="Student Dashboard">
+</div>
+<p></br><span style="background-color:yellow;">Above: Wireframe --- Below: Work In Progress</span></p>
+
+<div class="container">
+	<div class="row">
+		<div class="col-mid-2 col-md-offset-5"><h2>Please Sign In</h2><br></div>
+		<div class="col-md-4 check-in">
+			<div id="stu1" class="student-card" style="background-color: #871518">
+				<img src="~/Content/images/DummyAvatar_1.jpg" class="img-circle" alt="Student Avatar">
+				<span>Nancy Thompson</span>
+			</div>
+		</div>
+		<div class="col-md-4 check-in">
+			<div id="stu2" class="student-card" style="background-color: #FAAC38">
+				<img src="~/Content/images/DummyAvatar_2.jpg" class="img-circle" alt="Student Avatar">
+				<span>Alvin Hopkins</span>
+			</div>
+		</div>
+		<div class="col-md-4 check-in">
+			<div id="stu3" class="student-card" style="background-color: #001640">
+				<img src="~/Content/images/DummyAvatar_1.jpg" class="img-circle" alt="Student Avatar">
+				<span>Mina Clark</span>
+			</div>
+		</div>
+		<div class="col-md-4 check-in">
+			<div id="stu4" class="student-card" style="background-color: #193F4C">
+				<img src="~/Content/images/DummyAvatar_3.jpg" class="img-circle" alt="Student Avatar">
+				<span>Verna Potter</span>
+			</div>
+		</div>
+		<div class="col-md-4 check-in">
+			<div id="stu5" class="student-card" style="background-color: #FF590F">
+				<img src="~/Content/images/DummyAvatar_4.jpg" class="img-circle" alt="Student Avatar">
+				<span>Gabriel Klein</span>
+			</div>
+		</div>
+		<div class="col-md-4 check-in">
+			<div id="stu6" class="student-card" style="background-color: #006F7A">
+				<img src="~/Content/images/DummyAvatar_1.jpg" class="img-circle" alt="Student Avatar">
+				<span>Seth Berry</span>
+			</div>
+		</div>
+		<div class="col-md-4 check-in">
+			<div id="stu7" class="student-card" style="background-color: #990066">
+				<img src="~/Content/images/DummyAvatar_5.jpg" class="img-circle" alt="Student Avatar">
+				<span>Rebecca Gurdine</span>
+			</div>
+		</div>
+		<div class="col-md-4 check-in">
+			<div id="stu8" class="student-card" style="background-color: #003366">
+				<img src="~/Content/images/DummyAvatar_1.jpg" class="img-circle" alt="Student Avatar">
+				<span>Harry Reid</span>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="student-card-add">
+				<span class="glyphicon-plus">  Add Student</span>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- JQuery Pop-up -->
+<div class="row">
+	<div class="col-md-6 check-in-popup">
+		<div class="check-in-box">
+			<div class="row student-card-info">
+				<button class="btn details-button">Details</button>
+			</div>
+			<div class="row">
+				<div class="col-md-12 emoticon">
+					<h3>How are you doing today?</h3><br>
+					<a href="javascript:checkedIn()"><img src="~/Content/images/face1.png" alt="Sad"></a>
+					<a href="javascript:checkedIn()"><img src="~/Content/images/face2.png" alt="Somewhat Sad"></a>
+					<a href="javascript:checkedIn()"><img src="~/Content/images/face3.png" alt="Okay"></a>
+					<a href="javascript:checkedIn()"><img src="~/Content/images/face4.png" alt="Somewhat Happy"></a>
+					<a href="javascript:checkedIn()"><img src="~/Content/images/face5.png" alt="Happy"></a><br><br>
+					<p>Select emoticon to sign in</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-6">
+		<div class="puzzle-box">
+			<h3><span> Puzzle Preview </span></h3>
+		</div>
+	</div>
+</div>
+
+
+<!-- Footer bar-->
+<section class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-md-8 col-lg-12">
+				<div class="callout-text font-alt">
+					<p style="margin-bottom: 0px;" class="alignleft">2018 Team Powerpuff</p>
+					<p style="margin-bottom: 0px;" class="alignright">Middle College High School</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

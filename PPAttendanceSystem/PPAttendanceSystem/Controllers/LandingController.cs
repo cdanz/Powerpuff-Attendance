@@ -11,7 +11,9 @@ namespace _5051.Controllers
         // GET: Landing
         public ActionResult Home()
         {
+            ViewBag.Message = "Home";
             return View();
         }
+
     }
 }

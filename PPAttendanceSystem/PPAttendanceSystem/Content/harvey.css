@@ -1,0 +1,39 @@
+﻿.harvey {
+    position: relative;
+    border: 1px solid #000;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: #ff0000;
+    float: left;
+    margin: 30px;
+}
+
+.half-right {
+    background-image: linear-gradient( right, #FFA500,#FFA500 50.0%,#ffffff 50.0%);
+    background-image: -webkit-linear-gradient( right, #FFA500,#FFA500 50.0%,#ffffff 50.0%);
+    background-image: -moz-linear-gradient( right, #FFA500,#FFA500 50.0%,#ffffff 50.0%);
+    background-image: -o-linear-gradient( right, #FFA500,#FFA500 50.0%,#ffffff 50.0%);
+    background-image: -ms-linear-gradient( right, #FFA500,#FFA500 50.0%,#ffffff 50.0%);
+}
+
+
+
+.upper-right {
+    position: absolute;
+    right: 0px;
+    width: 50px;
+    height: 50px;
+    background-color: #008000;
+}
+
+
+
+.black {
+    background-color: #000;
+}
+
+.white {
+    background-color: #FFF;
+}
