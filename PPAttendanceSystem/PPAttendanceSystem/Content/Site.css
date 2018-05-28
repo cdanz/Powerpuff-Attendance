@@ -35,20 +35,36 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.center_elements {
+    margin-right: auto;
+    margin-left: auto;
+}
 /*All custom classes for the admin controller are below. Any custom classes 
     for admin should be prefixed with "Admin_"*/
 .admin_container {
-    border: 0px solid var(--PPWhite);
+    border 0px solid var(--PPWhite);
     padding: 1rem;
     margin-right: auto;
     margin-left: auto;
 }
-#admin_wkLog {
-    display:block;
+
+#admin_wkHeaders {
+    display: block;
 }
+
+#admin_dyHeader {
+    display: none;
+    text-align: center;
+}
+
+#admin_wkLog {
+    display: block;
+}
+
 #admin_dyLog {
     display: none;
 }
-#admin_logDisplayName{
 
+#admin_logDisplayName {
 }

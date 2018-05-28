@@ -6,8 +6,10 @@
     border-radius: 30px;
     overflow: hidden;
     background-color: #ff0000;
-    float: left;
-    margin: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7px;
+    margin-bottom: 7px;
 }
 
 .half-right {
