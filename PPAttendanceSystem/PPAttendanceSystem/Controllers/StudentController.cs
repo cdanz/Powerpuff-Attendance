@@ -33,26 +33,38 @@ namespace _5051.Controllers
             return View();
         }
 
-        [HttpPost]
-        public ActionResult Index(UsernameModels user)
-        {
-            string userId = user.Id;
-            string name = user.Username;
-
-            return View();
-        }
-
-        // GET: Student username
         /// <summary>
-        /// Read information on a single user and assign template username
+        /// Make a new profile name sent in by the edit student profile screen
         /// </summary>
-        /// <param name="id"></param>
+        /// <param name="collection"></param>
         /// <returns></returns>
-        // GET: Username/Details/5
-        public ActionResult Read(string id = null)
+        // POST: Username/Create
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Create([Bind(Include=
+                                        "Id,"+
+                                        "Name,"+
+                                        "")] UsernameModels data)
         {
-            var myData = "Mystery Explorer";
-            return View(myData);
+            if (!ModelState.IsValid)
+            {
+                // Send back for edit, with Error Message
+                return View(data);
+            }
+
+            if (data == null)
+            {
+                // Send to Error Page
+                return RedirectToAction("Error", new { route = "Home", action = "Error" });
+            }
+
+            if (string.IsNullOrEmpty(data.Id))
+            {
+                // Sind back for Edit
+                return View(data);
+            }
+
+            return RedirectToAction("StudentHome");
         }
     }
 }

@@ -3,13 +3,10 @@
 	ViewBag.Title = "Student Edit Profile";
 }
 
-@using (Html.BeginForm("StudentHome", "Student", FormMethod.Post))
-{
-
 	<section class="bg-dark-30 showcase-page-header module parallax-bg">
 		<div class="titan-caption">
 			<div class="caption-content">
-				<div class="font-alt mb-30 titan-title-size-1">Hello, Zadie</div>
+				<div class="font-alt mb-30 titan-title-size-1">Hello, @Html.DisplayNameFor(m => m.Username)</div>
 				<div class="font-alt mb-40 titan-title-size-2">Let's edit your profile...</div>
 			</div>
 		</div>
@@ -17,20 +14,41 @@
 
 	<section class="module">
 		<div class="container">
-			<div class="row">
-				<div class="col-sm-8 col-sm-offset-2">
-					<h4 class="font-alt mb-0">Your Profile</h4>
-					<hr class="divider-w mt-10 mb-20">
-					<form class="form" role="form" method="post">
-						<div class="form-group">
-							<input class="form-control input-lg" type="text" placeholder="Username" />
-							@Html.TextBoxFor(m => m.Username)
-						</div>
-						<td><input type="submit" value="Submit" /></td>
-					</form>
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<h4 class="font-alt mb-0">Your Profile</h4>
+						<hr class="divider-w mt-10 mb-20">
+						@using (Html.BeginForm())
+						{
+							@Html.AntiForgeryToken()
+							@Html.HiddenFor(m => m.Id)
+
+							<div class="row">
+								<div class="col-sm-3 text-right">
+									@Html.DisplayNameFor(m => m.Username)
+								</div>
+								<div class="col-sm-4">
+									<style>
+										#comment-input {
+											font-family: "Roboto Condensed", sans-serif;
+											text-transform: uppercase;
+											letter-spacing: 2px;
+											font-size: 11px;
+											height: 33px;
+											border: 1px solid #EAEAEA;
+											border-radius: 2px;
+											transition: all 0.4s ease-in-out 0s;
+										}
+									</style>
+									@Html.EditorFor(m => m.Username, null, "comment-input", null)
+									@Html.ValidationMessageFor(m => m.Username)
+									<input type="submit" value="Submit" />
+								</div>
+							</div>
+						}
+					</div>
 				</div>
 			</div>
-		</div>
 	</section>
 }
 

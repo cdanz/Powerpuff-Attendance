@@ -20,10 +20,11 @@ namespace _5051.Models
         public void Initialize()
         {
             Id = Guid.NewGuid().ToString();
+            Username = "Mystery Explorer";
         }
 
         /// <summary>
-        /// New Avatar
+        /// New Username
         /// </summary>
         public UsernameModels()
         {
@@ -31,11 +32,9 @@ namespace _5051.Models
         }
 
         /// <summary>
-        /// Make an Avatar from values passed in
+        /// Make a profile username from values passed in
         /// </summary>
-        /// <param name="uri">The Picture path</param>
-        /// <param name="name">Avatar Name</param>
-        /// <param name="description">Avatar Description</param>
+        /// <param Username="name">Profile Name</param>
         public UsernameModels(string name)
         {
             Initialize();
@@ -44,7 +43,7 @@ namespace _5051.Models
         }
 
         /// <summary>
-        /// Used to Update Avatar Before doing a data save
+        /// Used to Update Username Before doing a data save
         /// Updates everything except for the ID
         /// </summary>
         /// <param name="data">Data to update</param>
