@@ -16,7 +16,7 @@ namespace _5051.Controllers
             return View();
         }
 
-        public ActionResult Student_Dashboard()
+        public ActionResult StudentDashboard()
         {
             ViewBag.Message = "Student Dashboard";
 
