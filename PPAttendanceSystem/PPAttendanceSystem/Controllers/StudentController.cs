@@ -43,7 +43,7 @@ namespace _5051.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include=
                                         "Id,"+
-                                        "Name,"+
+                                        "Username,"+
                                         "")] UsernameModels data)
         {
             if (!ModelState.IsValid)
@@ -64,7 +64,7 @@ namespace _5051.Controllers
                 return View(data);
             }
 
-            return RedirectToAction("StudentHome");
+            return RedirectToAction("Index");
         }
     }
 }

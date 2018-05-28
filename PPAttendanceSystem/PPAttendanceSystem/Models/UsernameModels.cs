@@ -10,7 +10,7 @@ namespace _5051.Models
         [Required(ErrorMessage = "Id is required")]
         public string Id { get; set; }
 
-        [Display(Name = "Name", Description = "Username")]
+        [Display(Name = "Username", Description = "Username")]
         [Required(ErrorMessage = "Username is required")]
         public string Username { get; set; }
 
