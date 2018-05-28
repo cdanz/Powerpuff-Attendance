@@ -208,7 +208,13 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\AvatarIcons\cat-icon.png" />
     <Content Include="Content\AvatarIcons\dog-icon.png" />
+    <Content Include="Content\AvatarIcons\elephant-icon.png" />
+    <Content Include="Content\AvatarIcons\fox-icon.png" />
+    <Content Include="Content\AvatarIcons\frog-icon.png" />
+    <Content Include="Content\AvatarIcons\rabbit-icon.png" />
+    <Content Include="Content\AvatarIcons\squirrel-icon.png" />
     <Content Include="Content\AvatarIcons\swan-icon.png" />
     <Content Include="Content\harvey.min.css" />
     <Content Include="Content\images\dayViewMock.png" />
