@@ -23,7 +23,7 @@ namespace _5051.Controllers
             return View();
         }
 
-        public ActionResult Student_New()
+        public ActionResult StudentNew()
         {
             ViewBag.Message = "Student New";
 
