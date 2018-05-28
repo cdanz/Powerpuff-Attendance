@@ -21,10 +21,8 @@
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
     <IISExpressSSLPort />
-    <IISExpressAnonymousAuthentication>
-    </IISExpressAnonymousAuthentication>
-    <IISExpressWindowsAuthentication>
-    </IISExpressWindowsAuthentication>
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>disabled</IISExpressWindowsAuthentication>
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
@@ -370,6 +368,7 @@
     <Content Include="Content\Landing\hikerBG.JPG" />
     <Content Include="Content\Landing\map.png" />
     <Content Include="Content\Landing\MCHSlogo.png" />
+    <Content Include="Content\Landing\mountain-background.png" />
     <Content Include="Content\Landing\mountainBG.jpg" />
     <Content Include="Content\Landing\pin.png" />
     <Content Include="Content\Landing\route.png" />
