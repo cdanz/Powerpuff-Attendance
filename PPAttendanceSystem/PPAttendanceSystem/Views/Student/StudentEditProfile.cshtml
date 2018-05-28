@@ -1,35 +1,38 @@
-﻿
+﻿@model _5051.Models.UsernameModels
 @{
 	ViewBag.Title = "Student Edit Profile";
 }
 
-<section class="bg-dark-30 showcase-page-header module parallax-bg">
-	<div class="titan-caption">
-		<div class="caption-content">
-			<div class="font-alt mb-30 titan-title-size-1">Hello, Zadie</div>
-			<div class="font-alt mb-40 titan-title-size-2">Let's edit your profile...</div>
-		</div>
-	</div>
-</section>
+@using (Html.BeginForm("StudentHome", "Student", FormMethod.Post))
+{
 
-<section class="module">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-8 col-sm-offset-2">
-				<h4 class="font-alt mb-0">Your Profile</h4>
-				<hr class="divider-w mt-10 mb-20">
-					<form class="form" role="form">
+	<section class="bg-dark-30 showcase-page-header module parallax-bg">
+		<div class="titan-caption">
+			<div class="caption-content">
+				<div class="font-alt mb-30 titan-title-size-1">Hello, Zadie</div>
+				<div class="font-alt mb-40 titan-title-size-2">Let's edit your profile...</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="module">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-8 col-sm-offset-2">
+					<h4 class="font-alt mb-0">Your Profile</h4>
+					<hr class="divider-w mt-10 mb-20">
+					<form class="form" role="form" method="post">
 						<div class="form-group">
 							<input class="form-control input-lg" type="text" placeholder="Username" />
+							@Html.TextBoxFor(m => m.Username)
 						</div>
-						<div class="form-group">
-							<input class="form-control input-lg" type="text" placeholder="Animal Avatar" />
-						</div>
+						<td><input type="submit" value="Submit" /></td>
 					</form>
 				</div>
+			</div>
 		</div>
-	</div>
-</section>
+	</section>
+}
 
 	<!-- Footer bar-->
 	<section class="footer">

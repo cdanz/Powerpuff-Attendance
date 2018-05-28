@@ -12,7 +12,7 @@ namespace _5051.Models
 
         [Display(Name = "Name", Description = "Username")]
         [Required(ErrorMessage = "Username is required")]
-        public string Name { get; set; }
+        public string Username { get; set; }
 
         /// <summary>
         /// Create the default values
@@ -40,7 +40,7 @@ namespace _5051.Models
         {
             Initialize();
 
-            Name = name;
+            Username = name;
         }
 
         /// <summary>
@@ -55,7 +55,7 @@ namespace _5051.Models
                 return;
             }
 
-            Name = data.Name;
+            Username = data.Username;
         }
     }
 }
