@@ -212,6 +212,7 @@
     <Content Include="Content\AvatarIcons\dog-icon.png" />
     <Content Include="Content\AvatarIcons\swan-icon.png" />
     <Content Include="Content\harvey.min.css" />
+    <Content Include="Content\images\puzzle-preview.png" />
     <Content Include="Content\Landing\css\colors\default-rtl.css" />
     <Content Include="Content\Landing\css\colors\default.css" />
     <Content Include="Content\Landing\css\style.css" />
