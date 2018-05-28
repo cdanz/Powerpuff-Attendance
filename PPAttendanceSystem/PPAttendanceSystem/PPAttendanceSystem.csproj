@@ -555,7 +555,7 @@
     <Content Include="Views\Admin\AdminDashboard.cshtml" />
     <Content Include="Views\Admin\ClassSettings.cshtml" />
     <Content Include="Views\Admin\CustomReport.cshtml" />
-    <Content Include="Views\Kiosk\Student_New.cshtml" />
+    <Content Include="Views\Kiosk\StudentNew.cshtml" />
     <Content Include="Views\Kiosk\Puzzle.cshtml" />
     <Content Include="Views\Student\StudentReport.cshtml" />
     <Content Include="Views\Student\StudentEditProfile.cshtml" />
