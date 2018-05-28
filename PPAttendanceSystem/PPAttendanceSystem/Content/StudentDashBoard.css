@@ -33,6 +33,13 @@
      font-size: 17px;
 }
 
+.student-card-row {
+    margin-top: 50px;
+}
+
+.check-in-row {
+    margin-bottom: 50px;
+}
 .check-in-box {
     background-color: #202529;
     padding: 10px 15px 10px 15px;
@@ -50,7 +57,7 @@
 }
 
 .student-card-info > span {
-    min-width: 355px;
+    min-width: 290px;
     display: inline-block;
     font-size: 17px;
 }
@@ -90,8 +97,8 @@
     background: url("https://www.destructoid.com//ul/404672-DeathSquared.jpg");
     background-size: 100% 100%;
     margin-top: 15px;
-    padding-top: 104px;
-    padding-bottom: 104px;
+    padding-top: 111px;
+    padding-bottom: 111px;
     border-radius: 5px;
     color: white;
     font-weight: bold;

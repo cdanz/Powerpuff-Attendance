@@ -21,8 +21,10 @@
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
     <IISExpressSSLPort />
-    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
-    <IISExpressWindowsAuthentication>disabled</IISExpressWindowsAuthentication>
+    <IISExpressAnonymousAuthentication>
+    </IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>
+    </IISExpressWindowsAuthentication>
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
@@ -209,7 +211,6 @@
   <ItemGroup>
     <Content Include="Content\AvatarIcons\dog-icon.png" />
     <Content Include="Content\AvatarIcons\swan-icon.png" />
-    <Content Include="Content\RosterTable.css" />
     <Content Include="Content\harvey.min.css" />
     <Content Include="Content\Landing\css\colors\default-rtl.css" />
     <Content Include="Content\Landing\css\colors\default.css" />
