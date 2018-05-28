@@ -6,7 +6,7 @@
 	<section class="bg-dark-30 showcase-page-header module parallax-bg">
 		<div class="titan-caption">
 			<div class="caption-content">
-				<div class="font-alt mb-30 titan-title-size-1">Hello, @Html.DisplayNameFor(m => m.Username)</div>
+				<div class="font-alt mb-30 titan-title-size-3">Hello, @Html.DisplayNameFor(m => m.Username)</div>
 				<div class="font-alt mb-40 titan-title-size-2">Let's edit your profile...</div>
 			</div>
 		</div>
@@ -16,7 +16,7 @@
 		<div class="container">
 				<div class="row">
 					<div class="col-sm-8 col-sm-offset-2">
-						<h4 class="font-alt mb-0">Your Profile</h4>
+						<h4 class="font-alt mb-0" style="color:white">Your Profile</h4>
 						<hr class="divider-w mt-10 mb-20">
 						@using (Html.BeginForm())
 						{
@@ -25,23 +25,26 @@
 
 							<div class="row">
 								<div class="col-sm-3 text-right">
-									@Html.DisplayNameFor(m => m.Username)
+									<div class="font-alt mb-40 titan-title-size-1" style="color:white">Username:</div>
 								</div>
 								<div class="col-sm-4">
 									<style>
-										#comment-input {
+										#user-input {
 											font-family: "Roboto Condensed", sans-serif;
 											text-transform: uppercase;
 											letter-spacing: 2px;
-											font-size: 11px;
-											height: 33px;
 											border: 1px solid #EAEAEA;
 											border-radius: 2px;
 											transition: all 0.4s ease-in-out 0s;
+											height: 43px;
+											width: 300px;
+											font-size: 13px;
 										}
 									</style>
-									@Html.EditorFor(m => m.Username, null, "comment-input", null)
+									@Html.EditorFor(m => m.Username, null, "user-input", null)
 									@Html.ValidationMessageFor(m => m.Username)
+									<br>
+									<br>
 									<input type="submit" value="Submit" />
 								</div>
 							</div>
