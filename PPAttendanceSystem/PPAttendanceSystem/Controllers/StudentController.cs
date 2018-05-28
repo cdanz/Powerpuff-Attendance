@@ -34,6 +34,63 @@ namespace _5051.Controllers
         }
 
         /// <summary>
+        /// This will show the details of the username to update
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        // GET: Username/Edit/5
+        public ActionResult Update(string id = null)
+        {
+            var myData = "J. Doe";
+            return View(myData);
+        }
+
+        /// <summary>
+        /// This updates the username based on the information posted from the udpate page
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
+        // POST: Username/Update/5
+        [HttpPost]
+        public ActionResult Update([Bind(Include=
+                                        "Id,"+
+                                        "Name,"+
+                                        "")] UsernameModels data)
+        {
+            if (!ModelState.IsValid)
+            {
+                // Send back for edit
+                return View(data);
+            }
+
+            if (data == null)
+            {
+                // Send to error page
+                return RedirectToAction("Error", new { route = "Home", action = "Error" });
+            }
+
+            if (string.IsNullOrEmpty(data.Id))
+            {
+                // Send back for Edit
+                return View(data);
+            }
+
+            return RedirectToAction("Index");
+        }
+
+
+        /// <summary>
+        /// This opens up the make a new username screen
+        /// </summary>
+        /// <returns></returns>
+        // GET: Username/Create
+        public ActionResult Create()
+        {
+            var myData = new UsernameModels();
+            return View(myData);
+        }
+
+        /// <summary>
         /// Make a new profile name sent in by the edit student profile screen
         /// </summary>
         /// <param name="collection"></param>
