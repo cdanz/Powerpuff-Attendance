@@ -209,7 +209,6 @@
   <ItemGroup>
     <Content Include="Content\AvatarIcons\dog-icon.png" />
     <Content Include="Content\AvatarIcons\swan-icon.png" />
-    <Content Include="Content\RosterTable.css" />
     <Content Include="Content\harvey.min.css" />
     <Content Include="Content\Landing\css\colors\default-rtl.css" />
     <Content Include="Content\Landing\css\colors\default.css" />
@@ -372,8 +371,6 @@
     <Content Include="Content\Landing\pin.png" />
     <Content Include="Content\Landing\route.png" />
     <Content Include="Content\PPcustom.css" />
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\images\face1.png" />
     <Content Include="Content\images\face2.png" />
     <Content Include="Content\images\face3.png" />

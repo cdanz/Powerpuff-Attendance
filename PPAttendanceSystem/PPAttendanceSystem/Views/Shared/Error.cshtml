@@ -1,9 +1,24 @@
 ﻿@model System.Web.Mvc.HandleErrorInfo
 
 @{
-    ViewBag.Title = "Error";
+	ViewBag.Title = "Error";
 }
 
-<h1 class="text-danger">Error.</h1>
-<h2 class="text-danger">An error occurred while processing your request.</h2>
+<body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+	<main>
+		<div class="page-loader">
+			<div class="loader">Loading...</div>
+		</div>
+		<section class="home-section home-parallax home-fade home-full-height bg-dark bg-dark-30" id="home" data-background="../../Content/Landing/CanoeBG.jpg">
+			<div class="titan-caption">
+				<div class="caption-content">
+					<div class="font-alt mb-30 titan-title-size-4">Error 404</div>
+					<div class="font-alt">
+						Looks like this page got lost along the way!
+					</div>
+					<div class="font-alt mt-30"><a class="btn btn-border-w btn-round" href="@Url.Action("Home", "Landing")">Let's head back home</a></div>
+				</div>
+			</div>
+		</section>
+	</main>
 
