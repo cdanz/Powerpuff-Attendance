@@ -80,32 +80,34 @@
 </div>
 
 <!-- JQuery Pop-up -->
-<div class="row check-in-row">
-	<div class="col-md-4 col-md-offset-1 check-in-popup">
-		<div class="check-in-box" style="height:300px">
-			<div class="row student-card-info">
-			</div>
-			<div class="row">
-				<div class="col-md-12 emoticon">
-					<a class="btn btn-default btn-circle" href="@Url.Action("Home", "Landing")#student" style="text-align:center">Details</a>
-					<h3>How are you doing today?</h3><br>
-					<a href="javascript:checkedIn()"><img src="~/Content/images/face1.png" alt="Sad"></a>
-					<a href="javascript:checkedIn()"><img src="~/Content/images/face2.png" alt="Somewhat Sad"></a>
-					<a href="javascript:checkedIn()"><img src="~/Content/images/face3.png" alt="Okay"></a>
-					<a href="javascript:checkedIn()"><img src="~/Content/images/face4.png" alt="Somewhat Happy"></a>
-					<a href="javascript:checkedIn()"><img src="~/Content/images/face5.png" alt="Happy"></a><br><br>
-					<p>Select an emoticon to sign in</p>
-				</div>
-			</div>
-		</div>
-	</div>
+<div class="container">
+    <div class="row check-in-row">
+	    <div class="col-md-6 check-in-popup">
+		    <div class="check-in-box" style="height:300px">
+                <div class="row student-card-info">
+                    <a class="btn btn-default btn-circle" href="@Url.Action("Home", "Landing")#student" style="text-align:center">Details</a>
+                </div>
+			    <div class="row">
+				    <div class="col-md-12 emoticon">
+					    <h3>How are you doing today?</h3><br>
+					    <a href="javascript:checkedIn()"><img src="~/Content/images/face1.png" alt="Sad"></a>
+					    <a href="javascript:checkedIn()"><img src="~/Content/images/face2.png" alt="Somewhat Sad"></a>
+					    <a href="javascript:checkedIn()"><img src="~/Content/images/face3.png" alt="Okay"></a>
+					    <a href="javascript:checkedIn()"><img src="~/Content/images/face4.png" alt="Somewhat Happy"></a>
+					    <a href="javascript:checkedIn()"><img src="~/Content/images/face5.png" alt="Happy"></a><br><br>
+					    <p>Select an emoticon to sign in</p>
+				    </div>
+			    </div>
+		    </div>
+	    </div>
 
-	<!-- Class puzzle preview-->
-	<div class="col-md-4 col-md-offset-1">
-		<div class="puzzle-box" style="height:300px">
-			<a class="section-scroll btn btn-border-w btn-round" href="@Url.Action("Puzzle", "Kiosk")">Puzzle Detail</a>
-		</div>
-	</div>
+	    <!-- Class puzzle preview-->
+	    <div class="col-md-6">
+		    <div class="puzzle-box">
+			    <a class="section-scroll btn btn-border-w btn-round" href="@Url.Action("Puzzle", "Kiosk")">Puzzle Detail</a>
+		    </div>
+	    </div>
+    </div>
 </div>
 
 <!-- Footer bar-->

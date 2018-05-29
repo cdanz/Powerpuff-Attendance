@@ -57,7 +57,7 @@
 }
 
 .student-card-info > span {
-    min-width: 290px;
+    min-width: 270px;
     display: inline-block;
     font-size: 17px;
 }
@@ -96,9 +96,9 @@
 .puzzle-box {
 	background: url("images/puzzle-preview.png");
 	background-size: 100% 100%;
-	margin-top: 15px;
-	padding-top: 111px;
-	padding-bottom: 111px;
+	margin-top: 10px;
+	padding-top: 140px;
+	padding-bottom: 145px;
 	border-radius: 5px;
 	color: #3671d1;
 	font-weight: bold;
