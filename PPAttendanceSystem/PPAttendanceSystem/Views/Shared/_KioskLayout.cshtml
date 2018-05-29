@@ -31,9 +31,10 @@
 	<!-- Main stylesheet and color file-->
 	<link href="~/Content/Landing/css/style.css" rel="stylesheet">
 	<link id="color-scheme" href="~/Content/Landing/css/colors/default.css" rel="stylesheet">
+	<link href="@Url.Content("~/Content/StudentDashBoard.css")" rel="stylesheet" type="text/css">
 </head>
 
-<body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+<body data-spy="scroll" data-target=".onpage-navigation" data-offset="60" style="background-image:url(../../Content/Landing/mountain-background.png); height: 100%; background-position: center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
 	<main>
 		<!-- Loading animation-->
 		<div class="page-loader">
@@ -97,5 +98,9 @@
 	<script src="~/assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
 	<script src="~/assets/js/plugins.js"></script>
 	<script src="~/assets/js/main.js"></script>
+
+	<!-- JQuery and JavaScript-->
+
+	@Scripts.Render("~/bundles/studentDashboard")
 </body>
 </html>

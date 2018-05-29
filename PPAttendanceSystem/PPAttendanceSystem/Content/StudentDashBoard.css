@@ -6,7 +6,7 @@
 }
 
 .student-card:hover {
-    box-shadow: 0 0 10px yellow;
+    box-shadow: 0 0 10px blue;
 }
 
 .student-card img {
@@ -94,15 +94,15 @@
 }
 
 .puzzle-box {
-    background: url("https://i1.wp.com/www.html5games.net/wp-content/uploads/327.jpg");
-    background-size: 100% 100%;
-    margin-top: 15px;
-    padding-top: 111px;
-    padding-bottom: 111px;
-    border-radius: 5px;
-    color: white;
-    font-weight: bold;
-    text-align: center;
+	background: url("images/puzzle-preview.png");
+	background-size: 100% 100%;
+	margin-top: 15px;
+	padding-top: 111px;
+	padding-bottom: 111px;
+	border-radius: 5px;
+	color: #3671d1;
+	font-weight: bold;
+	text-align: center;
 }
 
 .puzzle-box span {
