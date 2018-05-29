@@ -380,6 +380,7 @@
     <Content Include="Content\Landing\mountainBG.jpg" />
     <Content Include="Content\Landing\pin.png" />
     <Content Include="Content\Landing\route.png" />
+    <Content Include="Content\Landing\wayfinder-logo.png" />
     <Content Include="Content\PPcustom.css" />
     <Content Include="Content\images\face1.png" />
     <Content Include="Content\images\face2.png" />
