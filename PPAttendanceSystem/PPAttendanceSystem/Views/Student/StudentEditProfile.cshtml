@@ -3,15 +3,6 @@
 	ViewBag.Title = "Student Edit Profile";
 }
 
-	<section class="bg-dark-30 showcase-page-header module parallax-bg">
-		<div class="titan-caption">
-			<div class="caption-content">
-				<div class="font-alt mb-30 titan-title-size-3">Hello, Tamara</div>
-				<div class="font-alt mb-40 titan-title-size-2">Let's edit your profile...</div>
-			</div>
-		</div>
-	</section>
-
 	<section class="module">
 		<div class="container">
 				<div class="row">
@@ -36,9 +27,11 @@
 											border: 1px solid #EAEAEA;
 											border-radius: 2px;
 											transition: all 0.4s ease-in-out 0s;
-											height: 43px;
-											width: 300px;
+											height: 35px;
+											width: 250px;
 											font-size: 13px;
+											letter-spacing: 2px;
+											padding: 8px 8px;
 										}
 									</style>
 									@Html.EditorFor(m => m.Username, null, "user-input", null)
