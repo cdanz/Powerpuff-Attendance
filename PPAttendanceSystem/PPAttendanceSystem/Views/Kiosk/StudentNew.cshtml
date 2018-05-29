@@ -2,10 +2,49 @@
 @{
 	ViewBag.Title = "Student New";
 }
-<div class="container" style="max-width:1028px;">
-	<img src="~/Content/wireframes/wk6-add_Student.png" class="img-responsive" alt="Create New Student">
-</div>
-<p></br><span style="background-color:yellow;">Above: Wireframe --- Below: Work In Progress</span></span></p>
+
+<section class="module">
+	<div class="container" style="color:white">
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2">
+				<div class="col-sm-5">
+					<h4 class="font-alt">Register a student profile</h4>
+					<hr class="divider-w mb-10">
+					<form class="form">
+						<div class="form-group">
+							<label for="avatar" class="font-alt">Avatar list:</label>
+							<select class="form-control" id="avatar">
+								<option>Cat</option>
+								<option>Dog</option>
+								<option>Elephant</option>
+								<option>Fox</option>
+								<option>Frog</option>
+								<option>Rabbit</option>
+								<option>Squirrel</option>
+								<option>Swan</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<input class="form-control" id="studentId" type="text" name="studentId" placeholder="Student ID" />
+						</div>
+						<div class="form-group">
+							<input class="form-control" id="username" type="text" name="username" placeholder="Username" />
+						</div>
+						<div class="form-group">
+							<input class="form-control" id="password" type="password" name="password" placeholder="Password" />
+						</div>
+						<div class="form-group">
+							<input class="form-control" id="re-password" type="password" name="re-password" placeholder="Re-enter Password" />
+						</div>
+						<div class="form-group">
+							<a class="btn btn-block btn-round btn-b" href="@Url.Action("StudentDashboard", "Kiosk")#kiosk" style="text-align:center">Register</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
 <!-- Footer bar-->
 <section class="footer">
