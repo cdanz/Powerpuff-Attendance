@@ -1,0 +1,61 @@
+﻿@model _5051.Models.StudentViewModel
+
+@{
+	ViewBag.Title = "Students";
+}
+
+
+<!-- Welcome greeting w/ name-->
+<div class="main" style="margin-bottom:0px;margin-top:0px;background-color:transparent">
+	<section class="module" id="myprofile">
+		<div class="container">
+			<div class="row align-center">
+				<div class="col-sm-8 col-sm-offset-2">
+					<h2 class="module-title font-alt">Select your profile:</h2>
+					@{
+						if (Model.StudentList == null || !Model.StudentList.Any())
+						{
+							<br />
+							<p>No Students in the System</p>
+							<br />
+						}
+						else
+						{
+							foreach (var item in Model.StudentList)
+							{
+								<div class="col-sm-2">
+									<div class="AvatarBox">
+										<a id="@item.Id" href="~/Student/Read/@item.Id">
+											<img src="~/Content/img/@item.AvatarUri" class="AvatarSize1" />
+										</a>
+										<br />
+										<span>
+											<h3 class="features-title font-alt">@item.Name</h3>
+											<br />
+											<br />
+											<br />
+										</span>
+									</div>
+								</div>
+							}
+						}
+					}
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+
+<!-- Footer bar-->
+<section class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-md-8 col-lg-12">
+				<div class="callout-text font-alt">
+					<p style="margin-bottom: 0px;" class="alignleft">2018 Team Powerpuff</p>
+					<p style="margin-bottom: 0px;" class="alignright">Middle College High School</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

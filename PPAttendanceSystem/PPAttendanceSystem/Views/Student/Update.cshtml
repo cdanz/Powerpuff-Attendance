@@ -1,0 +1,115 @@
+﻿@model _5051.Models.StudentDisplayViewModel
+@{
+	ViewBag.Title = "Student Edit Profile";
+}
+
+<section class="module">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2">
+				<h4 class="font-alt mb-0" style="color:white">Your Profile</h4>
+				<hr class="divider-w mt-10 mb-20">
+
+				@{
+					if (Model == null)
+					{
+						<p>No Student</p>
+					}
+
+					else
+					{
+						<div class="row">
+							<div class="row">
+								<div class="col-sm-3 text-right">
+								</div>
+								<div class="col-sm-2">
+									<img src="~/Content/img/@Model.AvatarUri" class="AvatarSize1" />
+									<br />
+									<span>
+										@Model.Name
+										<br />
+										<br />
+										<br />
+									</span>
+								</div>
+							</div>
+
+							<style>
+								#user-input {
+									font-family: "Roboto Condensed", sans-serif;
+									text-transform: uppercase;
+									letter-spacing: 2px;
+									border: 1px solid #EAEAEA;
+									border-radius: 2px;
+									transition: all 0.4s ease-in-out 0s;
+									height: 35px;
+									width: 250px;
+									font-size: 13px;
+									letter-spacing: 2px;
+									padding: 8px 8px;
+								}
+							</style>
+
+							@using (Html.BeginForm())
+							{
+								@Html.AntiForgeryToken()
+								@Html.HiddenFor(m => m.Id)
+								@Html.HiddenFor(m => m.Password)
+
+								<div class="row">
+									<div class="col-sm-3 text-right">
+										@Html.DisplayNameFor(m => m.Name)
+									</div>
+									<div class="col-sm-2">
+										@Html.EditorFor(m => m.Name)
+										@Html.ValidationMessageFor(m => m.Name)
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-sm-3 text-right">
+										Avatar
+									</div>
+									<div class="col-sm-2">
+										@Html.DropDownListFor(m => m.AvatarId, _5051.Backend.AvatarBackend.Instance.GetAvatarListItem(Model.AvatarId))
+										@Html.ValidationMessageFor(m => m.AvatarId)
+									</div>
+								</div>
+
+								<br />
+								<br />
+								<div class="row">
+									<div class="col-sm-3 text-right">
+									</div>
+									<div class="col-sm-4">
+										<input type="submit" value="Update" class="btn btn-block btn-round btn-b">
+										<a class="btn btn-block btn-round btn-b" href="@Url.Action("Index", "Student")" style="text-align:center">Cancel</a>
+									</div>
+								</div>
+
+							}
+
+
+						</div>
+					}
+
+				}
+			</div>
+		</div>
+	</div>
+</section>
+}
+
+<!-- Footer bar-->
+<section class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-md-8 col-lg-12">
+				<div class="callout-text font-alt">
+					<p style="margin-bottom: 0px;" class="alignleft">2018 Team Powerpuff</p>
+					<p style="margin-bottom: 0px;" class="alignright">Middle College High School</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

@@ -1,20 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
+using _5051.Models;
+using _5051.Backend;
 
 namespace _5051.Controllers
 {
     public class KioskController : Controller
     {
-
-        public ActionResult Index()
-        {
-            ViewBag.Message = "Home Page";
-
-            return View();
-        }
 
         public ActionResult StudentDashboard()
         {
@@ -36,6 +27,5 @@ namespace _5051.Controllers
 
             return View();
         }
-
     }
 }

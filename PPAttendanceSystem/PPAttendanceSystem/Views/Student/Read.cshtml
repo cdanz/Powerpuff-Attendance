@@ -1,0 +1,54 @@
+﻿@model _5051.Models.StudentDisplayViewModel
+
+@{
+	ViewBag.Title = "Read";
+}
+
+<!-- Welcome greeting w/ rotating text-->
+<section class="home-section home-parallax home-fade home-full-height bg-dark-30" data-background="../../Content/Landing/hikerBG.JPG">
+	<div class="titan-caption">
+		<div class="caption-content">
+			<div class="font-alt mb-30 titan-title-size-2">Hello, explorer</div>
+			<div class="font-alt mb-40 titan-title-size-3">
+				<span class="rotate">You are a trailblazer | You strive for more | You are resilient</span>
+			</div><a class="section-scroll btn btn-border-w btn-circle" href="#myprofile">How far you've come</a>
+		</div>
+	</div>
+</section>
+
+<!-- Welcome greeting w/ name-->
+<div class="main" style="margin-bottom:0px;margin-top:0px">
+	<section class="module" id="myprofile">
+		<div class="container">
+			<div class="row align-center">
+				<div class="col-sm-8 col-sm-offset-2">
+					<img class="card-img-top" src="~/Content/img/@Model.AvatarUri" alt="SWAN" style="width:150px;height:150px; margin-bottom: 20px;">
+					<h2 class="module-title font-alt">Hello, @Model.Name</h2>
+					<h3 class="features-title font-alt">Profile name: @Model.Name</h3>
+					<h3 class="features-title font-alt">Animal guide: @Html.DisplayFor(m => m.AvatarName)</h3>
+					<div class="alert alert-success" role="alert">
+						<button class="close" type="button" data-dismiss="alert" aria-hidden="true">&times;</button><i class="fa fa-diamond"></i><strong>Combo!</strong> You've arrived on time for 3+ consecutive days.
+					</div>
+					<!-- UPDATE: add viewbag to grab student name-->
+					<a class="section-scroll btn btn-g btn-round" href="@Url.Action("StudentReport", "Student")">See your progress</a>
+					@Html.ActionLink("Edit your profile", "Update", new { id = Model.Id }, new { @class = "section-scroll btn btn-g btn-round" })
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+
+<!-- Footer bar-->
+<section class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-md-8 col-lg-12">
+				<div class="callout-text font-alt">
+					<p style="margin-bottom: 0px;" class="alignleft">2018 Team Powerpuff</p>
+					<p style="margin-bottom: 0px;" class="alignright">Middle College High School</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
