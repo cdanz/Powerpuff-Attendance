@@ -14,13 +14,14 @@
         <div class="caption-content">
             <div class="admin_container" style="float:right;">
                 @Html.ActionLink("Custom Report", "CustomReport", "Admin", null, new { @class = "btn btn-primary" })
+                @Html.ActionLink("Settings", "ClassSettings", "Admin", null, new { @class = "btn btn-primary" })
             </div>
             <div class"row" style="width:100%;">
                 <table style="width:100%;">
                     <tr style="width:100%;">
                         <td style="width:20%;"><h1>Attendance</h1></td>
-                        <td style="width:40%;"></td>
-                        <td style="width:10%;"><h5>Week of @weekList[weekIndex]</h5></td>
+                        <td style="width:43%;"></td>
+                        <td style="width:7%;"><h5>Week of @weekList[weekIndex]</h5></td>
                         <td style="width:30%;">
                             @Html.ActionLink("Previous", "AdminDashboardwkm1", "Admin", null, new { @class = "btn btn-border-w btn-round"})
                             @Html.ActionLink("Next", "AdminDashboardwkm3", "Admin", null, new { @class = "btn btn-border-w btn-round"})
@@ -62,7 +63,14 @@
                             <div id="admin_wkLog">
                                 <table cellspacing="50" style="width:100%;">
                                     <tr style="width:100%;">
-                                        <td style="width:18%;"><div class="harvey half-right"></div></td>
+                                        <td style="width:18%;">
+                                            <div class="btn-group" role="group" aria-label="Attendance">
+                                                <button class="admin_atndbtnL" id="admin_atndbtnS1" style="margin-left:5px;"></button>
+                                                <button class="admin_atndbtnM" id="admin_atndbtnS1"></button>
+                                                <button class="admin_atndbtnR" id="admin_atndbtnS1" style="margin-right:5px;"></button>
+                                                <button class="admin_atndbtnR" id="admin_atndbtnBlk" style="margin:5px;"></button>
+                                            </div>
+                                        </td>
                                         <td style="width:18%;"><div class="harvey half-left"></div></td>
                                         <td style="width:18%;"><div class="harvey"></div></td>
                                         <td style="width:18%;"><div class="harvey half-right"></div></td>

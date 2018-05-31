@@ -50,7 +50,11 @@
 .white {
     background-color: #FFF
 }
-
+.admin_inputNeeded {
+    font-size: 2 rem;
+    font-color: #a1a2a3;
+    font-style:italic;
+}
 .admin_gdGoal {
     font-size: 1.5rem;
     color: #2bb721;
@@ -118,11 +122,6 @@
 #admin_atndbtnS7 {
     background-color: #FF5353;
 }
-
-/*Need to settle on a ball for each situation:
-    suggested that top quarters represent on time (left quarter) and stayed through end (right quarter)
-    bottom quarters represent presence for most of first half (left quarter) and second (right quarter)
-    on time and there throughout day: full ball
-    missed whole day: empty ball
-    not ontime but there for the majority of the day first and last half: top left quarter missing. 
-*/
+#admin_atndbtnBlk {
+    background: none;
+}
