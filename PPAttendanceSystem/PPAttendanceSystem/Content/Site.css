@@ -57,20 +57,6 @@ textarea {
     color: var(--PPRed);
 }
 
-.admin_atndbtnL {
-    margin:0;
-    border-width:0;
-    border-style:solid;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    float: right;
-    height:.5rem;
-    width:100%;
-}
-#admin_atndbtnS1 {
-    background-color: #FF5353;
-}
-
 #admin_wkHeaders {
     display: block;
 }
