@@ -1,0 +1,138 @@
+﻿@{
+	ViewBag.Title = "Admin Dashboard";
+}
+@{string[] weekList = {"4/30/2018","5/7/2018","5/14/2018","5/21/2018","5/28/2018","6/4/2018"};}
+@{int weekIndex = weekList.Length - 1;}
+@{string dayOfWeek = "FRIDAY";}
+
+<link href="~/Content/harvey.min.css" rel="stylesheet" type="text/css" />
+</style>
+
+
+<section class="bg-dark-30 showcase-page-header module parallax-bg" data-background="../../Content/Landing/mountainBG.jpg">
+    <div class="titan-caption">
+        <div class="caption-content">
+            <div class="admin_container" style="float:right;">
+                @Html.ActionLink("Custom Report", "CustomReport", "Admin", null, new { @class = "btn btn-primary" })
+            </div>
+            <div class"row" style="width:100%;">
+                <table style="width:100%;">
+                    <tr style="width:100%;">
+                        <td style="width:20%;"><h1>Attendance</h1></td>
+                        <td style="width:30%;"></td>
+                        <td style="width:20%;"><h5>Week of @weekList[weekIndex]</h5></td>
+                        <td style="width:30%;">
+                            <span style="text-align:right;">Previous</span><button class="btn btn-border-w btn-round" style="margin-left:6px;">&#8678;</button>
+                            <button class="btn btn-border-w btn-round" style="margin-right:6px;">&#8680;</button><span style="text-align:left;">Next</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="admin_container">
+                <table cellspacing="50" style="width:100%;">
+                    <tr>
+                        <td style="width=20%"></td>
+                        <td style="width=80%">
+                            <div id="admin_wkHeaders">
+                                <table cellspacing="50" style="width:100%;">
+                                    <tr>
+                                        <td style="width:90%;">@dayOfWeek &nbsp;&nbsp;&nbsp;&nbsp;@Html.ActionLink("Week View", "AdminDashboard", "Admin", null, new { @class = "btn btn-border-w btn-round" })</td>
+                                        <td style="width:10%;"><div>On Track</div></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:20%;">
+                            <table cellspacing="50" style="width:100%;">
+                                <tr><td height="20" style="margin:5px; padding: 5px;">@Html.ActionLink("Student 1", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</tdstyle="width:20%;"></tr>
+                                <tr><td height="20" style="margin:5px; padding: 5px;">@Html.ActionLink("Student 2", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</td></tr>
+                                <tr><td height="20" style="margin:5px; padding: 5px;">@Html.ActionLink("Student 3", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</td></tr>
+                                <tr><td height="20" style="margin:5px; padding: 5px;">@Html.ActionLink("Student 4", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</td></tr>
+                                <tr><td height="20" style="margin:5px; padding: 5px;">@Html.ActionLink("Student 5", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</td></tr>
+                                <tr><td height="20" style="margin:5px; padding: 5px;">@Html.ActionLink("Student 6", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</td></tr>
+                            </table>
+                        </td>
+                        <td style="width:80%;">
+                            <div id="admin_wkLog">
+                                <table cellspacing="50" style="width:100%;">
+                                    <tr style="width:100%;">
+                                        <td style="width:18%;"><div class="harvey half-right"></div></td>
+                                        <td style="width:18%;"><div class="harvey half-left"></div></td>
+                                        <td style="width:18%;"><div class="harvey"></div></td>
+                                        <td style="width:18%;"><div class="harvey half-right"></div></td>
+                                        <td style="width:18%;"><div class="harvey half-left"></div></td>
+                                        <td style="width:10%;"><div>&#10004;</div></td>
+                                    </tr>
+                                    <tr style="width:100%;">
+                                        <td style="width:18%;"><div class="harvey half-right"></div></td>
+                                        <td style="width:18%;"><div class="harvey half-left"></div></td>
+                                        <td style="width:18%;"><div class="harvey"></div></td>
+                                        <td style="width:18%;"><div class="harvey half-right"></div></td>
+                                        <td style="width:18%;"><div class="harvey half-left"></div></td>
+                                        <td style="width:10%;"><div>&#10008;</div></td>
+                                    </tr>
+                                    <tr style="width:100%;">
+                                        <td style="width:18%;"><div class="harvey half-right"></div></td>
+                                        <td style="width:18%;"><div class="harvey half-left"></div></td>
+                                        <td style="width:18%;"><div class="harvey"></div></td>
+                                        <td style="width:18%;"><div class="harvey half-right"></div></td>
+                                        <td style="width:18%;"><div class="harvey half-left"></div></td>
+                                        <td style="width:10%;"><div>&#10008;</div></td>
+                                    </tr>
+                                    <tr style="width:100%;">
+                                        <td style="width:18%;"><div class="harvey half-right"></div></td>
+                                        <td style="width:18%;"><div class="harvey half-left"></div></td>
+                                        <td style="width:18%;"><div class="harvey"></div></td>
+                                        <td style="width:18%;"><div class="harvey half-right"></div></td>
+                                        <td style="width:18%;"><div class="harvey half-left"></div></td>
+                                        <td style="width:10%;"><div>&#10004;</div></td>
+                                    </tr>
+                                    <tr style="width:100%;">
+                                        <td style="width:18%;"><div class="harvey half-right"></div></td>
+                                        <td style="width:18%;"><div class="harvey half-left"></div></td>
+                                        <td style="width:18%;"><div class="harvey"></div></td>
+                                        <td style="width:18%;"><div class="harvey half-right"></div></td>
+                                        <td style="width:18%;"><div class="harvey half-left"></div></td>
+                                        <td style="width:10%;"><div>&#10004;</div></td>
+                                    </tr>
+                                    <tr style="width:100%;">
+                                        <td style="width:18%;"><div class="harvey half-right"></div></td>
+                                        <td style="width:18%;"><div class="harvey half-left"></div></td>
+                                        <td style="width:18%;"><div class="harvey"></div></td>
+                                        <td style="width:18%;"><div class="harvey half-right"></div></td>
+                                        <td style="width:18%;"><div class="harvey half-left"></div></td>
+                                        <td style="width:10%;"><div>&#10004;</div></td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                        </td>
+                    </tr>
+                </table>
+                </td>
+                </tr>
+                </table>
+            </div>
+        </div>
+</section>
+
+
+
+<!-- Footer bar-->
+<section class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-8 col-lg-12">
+                <div class="callout-text font-alt">
+                    <p style="margin-bottom: 0px;" class="alignleft">2018 Team Powerpuff</p>
+                    <p style="margin-bottom: 0px;" class="alignright">Middle College High School</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
