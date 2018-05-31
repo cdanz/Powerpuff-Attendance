@@ -1,6 +1,6 @@
 ﻿
 @{
-	ViewBag.Title = "Class Settings";
+	ViewBag.Title = "School Calendar";
 }
 
 <link href="~/Content/harvey.min.css" rel="stylesheet" type="text/css" />
@@ -20,7 +20,7 @@
             <div class"row" style="width:100%;">
                 <table style="width:100%;">
                     <tr style="width:100%;">
-                        <td style="width:20%;"><h1>Settings</h1></td>
+                        <td style="width:20%;"><h1>School Calendar</h1></td>
                         <td style="width:80%;"></td>
                     </tr>
                 </table>
@@ -33,8 +33,8 @@
                     </tr>
                     <tr>
                         <td style="width=15%">Auto-Log Out Times</td>
-                        <td style="width=85%">12:00pm 4:30pm
-                           <!-- this doesnt work was trying to use this: https://select2.org/tagging
+                        <td style="width=85%"><!--12:00pm 4:30pm
+                            this doesnt work was trying to use this: https://select2.org/tagging-->
                                 <select class="form-control" multiple="multiple">
                                 <option>7:30am</option>
                                 <option>7:45am</option>
@@ -81,7 +81,7 @@
                                 <option>6:00pm</option>
                             </select>
                                 
-                                -->
+                                
                             
                         </td>
                     </tr>
@@ -97,7 +97,7 @@
                         <td style="width=15%">Community Hours</td>
                         <td style="width=85%">
                             <div class="admin_container" style="float:left;">
-                                @Html.ActionLink("Adjust Student Goals", "CommunityHours", "Admin", null, new { @class = "btn btn-primary" })
+                                @Html.ActionLink("Adjust Student Goals", "ClassRoster", "Admin", null, new { @class = "btn btn-primary" })
                             </div>
                         </td>
                     </tr>
@@ -105,7 +105,7 @@
                         <td style="width=15%">School Calendar</td>
                         <td style="width=85%">
                             <div class="admin_container" style="float:left;">
-                                @Html.ActionLink("Set Days Off", "SchoolCalendar", "Admin", null, new { @class = "btn btn-primary" })
+                                @Html.ActionLink("Set Days Off", "ClassRoster", "Admin", null, new { @class = "btn btn-primary" })
                             </div>
                         </td>
                     </tr>

@@ -71,11 +71,22 @@ namespace _5051.Controllers
 
             return View();
         }
+        public ActionResult CommunityHours()
+        {
+            ViewBag.Message = "Community Hours";
 
+            return View();
+        }
+        public ActionResult SchoolCalendar()
+        {
+            ViewBag.Message = "School Calendar";
+
+            return View();
+        }
         // GET: Custom Report
         public ActionResult CustomReport()
         {
-            ViewBag.Message = "Build Custom Report";
+            ViewBag.Message = "Build Custom Reports";
 
             return View();
         }

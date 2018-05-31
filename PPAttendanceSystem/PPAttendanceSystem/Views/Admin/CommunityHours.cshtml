@@ -1,0 +1,100 @@
+﻿@{
+	ViewBag.Title = "Community Hours";
+}
+
+<link href="~/Content/harvey.min.css" rel="stylesheet" type="text/css" />
+</style>
+<script>
+    $(".js-example-tags").select2({
+        tags: true
+    });</script>
+
+
+<section class="bg-dark-30 showcase-page-header module parallax-bg" data-background="../../Content/Landing/mountainBG.jpg">
+    <div class="titan-caption">
+        <div class="caption-content">
+            <div class="admin_container" style="float:right;">
+                @Html.ActionLink("Admin Dashboard", "AdminDashboard", "Admin", null, new { @class = "btn btn-primary" })
+            </div>
+            <div class"row" style="width:100%;">
+                <table style="width:100%;">
+                    <tr style="width:100%;">
+                        <td style="width:20%;"><h1>Community Hours</h1></td>
+                        <td style="width:80%;"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="admin_container">
+                <table cellspacing="50" style="width:100%;">
+                    <tr>
+                        <td style="width=20%"></td>
+                        <td style="width=80%">
+                            <div id="admin_wkHeaders">
+                                <table cellspacing="50" style="width:100%;">
+                                    <tr>
+                                        <td style="width:18%;">Goal - Percent of Available Week Hours Attended</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:20%;">
+                            <table cellspacing="50" style="width:100%;">
+                                <tr><td height="20" style="margin:5px; padding: 5px;">@Html.ActionLink("Student 1", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</tdstyle="width:20%;"></tr>
+                                <tr><td height="20" style="margin:5px; padding: 5px;">@Html.ActionLink("Student 2", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</td></tr>
+                                <tr><td height="20" style="margin:5px; padding: 5px;">@Html.ActionLink("Student 3", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</td></tr>
+                                <tr><td height="20" style="margin:5px; padding: 5px;">@Html.ActionLink("Student 4", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</td></tr>
+                                <tr><td height="20" style="margin:5px; padding: 5px;">@Html.ActionLink("Student 5", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</td></tr>
+                                <tr><td height="20" style="margin:5px; padding: 5px;">@Html.ActionLink("Student 6", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</td></tr>
+                            </table>
+                        </td>
+                        <td style="width:80%;">
+                            <div class="admin_container">
+                                <table cellspacing="50" style="width:100%;">
+                                    <tr style="width:100%;">
+                                        <td style="width:100%;">slider</td>
+                                    </tr>
+                                    <tr style="width:100%;">
+                                        <td style="width:100%;">slider</td>
+                                    </tr>
+                                    <tr style="width:100%;">
+                                        <td style="width:100%;">slider</td>
+                                    </tr>
+                                    <tr style="width:100%;">
+                                        <td style="width:100%;">slider</td>
+                                    </tr>
+                                    <tr style="width:100%;">
+                                        <td style="width:100%;">slider</td>
+                                    </tr>
+                                    <tr style="width:100%;">
+                                        <td style="width:100%;">slider</td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                        </td>
+                    </tr>
+                </table>
+                </td>
+                </tr>
+                </table>
+            </div>
+        </div>
+</section>
+
+
+
+<!-- Footer bar-->
+<section class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-8 col-lg-12">
+                <div class="callout-text font-alt">
+                    <p style="margin-bottom: 0px;" class="alignleft">2018 Team Powerpuff</p>
+                    <p style="margin-bottom: 0px;" class="alignright">Middle College High School</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

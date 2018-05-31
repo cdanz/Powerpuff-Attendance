@@ -2,61 +2,124 @@
 	ViewBag.Title = "Class Roster";
 }
 
-<link href="~/Content/RosterTable.css" rel="stylesheet" type="text/css" />
+<link href="~/Content/harvey.min.css" rel="stylesheet" type="text/css" />
+</style>
+<script>
+    $(".js-example-tags").select2({
+        tags: true
+    });</script>
 
-<section class="home-section home-parallax home-fade home-full-height bg-dark-30" data-background="../../Content/Landing/mountainBG.JPG">
-	<div class="titan-caption">
-		<div class="caption-content">
-			<div class="row" style="width:50%;">
-				<h1 align="center">Class Roster</h1>
-				<table style="width:100%;" align="center">
-					<tr style="font-weight:bold">
-						<td>First name</td>
-						<td>Last name</td>
-						<td>Student ID</td>
-						<td>Status</td>
-					</tr>
-					<tr>
-						<td>Alvin</td>
-						<td>Hopkins</td>
-						<td>123456</td>
-						<td>Active</td>
-					</tr>
-					<tr>
-						<td>Mina</td>
-						<td>Clark</td>
-						<td>124356</td>
-						<td>Active</td>
-					</tr>
-					<tr>
-						<td>Verna</td>
-						<td>Potter</td>
-						<td>345126</td>
-						<td>Active</td>
-					</tr>
-					<tr>
-						<td>Gabriel</td>
-						<td>Klein</td>
-						<td>987654</td>
-						<td>Active</td>
-					</tr>
-					<tr>
-						<td>Tamara</td>
-						<td>Kochubey</td>
-						<td>271449</td>
-						<td>Active</td>
-					</tr>
-					<tr>
-						<td>Harry</td>
-						<td>Reid</td>
-						<td>271449</td>
-						<td>Active</td>
-					</tr>
 
-				</table>
-			</div>
-		</div>
-	</div>
+<section class="bg-dark-30 showcase-page-header module parallax-bg" data-background="../../Content/Landing/mountainBG.jpg">
+    <div class="titan-caption">
+        <div class="caption-content">
+            <div class="admin_container" style="float:right;">
+                @Html.ActionLink("Settings", "ClassSettings", "Admin", null, new { @class = "btn btn-primary" })
+            </div>
+            <div class"row" style="width:100%;">
+                <table style="width:100%;">
+                    <tr style="width:100%;">
+                        <td style="width:20%;"><h1>Manage Roster</h1></td>
+                        <td style="width:80%;"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="admin_container">
+                <table cellspacing="50" style="width:100%;">
+                    <tr>
+                        <td style="width=20%"></td>
+                        <td style="width=80%">
+                            <div id="admin_wkHeaders">
+                                <table cellspacing="50" style="width:100%;">
+                                    <tr>
+                                        <td style="width:100%;">@Html.ActionLink("Add New Student", "StudentNew", "Kiosk", null, new { @class = "btn btn-border-w btn-round" })</td>
+                                    </tr>
+                                </table>
+                            
+                            <table cellspacing="50" style="width:100%;">
+                                <tr style="font-weight:bold">
+                                        <td>First name</td>
+                                        <td>Last name</td>
+                                        <td>Student ID</td>
+                                        <td>Status</td>
+                                        <td style="width:10%;"></td>
+                                        <td style="width:10%;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Alvin</td>
+                                        <td>Hopkins</td>
+                                        <td>123456</td>
+                                        <td>Active</td>
+                                        <td style="width:10%;">@Html.ActionLink("Deactivate", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</td>
+                                        <td style="width:10%;">@Html.ActionLink("Delete", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mina</td>
+                                        <td>Clark</td>
+                                        <td>124356</td>
+                                        <td>Active</td>
+                                        <td style="width:10%;">@Html.ActionLink("Deactivate", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</td>
+                                        <td style="width:10%;">@Html.ActionLink("Delete", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Verna</td>
+                                        <td>Potter</td>
+                                        <td>345126</td>
+                                        <td>Active</td>
+                                        <td style="width:10%;">@Html.ActionLink("Deactivate", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</td>
+                                        <td style="width:10%;">@Html.ActionLink("Delete", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gabriel</td>
+                                        <td>Klein</td>
+                                        <td>987654</td>
+                                        <td>Active</td>
+                                        <td style="width:10%;">@Html.ActionLink("Deactivate", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</td>
+                                        <td style="width:10%;">@Html.ActionLink("Delete", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tamara</td>
+                                        <td>Kochubey</td>
+                                        <td>271449</td>
+                                        <td>Active</td>
+                                        <td style="width:10%;">@Html.ActionLink("Deactivate", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</td>
+                                        <td style="width:10%;">@Html.ActionLink("Delete", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Harry</td>
+                                        <td>Reid</td>
+                                        <td>256449</td>
+                                        <td>Active</td>
+                                        <td style="width:10%;">@Html.ActionLink("Deactivate", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</td>
+                                        <td style="width:10%;">@Html.ActionLink("Delete", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Beth</td>
+                                        <td>Frye</td>
+                                        <td>233449</td>
+                                        <td>Inactive</td>
+                                        <td style="width:10%;">@Html.ActionLink("Reactivate", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</td>
+                                        <td style="width:10%;">@Html.ActionLink("Delete", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Harry</td>
+                                        <td>Reid</td>
+                                        <td>258365</td>
+                                        <td>Inactive</td>
+                                        <td style="width:10%;">@Html.ActionLink("Reactivate", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</td>
+                                        <td style="width:10%;">@Html.ActionLink("Delete", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                        </td>
+                    </tr>
+                </table>
+                </td>
+                </tr>
+                </table>
+            </div>
+        </div>
 </section>
 
 
