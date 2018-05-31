@@ -38,6 +38,73 @@
 .white {
     background-color: #FFF
 }
+
+.admin_gdGoal {
+    color: var(--PPGreen);
+}
+
+.admin_bdGoal {
+    color: var(--PPRed);
+}
+
+.admin_atndbtnL {
+    margin: 0;
+    border-width: 0;
+    border-style: solid;
+    border-top-left-radius: 15%;
+    border-bottom-left-radius: 15%;
+    float: right;
+    height: 1rem;
+}
+
+.admin_atndbtnM {
+    margin: 0;
+    border-width: 0;
+    border-style: solid;
+    border-radius: 0;
+    float: right;
+    height: 1rem;
+    width: 100%;
+}
+
+.admin_atndbtnR {
+    margin: 0;
+    border-width: 0;
+    border-style: solid;
+    border-top-right-radius: 15%;
+    border-bottom-right-radius: 15%;
+    float: left;
+    height: 1rem;
+}
+
+#admin_atndbtnS1 {
+    background-color: #FF5353;
+}
+
+#admin_atndbtnS2 {
+    background-color: #FFB253;
+}
+
+#admin_atndbtnS3 {
+    background-color: #FFEA53;
+}
+
+#admin_atndbtnS4 {
+    background-color: #5378FF;
+}
+
+#admin_atndbtnS5 {
+    background-color: #9453FF;
+}
+
+#admin_atndbtnS6 {
+    background-color: #60EBAB;
+}
+
+#admin_atndbtnS7 {
+    background-color: #FF5353;
+}
+
 /*Need to settle on a ball for each situation:
     suggested that top quarters represent on time (left quarter) and stayed through end (right quarter)
     bottom quarters represent presence for most of first half (left quarter) and second (right quarter)
