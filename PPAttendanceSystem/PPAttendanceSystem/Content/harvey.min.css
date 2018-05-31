@@ -1,4 +1,16 @@
-﻿.harvey {
+﻿:root {
+    --StudBack1: #FF5353;
+    --StudBack2: #FFB253;
+    --StudBack3: #FFEA53;
+    --StudBack4: #5378FF;
+    --StudBack5: #9453FF;
+    --StudBack6: #60EBAB;
+    --StudBack7: #FF5353;
+    --PPGreen: #2bb721;
+    --PPRed: #d63b2a;
+}
+
+.harvey {
     position: relative;
     border: 1px solid #000;
     width: 30px;
@@ -40,19 +52,21 @@
 }
 
 .admin_gdGoal {
-    color: var(--PPGreen);
+    font-size: 1.5rem;
+    color: #2bb721;
 }
 
 .admin_bdGoal {
-    color: var(--PPRed);
+    font-size: 1.5rem;
+    color: #d63b2a;
 }
 
 .admin_atndbtnL {
     margin: 0;
     border-width: 0;
     border-style: solid;
-    border-top-left-radius: 15%;
-    border-bottom-left-radius: 15%;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
     float: right;
     height: 1rem;
 }
@@ -71,8 +85,8 @@
     margin: 0;
     border-width: 0;
     border-style: solid;
-    border-top-right-radius: 15%;
-    border-bottom-right-radius: 15%;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
     float: left;
     height: 1rem;
 }
