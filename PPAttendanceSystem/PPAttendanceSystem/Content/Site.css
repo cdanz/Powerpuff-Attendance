@@ -7,8 +7,6 @@
     --StudBack5: #9453FF;
     --StudBack6: #60EBAB;
     --StudBack7: #FF5353;
-    --PPGreen: #2bb721;
-    --PPRed: #d63b2a;
 }
 
 
@@ -50,12 +48,6 @@ textarea {
     margin-right: auto;
     margin-left: auto;
 }
-.admin_gdGoal{
-    color: var(--PPGreen);
-}
-.admin_bdGoal {
-    color: var(--PPRed);
-}
 
 #admin_wkHeaders {
     display: block;
@@ -71,7 +63,7 @@ textarea {
 }
 
 #admin_dyLog {
-    display: block;
+    display: none;
 }
 
 #admin_logDisplayName {

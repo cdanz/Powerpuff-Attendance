@@ -545,14 +545,6 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\studentDashboard.js" />
-    <Content Include="Views\Admin\AdminDashboardwkm1.cshtml" />
-    <Content Include="Views\Admin\AdminDashboardwkm2.cshtml" />
-    <Content Include="Views\Admin\AdminDashboardwkm3.cshtml" />
-    <Content Include="Views\Admin\AdminDashboardmon.cshtml" />
-    <Content Include="Views\Admin\AdminDashboardtues.cshtml" />
-    <Content Include="Views\Admin\AdminDashboardwed.cshtml" />
-    <Content Include="Views\Admin\AdminDashboardthurs.cshtml" />
-    <Content Include="Views\Admin\AdminDashboardfri.cshtml" />
     <None Include="Views\Student\StudentEditProfile.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
