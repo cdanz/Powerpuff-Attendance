@@ -17,49 +17,49 @@ namespace _5051.Controllers
         }
         public ActionResult AdminDashboardwkm1()
         {
-            ViewBag.Message = "Admin Dashboard";
+            ViewBag.Message = "Admin Dashboard1";
 
             return View();
         }
         public ActionResult AdminDashboardwkm2()
         {
-            ViewBag.Message = "Admin Dashboard";
+            ViewBag.Message = "Admin Dashboard2";
 
             return View();
         }
         public ActionResult AdminDashboardwkm3()
         {
-            ViewBag.Message = "Admin Dashboard";
+            ViewBag.Message = "Admin Dashboard3";
 
             return View();
         }
         public ActionResult AdminDashboardmon()
         {
-            ViewBag.Message = "Admin Dashboard";
+            ViewBag.Message = "Admin Dashboardm";
 
             return View();
         }
         public ActionResult AdminDashboardtues()
         {
-            ViewBag.Message = "Admin Dashboard";
+            ViewBag.Message = "Admin Dashboardt";
 
             return View();
         }
         public ActionResult AdminDashboardwed()
         {
-            ViewBag.Message = "Admin Dashboard";
+            ViewBag.Message = "Admin Dashboardw";
 
             return View();
         }
         public ActionResult AdminDashboardthurs()
         {
-            ViewBag.Message = "Admin Dashboard";
+            ViewBag.Message = "Admin Dashboardth";
 
             return View();
         }
         public ActionResult AdminDashboardfri()
         {
-            ViewBag.Message = "Admin Dashboard";
+            ViewBag.Message = "Admin Dashboardf";
 
             return View();
         }

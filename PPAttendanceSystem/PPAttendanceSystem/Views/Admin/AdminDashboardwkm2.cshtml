@@ -1,5 +1,5 @@
 ﻿@{
-	ViewBag.Title = "Admin Dashboard";
+	ViewBag.Title = "Admin Dashboard2";
 }
 @{string[] weekList = {"4/30/2018","5/7/2018","5/14/2018","5/21/2018","5/28/2018","6/4/2018"};}
 @{int weekIndex = weekList.Length - 3;}
@@ -22,8 +22,8 @@
                         <td style="width:30%;"></td>
                         <td style="width:20%;"><h5>Week of @weekList[weekIndex]</h5></td>
                         <td style="width:30%;">
-                            <span style="text-align:right;">Previous</span>@Html.ActionLink("&#8678;", "AdminDashboardwkm3", "Admin", null, new { @class = "btn btn-border-w btn-round" })
-                            @Html.ActionLink("&#8680;", "AdminDashboardwkm1", "Admin", null, new { @class = "btn btn-border-w btn-round" })<span style="text-align:left;">Next</span>
+                            @Html.ActionLink("Previous", "AdminDashboardwkm3", "Admin", null, new { @class = "btn btn-border-w btn-round" })
+                            @Html.ActionLink("Next", "AdminDashboardwkm1", "Admin", null, new { @class = "btn btn-border-w btn-round" })
                         </td>
                     </tr>
                 </table>
@@ -39,15 +39,11 @@
                                         <td style="width:18%;">@Html.ActionLink("Monday", "AdminDashboardmon", "Admin", null, new { @class = "btn btn-border-w btn-round" })</td>
                                         <td style="width:18%;">@Html.ActionLink("Tuesday", "AdminDashboardtues", "Admin", null, new { @class = "btn btn-border-w btn-round" })</td>
                                         <td style="width:18%;">@Html.ActionLink("Wednesday", "AdminDashboardwed", "Admin", null, new { @class = "btn btn-border-w btn-round" })</td>
-                                        <td style="width:18%;">@Html.ActionLink("Thursday", "AdminDashboardwed", "Admin", null, new { @class = "btn btn-border-w btn-round" })</td>
-                                        <td style="width:18%;">@Html.ActionLink("Friday", "AdminDashboardwed", "Admin", null, new { @class = "btn btn-border-w btn-round" })</td>
+                                        <td style="width:18%;">@Html.ActionLink("Thursday", "AdminDashboardthurs", "Admin", null, new { @class = "btn btn-border-w btn-round" })</td>
+                                        <td style="width:18%;">@Html.ActionLink("Friday", "AdminDashboardfri", "Admin", null, new { @class = "btn btn-border-w btn-round" })</td>
                                         <td style="width:10%;"><div>On Track</div></td>
                                     </tr>
                                 </table>
-                            </div>
-                            <div id="admin_dyHeader">
-                                <!--Default is this is hidden-->
-                                @dayOfWeek &nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-border-w btn-round" onclick="weekView()" name="Week" value="Week">Week View</button>
                             </div>
                         </td>
                     </tr>
