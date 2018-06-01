@@ -33,8 +33,7 @@ namespace _5051
 
             // Adding a custom css file for student dashboard
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/studentDashboard.css"));
         }
     }
 }
