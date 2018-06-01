@@ -9,6 +9,11 @@
     box-shadow: 0 0 10px blue;
 }
 
+.student-card > img {
+    margin-right: 15px;
+    height: 50px;
+    width: 50px;
+}
 .student-card img {
     margin-right: 15px;
 }
@@ -18,61 +23,162 @@
     font-size: 17px;
 }
 
+.student-card .emoticon {
+    color: white;
+    font-size: 12px;
+}
+
+.student-cards-row {
+
+}
+
+.emoticon a img {
+    width: 50px;
+    margin-right: 0px;
+    padding: 0px 5px 0px 5px;
+}
+
 .student-card-add {
-    background: #0026ff;
-    padding-top: 25px;
+    padding-top: 10px;
     border-radius: 5px;
-    margin: 15px 5px 15px 5px;
+    margin-top: 15px;
     text-align: center;
-    height: 80px;
+    height: 60px;
     vertical-align: middle;
 }
 
 .student-card-add span {
-     color: white;
+     color: black;
      font-size: 17px;
+     text-decoration: underline;
 }
 
-.student-card-row {
-    margin-top: 50px;
-}
 
-.check-in-row {
-    margin-bottom: 50px;
-}
-.check-in-box {
-    background-color: #202529;
-    padding: 10px 15px 10px 15px;
-    border-radius: 5px;
-    margin: 15px 5px 15px 5px;
+
+.emoticon1 {
+    display: none;
+    text-align: center;
+    padding-bottom: 10px;
     color: white;
 }
 
-.student-card-info {
-    padding-left: 15px;
-}
-
-.student-card-info > img {
-    margin-right: 15px;
-}
-
-.student-card-info > span {
-    min-width: 270px;
-    display: inline-block;
-    font-size: 17px;
-}
-
-.emoticon {
+.emoticon1.active {
+    display: block;
     text-align: center;
     padding-bottom: 10px;
+    color: white;
 }
 
-.emoticon img {
-    padding: 0px 10px 0px 10px;
+.emoticon2 {
+    display: none;
+    text-align: center;
+    padding-bottom: 10px;
+    color: white;
 }
 
-.emoticon btn {
-    background-color: #202529;
+.emoticon2.active {
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.emoticon3 {
+    display: none;
+    text-align: center;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.emoticon3.active {
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.emoticon4 {
+    display: none;
+    text-align: center;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.emoticon4.active {
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.emoticon5 {
+    display: none;
+    text-align: center;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.emoticon5.active {
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.emoticon6 {
+    display: none;
+    text-align: center;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.emoticon6.active {
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.emoticon7 {
+    display: none;
+    text-align: center;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.emoticon7.active {
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.emoticon8 {
+    display: none;
+    text-align: center;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.emoticon8.active {
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.emoticon9 {
+    display: none;
+    text-align: center;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.emoticon9.active {
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+    color: white;
 }
 
 .add-student-card {
@@ -85,21 +191,12 @@
     border-radius: 100%;
 }
 
-.check-in-popup {
-    visibility: hidden;
-}
-
-.check-in-popup.active {
-    visibility: visible;
-}
-
 .puzzle-box {
-	background: url("images/puzzle-preview.png");
+	background-color: black;
 	background-size: 100% 100%;
-	margin-top: 10px;
-	padding-top: 140px;
-	padding-bottom: 145px;
-	border-radius: 5px;
+	margin-top:100px;
+	padding-top: 170px;
+	padding-bottom: 170px;
 	color: #3671d1;
 	font-weight: bold;
 	text-align: center;
@@ -109,4 +206,8 @@
     background-color: #202529;
     padding: 5px;
     border-radius: 3px;
+}
+
+h3 {
+    text-align: center;
 }
