@@ -1,4 +1,40 @@
 ﻿/*CSS code for the student Dashboard Page*/
+body {
+    background-image: url("Landing/mountain-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Open Sans';
+}
+
+.shared-head {
+    padding-top: 20px;
+    padding-left: 70px;
+    margin-bottom: 50px;
+    padding-right: 70px;
+}
+
+.head-btn {
+    margin-top: 20px;
+    color: white;
+}
+
+.head-btn:hover {
+    margin-top: 20px;
+    color: white;
+    text-decoration: underline;
+}
+
+.head-btn-circle {
+    color: black;
+    border-radius: 100%;
+    padding: 10px;
+    width: 65px;
+    height: 65px;
+    margin-left: 10px;
+}
+
 .student-card {
     padding: 10px 15px 10px 15px;
     border-radius: 5px;
@@ -195,6 +231,7 @@
 	background-color: black;
 	background-size: 100% 100%;
 	margin-top:100px;
+    margin-bottom: 50px;
 	padding-top: 170px;
 	padding-bottom: 170px;
 	color: #3671d1;
@@ -209,5 +246,11 @@
 }
 
 h3 {
+    text-align: center;
+}
+
+.plsSignIn {
+    padding-top: 20px;
+    padding-bottom: 20px;
     text-align: center;
 }
