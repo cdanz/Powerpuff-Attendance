@@ -113,6 +113,10 @@
     float: left;
     height: 1rem;
 }
+.admin_studentBtn{
+    display: block;
+    width: 200px;
+}
 
 .admin_settingBtn {
     width: 300px;
