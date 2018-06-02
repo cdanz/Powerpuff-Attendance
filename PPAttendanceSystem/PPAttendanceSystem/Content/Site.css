@@ -114,6 +114,11 @@
     height: 1rem;
 }
 
+.admin_settingBtn {
+    width: 300px;
+}
+
+
 #admin_atndbtnS1 {
     background-color: #FF5353;
 }

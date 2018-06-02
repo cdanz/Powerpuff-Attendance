@@ -30,13 +30,17 @@
             <div class="admin_container">
                 <table cellspacing="50" style="width:100%;">
                     <tr>
-                        <td style="width=15%">Expected Start Times</td>
-                        <td style="width=85%">9:00am 1:00pm</td>
+                        <td style="width:30%;"><div class="admin_container" style="float:right;"><h3>Expected Start Times</h3></div></td>
+                        <td style="width:10%;"></td>
+                        <td style="width:30%;"><div class="admin_container" style="float:left;">9:00am 1:00pm</div></td>
+                        <td style="width:30%;"></td>
                     </tr>
                     <tr>
-                        <td style="width=15%">Auto-Log Out Times</td>
-                        <td style="width=85%">12:00pm 4:30pm
-                           <!-- this doesnt work was trying to use this: https://select2.org/tagging
+                        <td style="width:30%;"><div class="admin_container" style="float:right;"><h3>Auto-Log Out Times</h3></div></td>
+                        <td style="width:10%;"></td>
+                        <td style="width:30%;"><div class="admin_container" style="float:left;">
+                            12:00pm 4:30pm
+                            <!-- this doesnt work was trying to use this: https://select2.org/tagging
                                 <select class="form-control" multiple="multiple">
                                 <option>7:30am</option>
                                 <option>7:45am</option>
@@ -82,34 +86,41 @@
                                 <option>5:45pm</option>
                                 <option>6:00pm</option>
                             </select>
-                                
+
                                 -->
-                            
+                        </div>
                         </td>
+                        <td style="width:30%;"></td>
                     </tr>
                     <tr>
-                        <td style="width=15%">Class Roster</td>
-                        <td style="width=85%">
+                        <td style="width:30%;"><div class="admin_container" style="float:right;"><h3>Class Roster</h3></div></td>
+                        <td style="width:10%;"></td>
+                        <td style="width:30%;">
                             <div class="admin_container" style="float:left;">
                                 @Html.ActionLink("Manage Roster", "ClassRoster", "Admin", null, new { @class = "btn btn-primary" })
                             </div>
                         </td>
+                        <td style="width:30%;"></td>
                     </tr>
                     <tr>
-                        <td style="width=15%">Community Hours</td>
-                        <td style="width=85%">
+                        <td style="width:30%;"><div class="admin_container" style="float:right;"><h3>Community Hours</h3></div></td>
+                        <td style="width:10%;"></td>
+                        <td style="width:30%:">
                             <div class="admin_container" style="float:left;">
                                 @Html.ActionLink("Adjust Student Goals", "CommunityHours", "Admin", null, new { @class = "btn btn-primary" })
                             </div>
                         </td>
+                        <td style="width:30%;"></td>
                     </tr>
                     <tr>
-                        <td style="width=15%">School Calendar</td>
-                        <td style="width=85%">
+                        <td style="width:30%;"><div class="admin_container" style="float:right;"><h3>School Calendar</h3></div></td>
+                        <td style="width:10%;"></td>
+                        <td style="width:30%;">
                             <div class="admin_container" style="float:left;">
                                 @Html.ActionLink("Set Days Off", "SchoolCalendar", "Admin", null, new { @class = "btn btn-primary" })
                             </div>
                         </td>
+                        <td style="width:30%;"></td>
                     </tr>
                 </table>
             </div>
