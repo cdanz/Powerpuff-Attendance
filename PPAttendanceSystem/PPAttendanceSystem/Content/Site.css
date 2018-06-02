@@ -5,7 +5,9 @@
     --StudBack4: #5378FF;
     --StudBack5: #9453FF;
     --StudBack6: #60EBAB;
-    --StudBack7: #FF5353;
+    --StudBack7: #42eef4;
+    --StudBack8: #df42f4;
+    --StudBack9: #b9f442;
     --PPGreen: #2bb721;
     --PPRed: #d63b2a;
 }
@@ -148,7 +150,15 @@
 }
 
 #admin_atndbtnS7 {
-    background-color: #FF5353;
+    background-color: #42EEF4;
+}
+
+#admin_atndbtnS8 {
+    background-color: #DF42F4;
+}
+
+#admin_atndbtnS9 {
+    background-color: #B9F442;
 }
 
 #admin_atndbtnBlk {
