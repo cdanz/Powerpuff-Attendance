@@ -2,8 +2,10 @@
 	ViewBag.Title = "Community Hours";
 }
 
+
 <link href="~/Content/harvey.min.css" rel="stylesheet" type="text/css" />
-</style>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 <script>
     $(".js-example-tags").select2({
         tags: true
@@ -41,7 +43,7 @@
                     <tr>
                         <td style="width:20%;">
                             <table cellspacing="50" style="width:100%;">
-                                <tr><td height="20" style="margin:5px; padding: 5px;">@Html.ActionLink("Student 1", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</tdstyle="width:20%;"></tr>
+                                <tr><td height="20" style="margin:5px; padding: 5px;">@Html.ActionLink("Student 1", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</tdstyle="width:50%;"></tr>
                                 <tr><td height="20" style="margin:5px; padding: 5px;">@Html.ActionLink("Student 2", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</td></tr>
                                 <tr><td height="20" style="margin:5px; padding: 5px;">@Html.ActionLink("Student 3", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</td></tr>
                                 <tr><td height="20" style="margin:5px; padding: 5px;">@Html.ActionLink("Student 4", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</td></tr>
@@ -52,24 +54,41 @@
                         <td style="width:80%;">
                             <div class="admin_container">
                                 <table cellspacing="50" style="width:100%;">
-                                    <tr style="width:100%;">
-                                        <td style="width:100%;">slider</td>
-                                    </tr>
-                                    <tr style="width:100%;">
-                                        <td style="width:100%;">slider</td>
-                                    </tr>
-                                    <tr style="width:100%;">
-                                        <td style="width:100%;">slider</td>
-                                    </tr>
-                                    <tr style="width:100%;">
-                                        <td style="width:100%;">slider</td>
-                                    </tr>
-                                    <tr style="width:100%;">
-                                        <td style="width:100%;">slider</td>
-                                    </tr>
-                                    <tr style="width:100%;">
-                                        <td style="width:100%;">slider</td>
-                                    </tr>
+                                    <tr><td height="43" style="margin:5px; padding: 5px;">
+                                       <div class="w3-grey">
+                                       <div id="myBar" class="w3-container w3-green w3-center" style="width:20%">20%</div>                                                                      
+                                    </tr></tdstyle="width:60%;">
+
+                                    <tr><td height="43" style="margin:5px; padding: 5px;">                                       
+                                      <div class="w3-grey">
+                                       <div id="myBar" class="w3-container w3-blue w3-center" style="width:50%">50%</div>                                               
+                                    </tr></tdstyle="width:60%;">
+
+                                    <tr>
+                                        <td height="43" style="margin:5px; padding: 5px;">
+                                            <div class="w3-grey">
+                                                <div id="myBar" class="w3-container w3-red w3-center" style="width:60%">60%</div>
+                                    </tr></tdstyle="width:60%;">
+
+                                    <tr>
+                                        <td height="43" style="margin:5px; padding: 5px;">
+                                            <div class="w3-grey">
+                                                <div id="myBar" class="w3-container w3-purple w3-center" style="width:15%">15%</div>
+                                    </tr></tdstyle="width:60%;">
+
+                                    <tr>
+                                        <td height="43" style="margin:5px; padding: 5px;">
+                                            <div class="w3-grey">
+                                                <div id="myBar" class="w3-container w3-orange w3-center" style="width:20%">20%</div>
+                                    </tr></tdstyle="width:60%;">
+
+                                    <tr>
+                                        <td height="43" style="margin:5px; padding: 5px;">
+                                            <div class="w3-grey">
+                                                <div id="myBar" class="w3-container w3-pink w3-center" style="width:20%">20%</div>
+                                    </tr></tdstyle="width:60%;">
+
+                                    
                                 </table>
                             </div>
 
