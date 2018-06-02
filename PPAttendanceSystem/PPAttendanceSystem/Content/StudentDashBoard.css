@@ -254,3 +254,16 @@ h3 {
     padding-bottom: 20px;
     text-align: center;
 }
+
+.student-card > p {
+    float: right;
+    margin-top: 15px;
+    color: white;
+}
+
+#check-in-alert, #check-out-alert {
+    padding: 10px 10px 4px 10px;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
