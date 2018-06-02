@@ -1,5 +1,4 @@
-﻿/*Custom color palette, call like so "background: var(--StudBack1);"*/
-:root {
+﻿:root {
     --StudBack1: #FF5353;
     --StudBack2: #FFB253;
     --StudBack3: #FFEA53;
@@ -11,114 +10,138 @@
     --PPRed: #d63b2a;
 }
 
-
-
-body {
-    padding-top: 50px;
-    padding-bottom: 20px;
-}
-
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
-}
-
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
-}
-
-.center_elements {
-    margin-right: auto;
+.harvey {
+    position: relative;
+    border: 1px solid #000;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: #ff0000;
     margin-left: auto;
-}
-/*All custom classes for the admin controller are below. Any custom classes 
-    for admin should be prefixed with "Admin_"*/
-.admin_container {
-    border 0px solid var(--PPWhite);
-    padding: 1rem;
     margin-right: auto;
-    margin-left: auto;
+    margin-top: 7px;
+    margin-bottom: 7px;
 }
-.admin_gdGoal{
-    color: var(--PPGreen);
+
+.half-right {
+    background-image: linear-gradient(right,#FFA500,#FFA500 50.0%,#fff 50.0%);
+    background-image: -webkit-linear-gradient(right,#FFA500,#FFA500 50.0%,#fff 50.0%);
+    background-image: -moz-linear-gradient(right,#FFA500,#FFA500 50.0%,#fff 50.0%);
+    background-image: -o-linear-gradient(right,#FFA500,#FFA500 50.0%,#fff 50.0%);
+    background-image: -ms-linear-gradient(right,#FFA500,#FFA500 50.0%,#fff 50.0%)
 }
+
+
+
+.upper-right {
+    position: absolute;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background-color: #008000;
+}
+
+
+.black {
+    background-color: #000
+}
+
+.white {
+    background-color: #FFF
+}
+
+.admin_inputNeeded {
+    font-size: 2 rem;
+    font-color: #a1a2a3;
+    font-style: italic;
+}
+
+.admin_gdGoal {
+    font-size: 1.5rem;
+    color: #2bb721;
+}
+
 .admin_bdGoal {
-    color: var(--PPRed);
+    font-size: 1.5rem;
+    color: #d63b2a;
+}
+
+.admin_atndbtn {
+    display: inline-block;
+    border-width: 0;
+    border-style: solid;
+    border-radius: 10%;
+    height: 1rem;
+}
+
+.admin_atndbtnF {
+    display: block;
+    width: 100%;
+    border-width: 0;
+    border-style: solid;
+    border-radius: 10%;
+    height: 1rem;
 }
 
 .admin_atndbtnL {
-    margin:0;
-    border-width:0;
-    border-style:solid;
-    border-top-left-radius: 15%;
-    border-bottom-left-radius: 15%;
+    margin: 0;
+    border-width: 0;
+    border-style: solid;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
     float: right;
-    height:1rem;
+    height: 1rem;
 }
+
 .admin_atndbtnM {
     margin: 0;
     border-width: 0;
     border-style: solid;
-    border-radius:0;
+    border-radius: 0;
     float: right;
     height: 1rem;
-    width:100%;
+    width: 100%;
 }
+
 .admin_atndbtnR {
     margin: 0;
     border-width: 0;
     border-style: solid;
-    border-top-right-radius: 15%;
-    border-bottom-right-radius: 15%;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
     float: left;
     height: 1rem;
 }
+
 #admin_atndbtnS1 {
     background-color: #FF5353;
 }
+
 #admin_atndbtnS2 {
     background-color: #FFB253;
 }
+
 #admin_atndbtnS3 {
     background-color: #FFEA53;
 }
+
 #admin_atndbtnS4 {
     background-color: #5378FF;
 }
+
 #admin_atndbtnS5 {
     background-color: #9453FF;
 }
+
 #admin_atndbtnS6 {
     background-color: #60EBAB;
 }
+
 #admin_atndbtnS7 {
     background-color: #FF5353;
 }
 
-
-#admin_dyHeader {
-    display: none;
-    text-align: center;
-}
-
-#admin_wkLog {
-    display: block;
-}
-
-#admin_dyLog {
-    display: block;
-}
-
-#admin_logDisplayName {
+#admin_atndbtnBlk {
+    background: none;
 }

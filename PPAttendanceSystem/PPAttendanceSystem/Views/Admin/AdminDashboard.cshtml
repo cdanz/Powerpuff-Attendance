@@ -5,13 +5,8 @@
 @{int weekIndex = weekList.Length - 1;}
 @{string dayOfWeek = "Monday";}
 
-<link href="~/Content/harvey.min.css" rel="stylesheet" type="text/css" />
-<link href="~/Content/backgroundcolor.css" rel="stylesheet" type="text/css" />
 
-</style>
-
-
-<section class="bg-dark-30 showcase-page-header module parallax-bg">
+<section class="bg-dark-30 showcase-page-header module parallax-bg" data-background="../../Content/Landing/mountainBG.jpg">
     <div class="titan-caption">
         <div class="caption-content">
             <div class="admin_container" style="float:right;">
@@ -22,8 +17,8 @@
                 <table style="width:100%;">
                     <tr style="width:100%;">
                         <td style="width:20%;"><h1>Attendance</h1></td>
-                        <td style="width:43%;"></td>
-                        <td style="width:7%;"><h5>Week of @weekList[weekIndex]</h5></td>
+                        <td style="width:40%;"></td>
+                        <td style="width:10%;"><h5>Week of @weekList[weekIndex]</h5></td>
                         <td style="width:30%;">
                             @Html.ActionLink("Previous", "AdminDashboardwkm1", "Admin", null, new { @class = "btn btn-border-w btn-round"})
                             @Html.ActionLink("Next", "AdminDashboardwkm3", "Admin", null, new { @class = "btn btn-border-w btn-round"})
@@ -61,62 +56,154 @@
                                 <tr><td height="20" style="margin:5px; padding: 5px;">@Html.ActionLink("Student 6", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</td></tr>
                             </table>
                         </td>
+
+                        <!--Week View Attendance display options
+                            ~There on time, left when excused
+                                <button class="admin_atndbtn" id="admin_atndbtnS1" style="width:120px;padding-left:2px; padding-right:5px;"></button>
+                            ~Arrived on time, left early for first break, returned on time and stayed through day.
+                                <button class="admin_atndbtn" id="admin_atndbtnS1" style="width:50px;padding-left:2px; padding-right:5px;"></button>
+                                &nbsp;&nbsp;&#9200;&nbsp;&nbsp;
+                                <button class="admin_atndbtn" id="admin_atndbtnS1" style="width:60px;padding-left:2px; padding-right:5px;"></button>
+                            ~Arrived Late, left early
+                                &#9200;&nbsp;&nbsp;<button class="admin_atndbtn" id="admin_atndbtnS1" style="width:100px;padding-left:2px; padding-right:5px;"></button>&nbsp;&nbsp;&#9200;
+
+                            -->
                         <td style="width:80%;">
                             <div id="admin_wkLog">
                                 <table cellspacing="50" style="width:100%;">
-                                    <tr style="width:100%;">
+                                    <tr style="width:100%; height:42px;">
                                         <td style="width:18%;">
-                                            <div class="btn-group" role="group" aria-label="Attendance">
-                                                <button class="admin_atndbtnL" id="admin_atndbtnS1" style="margin-left:5px;"></button>
-                                                <button class="admin_atndbtnM" id="admin_atndbtnS1"></button>
-                                                <button class="admin_atndbtnR" id="admin_atndbtnS1" style="margin-right:5px;"></button>
-                                                <button class="admin_atndbtnR" id="admin_atndbtnBlk" style="margin:5px;"></button>
-                                            </div>
+                                            <!--S1 Mon-->
+                                            <button class="admin_atndbtn" id="admin_atndbtnS1" style="width:60px;"></button>
+                                            &nbsp;&nbsp;&#9200;&nbsp;
+                                            <button class="admin_atndbtn" id="admin_atndbtnS1" style="width:45px;"></button>
                                         </td>
-                                        <td style="width:18%;"><div class="harvey half-left"></div></td>
-                                        <td style="width:18%;"><div class="harvey"></div></td>
-                                        <td style="width:18%;"><div class="harvey half-right"></div></td>
-                                        <td style="width:18%;"><div class="harvey half-left"></div></td>
+                                        <td style="width:18%;">
+                                            <!--S1 Tues-->
+                                            &#9200;&nbsp;<button class="admin_atndbtn" id="admin_atndbtnS1" style="width:90px;"></button>&nbsp;&#9200;
+                                        </td>
+                                        <td style="width:18%;">
+                                            <!--S1 Wed-->
+                                            &#9200;&nbsp;<button class="admin_atndbtn" id="admin_atndbtnS1" style="width:105px;"></button>
+                                        </td>
+                                        <td style="width:18%;">
+                                            <!--S1 Thur-->
+                                            &#9200;&nbsp;<button class="admin_atndbtn" id="admin_atndbtnS1" style="width:105px;"></button>
+                                        </td>
+                                        <td style="width:18%;">
+                                            <!--S1 Fri-->
+                                            <button class="admin_atndbtn" id="admin_atndbtnS1" style="width:105px;"></button>&nbsp;&#9200;
                                         <td style="width:10%;"><div class="admin_gdGoal">&#10004;</div></td>
                                     </tr>
-                                    <tr style="width:100%;">
-                                        <td style="width:18%;"><div class="harvey half-right"></div></td>
-                                        <td style="width:18%;"><div class="harvey half-left"></div></td>
-                                        <td style="width:18%;"><div class="harvey"></div></td>
-                                        <td style="width:18%;"><div class="harvey half-right"></div></td>
-                                        <td style="width:18%;"><div class="harvey half-left"></div></td>
+                                    <tr style="width:100%; height:42px;">
+                                        <td style="width:18%;">
+                                            <button class="admin_atndbtn" id="admin_atndbtnBlk" style="width:60px;"></button>
+                                            <button class="admin_atndbtn" id="admin_atndbtnS2" style="width:60px;"></button>
+                                        </td>
+                                        <td style="width:18%;">
+                                            <button class="admin_atndbtn" id="admin_atndbtnS2" style="width:120px;"></button>
+                                        </td>
+                                        <td style="width:18%;">
+                                            <button class="admin_atndbtn" id="admin_atndbtnBlk" style="width:120px;"></button>
+                                        </td>
+                                        <td style="width:18%;">
+                                            &#9200;&nbsp;<button class="admin_atndbtn" id="admin_atndbtnS2" style="width:105px;"></button>
+                                        </td>
+                                        <td style="width:18%;">
+                                            <button class="admin_atndbtn" id="admin_atndbtnS2" style="width:120px;"></button>
+                                        </td>
                                         <td style="width:10%;"><div class="admin_bdGoal">&#10008;</div></td>
                                     </tr>
-                                    <tr style="width:100%;">
-                                        <td style="width:18%;"><div class="harvey half-right"></div></td>
-                                        <td style="width:18%;"><div class="harvey half-left"></div></td>
-                                        <td style="width:18%;"><div class="harvey"></div></td>
-                                        <td style="width:18%;"><div class="harvey half-right"></div></td>
-                                        <td style="width:18%;"><div class="harvey half-left"></div></td>
+                                    <tr style="width:100%; height:42px;">
+                                        <td style="width:18%;">
+                                            <!--S3 Mon-->
+
+                                        </td>
+                                        <td style="width:18%;">
+                                            <!--S3 Tues-->
+                                            &#9200;&nbsp;<button class="admin_atndbtn" id="admin_atndbtnS3" style="width:105px;"></button>
+                                        </td>
+                                        <td style="width:18%;">
+                                            <!--S3 Wed-->
+                                            <button class="admin_atndbtn" id="admin_atndbtnS3" style="width:120px;"></button>
+                                        </td>
+                                        <td style="width:18%;">
+                                            <!--S3 Thur-->
+
+                                        </td>
+                                        <td style="width:18%;">
+                                            <!--S3 Fri-->
+
                                         <td style="width:10%;"><div class="admin_bdGoal">&#10008;</div></td>
                                     </tr>
-                                    <tr style="width:100%;">
-                                        <td style="width:18%;"><div class="harvey half-right"></div></td>
-                                        <td style="width:18%;"><div class="harvey half-left"></div></td>
-                                        <td style="width:18%;"><div class="harvey"></div></td>
-                                        <td style="width:18%;"><div class="harvey half-right"></div></td>
-                                        <td style="width:18%;"><div class="harvey half-left"></div></td>
+                                    <tr style="width:100%; height:42px;">
+                                        <td style="width:18%;">
+                                            <!--S4 Mon-->
+                                            <button class="admin_atndbtn" id="admin_atndbtnBlk" style="width:60px;"></button>
+                                            &nbsp;&nbsp;&#9200;&nbsp;
+                                            <button class="admin_atndbtn" id="admin_atndbtnS4" style="width:45px;"></button>
+                                        </td>
+                                        <td style="width:18%;">
+                                            <!--S4 Tues-->
+                                            <button class="admin_atndbtn" id="admin_atndbtnBlk" style="width:60px;"></button>
+                                            <button class="admin_atndbtn" id="admin_atndbtnS4" style="width:60px;"></button>
+                                        </td>
+                                        <td style="width:18%;">
+                                            <!--S4 Wed-->
+                                            &#9200;&nbsp;<button class="admin_atndbtn" id="admin_atndbtnS4" style="width:105px;"></button>
+                                        </td>
+                                        <td style="width:18%;">
+                                            <!--S4 Thur-->
+                                            &#9200;&nbsp;<button class="admin_atndbtn" id="admin_atndbtnS4" style="width:105px;"></button>
+                                        </td>
+                                        <td style="width:18%;">
+                                            <!--S4 Fri-->
+                                            <button class="admin_atndbtn" id="admin_atndbtnS4" style="width:105px;"></button>&nbsp;&#9200;
+                                        </td>
                                         <td style="width:10%;"><div class="admin_gdGoal">&#10004;</div></td>
                                     </tr>
-                                    <tr style="width:100%;">
-                                        <td style="width:18%;"><div class="harvey half-right"></div></td>
-                                        <td style="width:18%;"><div class="harvey half-left"></div></td>
-                                        <td style="width:18%;"><div class="harvey"></div></td>
-                                        <td style="width:18%;"><div class="harvey half-right"></div></td>
-                                        <td style="width:18%;"><div class="harvey half-left"></div></td>
+                                    <tr style="width:100%; height:42px;">
+                                        <td style="width:18%;">
+                                            <!--S5 Mon-->
+                                            <button class="admin_atndbtn" id="admin_atndbtnS5" style="width:120px;"></button>
+                                        </td>
+                                        <td style="width:18%;">
+                                            <!--S5 Tues-->
+                                            &#9200;&nbsp;<button class="admin_atndbtn" id="admin_atndbtnS5" style="width:105px;"></button>&nbsp;&#9200;
+                                        </td>
+                                        <td style="width:18%;">
+                                            <!--S5 Wed-->
+                                            <button class="admin_atndbtn" id="admin_atndbtnS5" style="width:120px;"></button>
+                                        </td>
+                                        <td style="width:18%;">
+                                            <!--S5 Thur-->
+
+                                        </td>
+                                        <td style="width:18%;">
+                                            <!--S5 Fri-->
+                                            <button class="admin_atndbtn" id="admin_atndbtnS5" style="width:105px;"></button>&nbsp;&#9200;
                                         <td style="width:10%;"><div class="admin_gdGoal">&#10004;</div></td>
                                     </tr>
-                                    <tr style="width:100%;">
-                                        <td style="width:18%;"><div class="harvey half-right"></div></td>
-                                        <td style="width:18%;"><div class="harvey half-left"></div></td>
-                                        <td style="width:18%;"><div class="harvey"></div></td>
-                                        <td style="width:18%;"><div class="harvey half-right"></div></td>
-                                        <td style="width:18%;"><div class="harvey half-left"></div></td>
+                                    <tr style="width:100%; height:42px;">
+                                        <td style="width:18%;">
+                                            <!--S6 Mon-->
+                                            <button class="admin_atndbtn" id="admin_atndbtnS6" style="width:120px;"></button>
+                                        </td>
+                                        <td style="width:18%;">
+                                            <!--S6 Tues-->
+                                            <button class="admin_atndbtn" id="admin_atndbtnS6" style="width:120px;"></button>
+                                        </td>
+                                        <td style="width:18%;">
+                                            <!--S6 Wed-->
+                                            <button class="admin_atndbtn" id="admin_atndbtnS6" style="width:120px;"></button>
+                                        </td>
+                                        <td style="width:18%;">
+                                            <!--S6 Thur-->
+                                            <button class="admin_atndbtn" id="admin_atndbtnS6" style="width:120px;"></button>
+                                        </td>
+                                        <td style="width:18%;">
+                                            <!--S6 Fri-->
+                                            <button class="admin_atndbtn" id="admin_atndbtnS6" style="width:120px;"></button>
                                         <td style="width:10%;"><div class="admin_gdGoal">&#10004;</div></td>
                                     </tr>
                                 </table>
