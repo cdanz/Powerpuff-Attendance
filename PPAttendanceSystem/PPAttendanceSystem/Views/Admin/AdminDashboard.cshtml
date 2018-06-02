@@ -6,7 +6,7 @@
 @{string dayOfWeek = "Monday";}
 
 
-<section class="bg-dark-30 showcase-page-header module parallax-bg" data-background="../../Content/Landing/mountainBG.jpg">
+<section class="bg-dark-30 showcase-page-header module parallax-bg">
     <div class="titan-caption">
         <div class="caption-content">
             <div class="admin_container" style="float:right;">
@@ -47,17 +47,17 @@
                     </tr>
                     <tr>
                         <td style="width:20%;">
-                            <table cellspacing="50" style="width:100%;">
-                                <tr><td height="20" style="margin:5px; padding: 5px;">@Html.ActionLink("Nancy Thompson", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round admin_studentBtn" })</tdstyle="width:20%;"></tr>
-                                <tr><td height="20" style="margin:5px; padding: 5px;">@Html.ActionLink("Verna Potter", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round admin_studentBtn" })</td></tr>
-                                <tr><td height="20" style="margin:5px; padding: 5px;">@Html.ActionLink("Tamara Kochubey", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round admin_studentBtn" })</td></tr>
-                                <tr><td height="20" style="margin:5px; padding: 5px;">@Html.ActionLink("Alvin Hopkins", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round admin_studentBtn" })</td></tr>
-                                <tr><td height="20" style="margin:5px; padding: 5px;">@Html.ActionLink("Gabriel Klein", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round admin_studentBtn" })</td></tr>
-                                <tr><td height="20" style="margin:5px; padding: 5px;">@Html.ActionLink("Harry Reid", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round admin_studentBtn" })</td></tr>
-                                <tr><td height="20" style="margin:5px; padding: 5px;">@Html.ActionLink("Mina Clark", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round admin_studentBtn" })</td></tr>
-                                <tr><td height="20" style="margin:5px; padding: 5px;">@Html.ActionLink("Seth Berry", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round admin_studentBtn" })</td></tr>
-                                <tr><td height="20" style="margin:5px; padding: 5px;">@Html.ActionLink("Bianca Blanco", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round admin_studentBtn" })</td></tr>
-                            </table>
+							<table cellspacing="50" style="width:100%;">
+								<tr><td height="20" style="margin:5px; padding: 5px;"><button type="button" class="btn btn-border-w btn-round">Seth Berry</button></td></tr>
+								<tr><td height="20" style="margin:5px; padding: 5px;"><button type="button" class="btn btn-border-w btn-round">Bianca Blanco</button></td></tr>
+								<tr><td height="20" style="margin:5px; padding: 5px;"><button type="button" class="btn btn-border-w btn-round">Mina Chen</button></td></tr>
+								<tr><td height="20" style="margin:5px; padding: 5px;"><button type="button" class="btn btn-border-w btn-round">Alvin Hopkins</button></td></tr>
+								<tr><td height="20" style="margin:5px; padding: 5px;"><button type="button" class="btn btn-border-w btn-round">Gabriel Klein</button></td></tr>
+								<tr><td height="20" style="margin:5px; padding: 5px;"><a href="@Url.Action("StudentHome", "Student")" class="btn btn-border-w btn-round" role="button">Tamara Kochubey</a></td></tr>
+								<tr><td height="20" style="margin:5px; padding: 5px;"><button type="button" class="btn btn-border-w btn-round">Verna Potter</button></td></tr>
+								<tr><td height="20" style="margin:5px; padding: 5px;"><button type="button" class="btn btn-border-w btn-round">Harry Reid</button></td></tr>
+								<tr><td height="20" style="margin:5px; padding: 5px;"><button type="button" class="btn btn-border-w btn-round">Nancy Thomas</button></td></tr>
+							</table>
                         </td>
 
                         <!--Week View Attendance display options
@@ -285,22 +285,6 @@
                 </table>
             </div>
         </div>
-</section>
-
-
-
-<!-- Footer bar-->
-<section class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6 col-md-8 col-lg-12">
-                <div class="callout-text font-alt">
-                    <p style="margin-bottom: 0px;" class="alignleft">2018 Team Powerpuff</p>
-                    <p style="margin-bottom: 0px;" class="alignright">Middle College High School</p>
-                </div>
-            </div>
-        </div>
-    </div>
 </section>
 
 
