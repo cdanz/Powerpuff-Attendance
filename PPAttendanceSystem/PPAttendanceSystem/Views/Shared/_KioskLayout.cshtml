@@ -30,7 +30,7 @@
 			<div class="col-md-4 menu">
 				<div class="col-md-3"><a class="btn btn-link head-btn" href="@Url.Action("Home", "Landing")">Home</a></div>
 				<div class="col-md-3"><a class="btn btn-link head-btn" href="@Url.Action("Home", "Landing")#admin">Admin</a></div>
-				<div class="col-md-3"><a class="btn btn-link head-btn" href="@Url.Action("StudentDashboard", "Kiosk")">Dashboard</a></div>
+				<div class="col-md-3"><a class="btn btn-link head-btn" href="@Url.Action("StudentDashboard", "Kiosk")">Kiosk</a></div>
 				<div class="col-md-3"><a href="@Url.Action("StudentNew", "Kiosk")"><button class="btn btn-light head-btn-circle glyphicon-plus" type="button"></button></a></div>
 			</div>
 		</div>
@@ -38,13 +38,10 @@
 </head>
 
 <body>
-
-
     <!-- Don't delete this or else MVC gets very angry-->
     <div class="container">
         @RenderBody()
     </div>
-
 
         <!-- JQuery and JavaScript-->
     @Scripts.Render("~/bundles/jquery")
