@@ -15,6 +15,28 @@ namespace _5051.Controllers
 
             return View();
         }
+        public ActionResult AdminDashboardp1()
+        {
+            ViewBag.Message = "Admin Dashboard (-1wk)";
+
+            return View();
+        }
+
+        public ActionResult AdminDashboardp2()
+        {
+            ViewBag.Message = "Admin Dashboard (-2wk)";
+
+            return View();
+        }
+
+        public ActionResult AdminDashboardm()
+        {
+            ViewBag.Message = "Admin Dashboard Monday";
+
+            return View();
+        }
+
+
 
         // GET: Class Roster
         public ActionResult ClassRoster()

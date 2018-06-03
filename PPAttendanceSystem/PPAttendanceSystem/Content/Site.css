@@ -160,7 +160,9 @@ th, td {
     display: block;
     width: 200px;
 }
-
+.admin_dayBtn {
+    width: 150px;
+}
 .admin_settingBtn {
     width: 300px;
 }

@@ -231,5 +231,11 @@ namespace _5051.Controllers
 
             return RedirectToAction("Index");
         }
+        public ActionResult StudentReport()
+        {
+            ViewBag.Message = "Student Report";
+
+            return View();
+        }
     }
 }

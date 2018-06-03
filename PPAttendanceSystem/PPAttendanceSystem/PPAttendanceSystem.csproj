@@ -558,6 +558,9 @@
     <Content Include="Views\Admin\CustomReportResult.cshtml" />
     <Content Include="Views\Admin\CommunityHours.cshtml" />
     <Content Include="Views\Admin\SchoolCalendar.cshtml" />
+    <Content Include="Views\Admin\AdminDashboardp1.cshtml" />
+    <Content Include="Views\Admin\AdminDashboardp2.cshtml" />
+    <Content Include="Views\Admin\AdminDashboardm.cshtml" />
     <None Include="Views\Student\StudentEditProfile.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
