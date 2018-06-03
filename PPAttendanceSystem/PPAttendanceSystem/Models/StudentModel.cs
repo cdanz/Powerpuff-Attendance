@@ -38,6 +38,27 @@ namespace _5051.Models
         public string AvatarId { get; set; }
 
         /// <summary>
+        /// The personal level for the Avatar, the avatar levels up.  switching the avatar ID (picture), does not change the level
+        /// </summary>
+        [Display(Name = "Avatar Level", Description = "Level of the Avatar")]
+        [Required(ErrorMessage = "Level is required")]
+        public int AvatarLevel { get; set; }
+
+        /// <summary>
+        /// The number of Tokens the student has, tokens are used in the store, and also to level up
+        /// </summary>
+        [Display(Name = "XP", Description = "Experience Points Earned")]
+        [Required(ErrorMessage = "XP is required")]
+        public int ExperiencePoints { get; set; }
+
+        /// <summary>
+        /// The number of Tokens the student has, tokens are used in the store, and also to level up
+        /// </summary>
+        [Display(Name = "Tokens", Description = "Tokens Saved")]
+        [Required(ErrorMessage = "Tokens are required")]
+        public int Tokens { get; set; }
+
+        /// <summary>
         /// The status of the student, for example currently logged in, out
         /// </summary>
         [Display(Name = "Current Status", Description = "Status of the Student")]
@@ -57,7 +78,10 @@ namespace _5051.Models
         public void Initialize()
         {
             Id = Guid.NewGuid().ToString();
+            Tokens = 0;
+            AvatarLevel = 1;
             Status = StudentStatusEnum.Out;
+            ExperiencePoints = 0;
             Password = string.Empty;
         }
 
@@ -98,7 +122,10 @@ namespace _5051.Models
             Name = data.Name;
 
             AvatarId = data.AvatarId;
+            AvatarLevel = data.AvatarLevel;
+            Tokens = data.Tokens;
             Status = data.Status;
+            ExperiencePoints = data.ExperiencePoints;
             Password = data.Password;
         }
 
@@ -116,7 +143,10 @@ namespace _5051.Models
 
             Name = data.Name;
             AvatarId = data.AvatarId;
+            AvatarLevel = data.AvatarLevel;
+            Tokens = data.Tokens;
             Status = data.Status;
+            ExperiencePoints = data.ExperiencePoints;
             Password = data.Password;
 
             return true;
@@ -171,8 +201,11 @@ namespace _5051.Models
 
             Id = data.Id;
             Name = data.Name;
+            Tokens = data.Tokens;
+            AvatarLevel = data.AvatarLevel;
             AvatarId = data.AvatarId;
             Status = data.Status;
+            ExperiencePoints = data.ExperiencePoints;
             Password = data.Password;
 
             var myDataAvatar = AvatarBackend.Instance.Read(AvatarId);
