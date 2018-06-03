@@ -26,6 +26,11 @@
 	margin-top: 0px;
 }
 
+.row-first {
+	height: 100%;
+	overflow: hidden;
+}
+
 .harvey {
     position: relative;
     border: 1px solid #000;
