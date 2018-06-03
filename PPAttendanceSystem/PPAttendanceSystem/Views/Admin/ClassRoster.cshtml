@@ -2,18 +2,20 @@
 	ViewBag.Title = "Class Roster";
 }
 
-<link href="~/Content/harvey.min.css" rel="stylesheet" type="text/css" />
-<link href="~/Content/backgroundcolor.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="~/Scripts/tableContent.js"></script>
+<head>
+    <link href="~/Content/harvey.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/backgroundcolor.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="~/Scripts/tableContent.js"></script>
 
 
-<script>
-    $(".js-example-tags").select2({
-        tags: true
-    });</script>
+    <script>
+        $(".js-example-tags").select2({
+            tags: true
+        });</script>
 
+</head>
 
-<section class="bg-dark-30 showcase-page-header module parallax-bg" >
+<section class="bg-dark-30 showcase-page-header module parallax-bg">
     <div class="titan-caption">
         <div class="caption-content">
             <div class="admin_container" style="float:right;">
@@ -29,134 +31,82 @@
             </div>
 
             <div id="wrapper">
-                    <table cellspacing="50" style="width:100%;">
-                        <tr style="font-weight:bold">
-                            <td>First name</td>
-                            <td>Last name</td>
-                            <td>Student ID</td>
-                            <td>Status</td>
-                            <td>Edits</td>
-                            <td style="width:10%;"></td>
-                            <td style="width:10%;"></td>
-                        </tr>
+                <table align='center' cellspacing=50 cellpadding=10 id="data_table" border=1 style="width:80%;">
+                    
+                    <tr style="font-weight:bold">
+                        <td>Name</td>
+                        <td>Country</td>
+                        <td>id</td>
+                    </tr>
 
-                        <tr id="row1">
-                            <td>Alvin</td>
-                            <td>Hopkins</td>
-                            <td>123456</td>
-                            <td>Active</td>                          
-                            <td>
-                                <input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
-                                <input type="button" id="save_button1" value="Save" class="save" onclick="save_row('1')">
-                                <input type="button" value="Delete" class="delete" onclick="delete_row('1')">
-                            </td>
-                        </tr>
+                    <tr id="row1">
+                        <td id="name_row1">Ankit</td>
+                        <td id="country_row1">India</td>
+                        <td id="age_row1">20</td>
+                        <td>
+                            <input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
+                            <input type="button" id="save_button1" value="Save" class="save" onclick="save_row('1')">
+                            <input type="button" value="Delete" class="delete" onclick="delete_row('1')">
+                        </td>
+                    </tr>
 
-                        <tr id="row2">
-                            <td>Mina</td>
-                            <td>Clark</td>
-                            <td>124356</td>
-                            <td>Active</td>
-                            <td>
-                                <input type="button" id="edit_button2" value="Edit" class="edit" onclick="edit_row('2')">
-                                <input type="button" id="save_button2" value="Save" class="save" onclick="save_row('2')">
-                                <input type="button" value="Delete" class="delete" onclick="delete_row('2')">
-                            </td>
-                        </tr>
+                    <tr id="row2">
+                        <td id="name_row2">Shawn</td>
+                        <td id="country_row2">Canada</td>
+                        <td id="age_row2">26</td>
+                        <td>
+                            <input type="button" id="edit_button2" value="Edit" class="edit" onclick="edit_row('2')">
+                            <input type="button" id="save_button2" value="Save" class="save" onclick="save_row('2')">
+                            <input type="button" value="Delete" class="delete" onclick="delete_row('2')">
+                        </td>
+                    </tr>
 
-                        <tr id="row3">
-                            <td>Verna</td>
-                            <td>Potter</td>
-                            <td>345126</td>
-                            <td>Active</td>
-                            <td>
-                                <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('3')">
-                                <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('3')">
-                                <input type="button" value="Delete" class="delete" onclick="delete_row('3')">
-                            </td>
-                        </tr>
+                    <tr id="row3">
+                        <td id="name_row3">Rahul</td>
+                        <td id="country_row3">India</td>
+                        <td id="age_row3">19</td>
+                        <td>
+                            <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('3')">
+                            <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('3')">
+                            <input type="button" value="Delete" class="delete" onclick="delete_row('3')">
+                        </td>
+                    </tr>
 
-                        <tr id="row4">
-                            <td>Gabriel</td>
-                            <td>Klein</td>
-                            <td>987654</td>
-                            <td>Active</td>
-                            <td>
-                                <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('3')">
-                                <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('3')">
-                                <input type="button" value="Delete" class="delete" onclick="delete_row('3')">
-                            </td>
-                        </tr>
-                        <tr id="row5">
-                            <td>Tamara</td>
-                            <td>Kochubey</td>
-                            <td>271449</td>
-                            <td>Active</td>
-                            <td>
-                                <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('3')">
-                                <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('3')">
-                                <input type="button" value="Delete" class="delete" onclick="delete_row('3')">
-                            </td>
-                        </tr>
-                        <tr id="row6">
-                            <td>Harry</td>
-                            <td>Reid</td>
-                            <td>256449</td>
-                            <td>Active</td>
-                            <td>
-                                <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('3')">
-                                <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('3')">
-                                <input type="button" value="Delete" class="delete" onclick="delete_row('3')">
-                            </td>
-                        </tr>
-                        <tr id="row7">
-                            <td>Beth</td>
-                            <td>Frye</td>
-                            <td>233449</td>
-                            <td>Inactive</td>
-                            <td>
-                                <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('3')">
-                                <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('3')">
-                                <input type="button" value="Delete" class="delete" onclick="delete_row('3')">
-                            </td>
-                        </tr>
-                        <tr id="row8">
-                            <td>Kit</td>
-                            <td>Montgomery</td>
-                            <td>258365</td>
-                            <td>Inactive</td>
-                            <td>
-                                <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('3')">
-                                <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('3')">
-                                <input type="button" value="Delete" class="delete" onclick="delete_row('3')">
-                            </td>
-                        </tr>
+                    <tr id="row4">
+                        <td id="name_row4">Rahul</td>
+                        <td id="country_row4">India</td>
+                        <td id="age_row4">19</td>
+                        <td>
+                            <input type="button" id="edit_button4" value="Edit" class="edit" onclick="edit_row('4')">
+                            <input type="button" id="save_button4" value="Save" class="save" onclick="save_row('4')">
+                            <input type="button" value="Delete" class="delete" onclick="delete_row('4')">
+                        </td>
+                    </tr>
 
-                        <tr>
-                            <td><input type="text" id="new_name"></td>
-                            <td><input type="text" id="new_country"></td>
-                            <td><input type="text" id="new_age"></td>
-                            <td><input type="text" id="new_status"></td>
-                            <td><input type="button" class="add" onclick="add_row();" value="Add Row"></td>
-                        </tr>
+                    <tr>
+                        <td><input type="text" id="new_name"></td>
+                        <td><input type="text" id="new_country"></td>
+                        <td><input type="text" id="new_age"></td>
+                        <td><input type="button" class="add" onclick="add_row();" value="Add Row"></td>
+                    </tr>
 
-                    </table>
+                </table>
             </div>
+            </section>
 
-</section>
+            <!-- Footer bar-->
+            <section class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-8 col-lg-12">
+                            <div class="callout-text font-alt">
+                                <p style="margin-bottom: 0px;" class="alignleft">2018 Team Powerpuff</p>
+                                <p style="margin-bottom: 0px;" class="alignright">Middle College High School</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
 
 
-<!-- Footer bar-->
-<section class="footer">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-6 col-md-8 col-lg-12">
-				<div class="callout-text font-alt">
-					<p style="margin-bottom: 0px;" class="alignleft">2018 Team Powerpuff</p>
-					<p style="margin-bottom: 0px;" class="alignright">Middle College High School</p>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
