@@ -2,11 +2,18 @@
 @{
 	ViewBag.Title = "Build Custom Reports";
 }
-
+<head>
+    <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+    </script>
+</head>
 
 <link href="~/Content/harvey.min.css" rel="stylesheet" type="text/css" />
 <link href="~/Content/backgroundcolor.css" rel="stylesheet" type="text/css" />
 
+</style>
 
 
 <section class="bg-dark-30 showcase-page-header module parallax-bg">
@@ -27,8 +34,7 @@
                 <table cellspacing="50" style="width:100%;">
                     <tr>
                         <td style="width=15%">Date Range</td>
-                        <td style="width=85%"><label for="from">From</label><input type="text" id="from" name="from">
-                        <label for="to">to</label><input type="text" id="to" name="to">@Html.ActionLink("Submit", "CustomReportResult", "Admin", null, new { @class = "btn btn-border-w btn-round" })</td>
+                        <td style="width=85%">Start: <input type="text" id="datepicker">End: <input type="text" id="datepicker">@Html.ActionLink("Submit", "CustomReportResult", "Admin", null, new { @class = "btn btn-border-w btn-round" })</td>
                     </tr>
                     <tr>
                         <td style="width=15%"></td>

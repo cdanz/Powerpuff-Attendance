@@ -17,45 +17,9 @@
 	<link href="~/Content/Landing/css/style.css" rel="stylesheet">
 	<link href="~/assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link href="~/Content/Site.css" rel="stylesheet">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-	<link href= "@Url.Content("~/Content/StudentDashBoard.css")" rel="stylesheet" type="text/css">
+	<link href="@Url.Content("~/Content/StudentDashBoard.css")" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script>
-        $(function () {
-            var dateFormat = "mm/dd/yy",
-                from = $("#from")
-                    .datepicker({
-                        defaultDate: "+1w",
-                        changeMonth: true,
-                        numberOfMonths: 3
-                    })
-                    .on("change", function () {
-                        to.datepicker("option", "minDate", getDate(this));
-                    }),
-                to = $("#to").datepicker({
-                    defaultDate: "+1w",
-                    changeMonth: true,
-                    numberOfMonths: 3
-                })
-                    .on("change", function () {
-                        from.datepicker("option", "maxDate", getDate(this));
-                    });
-
-            function getDate(element) {
-                var date;
-                try {
-                    date = $.datepicker.parseDate(dateFormat, element.value);
-                } catch (error) {
-                    date = null;
-                }
-
-                return date;
-            }
-        });
-    </script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
 	<!-- navbar links-->
 	<div class="container-fluid shared-head">
@@ -81,12 +45,14 @@
 
 	<!-- JQuery and JavaScript-->
 	<script type="text/javascript" src="~/Scripts/tableContent.js"></script>
+	<script src="~/Scripts/jquery-1.10.2.js"></script>
 
 	<script type="text/javascript" src="~/Scripts/bootstrap-clockpicker.js"></script>
 	<script type="text/javascript" src="~/Scripts/clockpicker.js"></script>
 	<script type="text/javascript" src="~/Scripts/highlight.min.js"></script>
 	<script type="text/javascript" src="~/Scripts/jquery-clockpicker.js"></script>
 	<script src="~/Scripts/time.js"></script>
+	@Scripts.Render("~/bundles/jquery")
 	@Scripts.Render("~/bundles/bootstrap")
 	@Scripts.Render("~/bundles/studentDashboard")
 </body>
