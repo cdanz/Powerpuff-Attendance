@@ -1,37 +1,37 @@
 ﻿<!DOCTYPE html>
 <html lang="en-US" dir="ltr">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--
-    Document Title
-    =============================================
-    -->
-    <title>Wayfinder | @ViewBag.Title</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--
+	Document Title
+	=============================================
+	-->
+	<title>Wayfinder | @ViewBag.Title</title>
 
-    <!--
-    Stylesheets
-    =============================================
-    -->
-    <!-- Default stylesheets-->
-    <link href="~/assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <link href="@Url.Content("~/Content/StudentDashBoard.css")" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-    <div class="container-fluid shared-head">
-        <div class="row">
-            <div class="col-md-8">
-                <img src="~/Content/Landing/logo.png">
-            </div>
-            <div class="col-md-4 menu">
-                <div class="col-md-3"><a class="btn btn-link head-btn" href="@Url.Action("Home", "Landing")">Home</a></div>
-                <div class="col-md-3"><a class="btn btn-link head-btn" href="@Url.Action("Home", "Landing")">Admin</a></div>
-                <div class="col-md-3"><a class="btn btn-link head-btn" href="@Url.Action("Home", "Landing")">Dashboard</a></div>
-                <div class="col-md-3"><button type="button" class="btn btn-light head-btn-circle glyphicon-plus" href="@Url.Action("Home", "Landing")"></button></div>
-            </div>
-        </div>
-    </div>
+	<!--
+	Stylesheets
+	=============================================
+	-->
+	<!-- Default stylesheets-->
+	<link href="~/assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="~/Content/Site.css" rel="stylesheet">
+	<link href="@Url.Content("~/Content/StudentDashBoard.css")" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+	<div class="container-fluid shared-head">
+		<div class="row">
+			<div class="col-md-8">
+				<img src="~/Content/Landing/logo.png">
+			</div>
+			<div class="col-md-4 menu">
+				<div class="col-md-3"><a class="btn btn-link head-btn" href="@Url.Action("Home", "Landing")">Home</a></div>
+				<div class="col-md-3"><a class="btn btn-link head-btn" href="@Url.Action("Home", "Landing")#admin">Admin</a></div>
+				<div class="col-md-3"><a class="btn btn-link head-btn" href="@Url.Action("StudentDashboard", "Kiosk")">Dashboard</a></div>
+				<div class="col-md-3"><a href="@Url.Action("StudentNew", "Kiosk")"><button class="btn btn-light head-btn-circle glyphicon-plus" type="button"></button></a></div>
+			</div>
+		</div>
+	</div>
 </head>
 
 <body>
