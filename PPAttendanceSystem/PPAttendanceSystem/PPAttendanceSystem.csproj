@@ -239,6 +239,7 @@
     <Content Include="Content\images\puzzle-preview.png" />
     <Content Include="Content\Landing\css\colors\default-rtl.css" />
     <Content Include="Content\Landing\css\colors\default.css" />
+    <Content Include="Content\Landing\css\puzzle-map.png" />
     <Content Include="Content\Landing\logo%402x.png" />
     <Content Include="Content\Landing\logo%403x.png" />
     <Content Include="Content\Landing\logo.png" />
