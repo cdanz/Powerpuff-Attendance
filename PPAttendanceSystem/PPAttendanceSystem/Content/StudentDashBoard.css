@@ -228,10 +228,11 @@ body {
 }
 
 .puzzle-box {
-	background-color: black;
-	background-size: 100% 100%;
-	margin-top:100px;
-    margin-bottom: 50px;
+	background-image: url(Landing/puzzle-map.png);
+	background-size: 100%;
+	overflow: hidden;
+	margin-top: 100px;
+	margin-bottom: 50px;
 	padding-top: 170px;
 	padding-bottom: 170px;
 	color: #3671d1;

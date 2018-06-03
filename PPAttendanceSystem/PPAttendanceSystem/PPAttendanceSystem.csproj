@@ -231,6 +231,7 @@
     <Content Include="Content\AvatarIcons\elephant-icon.png" />
     <Content Include="Content\AvatarIcons\fox-icon.png" />
     <Content Include="Content\AvatarIcons\frog-icon.png" />
+    <Content Include="Content\AvatarIcons\penguin-icon.png" />
     <Content Include="Content\AvatarIcons\rabbit-icon.png" />
     <Content Include="Content\AvatarIcons\squirrel-icon.png" />
     <Content Include="Content\AvatarIcons\swan-icon.png" />
@@ -396,6 +397,7 @@
     <Content Include="Content\Landing\mountain-background.png" />
     <Content Include="Content\Landing\mountainBG.jpg" />
     <Content Include="Content\Landing\pin.png" />
+    <Content Include="Content\Landing\puzzle-map.png" />
     <Content Include="Content\Landing\route.png" />
     <Content Include="Content\Landing\wayfinder-logo.png" />
     <Content Include="Content\PPcustom.css" />
