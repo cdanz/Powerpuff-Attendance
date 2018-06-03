@@ -14,11 +14,14 @@
 	Stylesheets
 	=============================================
 	-->
-	<!-- Default stylesheets-->
+	<link href="~/Content/Landing/css/style.css" rel="stylesheet">
 	<link href="~/assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link href="~/Content/Site.css" rel="stylesheet">
 	<link href="@Url.Content("~/Content/StudentDashBoard.css")" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+
+	<!-- navbar links-->
 	<div class="container-fluid shared-head">
 		<div class="row">
 			<div class="col-md-8">
@@ -37,7 +40,7 @@
 <body>
 
 
-    <!-- Also don't delete this or else MVC gets very angry-->
+    <!-- Don't delete this or else MVC gets very angry-->
     <div class="container">
         @RenderBody()
     </div>
