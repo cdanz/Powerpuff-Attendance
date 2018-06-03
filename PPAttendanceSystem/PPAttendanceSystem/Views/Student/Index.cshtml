@@ -6,56 +6,84 @@
 
 
 <!-- Welcome greeting w/ name-->
-<div class="main" style="margin-bottom:0px;margin-top:0px;background-color:transparent">
-	<section class="module" id="myprofile">
-		<div class="container">
-			<div class="row align-center">
-				<div class="col-sm-8 col-sm-offset-2">
-					<h2 class="module-title font-alt">Select your profile:</h2>
-					@{
-						if (Model.StudentList == null || !Model.StudentList.Any())
-						{
-							<br />
-							<p>No Students in the System</p>
-							<br />
-						}
-						else
-						{
-							foreach (var item in Model.StudentList)
-							{
-								<div class="col-sm-2">
-									<div class="AvatarBox">
-										<a id="@item.Id" href="~/Student/Read/@item.Id">
-											<img src="~/Content/img/@item.AvatarUri" class="AvatarSize1" />
-										</a>
-										<br />
-										<span>
-											<h3 class="features-title font-alt">@item.Name</h3>
-											<br />
-											<br />
-											<br />
-										</span>
-									</div>
-								</div>
-							}
-						}
-					}
-				</div>
-			</div>
-		</div>
-	</section>
+<div class="row">
+    <h2 class="plsSignIn">Please Sign In</h2>
+    <div class="alert-warning" id="check-out-alert" role="alert">
+        <button type="button" class="close" data-dismiss="alert">x</button>
+        <p>
+            You are now signed Out!&nbsp; Your Check Out Time:
+            <script>
+                var currTime = new Date().toLocaleTimeString();
+                document.write(currTime);
+            </script>
+        </p>
+    </div>
+    <div class="alert-success" id="check-in-alert" role="alert">
+        <button type="button" class="close" data-dismiss="alert">x</button>
+        <p>
+            Thank you for Signing In! &nbsp; Your Check In Time:
+            <script>
+                var currTime = new Date().toLocaleTimeString();
+                document.write(currTime);
+            </script>
+        </p>
+    </div>
+    <div class="student-cards-row">
+        @{
+            if (Model.StudentList == null || !Model.StudentList.Any())
+            {
+                <br />
+                <p>No Students in the System</p>
+                <br />
+            }
+            else
+            {
+                var count = 1;
+                var randomColor = new Random();
+                foreach (var item in Model.StudentList)
+                {
+                    <div class="col-md-4">
+                        <div class="check-in">
+                        @{var stuID = "stu" + count;
+                          var CardColor = String.Format("#{0:X6}", randomColor.Next(0x1000000));
+                        }
+                        
+                        <div id="@stuID" class="student-card" style="background-color: @CardColor">
+                            <img src="~/Content/img/@item.AvatarUri" class="img-circle avatar" alt="Student Avatar">
+                            <span>@item.Name</span>
+                            @{var emoticon = "emoticon" + count;}
+                            <div class=@emoticon>
+                                <hr>
+                                <h3>How are you doing today?</h3><br>
+                                <a href="javascript:checkedIn('/Content/img/@item.AvatarUri', '@stuID')"><img src="~/Content/images/face1.png" alt="Sad"></a>
+                                <a href="javascript:checkedIn('/Content/img/@item.AvatarUri', '@stuID')"><img src="~/Content/images/face2.png" alt="Somewhat Sad"></a>
+                                <a href="javascript:checkedIn('/Content/img/@item.AvatarUri', '@stuID')"><img src="~/Content/images/face3.png" alt="Okay"></a>
+                                <a href="javascript:checkedIn('/Content/img/@item.AvatarUri', '@stuID')"><img src="~/Content/images/face4.png" alt="Somewhat Happy"></a>
+                                <a href="javascript:checkedIn('/Content/img/@item.AvatarUri', '@stuID')"><img src="~/Content/images/face5.png" alt="Happy"></a><br><br>
+                                <p>Select an emoticon to sign in</p>
+                                <hr />
+                                <a class="btn-sm btn-default btn-circle" href="@Url.Action("Home", "Landing")#student" style="text-align:center">Details</a>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    count++;
+                }
+            }
+        }
+    </div>
 </div>
 
-<!-- Footer bar-->
-<section class="footer">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-6 col-md-8 col-lg-12">
-				<div class="callout-text font-alt">
-					<p style="margin-bottom: 0px;" class="alignleft">2018 Team Powerpuff</p>
-					<p style="margin-bottom: 0px;" class="alignright">Middle College High School</p>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+        <!-- Footer bar-->
+        <section class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-8 col-lg-12">
+                        <div class="callout-text font-alt">
+                            <p style="margin-bottom: 0px;" class="alignleft">2018 Team Powerpuff</p>
+                            <p style="margin-bottom: 0px;" class="alignright">Middle College High School</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>

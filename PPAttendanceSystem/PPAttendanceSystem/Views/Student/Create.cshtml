@@ -30,7 +30,7 @@
 					@Html.DisplayNameFor(m => m.AvatarId)
 				</div>
 				<div class="col-sm-2">
-					@Html.DropDownListFor(m => m.AvatarId, _5051.Backend.AvatarBackend.Instance.GetAvatarListItem(Model.AvatarId),null,"user-input",null)
+					@Html.DropDownListFor(m => m.AvatarId, _5051.Backend.AvatarBackend.Instance.GetAvatarListItem(Model.AvatarId))
 					@Html.ValidationMessageFor(m => m.AvatarId)
 				</div>
 			</div>
