@@ -4,24 +4,24 @@
 }
 
 <div class="col-md-10 col-md-offset-1 RectangleBlck">
-	<h2>Wayfinder Settings</h2>
+	<h2>Settings</h2>
 	<div class="row">
-		<div class="col-md-6">
+		<div class="col-md-4">
 			<h4>Expected Start Times</h4>
 		</div>
-		<div class="col-md-3">
+		<div class="col-md-4">
 			<h5>Morning:</h5>
 			<div class="input-group clockpicker">
-				<input type="text" class="form-control" value="09:00">
+				<input type="text" class="form-control" value="9:00am">
 				<span class="input-group-addon">
 					<span class="glyphicon glyphicon-time"></span>
 				</span>
 			</div>
 		</div>
-		<div class="col-md-3">
+		<div class="col-md-4">
 			<h5>Afternoon:</h5>
 			<div class="input-group clockpicker">
-				<input type="text" class="form-control" value="13:00">
+				<input type="text" class="form-control" value="1:00pm">
 				<span class="input-group-addon">
 					<span class="glyphicon glyphicon-time"></span>
 				</span>
@@ -30,22 +30,22 @@
 	</div>
 
 	<div class="row">
-		<div class="col-md-6">
+		<div class="col-md-4">
 			<h4>Auto Logout Times</h4>
 		</div>
-		<div class="col-md-3">
+		<div class="col-md-4">
 			<h5>Morning:</h5>
 			<div class="input-group clockpicker">
-				<input type="text" class="form-control" value="12:00">
+				<input type="text" class="form-control" value="12:00pm">
 				<span class="input-group-addon">
 					<span class="glyphicon glyphicon-time"></span>
 				</span>
 			</div>
 		</div>
-		<div class="col-md-3">
+		<div class="col-md-4">
 			<h5>Afternoon:</h5>
 			<div class="input-group clockpicker">
-				<input type="text" class="form-control" value="16:30">
+				<input type="text" class="form-control" value="4:30pm">
 				<span class="input-group-addon">
 					<span class="glyphicon glyphicon-time"></span>
 				</span>
@@ -55,34 +55,34 @@
 
 	<div class="row">
 		<div class="col-md-10 col-md-offset-1">
-			<p>-------------</p>
+			<hr />
 		</div>
 	</div>
 
 	<div class="row">
-		<div class="col-md-6">
+		<div class="col-md-4">
 			<h4>Class Roster</h4>
 		</div>
-		<div class="col-md-6">
-			@Html.ActionLink("Manage Roster", "ClassRoster", "Admin", null, new { @class = "btn btn-primary" })
+		<div class="col-md-4">
+			@Html.ActionLink("Manage Roster", "ClassRoster", "Admin", null, new { @class = "btn btn-primary admin_settingBtn" })
 		</div>
 	</div>
 
 	<div class="row">
-		<div class="col-md-6">
+		<div class="col-md-4">
 			<h4>Review Community Hours</h4>
 		</div>
-		<div class="col-md-6">
-			@Html.ActionLink("Adjust Student Goals", "CommunityHours", "Admin", null, new { @class = "btn btn-primary" })
+		<div class="col-md-4">
+			@Html.ActionLink("Adjust Student Goals", "CommunityHours", "Admin", null, new { @class = "btn btn-primary admin_settingBtn" })
 		</div>
 	</div>
 
 	<div class="row">
-		<div class="col-md-6">
+		<div class="col-md-4">
 			<h4>School Calendar</h4>
 		</div>
-		<div class="col-md-6">
-			@Html.ActionLink("Set Days Off", "SchoolCalendar", "Admin", null, new { @class = "btn btn-primary" })
+		<div class="col-md-4">
+			@Html.ActionLink("Set Days Off", "SchoolCalendar", "Admin", null, new { @class = "btn btn-primary admin_settingBtn" })
 		</div>
 	</div>
 </div>
