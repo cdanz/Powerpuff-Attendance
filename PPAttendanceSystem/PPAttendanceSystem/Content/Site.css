@@ -17,6 +17,23 @@
 	Add Admin formatting
 -----------------------------------------------------------------*/
 
+.beBold {
+	font-weight: bold;
+	font-family: "SofiaPro", sans-serif;
+	text-align: center;
+	font-size: 16px;
+}
+
+table {
+	border: 1px;
+	margin-top: 25px;
+}
+
+th, td {
+	padding: 2px;
+	text-align: center;
+}
+
 .RectangleBlck {
 	position: relative;
 	padding: 20px 20px 20px 20px;
