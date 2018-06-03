@@ -2,58 +2,29 @@
 @{
 	ViewBag.Title = "Student Home";
 }
-
-<!-- Welcome greeting w/ rotating text-->
-<section class="home-section home-parallax home-fade home-full-height bg-dark-30" data-background="../../Content/Landing/hikerBG.JPG">
-	<div class="titan-caption">
-		<div class="caption-content">
-			<div class="font-alt mb-30 titan-title-size-2">Hello, explorer</div>
-			<div class="font-alt mb-40 titan-title-size-3">
-				<span class="rotate">You are a trailblazer | You strive for more | You are resilient</span>
-			</div><a class="section-scroll btn btn-border-w btn-circle" href="#myprofile">How far you've come</a>
-		</div>
-	</div>
-</section>
-
 <!-- Welcome greeting w/ name-->
-<div class="main" style="margin-bottom:0px;margin-top:0px">
-	<section class="module" id="myprofile">
-		<div class="container">
-			<div class="row align-center">
-				<div class="col-sm-8 col-sm-offset-2">
-					<img class="card-img-top" src="~/Content/AvatarIcons/swan-icon.png" alt="SWAN" style="width:100px;height:100px; margin-bottom: 20px;">
-					<h2 class="module-title font-alt">Hello, Tamara</h2>
-					<h3 class="features-title font-alt">Profile name: Tamara</h3>
-					<h3 class="features-title font-alt">Animal guide: swan</h3>
-					<br>
-					<div class="progress">
-						<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
-							 aria-valuemin="0" aria-valuemax="100" style="width:40%">
-						</div>
-					</div>
-					<p>40% toward Community Hours goal completion</p>
-					<div class="alert alert-success" role="alert">
-						<button class="close" type="button" data-dismiss="alert" aria-hidden="true">&times;</button><i class="fa fa-diamond"></i><strong>Combo!</strong> You've arrived on time for 3+ consecutive days.
-					</div>
-					<!-- UPDATE: add viewbag to grab student name-->
-					<a class="section-scroll btn btn-g btn-round" href="@Url.Action("StudentReport", "Student")">See your progress</a>
-					<a class="section-scroll btn btn-g btn-round" href="@Url.Action("StudentEditProfile", "Student")">Update your profile</a>
-				</div>
-			</div>
-		</div>
-	</section>
-</div>
+<div class="col-md-10 col-md-offset-1 RectangleWhite">
+	<div class="row align-center">
+		<img class="profileimg" src="~/Content/AvatarIcons/swan-icon.png" alt="SWAN">
+	</div>
 
-<!-- Footer bar-->
-<section class="footer">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-6 col-md-8 col-lg-12">
-				<div class="callout-text font-alt">
-					<p style="margin-bottom: 0px;" class="alignleft">2018 Team Powerpuff</p>
-					<p style="margin-bottom: 0px;" class="alignright">Middle College High School</p>
+	<div class="row align-center">
+		<div class="col-md-8 col-md-offset-2">
+			<h2>Hello, Tamara</h2>
+			<h3 class="features-title font-alt">Profile name: Tamara</h3>
+			<h3 class="features-title font-alt">Animal guide: swan</h3>
+			<br>
+			<div class="progress">
+				<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
+					 aria-valuemin="0" aria-valuemax="100" style="width:40%">
 				</div>
 			</div>
+			<p>40% toward Community Hours goal completion</p>
+			<div class="alert alert-success" role="alert">
+				<button class="close" type="button" data-dismiss="alert" aria-hidden="true">&times;</button><i class="fa fa-diamond"></i><strong>Combo!</strong> You've arrived on time for 3+ consecutive days.
+			</div>
+			<a class="section-scroll btn btn-g btn-round" href="@Url.Action("StudentReport", "Student")">See progress</a>
+			<a class="section-scroll btn btn-g btn-round" href="@Url.Action("StudentEditProfile", "Student")">Update profile</a>
 		</div>
 	</div>
-</section>
+</div>

@@ -27,12 +27,12 @@
             <div class="col-md-8">
                 <img src="~/Content/Landing/logo.png">
             </div>
-            <div class="col-md-4 menu">
-                <div class="col-md-3"><a class="btn btn-link head-btn" href="@Url.Action("Home", "Landing")">Home</a></div>
-                <div class="col-md-3"><a class="btn btn-link head-btn" href="@Url.Action("Home", "Landing")#admin">Admin</a></div>
-                <div class="col-md-3"><a class="btn btn-link head-btn" href="@Url.Action("StudentDashboard", "Kiosk")">Dashboard</a></div>
-                <div class="col-md-3"><a href="@Url.Action("Create", "Student")"><button class="btn btn-light head-btn-circle glyphicon-plus" type="button"></button></a></div>
-            </div>
+			<div class="col-md-4 menu">
+				<div class="col-md-3"><a class="btn btn-link head-btn" href="@Url.Action("Home", "Landing")">Home</a></div>
+				<div class="col-md-3"><a class="btn btn-link head-btn" href="@Url.Action("Home", "Landing")#kiosk">Kiosk</a></div>
+				<div class="col-md-3"><a class="btn btn-link head-btn" href="@Url.Action("Home", "Landing")#admin">Admin</a></div>
+				<div class="col-md-3"><a class="btn btn-link head-btn" href="@Url.Action("StudentHome", "Student")">Student</a></div>
+			</div>
         </div>
     </div>
 </head>
@@ -44,7 +44,6 @@
     <div class="container">
         @RenderBody()
     </div>
-
 
     <!-- JQuery and JavaScript-->
     @Scripts.Render("~/bundles/jquery")
