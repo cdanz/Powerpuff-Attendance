@@ -7,55 +7,6 @@ html {
   -ms-overflow-style: scrollbar;
 }
 
-body {
-	background-color: #668fe8;
-	font: 400 12px/1.8 "Open Sans", sans-serif;
-	color: #666;
-	-webkit-font-smoothing: antialiased;
-}
-
-.alignleft {
-	float: left;
-}
-
-.alignright {
-	float: right;
-}
-
-/*----------------------------------------------------------------
-	D3.js formatting
------------------------------------------------------------------*/
-.chart div {
-	background-color: white;
-	text-align: right;
-	padding: 3px;
-	margin: 10px;
-}
-
-/*----------------------------------------------------------------
-	Scrollbar
------------------------------------------------------------------*/
-/* width */
-::-webkit-scrollbar {
-	width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-	background: #f1f1f1;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-	background: #888;
-}
-
-	/* Handle on hover */
-	::-webkit-scrollbar-thumb:hover {
-		background: #555;
-	}
-
-
 /*----------------------------------------------------------------
 	Custom footer
 -----------------------------------------------------------------*/
@@ -709,7 +660,6 @@ a,
 --------------------------------------------------------------*/
 .btn {
   border-radius: 0;
-  font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 11px;
@@ -755,11 +705,11 @@ a,
   color: #111;
 }
 
-.btn.btn-border-w {
-  background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.75);
-  color: #fff;
-}
+	.btn.btn-border-w {
+		background: transparent;
+		border: 1px solid rgba(255, 255, 255, 0.75);
+		color: #fff;
+	}
 
 .btn.btn-border-w:hover,
 .btn.btn-border-w:focus {

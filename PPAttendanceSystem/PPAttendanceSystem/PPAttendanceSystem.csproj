@@ -390,11 +390,6 @@
     <Content Include="assets\lib\smoothscroll.js" />
     <Content Include="assets\lib\wow\dist\wow.js" />
     <Content Include="Content\Dropdown.css" />
-    <Content Include="Content\images\DummyAvatar_1.jpg" />
-    <Content Include="Content\images\DummyAvatar_2.jpg" />
-    <Content Include="Content\images\DummyAvatar_3.jpg" />
-    <Content Include="Content\images\DummyAvatar_4.jpg" />
-    <Content Include="Content\images\DummyAvatar_5.jpg" />
     <Content Include="Content\Landing\CanoeBG.jpg" />
     <Content Include="Content\Landing\hikerBG.JPG" />
     <Content Include="Content\Landing\map.png" />

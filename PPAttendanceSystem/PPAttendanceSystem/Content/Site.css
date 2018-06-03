@@ -164,3 +164,44 @@
 #admin_atndbtnBlk {
     background: none;
 }
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+/*----------------------------------------------------------------
+	D3.js formatting
+-----------------------------------------------------------------*/
+.chart div {
+	background-color: white;
+	text-align: right;
+	padding: 3px;
+	margin: 10px;
+}
+
+/*----------------------------------------------------------------
+	Scrollbar
+-----------------------------------------------------------------*/
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #888;
+}
+
+	/* Handle on hover */
+	::-webkit-scrollbar-thumb:hover {
+		background: #555;
+	}
