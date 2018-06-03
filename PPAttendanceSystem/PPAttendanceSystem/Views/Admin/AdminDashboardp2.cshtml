@@ -19,7 +19,7 @@
             <div class="col-md-2 col-md-push-6"></div>
             <div class="col-md-2 col-md-push-6"><h4>Week of @weekList[weekIndex]</h4></div>
             <div class="col-md-1 col-md-push-6"><button type="button" class="btn btn-border-w btn-round">Prev</button></div>
-            <div class="col-md-1 col-md-push-6"><a href="@Url.Action(" AdminDashboardp1", "Admin" )" class="btn btn-border-w btn-round" role="button">Next</a></div>
+            <div class="col-md-1 col-md-push-6"><a href="@Url.Action("AdminDashboardp1", "Admin" )" class="btn btn-border-w btn-round" role="button">Next</a></div>
         </div>
 	<table cellspacing="50" style="width:100%;">
         <tr>
@@ -28,11 +28,11 @@
                 <div id="admin_wkHeaders">
                     <table cellspacing="50" style="width:100%;">
                         <tr>
-                            <td style="width:18%;"><a href="@Url.Action(" AdminDashboardm", "Admin" )" class="btn btn-border-w btn-round admin_dayBtn" role="button">Monday</a></td>
-                            <td style="width:18%;"><a href="@Url.Action(" AdminDashboardt", "Admin" )" class="btn btn-border-w btn-round admin_dayBtn" role="button">Tuesday</a></td>
-                            <td style="width:18%;"><a href="@Url.Action(" AdminDashboardw", "Admin" )" class="btn btn-border-w btn-round admin_dayBtn" role="button">Wednesday</a></td>
-                            <td style="width:18%;"><a href="@Url.Action(" AdminDashboardth", "Admin" )" class="btn btn-border-w btn-round admin_dayBtn" role="button">Thursday</a></td>
-                            <td style="width:18%;"><a href="@Url.Action(" AdminDashboardf", "Admin" )" class="btn btn-border-w btn-round admin_dayBtn" role="button">Friday</a></td>
+                            <td style="width:18%;"><a href="@Url.Action("AdminDashboardm", "Admin" )" class="btn btn-border-w btn-round admin_dayBtn" role="button">Monday</a></td>
+                            <td style="width:18%;"><a href="@Url.Action("AdminDashboardt", "Admin" )" class="btn btn-border-w btn-round admin_dayBtn" role="button">Tuesday</a></td>
+                            <td style="width:18%;"><a href="@Url.Action("AdminDashboardw", "Admin" )" class="btn btn-border-w btn-round admin_dayBtn" role="button">Wednesday</a></td>
+                            <td style="width:18%;"><a href="@Url.Action("AdminDashboardth", "Admin" )" class="btn btn-border-w btn-round admin_dayBtn" role="button">Thursday</a></td>
+                            <td style="width:18%;"><a href="@Url.Action("AdminDashboardf", "Admin" )" class="btn btn-border-w btn-round admin_dayBtn" role="button">Friday</a></td>
                             <td style="width:10%;"><div><h5>On Track</h5></div></td>
                         </tr>
 					</table>
@@ -71,177 +71,176 @@
                         <tr style="width:100%; height:42px;">
                             <td style="width:18%;">
                                 <!--S1 Mon-->
-                                <button class="admin_atndbtn" id="admin_atndbtnS1" style="width:65px;"></button>
-                                &nbsp;&nbsp;&#9200;&nbsp;
-                                <button class="admin_atndbtn" id="admin_atndbtnS1" style="width:38px;"></button>
+                                <button class="admin_atndbtn" id="admin_atndbtnS1" style="width:130px;"></button>
                             </td>
                             <td style="width:18%;">
                                 <!--S1 Tues-->
-                                &#9200;&nbsp;<button class="admin_atndbtn" id="admin_atndbtnS1" style="width:90px;"></button>&nbsp;&#9200;
+                                <button class="admin_atndbtn" id="admin_atndbtnS1" style="width:130px;"></button>
                             </td>
                             <td style="width:18%;">
                                 <!--S1 Wed-->
-                                &#9200;&nbsp;<button class="admin_atndbtn" id="admin_atndbtnS1" style="width:110px;"></button>
+                                <button class="admin_atndbtn" id="admin_atndbtnS1" style="width:130px;"></button>
                             </td>
                             <td style="width:18%;">
                                 <!--S1 Thur-->
-                                &#9200;&nbsp;<button class="admin_atndbtn" id="admin_atndbtnS1" style="width:110px;"></button>
+                                <button class="admin_atndbtn" id="admin_atndbtnS1" style="width:130px;"></button>
                             </td>
                             <td style="width:18%;">
                                 <!--S1 Fri-->
-                                <button class="admin_atndbtn" id="admin_atndbtnS1" style="width:110px;"></button>&nbsp;&#9200;
+                                <button class="admin_atndbtn" id="admin_atndbtnS1" style="width:130px;"></button>
+                            <td style="width:10%;"><div class="admin_gdGoal">&#10004;</div></td>
+                        </tr>
+                        <tr style="width:100%; height:42px;">
+                            <td style="width:18%;">
+                                <!--S2 Mon-->
+                                <button class="admin_atndbtn" id="admin_atndbtnS2" style="width:130px;"></button>
+                            </td>
+                            <td style="width:18%;">
+                                <!--S2 Tues-->
+                                &#9200;&nbsp;<button class="admin_atndbtn" id="admin_atndbtnS2" style="width:110px;"></button>&nbsp;&#9200;
+                            </td>
+                            <td style="width:18%;">
+                                <!--S2 Wed-->
+                                <button class="admin_atndbtn" id="admin_atndbtnS2" style="width:130px;"></button>
+                            </td>
+                            <td style="width:18%;">
+                                <!--S2 Thur-->
+
+                            </td>
+                            <td style="width:18%;">
+                                <!--S2 Fri-->
+                                <button class="admin_atndbtn" id="admin_atndbtnS2" style="width:110px;"></button>&nbsp;&#9200;
                             <td style="width:10%;"><div class="admin_gdGoal">&#10004;</div></td>
                         </tr>
                         <tr style="width:100%; height:42px;">
                             <td style="width:18%;">
                                 <button class="admin_atndbtn" id="admin_atndbtnBlk" style="width:65px;"></button>
-                                <button class="admin_atndbtn" id="admin_atndbtnS2" style="width:65px;"></button>
+                                <button class="admin_atndbtn" id="admin_atndbtnS3" style="width:65px;"></button>
                             </td>
                             <td style="width:18%;">
-                                <button class="admin_atndbtn" id="admin_atndbtnS2" style="width:130px;"></button>
+                                <button class="admin_atndbtn" id="admin_atndbtnS3" style="width:130px;"></button>
                             </td>
                             <td style="width:18%;">
                                 <button class="admin_atndbtn" id="admin_atndbtnBlk" style="width:130px;"></button>
                             </td>
                             <td style="width:18%;">
-                                &#9200;&nbsp;<button class="admin_atndbtn" id="admin_atndbtnS2" style="width:110px;"></button>
-                            </td>
-                            <td style="width:18%;">
-                                <button class="admin_atndbtn" id="admin_atndbtnS2" style="width:130px;"></button>
-                            </td>
-                            <td style="width:10%;"><div class="admin_bdGoal">&#10008;</div></td>
-                        </tr>
-                        <tr style="width:100%; height:42px;">
-                            <td style="width:18%;">
-                                <!--S3 Mon-->
-
-                            </td>
-                            <td style="width:18%;">
-                                <!--S3 Tues-->
                                 &#9200;&nbsp;<button class="admin_atndbtn" id="admin_atndbtnS3" style="width:110px;"></button>
                             </td>
                             <td style="width:18%;">
-                                <!--S3 Wed-->
                                 <button class="admin_atndbtn" id="admin_atndbtnS3" style="width:130px;"></button>
                             </td>
-                            <td style="width:18%;">
-                                <!--S3 Thur-->
-
-                            </td>
-                            <td style="width:18%;">
-                                <!--S3 Fri-->
-
                             <td style="width:10%;"><div class="admin_bdGoal">&#10008;</div></td>
                         </tr>
                         <tr style="width:100%; height:42px;">
                             <td style="width:18%;">
                                 <!--S4 Mon-->
-                                <button class="admin_atndbtn" id="admin_atndbtnBlk" style="width:65px;"></button>
-                                &nbsp;&nbsp;&#9200;&nbsp;
-                                <button class="admin_atndbtn" id="admin_atndbtnS4" style="width:38px;"></button>
+
                             </td>
                             <td style="width:18%;">
                                 <!--S4 Tues-->
-                                <button class="admin_atndbtn" id="admin_atndbtnBlk" style="width:65px;"></button>
-                                <button class="admin_atndbtn" id="admin_atndbtnS4" style="width:65px;"></button>
+                                &#9200;&nbsp;<button class="admin_atndbtn" id="admin_atndbtnS4" style="width:110px;"></button>
                             </td>
                             <td style="width:18%;">
                                 <!--S4 Wed-->
-                                &#9200;&nbsp;<button class="admin_atndbtn" id="admin_atndbtnS4" style="width:110px;"></button>
+                                <button class="admin_atndbtn" id="admin_atndbtnS4" style="width:130px;"></button>
                             </td>
                             <td style="width:18%;">
                                 <!--S4 Thur-->
-                                &#9200;&nbsp;<button class="admin_atndbtn" id="admin_atndbtnS4" style="width:110px;"></button>
+
                             </td>
                             <td style="width:18%;">
                                 <!--S4 Fri-->
-                                <button class="admin_atndbtn" id="admin_atndbtnS4" style="width:110px;"></button>&nbsp;&#9200;
-                            </td>
-                            <td style="width:10%;"><div class="admin_gdGoal">&#10004;</div></td>
+
+                            <td style="width:10%;"><div class="admin_bdGoal">&#10008;</div></td>
                         </tr>
                         <tr style="width:100%; height:42px;">
                             <td style="width:18%;">
                                 <!--S5 Mon-->
-                                <button class="admin_atndbtn" id="admin_atndbtnS5" style="width:130px;"></button>
+                                <button class="admin_atndbtn" id="admin_atndbtnS5" style="width:65px;"></button>
+                                &nbsp;&nbsp;&#9200;&nbsp;
+                                <button class="admin_atndbtn" id="admin_atndbtnS5" style="width:38px;"></button>
                             </td>
                             <td style="width:18%;">
                                 <!--S5 Tues-->
-                                <button class="admin_atndbtn" id="admin_atndbtnS5" style="width:130px;"></button>
+                                &#9200;&nbsp;<button class="admin_atndbtn" id="admin_atndbtnS5" style="width:90px;"></button>&nbsp;&#9200;
                             </td>
                             <td style="width:18%;">
                                 <!--S5 Wed-->
-                                <button class="admin_atndbtn" id="admin_atndbtnS5" style="width:130px;"></button>
+                                &#9200;&nbsp;<button class="admin_atndbtn" id="admin_atndbtnS5" style="width:110px;"></button>
                             </td>
                             <td style="width:18%;">
                                 <!--S5 Thur-->
-                                <button class="admin_atndbtn" id="admin_atndbtnS5" style="width:130px;"></button>
+                                &#9200;&nbsp;<button class="admin_atndbtn" id="admin_atndbtnS5" style="width:110px;"></button>
                             </td>
                             <td style="width:18%;">
                                 <!--S5 Fri-->
-                                <button class="admin_atndbtn" id="admin_atndbtnS5" style="width:130px;"></button>
+                                <button class="admin_atndbtn" id="admin_atndbtnS5" style="width:110px;"></button>&nbsp;&#9200;
                             <td style="width:10%;"><div class="admin_gdGoal">&#10004;</div></td>
                         </tr>
                         <tr style="width:100%; height:42px;">
                             <td style="width:18%;">
                                 <!--S6 Mon-->
-                                <button class="admin_atndbtn" id="admin_atndbtnS6" style="width:130px;"></button>
+                                <button class="admin_atndbtn" id="admin_atndbtnBlk" style="width:65px;"></button>
+                                &nbsp;&nbsp;&#9200;&nbsp;
+                                <button class="admin_atndbtn" id="admin_atndbtnS6" style="width:38px;"></button>
                             </td>
                             <td style="width:18%;">
                                 <!--S6 Tues-->
-                                &#9200;&nbsp;<button class="admin_atndbtn" id="admin_atndbtnS6" style="width:110px;"></button>&nbsp;&#9200;
+                                <button class="admin_atndbtn" id="admin_atndbtnBlk" style="width:65px;"></button>
+                                <button class="admin_atndbtn" id="admin_atndbtnS6" style="width:65px;"></button>
                             </td>
                             <td style="width:18%;">
                                 <!--S6 Wed-->
-                                <button class="admin_atndbtn" id="admin_atndbtnS6" style="width:130px;"></button>
+                                &#9200;&nbsp;<button class="admin_atndbtn" id="admin_atndbtnS6" style="width:110px;"></button>
                             </td>
                             <td style="width:18%;">
                                 <!--S6 Thur-->
-
+                                &#9200;&nbsp;<button class="admin_atndbtn" id="admin_atndbtnS6" style="width:110px;"></button>
                             </td>
                             <td style="width:18%;">
                                 <!--S6 Fri-->
                                 <button class="admin_atndbtn" id="admin_atndbtnS6" style="width:110px;"></button>&nbsp;&#9200;
+                            </td>
                             <td style="width:10%;"><div class="admin_gdGoal">&#10004;</div></td>
                         </tr>
                         <tr style="width:100%; height:42px;">
                             <td style="width:18%;">
                                 <!--S7 Mon-->
-                                <button class="admin_atndbtn" id="admin_atndbtnBlk" style="width:65px;"></button>
-                                &nbsp;&nbsp;&#9200;&nbsp;
-                                <button class="admin_atndbtn" id="admin_atndbtnS7" style="width:11px;"></button>
-                                &nbsp;&#9200;&nbsp;&nbsp;
-                            </td>
-                            <td style="width:18%;">
-                                <!--S7 Tues-->
-                                
-                            </td>
-                            <td style="width:18%;">
-                                <!--S7 Wed-->
-                                &#9200;&nbsp;<button class="admin_atndbtn" id="admin_atndbtnS7" style="width:38px;"></button>
-                                <button class="admin_atndbtn" id="admin_atndbtnBlk" style="width:65px;"></button>
-                            </td>
-                            <td style="width:18%;">
-                                <!--S7 Thur-->
                                 &#9200;&nbsp;<button class="admin_atndbtn" id="admin_atndbtnS7" style="width:110px;"></button>
                             </td>
                             <td style="width:18%;">
+                                <!--S7 Tues-->
+
+                            </td>
+                            <td style="width:18%;">
+                                <!--S7 Wed-->
+                                <button class="admin_atndbtn" id="admin_atndbtnS7" style="width:130px;"></button>
+                            </td>
+                            <td style="width:18%;">
+                                <!--S7 Thur-->
+
+                            </td>
+                            <td style="width:18%;">
                                 <!--S7 Fri-->
-                                
+
                             <td style="width:10%;"><div class="admin_bdGoal">&#10008;</div></td>
                         </tr>
                         <tr style="width:100%; height:42px;">
                             <td style="width:18%;">
                                 <!--S8 Mon-->
                                 <button class="admin_atndbtn" id="admin_atndbtnBlk" style="width:65px;"></button>
-                                <button class="admin_atndbtn" id="admin_atndbtnS8" style="width:65px;"></button>
+                                &nbsp;&nbsp;&#9200;&nbsp;
+                                <button class="admin_atndbtn" id="admin_atndbtnS8" style="width:11px;"></button>
+                                &nbsp;&#9200;&nbsp;&nbsp;
                             </td>
                             <td style="width:18%;">
                                 <!--S8 Tues-->
-                                <button class="admin_atndbtn" id="admin_atndbtnS8" style="width:130px;"></button>
+                                
                             </td>
                             <td style="width:18%;">
                                 <!--S8 Wed-->
-                                &#9200;&nbsp;<button class="admin_atndbtn" id="admin_atndbtnS8" style="width:110px;"></button>
+                                &#9200;&nbsp;<button class="admin_atndbtn" id="admin_atndbtnS8" style="width:38px;"></button>
+                                <button class="admin_atndbtn" id="admin_atndbtnBlk" style="width:65px;"></button>
                             </td>
                             <td style="width:18%;">
                                 <!--S8 Thur-->
@@ -249,31 +248,32 @@
                             </td>
                             <td style="width:18%;">
                                 <!--S8 Fri-->
-                                &#9200;&nbsp;<button class="admin_atndbtn" id="admin_atndbtnS8" style="width:110px;"></button>
-                            </td>
-                            <td style="width:10%;"><div class="admin_gdGoal">&#10004;</div></td>
+                                
+                            <td style="width:10%;"><div class="admin_bdGoal">&#10008;</div></td>
                         </tr>
                         <tr style="width:100%; height:42px;">
                             <td style="width:18%;">
                                 <!--S9 Mon-->
-                                &#9200;&nbsp;<button class="admin_atndbtn" id="admin_atndbtnS9" style="width:110px;"></button>
+                                <button class="admin_atndbtn" id="admin_atndbtnBlk" style="width:65px;"></button>
+                                <button class="admin_atndbtn" id="admin_atndbtnS9" style="width:65px;"></button>
                             </td>
                             <td style="width:18%;">
                                 <!--S9 Tues-->
-                               
-                            </td>
-                            <td style="width:18%;">
-                                <!--S3 Wed-->
                                 <button class="admin_atndbtn" id="admin_atndbtnS9" style="width:130px;"></button>
                             </td>
                             <td style="width:18%;">
+                                <!--S9 Wed-->
+                                &#9200;&nbsp;<button class="admin_atndbtn" id="admin_atndbtnS9" style="width:110px;"></button>
+                            </td>
+                            <td style="width:18%;">
                                 <!--S9 Thur-->
-
+                                &#9200;&nbsp;<button class="admin_atndbtn" id="admin_atndbtnS9" style="width:110px;"></button>
                             </td>
                             <td style="width:18%;">
                                 <!--S9 Fri-->
-
-                            <td style="width:10%;"><div class="admin_bdGoal">&#10008;</div></td>
+                                &#9200;&nbsp;<button class="admin_atndbtn" id="admin_atndbtnS9" style="width:110px;"></button>
+                            </td>
+                            <td style="width:10%;"><div class="admin_gdGoal">&#10004;</div></td>
                         </tr>
 					</table>
 				</div>
