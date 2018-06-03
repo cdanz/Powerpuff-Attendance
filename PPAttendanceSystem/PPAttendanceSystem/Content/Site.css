@@ -17,6 +17,11 @@
 	Add Admin formatting
 -----------------------------------------------------------------*/
 
+#admin-bg {
+	background-color: rgb(26, 117, 255);
+	background-image: none;
+}
+
 .beBold {
 	font-weight: bold;
 	font-family: "SofiaPro", sans-serif;

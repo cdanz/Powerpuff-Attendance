@@ -19,14 +19,7 @@
 	<link href="~/Content/Site.css" rel="stylesheet">
 	<link href="@Url.Content("~/Content/StudentDashBoard.css")" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-	<script type="text/javascript" src="~/Scripts/tableContent.js"></script>
-
-
-	<script>
-		$(".js-example-tags").select2({
-			tags: true
-		});
-	</script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
 	<!-- navbar links-->
 	<div class="container-fluid shared-head">
@@ -51,6 +44,15 @@
 	</div>
 
 	<!-- JQuery and JavaScript-->
+	<script type="text/javascript" src="~/Scripts/tableContent.js"></script>
+	<a href="http://jquery.com/">jQuery</a>
+	<script src="~/Scripts/jquery-1.10.2.js"></script>
+
+	<script type="text/javascript" src="~/Scripts/bootstrap-clockpicker.js"></script>
+	<script type="text/javascript" src="~/Scripts/clockpicker.js"></script>
+	<script type="text/javascript" src="~/Scripts/highlight.min.js"></script>
+	<script type="text/javascript" src="~/Scripts/jquery-clockpicker.js"></script>
+	<script src="~/Scripts/time.js"></script>
 	@Scripts.Render("~/bundles/jquery")
 	@Scripts.Render("~/bundles/bootstrap")
 	@Scripts.Render("~/bundles/studentDashboard")
