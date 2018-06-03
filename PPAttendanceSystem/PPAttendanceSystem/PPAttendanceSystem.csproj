@@ -435,6 +435,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Scripts\bootstrap-clockpicker.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
@@ -538,8 +539,12 @@
     <Content Include="assets\lib\owl.carousel\_config.json" />
     <None Include="Properties\PublishProfiles\PPAttendanceSystem20180516065014 - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\clockpicker.js" />
+    <Content Include="Scripts\highlight.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\jquery-clockpicker.js" />
+    <Content Include="Scripts\time.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
@@ -550,14 +555,6 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\studentDashboard.js" />
-    <Content Include="Views\Admin\AdminDashboardwkm1.cshtml" />
-    <Content Include="Views\Admin\AdminDashboardwkm2.cshtml" />
-    <Content Include="Views\Admin\AdminDashboardwkm3.cshtml" />
-    <Content Include="Views\Admin\AdminDashboardmon.cshtml" />
-    <Content Include="Views\Admin\AdminDashboardtues.cshtml" />
-    <Content Include="Views\Admin\AdminDashboardwed.cshtml" />
-    <Content Include="Views\Admin\AdminDashboardthurs.cshtml" />
-    <Content Include="Views\Admin\AdminDashboardfri.cshtml" />
     <Content Include="Views\Admin\CustomReportResult.cshtml" />
     <Content Include="Views\Admin\CommunityHours.cshtml" />
     <Content Include="Views\Admin\SchoolCalendar.cshtml" />
@@ -637,7 +634,7 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\backgroundcolor.css" />
+    <Content Include="Scripts\tableContent.js" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

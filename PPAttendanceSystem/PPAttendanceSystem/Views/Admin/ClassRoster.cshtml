@@ -2,140 +2,142 @@
 	ViewBag.Title = "Class Roster";
 }
 
-<link href="~/Content/harvey.min.css" rel="stylesheet" type="text/css" />
-<link href="~/Content/backgroundcolor.css" rel="stylesheet" type="text/css" />
+<head>
 
-</style>
-<script>
-    $(".js-example-tags").select2({
-        tags: true
-    });</script>
+</head>
 
+<div class="col-md-10 col-md-offset-1 RectangleBlck">
 
-<section class="bg-dark-30 showcase-page-header module parallax-bg">
-    <div class="titan-caption">
-        <div class="caption-content">
-            <div class="admin_container" style="float:right;">
-                @Html.ActionLink("Settings", "ClassSettings", "Admin", null, new { @class = "btn btn-primary" })
-            </div>
-            <div class"row" style="width:100%;">
-                <table style="width:100%;">
-                    <tr style="width:100%;">
-                        <td style="width:20%;"><h1>Manage Roster</h1></td>
-                        <td style="width:80%;"></td>
-                    </tr>
-                </table>
-            </div>
-            <div class="admin_container">
-                <table cellspacing="50" style="width:100%;">
-                    <tr>
-                        <td style="width=20%"></td>
-                        <td style="width=80%">
-                            <div id="admin_wkHeaders">
-                                <table cellspacing="50" style="width:100%;">
-                                    <tr>
-                                        <td style="width:100%;">@Html.ActionLink("Add New Student", "StudentNew", "Kiosk", null, new { @class = "btn btn-border-w btn-round" })</td>
-                                    </tr>
-                                </table>
-                            
-                            <table cellspacing="50" style="width:100%;">
-                                <tr style="font-weight:bold">
-                                        <td>First name</td>
-                                        <td>Last name</td>
-                                        <td>Student ID</td>
-                                        <td>Status</td>
-                                        <td style="width:10%;"></td>
-                                        <td style="width:10%;"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Alvin</td>
-                                        <td>Hopkins</td>
-                                        <td>123456</td>
-                                        <td>Active</td>
-                                        <td style="width:10%;">@Html.ActionLink("Deactivate", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</td>
-                                        <td style="width:10%;">@Html.ActionLink("Delete", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mina</td>
-                                        <td>Clark</td>
-                                        <td>124356</td>
-                                        <td>Active</td>
-                                        <td style="width:10%;">@Html.ActionLink("Deactivate", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</td>
-                                        <td style="width:10%;">@Html.ActionLink("Delete", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Verna</td>
-                                        <td>Potter</td>
-                                        <td>345126</td>
-                                        <td>Active</td>
-                                        <td style="width:10%;">@Html.ActionLink("Deactivate", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</td>
-                                        <td style="width:10%;">@Html.ActionLink("Delete", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Gabriel</td>
-                                        <td>Klein</td>
-                                        <td>987654</td>
-                                        <td>Active</td>
-                                        <td style="width:10%;">@Html.ActionLink("Deactivate", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</td>
-                                        <td style="width:10%;">@Html.ActionLink("Delete", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Tamara</td>
-                                        <td>Kochubey</td>
-                                        <td>271449</td>
-                                        <td>Active</td>
-                                        <td style="width:10%;">@Html.ActionLink("Deactivate", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</td>
-                                        <td style="width:10%;">@Html.ActionLink("Delete", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Harry</td>
-                                        <td>Reid</td>
-                                        <td>256449</td>
-                                        <td>Active</td>
-                                        <td style="width:10%;">@Html.ActionLink("Deactivate", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</td>
-                                        <td style="width:10%;">@Html.ActionLink("Delete", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Beth</td>
-                                        <td>Frye</td>
-                                        <td>233449</td>
-                                        <td>Inactive</td>
-                                        <td style="width:10%;">@Html.ActionLink("Reactivate", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</td>
-                                        <td style="width:10%;">@Html.ActionLink("Delete", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Kit</td>
-                                        <td>Montgomery</td>
-                                        <td>258365</td>
-                                        <td>Inactive</td>
-                                        <td style="width:10%;">@Html.ActionLink("Reactivate", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</td>
-                                        <td style="width:10%;">@Html.ActionLink("Delete", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</td>
-                                    </tr>
-                                </table>
-                            </div>
+	<h3>Student Roster</h3>
 
-                        </td>
-                    </tr>
-                </table>
-                </td>
-                </tr>
-                </table>
-            </div>
-        </div>
-</section>
+	<div id="wrapper">
+		<table align='center' cellspacing=50 cellpadding=10 id="data_table" border=1">
 
+			<tr>
+				<td class="beBold">First Name</td>
+				<td class="beBold">Last Name</td>
+				<td class="beBold">Status</td>
+			</tr>
 
+			<tr id="row1">
+				<td id="fname_row1">Seth</td>
+				<td id="lname_row1">Berry</td>
+				<td id="status_row1">Active</td>
+				<td>
+					<input type="button" id="edit_button1" value="Edit" class="section-scroll btn btn-border-w btn-round" onclick="edit_row('1')">
+					<input type="button" id="save_button1" value="Save" class="section-scroll btn btn-border-w btn-round" onclick="save_row('1')">
+					<input type="button" value="Delete" class="section-scroll btn btn-border-w btn-round" onclick="delete_row('1')">
+				</td>
+			</tr>
 
-<!-- Footer bar-->
-<section class="footer">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-6 col-md-8 col-lg-12">
-				<div class="callout-text font-alt">
-					<p style="margin-bottom: 0px;" class="alignleft">2018 Team Powerpuff</p>
-					<p style="margin-bottom: 0px;" class="alignright">Middle College High School</p>
-				</div>
-			</div>
-		</div>
+			<tr id="row2">
+				<td id="fname_row2">Bianca</td>
+				<td id="lname_row2">Blanco</td>
+				<td id="status_row2">Active</td>
+				<td>
+					<input type="button" id="edit_button2" value="Edit" class="section-scroll btn btn-border-w btn-round" onclick="edit_row('2')">
+					<input type="button" id="save_button2" value="Save" class="section-scroll btn btn-border-w btn-round" onclick="save_row('2')">
+					<input type="button" value="Delete" class="section-scroll btn btn-border-w btn-round" onclick="delete_row('2')">
+				</td>
+			</tr>
+
+			<tr id="row3">
+				<td id="fname_row3">Mina</td>
+				<td id="lname_row3">Chen</td>
+				<td id="status_row3">Active</td>
+				<td>
+					<input type="button" id="edit_button3" value="Edit" class="section-scroll btn btn-border-w btn-round" onclick="edit_row('3')">
+					<input type="button" id="save_button3" value="Save" class="section-scroll btn btn-border-w btn-round" onclick="save_row('3')">
+					<input type="button" value="Delete" class="section-scroll btn btn-border-w btn-round" onclick="delete_row('3')">
+				</td>
+			</tr>
+
+			<tr id="row4">
+				<td id="fname_row4">Rahul</td>
+				<td id="lname_row4">Singh</td>
+				<td id="status_row4">Paused</td>
+				<td>
+					<input type="button" id="edit_button4" value="Edit" class="section-scroll btn btn-border-w btn-round" onclick="edit_row('4')">
+					<input type="button" id="save_button4" value="Save" class="section-scroll btn btn-border-w btn-round" onclick="save_row('4')">
+					<input type="button" value="Delete" class="section-scroll btn btn-border-w btn-round" onclick="delete_row('4')">
+				</td>
+			</tr>
+
+			<tr id="row5">
+				<td id="fname_row5">Alvin</td>
+				<td id="lname_row5">Hopkins</td>
+				<td id="status_row5">Active</td>
+				<td>
+					<input type="button" id="edit_button5" value="Edit" class="section-scroll btn btn-border-w btn-round" onclick="edit_row('5')">
+					<input type="button" id="save_button5" value="Save" class="section-scroll btn btn-border-w btn-round" onclick="save_row('5')">
+					<input type="button" value="Delete" class="section-scroll btn btn-border-w btn-round" onclick="delete_row('5')">
+				</td>
+			</tr>
+
+			<tr id="row6">
+				<td id="fname_row6">Gabriel</td>
+				<td id="lname_row6">Klein</td>
+				<td id="status_row6">Active</td>
+				<td>
+					<input type="button" id="edit_button6" value="Edit" class="section-scroll btn btn-border-w btn-round" onclick="edit_row('6')">
+					<input type="button" id="save_button6" value="Save" class="section-scroll btn btn-border-w btn-round" onclick="save_row('6')">
+					<input type="button" value="Delete" class="section-scroll btn btn-border-w btn-round" onclick="delete_row('6')">
+				</td>
+			</tr>
+
+			<tr id="row7">
+				<td id="fname_row7">Tamera</td>
+				<td id="lname_row7">Kochubey</td>
+				<td id="status_row7">Active</td>
+				<td>
+					<input type="button" id="edit_button7" value="Edit" class="section-scroll btn btn-border-w btn-round" onclick="edit_row('7')">
+					<input type="button" id="save_button7" value="Save" class="section-scroll btn btn-border-w btn-round" onclick="save_row('7')">
+					<input type="button" value="Delete" class="section-scroll btn btn-border-w btn-round" onclick="delete_row('7')">
+				</td>
+			</tr>
+
+			<tr id="row8">
+				<td id="fname_row8">Verna</td>
+				<td id="lname_row8">Potter</td>
+				<td id="status_row8">Active</td>
+				<td>
+					<input type="button" id="edit_button8" value="Edit" class="section-scroll btn btn-border-w btn-round" onclick="edit_row('8')">
+					<input type="button" id="save_button8" value="Save" class="section-scroll btn btn-border-w btn-round" onclick="save_row('8')">
+					<input type="button" value="Delete" class="section-scroll btn btn-border-w btn-round" onclick="delete_row('8')">
+				</td>
+			</tr>
+
+			<tr id="row9">
+				<td id="fname_row9">Harry</td>
+				<td id="lname_row9">Reid</td>
+				<td id="status_row9">Active</td>
+				<td>
+					<input type="button" id="edit_button9" value="Edit" class="section-scroll btn btn-border-w btn-round" onclick="edit_row('9')">
+					<input type="button" id="save_button9" value="Save" class="section-scroll btn btn-border-w btn-round" onclick="save_row('9')">
+					<input type="button" value="Delete" class="section-scroll btn btn-border-w btn-round" onclick="delete_row('9')">
+				</td>
+			</tr>
+
+			<tr id="row10">
+				<td id="fname_row10">Nancy</td>
+				<td id="lname_row10">Thomas</td>
+				<td id="status_row10">Active</td>
+				<td>
+					<input type="button" id="edit_button10" value="Edit" class="section-scroll btn btn-border-w btn-round" onclick="edit_row('10')">
+					<input type="button" id="save_button10" value="Save" class="section-scroll btn btn-border-w btn-round" onclick="save_row('10')">
+					<input type="button" value="Delete" class="section-scroll btn btn-border-w btn-round" onclick="delete_row('10')">
+				</td>
+			</tr>
+
+			<tr>
+				<td><input class="form-control" type="text" placeholder="First Name" id="new_fname"></td>
+				<td><input class="form-control" type="text" placeholder="Last Name" id="new_lname"></td>
+				<td><input class="form-control" type="text" placeholder="Status" id="new_status"></td>
+				<td><input type="button" class="btn btn-block btn-round btn-b" onclick="add_row();" value="Add Row"></td>
+			</tr>
+
+		</table>
 	</div>
-</section>
+</div>
+
+
