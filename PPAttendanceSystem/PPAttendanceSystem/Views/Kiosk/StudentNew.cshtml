@@ -3,59 +3,42 @@
 	ViewBag.Title = "Student New";
 }
 
-<section class="module">
-	<div class="container" style="color:white">
-		<div class="row">
-			<div class="col-sm-8 col-sm-offset-2">
-				<div class="col-sm-5">
-					<h4 class="font-alt">Register a student profile</h4>
-					<hr class="divider-w mb-10">
-					<form class="form">
-						<div class="form-group">
-							<label for="avatar" class="font-alt">Avatar choice:</label>
-							<select class="form-control" id="avatar">
-								<option>Cat</option>
-								<option>Dog</option>
-								<option>Elephant</option>
-								<option>Fox</option>
-								<option>Frog</option>
-								<option>Rabbit</option>
-								<option>Squirrel</option>
-								<option>Swan</option>
-							</select>
-						</div>
-						<div class="form-group">
-							<input class="form-control" id="studentId" type="text" name="studentId" placeholder="Student ID" />
-						</div>
-						<div class="form-group">
-							<input class="form-control" id="username" type="text" name="username" placeholder="Username" />
-						</div>
-						<div class="form-group">
-							<input class="form-control" id="password" type="password" name="password" placeholder="Password" />
-						</div>
-						<div class="form-group">
-							<input class="form-control" id="re-password" type="password" name="re-password" placeholder="Re-enter Password" />
-						</div>
-						<div class="form-group">
-							<a class="btn btn-block btn-round btn-b" href="@Url.Action("StudentDashboard", "Kiosk")#kiosk" style="text-align:center">Register</a>
-						</div>
-					</form>
-				</div>
+<div class="col-md-12">
+	<div class="col-md-4 Rectangle-5">
+		<div class="text-register">Profile</div>
+		<hr class="divider-w mb-10">
+		<form class="form">
+			<div class="form-group">
+				<label for="avatar" class="font-alt">Avatar choice:</label>
+				<select class="form-control" id="avatar">
+					<option>Cat</option>
+					<option>Dog</option>
+					<option>Elephant</option>
+					<option>Fox</option>
+					<option>Frog</option>
+					<option>Penguin</option>
+					<option>Rabbit</option>
+					<option>Squirrel</option>
+					<option>Swan</option>
+				</select>
 			</div>
-		</div>
+			<div class="form-group">
+				<input class="form-control" id="studentId" type="text" name="studentId" placeholder="Student ID" />
+			</div>
+			<div class="form-group">
+				<input class="form-control" id="username" type="text" name="username" placeholder="Username" />
+			</div>
+			<div class="form-group">
+				<input class="form-control" id="password" type="password" name="password" placeholder="Password" />
+			</div>
+			<div class="form-group">
+				<input class="form-control" id="re-password" type="password" name="re-password" placeholder="Re-enter Password" />
+			</div>
+			<div class="form-group">
+				<a href="@Url.Action("StudentDashboard", "Kiosk")#kiosk"><button class="btn Rectangle" type="button" >Register</button></a>
+			</div>
+		</form>
 	</div>
-</section>
+</div>
 
-<!-- Footer bar-->
-<section class="footer">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-6 col-md-8 col-lg-12">
-				<div class="callout-text font-alt">
-					<p style="margin-bottom: 0px;" class="alignleft">2018 Team Powerpuff</p>
-					<p style="margin-bottom: 0px;" class="alignright">Middle College High School</p>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+
