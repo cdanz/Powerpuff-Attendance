@@ -9,85 +9,125 @@
 		google.charts.setOnLoadCallback(drawChart);
 		function drawChart() {
 			var data = google.visualization.arrayToDataTable([
-				['Attendance Type', 'Frequency %'],
-				['Excused', 10],
-				['Missed', 15],
-				['Partial day', 40],
-				['Full day', 35]
+				['Emotion Tracker', 'Frequency %'],
+				['Completed', 60],
+				['Remaining', 40],
+				
 			]);
 
 			var options = {
 				pieHole: 0.4,
 				backgroundColor: 'transparent',
 				color: 'white',
-				title: 'Annual Attendance'
+				title: 'Community Hours Tracker'
 			};
 
 			var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
 			chart.draw(data, options);
 		}
 	</script>
+
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawVisualization);
+
+        function drawVisualization() {
+            var data = google.visualization.arrayToDataTable([
+                ['Time Frame', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+                ['5/21-25', 8, 6, 8, 4, 8],
+                ['5/28-6/1', 8, 5, 4, 8, 8]
+               
+            ]);
+
+            var options = {
+                title: 'Attendance Tracker',
+                backgroundColor: 'transparent',
+                vAxis: { title: 'Hours' },
+                hAxis: { title: 'Time' },
+                seriesType: 'bars',
+                series: { 5: { type: 'line' } }
+            };
+
+            var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
+            chart.draw(data, options);
+        }
+    </script>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+
+            var data = google.visualization.arrayToDataTable([
+                ['Emotion Tracker', 'Frequency %'],
+                ['Very Sad', 10],
+                ['Sad', 20],
+                ['Indifferent', 40],
+                ['Happy', 20],
+                ['Very Happy', 10]
+            ]);
+
+            var options = {
+                title: 'Emotions Tracker',
+                backgroundColor: 'transparent'
+
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+            chart.draw(data, options);
+        }
+    </script>
+
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+          
+
+            var data = google.visualization.arrayToDataTable([
+                ['Time Frame', 'Attendance', 'Emotions'],
+                ['5/21', 8, 3],
+                ['5/22', 6, 3],
+                ['5/23', 8, 1],
+                ['5/24', 4, 2],
+                ['5/25', 8, 4,],
+                ['5/228', 8, 3],
+                ['5/29', 5, 3],
+                ['5/230', 4, 2],
+                ['5/31', 8, 5,],
+                ['6/1', 8, 4]
+            ]);
+
+           
+            var options = {
+                title: 'Emotions. vs. Attendance',
+                curveType: 'function',
+                legend: { position: 'bottom' }
+            };
+
+            var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+            chart.draw(data, options);
+        }
+    </script>
+
+
+
 </head>
 
-<div class="col-md-10 col-md-offset-1 RectangleWhite">
-	<div class="row align-center">
-		<button class="section-scroll btn btn-g btn-round" value="Print" onclick="window.print();return false;" />Print</button>
-	</div>
 
-	<div class="row">
-		<div class="font-alt mb-40 titan-title-size-3" align="center">Your progress</div>
-		<h4 class="font-alt mb-0" align="center">Week: June 4th, 2018</h4>
-		<br>
-		<div class="row align-center">
-			<!-- Bar chart-->
-			<div class="col-md-10 col-md-offset-1">
-				<h4 class="font-alt mb-0">This week's time in class...</h4>
-				<br>
-				<hr class="divider-w mt-10 mb-20">
-				<h6 class="font-alt">
-					<span class="icon-puzzle"></span> Monday
-				</h6>
-				<div class="progress">
-					<div class="progress">
-						<div class="progress-bar-success" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">8 hrs</div>
-					</div>
-				</div>
-				<h6 class="font-alt">
-					<span class="icon-puzzle"></span> Tuesday
-				</h6>
-				<div class="progress">
-					<div class="progress">
-						<div class="progress-bar-success" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">8 hrs</div>
-					</div>
-				</div>
-				<h6 class="font-alt">
-					<span class="icon-puzzle"></span> Wednesday
-				</h6>
-				<div class="progress">
-					<div class="progress">
-						<div class="progress-bar-warning" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">6 hrs</div>
-					</div>
-				</div>
-				<h6 class="font-alt">
-					<span class="icon-puzzle"></span> Thursday
-				</h6>
-				<div class="progress">
-					<div class="progress">
-						<div class="progress-bar-danger" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">4.5 hrs</div>
-					</div>
-				</div>
-				<h6 class="font-alt">
-					<span class="icon-puzzle"></span> Friday
-				</h6>
-				<div class="progress">
-					<div class="progress-bar-warning" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">6 hrs</div>
-				</div>
-			</div>
-		</div>
 
-		<!-- Pie chart-->
+		<!--Charts-->
 		<div class="row align-center">
 			<div id="donutchart" style="width: 900px; height: 500px;"></div>
+            <div id="chart_div" style="width: 900px; height: 500px;"></div>
+            <div id="curve_chart" style="width: 900px; height: 500px"></div>
+            <div id="piechart" style="width: 900px; height: 500px;"></div>
+
 		</div>
-	</div>
+	
 </div>
