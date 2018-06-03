@@ -6,30 +6,6 @@ namespace _5051.Controllers
 {
     public class StudentController : Controller
     {
-        // GET: Student profile landing page
-        public ActionResult StudentHome()
-        {
-            ViewBag.Message = "Student Home";
-
-            return View();
-        }
-
-        // GET: Student report page
-        public ActionResult StudentReport()
-        {
-            ViewBag.Message = "Student Report";
-
-            return View();
-        }
-
-        // GET: Student profile edit page
-        public ActionResult StudentEditProfile()
-        {
-            ViewBag.Message = "Student Edit Profile";
-
-            return View();
-        }
-
         // A ViewModel used for the Student that contains the StudentList
         private StudentViewModel StudentViewModel = new StudentViewModel();
 
@@ -96,6 +72,10 @@ namespace _5051.Controllers
                                         "Description,"+
                                         "Uri,"+
                                         "AvatarId,"+
+                                        "Status,"+
+                                        "Tokens,"+
+                                        "ExperiencePoints,"+
+                                        "AvatarLevel,"+
                                         "")] StudentModel data)
         {
             if (!ModelState.IsValid)
@@ -156,7 +136,12 @@ namespace _5051.Controllers
                                         "Description,"+
                                         "Uri,"+
                                         "AvatarId,"+
+                                        "AvatarLevel,"+
+                                        "Tokens,"+
+                                        "Status,"+
+                                        "ExperiencePoints,"+
                                         "Password,"+
+                                        "Tokens,"+
                                         "")] StudentDisplayViewModel data)
         {
             if (!ModelState.IsValid)
@@ -219,6 +204,10 @@ namespace _5051.Controllers
                                         "Description,"+
                                         "AvatarId,"+
                                         "Uri,"+
+                                        "Status,"+
+                                        "Tokens,"+
+                                        "ExperiencePoints,"+
+                                        "AvatarLevel,"+
                                         "")] StudentDisplayViewModel data)
         {
             if (!ModelState.IsValid)
