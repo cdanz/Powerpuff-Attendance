@@ -174,6 +174,40 @@
 }
 
 /*----------------------------------------------------------------
+	Add Student formatting
+-----------------------------------------------------------------*/
+
+.Rectangle {
+	width: 217.4px;
+	height: 51.6px;
+	border-radius: 5px;
+	background-image: linear-gradient(to right, #4690ff, #41dcec);
+}
+
+.Rectangle-5 {
+	width: 390px;
+	height: 450px;
+	border-radius: 2px;
+	background-color: #fdfdfd;
+}
+
+.text-register {
+	margin-top: 30px;
+	margin-bottom: 10px;
+	font-family: "SofiaPro", sans-serif;
+	width: 144.7px;
+	height: 43px;
+	font-size: 36px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #2d2d2d;
+	color: var(--black);
+}
+
+/*----------------------------------------------------------------
 	D3.js formatting
 -----------------------------------------------------------------*/
 .chart div {
