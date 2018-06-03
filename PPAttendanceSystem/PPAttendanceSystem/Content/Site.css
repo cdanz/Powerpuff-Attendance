@@ -26,11 +26,11 @@
 
 table {
 	border: 1px;
-	margin-top: 25px;
+	margin-top: 20px;
 }
 
 th, td {
-	padding: 2px;
+	padding: 1px;
 	text-align: center;
 }
 
