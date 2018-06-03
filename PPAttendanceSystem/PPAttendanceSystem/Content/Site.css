@@ -12,6 +12,20 @@
     --PPRed: #d63b2a;
 }
 
+
+/*----------------------------------------------------------------
+	Add Admin formatting
+-----------------------------------------------------------------*/
+
+.RectangleBlck {
+	position: relative;
+	padding: 20px 20px 20px 20px;
+	color: #fff;
+	background: rgba(2, 2, 2, 0.4);
+	margin-bottom: 50px;
+	margin-top: 0px;
+}
+
 .harvey {
     position: relative;
     border: 1px solid #000;
