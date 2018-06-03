@@ -14,6 +14,19 @@
 
 
 /*----------------------------------------------------------------
+	Add Student formatting
+-----------------------------------------------------------------*/
+
+.profileimg {
+	border-radius: 50%;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	vertical-align: middle;
+	width: 100px;
+	height: 100px;
+}
+
+/*----------------------------------------------------------------
 	Add Admin formatting
 -----------------------------------------------------------------*/
 
@@ -44,6 +57,15 @@ th, td {
 	padding: 20px 20px 20px 20px;
 	color: #fff;
 	background: rgba(2, 2, 2, 0.4);
+	margin-bottom: 50px;
+	margin-top: 0px;
+}
+
+.RectangleWhite {
+	position: relative;
+	padding: 20px 20px 20px 20px;
+	color: black;
+	background: rgba(255,255,255, 0.4);
 	margin-bottom: 50px;
 	margin-top: 0px;
 }
