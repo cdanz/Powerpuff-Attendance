@@ -76,6 +76,12 @@ namespace _5051.Controllers
 
             return View();
         }
+        public ActionResult CustomReportIndividualtResult()
+        {
+            ViewBag.Message = "Custom Individual Report";
+
+            return View();
+        }
         // GET: Class Settings
         public ActionResult ClassSettings()
         {

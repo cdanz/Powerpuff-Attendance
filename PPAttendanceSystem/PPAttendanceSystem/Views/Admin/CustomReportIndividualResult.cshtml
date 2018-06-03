@@ -1,0 +1,93 @@
+﻿@{
+	ViewBag.Title = "Custom Individual Report";
+}
+
+<head>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script type="text/javascript">
+		google.charts.load("current", { packages: ["corechart"] });
+		google.charts.setOnLoadCallback(drawChart);
+		function drawChart() {
+			var data = google.visualization.arrayToDataTable([
+				['Attendance Type', 'Frequency %'],
+				['Excused', 10],
+				['Missed', 15],
+				['Partial day', 40],
+				['Full day', 35]
+			]);
+
+			var options = {
+				pieHole: 0.4,
+				backgroundColor: 'transparent',
+				color: 'white',
+				title: 'Annual Attendance'
+			};
+
+			var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+			chart.draw(data, options);
+		}
+	</script>
+</head>
+
+<div class="col-md-10 col-md-offset-1 RectangleWhite">
+	<div class="row align-center">
+		<button class="section-scroll btn btn-g btn-round" value="Print" onclick="window.print();return false;" />Print</button>
+	</div>
+
+	<div class="row">
+		<div class="font-alt mb-40 titan-title-size-3" align="center">Your progress</div>
+		<h4 class="font-alt mb-0" align="center">Week: June 4th, 2018</h4>
+		<br>
+		<div class="row align-center">
+			<!-- Bar chart-->
+			<div class="col-md-10 col-md-offset-1">
+				<h4 class="font-alt mb-0">This week's time in class...</h4>
+				<br>
+				<hr class="divider-w mt-10 mb-20">
+				<h6 class="font-alt">
+					<span class="icon-puzzle"></span> Monday
+				</h6>
+				<div class="progress">
+					<div class="progress">
+						<div class="progress-bar-success" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">8 hrs</div>
+					</div>
+				</div>
+				<h6 class="font-alt">
+					<span class="icon-puzzle"></span> Tuesday
+				</h6>
+				<div class="progress">
+					<div class="progress">
+						<div class="progress-bar-success" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">8 hrs</div>
+					</div>
+				</div>
+				<h6 class="font-alt">
+					<span class="icon-puzzle"></span> Wednesday
+				</h6>
+				<div class="progress">
+					<div class="progress">
+						<div class="progress-bar-warning" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">6 hrs</div>
+					</div>
+				</div>
+				<h6 class="font-alt">
+					<span class="icon-puzzle"></span> Thursday
+				</h6>
+				<div class="progress">
+					<div class="progress">
+						<div class="progress-bar-danger" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">4.5 hrs</div>
+					</div>
+				</div>
+				<h6 class="font-alt">
+					<span class="icon-puzzle"></span> Friday
+				</h6>
+				<div class="progress">
+					<div class="progress-bar-warning" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">6 hrs</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Pie chart-->
+		<div class="row align-center">
+			<div id="donutchart" style="width: 900px; height: 500px;"></div>
+		</div>
+	</div>
+</div>
