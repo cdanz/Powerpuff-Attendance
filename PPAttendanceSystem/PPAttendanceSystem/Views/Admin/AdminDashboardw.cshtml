@@ -1,5 +1,5 @@
 ﻿@{
-	ViewBag.Title = "Admin Dashboard Monday";
+	ViewBag.Title = "Admin Dashboard Wednesday";
 }
 @{string[] weekList = {"4/30/2018","5/7/2018","5/14/2018","5/21/2018","5/28/2018","6/4/2018"};}
 @{int weekIndex = weekList.Length - 2;}
@@ -28,7 +28,7 @@
                 <div id="admin_wkHeaders">
                     <table cellspacing="50" style="width:100%;">
                         <tr>
-                            <td style="width:90%;">MONDAY&nbsp;&nbsp;<a href="@Url.Action("AdminDashboardp1", "Admin" )" class="btn btn-border-w btn-round admin_dayBtn" role="button">Week View</a></td>
+                            <td style="width:90%;">WEDNESDAY&nbsp;&nbsp;<a href="@Url.Action("AdminDashboardp1", "Admin" )" class="btn btn-border-w btn-round admin_dayBtn" role="button">Week View</a></td>
                             <td style="width:10%;"><div><h5>On Track</h5></div></td>
                         </tr>
 					</table>
@@ -68,17 +68,17 @@
 					<table cellspacing="50" style="width:100%;">
                         <tr style="width:100%; height:42px;">
                             <!--8-9-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnL" id="admin_atndbtnS1" style="width:5%;"></button> </td>
+                            <td style="width:10%; border-right:1px #fdfdfd solid;">  </td>
                             <!--9-10-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"><button class="admin_atndbtnM" id="admin_atndbtnS1"></button> </td>
+                            <td style="width:10%; border-right:1px #fdfdfd solid;"><button class="admin_atndbtnL" id="admin_atndbtnS1" style="width:90%;"></button> </td>
                             <!--10-11-->
                             <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS1"></button> </td>
                             <!--11-12-->
                             <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnR" id="admin_atndbtnS1" style="width:100%;"></button> </td>
                             <!--12-1-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"></td>
+                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnL" id="admin_atndbtnS1" style="width:10%;"></button> </td>
                             <!--1-2-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnL" id="admin_atndbtnS1" style="width:20%;"></button> </td>
+                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS1"></button> </td>
                             <!--2-3-->
                             <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS1"></button> </td>
                             <!--3-4-->
@@ -86,7 +86,7 @@
                             <!--4-5-->
                             <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnR" id="admin_atndbtnS1" style="width:50%;"></button> </td>
                             <!--5-6 no line-->
-                            <td style="width:10%;"> <button class="admin_atndbtnR" id="admin_atndbtnS1" style="width:50%;"></button> </td>
+                            <td style="width:10%;"> </td>
                             <!--On Track-->
                             <td style="width:10%;"><div class="admin_gdGoal">&#10004;</div></td>
                         </tr>
@@ -102,30 +102,6 @@
                             <!--12-1-->
                             <td style="width:10%; border-right:1px #fdfdfd solid;"></td>
                             <!--1-2-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnL" id="admin_atndbtnS2" style="width:100%;"></button> </td>
-                            <!--2-3-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS2"></button> </td>
-                            <!--3-4-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS2"></button> </td>
-                            <!--4-5-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnR" id="admin_atndbtnS2" style="width:50%;"></button> </td>
-                            <!--5-6 no line-->
-                            <td style="width:10%;"></td>
-                            <!--On Track-->
-                            <td style="width:10%;"><div class="admin_bdGoal">&#10008;</div></td>
-                        </tr>
-                        <tr style="width:100%; height:42px;">
-                            <!--8-9-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"></td>
-                            <!--9-10-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"></td>
-                            <!--10-11-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"></td>
-                            <!--11-12-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"></td>
-                            <!--12-1-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"></td>
-                            <!--1-2-->
                             <td style="width:10%; border-right:1px #fdfdfd solid;"></td>
                             <!--2-3-->
                             <td style="width:10%; border-right:1px #fdfdfd solid;"></td>
@@ -140,17 +116,40 @@
                         </tr>
                         <tr style="width:100%; height:42px;">
                             <!--8-9-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> </td>
+                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnL" id="admin_atndbtnS3" style="width:3%;"></button></td>
                             <!--9-10-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> </td>
+                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS3"></button></td>
                             <!--10-11-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> </td>
+                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS3"></button> </td>
                             <!--11-12-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> </td>
+                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnR" id="admin_atndbtnS3" style="width:100%;"></button> </td>
                             <!--12-1-->
                             <td style="width:10%; border-right:1px #fdfdfd solid;"> </td>
                             <!--1-2-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnL" id="admin_atndbtnS4" style="width:40%;"></button> </td>
+                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnL" id="admin_atndbtnS3" style="width:100%;"></button> </td>
+                            <!--2-3-->
+                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS3"></button> </td>
+                            <!--3-4-->
+                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS3"></button> </td>
+                            <!--4-5-->
+                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnR" id="admin_atndbtnS3" style="width:50%;"></button> </td>
+                            <!--5-6 no line-->
+                            <td style="width:10%;"></button> </td>
+                            <!--On Track-->
+                            <td style="width:10%;"><div class="admin_gdGoal">&#10004;</div></td>
+                        <tr style="width:100%; height:42px;">
+                            <!--8-9-->
+                            <td style="width:10%; border-right:1px #fdfdfd solid;">  </td>
+                            <!--9-10-->
+                            <td style="width:10%; border-right:1px #fdfdfd solid;"><button class="admin_atndbtnL" id="admin_atndbtnS4" style="width:85%;"></button> </td>
+                            <!--10-11-->
+                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS4"></button> </td>
+                            <!--11-12-->
+                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnR" id="admin_atndbtnS4" style="width:100%;"></button> </td>
+                            <!--12-1-->
+                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnL" id="admin_atndbtnS4" style="width:10%;"></button> </td>
+                            <!--1-2-->
+                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS4"></button> </td>
                             <!--2-3-->
                             <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS4"></button> </td>
                             <!--3-4-->
@@ -158,13 +157,13 @@
                             <!--4-5-->
                             <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnR" id="admin_atndbtnS4" style="width:50%;"></button> </td>
                             <!--5-6 no line-->
-                            <td style="width:10%;"></td>
+                            <td style="width:10%;"> </td>
                             <!--On Track-->
-                            <td style="width:10%;"><div class="admin_bdGoal">&#10008;</div></td>
+                            <td style="width:10%;"><div class="admin_gdGoal">&#10004;</div></td>
                         </tr>
                         <tr style="width:100%; height:42px;">
                             <!--8-9-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnL" id="admin_atndbtnS5" style="width:10%;"></button> </td>
+                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnL" id="admin_atndbtnS5" style="width:15%;"></button> </td>
                             <!--9-10-->
                             <td style="width:10%; border-right:1px #fdfdfd solid;"><button class="admin_atndbtnM" id="admin_atndbtnS5"></button> </td>
                             <!--10-11-->
@@ -180,7 +179,7 @@
                             <!--3-4-->
                             <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS5"></button> </td>
                             <!--4-5-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnR" id="admin_atndbtnS5" style="width:55%;"></button> </td>
+                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnR" id="admin_atndbtnS5" style="width:50%;"></button> </td>
                             <!--5-6 no line-->
                             <td style="width:10%;"></button> </td>
                             <!--On Track-->
@@ -188,7 +187,7 @@
                         </tr>
                         <tr style="width:100%; height:42px;">
                             <!--8-9-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnL" id="admin_atndbtnS6" style="width:5%;"></button> </td>
+                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnL" id="admin_atndbtnS6" style="width:10%;"></button> </td>
                             <!--9-10-->
                             <td style="width:10%; border-right:1px #fdfdfd solid;"><button class="admin_atndbtnM" id="admin_atndbtnS6"></button> </td>
                             <!--10-11-->
@@ -208,45 +207,45 @@
                             <!--5-6 no line-->
                             <td style="width:10%;"></button> </td>
                             <!--On Track-->
-                            <td style="width:10%;"><div class="admin_bdGoal">&#10008;</div></td>
-                        </tr>
-                        <tr style="width:100%; height:42px;">
-                            <!--8-9-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> </td>
-                            <!--9-10-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> </td>
-                            <!--10-11-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> </td>
-                            <!--11-12-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> </td>
-                            <!--12-1-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> </td>
-                            <!--1-2-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnL" id="admin_atndbtnS7" style="width:40%;"></button> </td>
-                            <!--2-3-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS7"></button> </td>
-                            <!--3-4-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS7"></button> </td>
-                            <!--4-5-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnR" id="admin_atndbtnS7" style="width:10%;"></button> </td>
-                            <!--5-6 no line-->
-                            <td style="width:10%;"></td>
-                            <!--On Track-->
                             <td style="width:10%;"><div class="admin_gdGoal">&#10004;</div></td>
                         </tr>
                         <tr style="width:100%; height:42px;">
                             <!--8-9-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"></td>
+                            <td style="width:10%; border-right:1px #fdfdfd solid;"> </td>
                             <!--9-10-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"></td>
+                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnL" id="admin_atndbtnS7" style="width:90%;"></button> </td>
                             <!--10-11-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"></td>
+                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS7"></button></td>
                             <!--11-12-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"></td>
+                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnR" id="admin_atndbtnS7" style="width:100%;"></button></td>
                             <!--12-1-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"></td>
+                            <td style="width:10%; border-right:1px #fdfdfd solid;"> </td>
                             <!--1-2-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnL" id="admin_atndbtnS8" style="width:100%;"></button> </td>
+                            <td style="width:10%; border-right:1px #fdfdfd solid;"> </td>
+                            <!--2-3-->
+                            <td style="width:10%; border-right:1px #fdfdfd solid;"> </td>
+                            <!--3-4-->
+                            <td style="width:10%; border-right:1px #fdfdfd solid;"> </td>
+                            <!--4-5-->
+                            <td style="width:10%; border-right:1px #fdfdfd solid;"> </td>
+                            <!--5-6 no line-->
+                            <td style="width:10%;"></td>
+                            <!--On Track-->
+                            <td style="width:10%;"><div class="admin_bdGoal">&#10008;</div></td>
+                        </tr>
+                        <tr style="width:100%; height:42px;">
+                            <!--8-9-->
+                            <td style="width:10%; border-right:1px #fdfdfd solid;">  </td>
+                            <!--9-10-->
+                            <td style="width:10%; border-right:1px #fdfdfd solid;"><button class="admin_atndbtnL" id="admin_atndbtnS8" style="width:80%;"></button> </td>
+                            <!--10-11-->
+                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS8"></button> </td>
+                            <!--11-12-->
+                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnR" id="admin_atndbtnS8" style="width:100%;"></button> </td>
+                            <!--12-1-->
+                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnL" id="admin_atndbtnS8" style="width:10%;"></button> </td>
+                            <!--1-2-->
+                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS8"></button> </td>
                             <!--2-3-->
                             <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS8"></button> </td>
                             <!--3-4-->
@@ -254,15 +253,15 @@
                             <!--4-5-->
                             <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnR" id="admin_atndbtnS8" style="width:50%;"></button> </td>
                             <!--5-6 no line-->
-                            <td style="width:10%;"></td>
+                            <td style="width:10%;"> </td>
                             <!--On Track-->
-                            <td style="width:10%;"><div class="admin_bdGoal">&#10008;</div></td>
+                            <td style="width:10%;"><div class="admin_gdGoal">&#10004;</div></td>
                         </tr>
                         <tr style="width:100%; height:42px;">
                             <!--8-9-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> </td>
+                            <td style="width:10%; border-right:1px #fdfdfd solid;"><button class="admin_atndbtnL" id="admin_atndbtnS9" style="width:1%;"></button></td>
                             <!--9-10-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"><button class="admin_atndbtnL" id="admin_atndbtnS9" style="width:85%;"></button> </td>
+                            <td style="width:10%; border-right:1px #fdfdfd solid;"><button class="admin_atndbtnM" id="admin_atndbtnS9"></button> </td>
                             <!--10-11-->
                             <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS9"></button> </td>
                             <!--11-12-->
