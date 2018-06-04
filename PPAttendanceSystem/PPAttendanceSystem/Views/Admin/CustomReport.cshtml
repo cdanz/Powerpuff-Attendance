@@ -1,74 +1,59 @@
-﻿
-@{
+﻿@{
 	ViewBag.Title = "Build Custom Reports";
 }
 
-
-<link href="~/Content/harvey.min.css" rel="stylesheet" type="text/css" />
-<link href="~/Content/backgroundcolor.css" rel="stylesheet" type="text/css" />
-
-
-
-<section class="bg-dark-30 showcase-page-header module parallax-bg">
-    <div class="titan-caption">
-        <div class="caption-content">
-            <div class="admin_container" style="float:right;">
-                @Html.ActionLink("Admin Dashboard", "AdminDashboard", "Admin", null, new { @class = "btn btn-primary" })
-            </div>
-            <div class"row" style="width:100%;">
-                <table style="width:100%;">
-                    <tr style="width:100%;">
-                        <td style="width:20%;"><h1>Custom Reports</h1></td>
-                        <td style="width:80%;"></td>
-                    </tr>
-                </table>
-            </div>
-            <div class="admin_container">
-                <table cellspacing="50" style="width:100%;">
-                    <tr>
-                        <td style="width=15%">Date Range</td>
-                        <td style="width=85%"><label for="from">From</label><input type="text" id="from" name="from">
-                        <label for="to">to</label><input type="text" id="to" name="to">@Html.ActionLink("Submit", "CustomReportResult", "Admin", null, new { @class = "btn btn-border-w btn-round" })</td>
-                    </tr>
-                    <tr>
-                        <td style="width=15%"></td>
-                        <td style="width=85%"><div class="admin_inputNeeded">Please select date range</div></td>
-                    </tr>
-                    <tr>
-                        <td style="width=15%"></td>
-                        <td style="width=85%"></td>
-                    </tr>
-                    <tr>
-                        <td style="width=15%"></td>
-                        <td style="width=85%"></td>
-                    </tr>
-                    <tr>
-                        <td style="width=15%"></td>
-                        <td style="width=85%"></td>
-                    </tr>
-                    <tr>
-                        <td style="width=15%"></td>
-                        <td style="width=85%"></td>
-                    </tr>
-                    <tr>
-                        <td style="width=15%"></td>
-                        <td style="width=85%"></td>
-                    </tr>
-                    <tr>
-                        <td style="width=15%"></td>
-                        <td style="width=85%"></td>
-                    </tr>
-                    <tr>
-                        <td style="width=15%"></td>
-                        <td style="width=85%"></td>
-                    </tr>
-                    <tr>
-                        <td style="width=15%"></td>
-                        <td style="width=85%"></td>
-                    </tr>
-                </table>
-            </div>
-        </div>
+<div class="col-md-10 col-md-offset-1 RectangleBlck">
+    <div class"row">
+        <h2>Custom Reports</h2>
+    </div>
+    <div class="admin_container">
+        <table cellspacing="50" style="width:100%;">
+            <tr>
+                <td style="width=15%">Date Range</td>
+                <td style="width=85%">
+                    <label for="from">From</label><input class="admin_field" type="text" id="from" name="from">
+                    <label for="to">to</label><input class="admin_field" type="text" id="to" name="to">@Html.ActionLink("Submit", "CustomReportResult", "Admin", null, new { @class = "btn btn-border-w btn-round" })
+                </td>
+            </tr>
+            <tr>
+                <td style="width=15%"></td>
+                <td style="width=85%"><div class="admin_inputNeeded">Please select date range</div></td>
+            </tr>
+            <tr>
+                <td style="width=15%"></td>
+                <td style="width=85%"></td>
+            </tr>
+            <tr>
+                <td style="width=15%"></td>
+                <td style="width=85%"></td>
+            </tr>
+            <tr>
+                <td style="width=15%"></td>
+                <td style="width=85%"></td>
+            </tr>
+            <tr>
+                <td style="width=15%"></td>
+                <td style="width=85%"></td>
+            </tr>
+            <tr>
+                <td style="width=15%"></td>
+                <td style="width=85%"></td>
+            </tr>
+            <tr>
+                <td style="width=15%"></td>
+                <td style="width=85%"></td>
+            </tr>
+            <tr>
+                <td style="width=15%"></td>
+                <td style="width=85%"></td>
+            </tr>
+            <tr>
+                <td style="width=15%"></td>
+                <td style="width=85%"></td>
+            </tr>
+        </table>
+    </div>
+</div>
 </section>
 
 

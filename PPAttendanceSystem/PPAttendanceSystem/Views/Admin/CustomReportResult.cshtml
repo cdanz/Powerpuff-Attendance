@@ -10,192 +10,179 @@
     </script>
 </head>
 
-<link href="~/Content/harvey.min.css" rel="stylesheet" type="text/css" />
-<link href="~/Content/backgroundcolor.css" rel="stylesheet" type="text/css" />
+<div class="col-md-10 col-md-offset-1 RectangleBlck">
+    <div class="admin_container alignright">
+        @Html.ActionLink("New Report", "CustomReport", "Admin", null, new { @class = "btn btn-primary" })
+    </div>
+    <div class"row">
+        <h2>Custom Reports</h2>
+    </div>
+    <div class="admin_container">
+        <table cellspacing="50" style="width:100%;">
+            <tr>
+                <td style="width=15%">Date Range</td>
+                <td style="width=85%">Start: 1/15/2018&nbsp;&nbsp;End: 5/31.2018</td>
+            </tr>
+        </table>
 
-</style>
-
-
-<section class="bg-dark-30 showcase-page-header module parallax-bg">
-    <div class="titan-caption">
-        <div class="caption-content">
-            <div class="admin_container" style="float:right;">
-                @Html.ActionLink("Admin Dashboard", "AdminDashboard", "Admin", null, new { @class = "btn btn-primary" })
-            </div>
-            <div class"row" style="width:100%;">
-                <table style="width:100%;">
-                    <tr style="width:100%;">
-                        <td style="width:20%;"><h1>Custom Reports</h1></td>
-                        <td style="width:80%;"></td>
-                    </tr>
-                </table>
-            </div>
-            <div class="admin_container">
-                <table cellspacing="50" style="width:100%;">
-                    <tr>
-                        <td style="width=15%">Date Range</td>
-                        <td style="width=85%">Start: 1/15/2018&nbsp;&nbsp;End: 5/31.2018</td>
-                    </tr>
-                    </table>
-
-                <table cellspacing="50" style="width:100%;">
-                    <tr style="font-weight:bold">
-                        <td style="width:9%;">First name</td>
-                        <td style="width:10%;">Last name</td>
-                        <td style="width:7%;">Status</td>
-                        <td style="width:7%;">Attend/Absent Ratio</td>
-                        <td style="width:7%;">Hours Total</td>
-                        <td style="width:7%;">Hours Avg per Week</td>
-                        <td style="width:7%;">Goal</td>
-                        <td style="width:5%;">Goal Achieved</td>
-                        <td style="width:8%;">Avg Check In</td>
-                        <td style="width:8%;">Avg Check Out</td>
-                        <td style="width:5%;">Very Sad</td>
-                        <td style="width:5%;">Sad</td>
-                        <td style="width:5%;">Indifferent</td>
-                        <td style="width:5%;">Happy</td>
-                        <td style="width:5%;">Very Happy</td>
-                    </tr>
-                    <tr>
-                        <td style="width:9%;">Alvin</td>
-                        <td style="width:10%;">Hopkins</td>
-                        <td style="width:7%;">Active</td>
-                        <td style="width:7%;">67.4%</td>
-                        <td style="width:7%;">434</td>
-                        <td style="width:7%;">22.5</td>
-                        <td style="width:7%;">75%</td>
-                        <td style="width:5%;">&#10008;</td>
-                        <td style="width:8%;">9:08am</td>
-                        <td style="width:8%;">3:55pm</td>
-                        <td style="width:5%;">24%</td>
-                        <td style="width:5%;">11%</td>
-                        <td style="width:5%;">45%</td>
-                        <td style="width:5%;">0%</td>
-                        <td style="width:5%;">20%</td>
-                    </tr>
-                    <tr>
-                        <td style="width:9%;">Mina</td>
-                        <td style="width:10%;">Clark</td>
-                        <td style="width:7%;">Active</td>
-                        <td style="width:7%;">67.4%</td>
-                        <td style="width:7%;">434</td>
-                        <td style="width:7%;">22.5</td>
-                        <td style="width:7%;">75%</td>
-                        <td style="width:5%;">&#10004;</td>
-                        <td style="width:8%;">9:08am</td>
-                        <td style="width:8%;">3:55pm</td>
-                        <td style="width:5%;">24%</td>
-                        <td style="width:5%;">11%</td>
-                        <td style="width:5%;">45%</td>
-                        <td style="width:5%;">0%</td>
-                        <td style="width:5%;">20%</td>
-                    </tr>
-                    <tr>
-                        <td style="width:9%;">Verna</td>
-                        <td style="width:10%;">Potter</td>
-                        <td style="width:7%;">Active</td>
-                        <td style="width:7%;">67.4%</td>
-                        <td style="width:7%;">434</td>
-                        <td style="width:7%;">22.5</td>
-                        <td style="width:7%;">75%</td>
-                        <td style="width:5%;">&#10004;</td>
-                        <td style="width:8%;">9:08am</td>
-                        <td style="width:8%;">3:55pm</td>
-                        <td style="width:5%;">24%</td>
-                        <td style="width:5%;">11%</td>
-                        <td style="width:5%;">45%</td>
-                        <td style="width:5%;">0%</td>
-                        <td style="width:5%;">20%</td>
-                    </tr>
-                    <tr>
-                        <td style="width:9%;">Gabriel</td>
-                        <td style="width:10%;">Klein</td>
-                        <td style="width:7%;">Active</td>
-                        <td style="width:7%;">67.4%</td>
-                        <td style="width:7%;">434</td>
-                        <td style="width:7%;">22.5</td>
-                        <td style="width:7%;">75%</td>
-                        <td style="width:5%;">&#10004;</td>
-                        <td style="width:8%;">9:08am</td>
-                        <td style="width:8%;">3:55pm</td>
-                        <td style="width:5%;">24%</td>
-                        <td style="width:5%;">11%</td>
-                        <td style="width:5%;">45%</td>
-                        <td style="width:5%;">0%</td>
-                        <td style="width:5%;">20%</td>
-                    </tr>
-                    <tr>
-                        <td style="width:9%;">Tamara</td>
-                        <td style="width:10%;">Kochubey</td>
-                        <td style="width:7%;">Active</td>
-                        <td style="width:7%;">67.4%</td>
-                        <td style="width:7%;">434</td>
-                        <td style="width:7%;">22.5</td>
-                        <td style="width:7%;">75%</td>
-                        <td style="width:5%;">&#10004;</td>
-                        <td style="width:8%;">9:08am</td>
-                        <td style="width:8%;">3:55pm</td>
-                        <td style="width:5%;">24%</td>
-                        <td style="width:5%;">11%</td>
-                        <td style="width:5%;">45%</td>
-                        <td style="width:5%;">0%</td>
-                        <td style="width:5%;">20%</td>
-                    </tr>
-                    <tr>
-                        <td style="width:9%;">Harry</td>
-                        <td style="width:10%;">Reid</td>
-                        <td style="width:7%;">Active</td>
-                        <td style="width:7%;">67.4%</td>
-                        <td style="width:7%;">434</td>
-                        <td style="width:7%;">22.5</td>
-                        <td style="width:7%;">75%</td>
-                        <td style="width:5%;">&#10004;</td>
-                        <td style="width:8%;">9:08am</td>
-                        <td style="width:8%;">3:55pm</td>
-                        <td style="width:5%;">24%</td>
-                        <td style="width:5%;">11%</td>
-                        <td style="width:5%;">45%</td>
-                        <td style="width:5%;">0%</td>
-                        <td style="width:5%;">20%</td>
-                    </tr>
-                    <tr>
-                        <td style="width:9%;">Beth</td>
-                        <td style="width:10%;">Frye</td>
-                        <td style="width:7%;">Inactive</td>
-                        <td style="width:7%;">67.4%</td>
-                        <td style="width:7%;">434</td>
-                        <td style="width:7%;">22.5</td>
-                        <td style="width:7%;">75%</td>
-                        <td style="width:5%;">&#10004;</td>
-                        <td style="width:8%;">9:08am</td>
-                        <td style="width:8%;">3:55pm</td>
-                        <td style="width:5%;">24%</td>
-                        <td style="width:5%;">11%</td>
-                        <td style="width:5%;">45%</td>
-                        <td style="width:5%;">0%</td>
-                        <td style="width:5%;">20%</td>
-                    </tr>
-                    <tr>
-                        <td style="width:9%;">Kit</td>
-                        <td style="width:10%;">Montgomery</td>
-                        <td style="width:7%;">Inactive</td>
-                        <td style="width:7%;">67.4%</td>
-                        <td style="width:7%;">434</td>
-                        <td style="width:7%;">22.5</td>
-                        <td style="width:7%;">75%</td>
-                        <td style="width:5%;">&#10004;</td>
-                        <td style="width:8%;">9:08am</td>
-                        <td style="width:8%;">3:55pm</td>
-                        <td style="width:5%;">24%</td>
-                        <td style="width:5%;">11%</td>
-                        <td style="width:5%;">45%</td>
-                        <td style="width:5%;">0%</td>
-                        <td style="width:5%;">20%</td>
-                    </tr>
-                </table>
-                </table>
-            </div>
-        </div>
+        <table cellspacing="50" style="width:100%;">
+            <tr style="font-weight:bold">
+                <td style="width:9%;">First name</td>
+                <td style="width:10%;">Last name</td>
+                <td style="width:7%;">Status</td>
+                <td style="width:7%;">Attend/Absent Ratio</td>
+                <td style="width:7%;">Hours Total</td>
+                <td style="width:7%;">Hours Avg per Week</td>
+                <td style="width:7%;">Goal</td>
+                <td style="width:5%;">Goal Achieved</td>
+                <td style="width:8%;">Avg Check In</td>
+                <td style="width:8%;">Avg Check Out</td>
+                <td style="width:5%;">Very Sad</td>
+                <td style="width:5%;">Sad</td>
+                <td style="width:5%;">Indifferent</td>
+                <td style="width:5%;">Happy</td>
+                <td style="width:5%;">Very Happy</td>
+            </tr>
+            <tr>
+                <td style="width:9%;">Alvin</td>
+                <td style="width:10%;">Hopkins</td>
+                <td style="width:7%;">Active</td>
+                <td style="width:7%;">67.4%</td>
+                <td style="width:7%;">434</td>
+                <td style="width:7%;">22.5</td>
+                <td style="width:7%;">75%</td>
+                <td style="width:5%;">&#10008;</td>
+                <td style="width:8%;">9:08am</td>
+                <td style="width:8%;">3:55pm</td>
+                <td style="width:5%;">24%</td>
+                <td style="width:5%;">11%</td>
+                <td style="width:5%;">45%</td>
+                <td style="width:5%;">0%</td>
+                <td style="width:5%;">20%</td>
+            </tr>
+            <tr>
+                <td style="width:9%;">Mina</td>
+                <td style="width:10%;">Clark</td>
+                <td style="width:7%;">Active</td>
+                <td style="width:7%;">67.4%</td>
+                <td style="width:7%;">434</td>
+                <td style="width:7%;">22.5</td>
+                <td style="width:7%;">75%</td>
+                <td style="width:5%;">&#10004;</td>
+                <td style="width:8%;">9:08am</td>
+                <td style="width:8%;">3:55pm</td>
+                <td style="width:5%;">24%</td>
+                <td style="width:5%;">11%</td>
+                <td style="width:5%;">45%</td>
+                <td style="width:5%;">0%</td>
+                <td style="width:5%;">20%</td>
+            </tr>
+            <tr>
+                <td style="width:9%;">Verna</td>
+                <td style="width:10%;">Potter</td>
+                <td style="width:7%;">Active</td>
+                <td style="width:7%;">67.4%</td>
+                <td style="width:7%;">434</td>
+                <td style="width:7%;">22.5</td>
+                <td style="width:7%;">75%</td>
+                <td style="width:5%;">&#10004;</td>
+                <td style="width:8%;">9:08am</td>
+                <td style="width:8%;">3:55pm</td>
+                <td style="width:5%;">24%</td>
+                <td style="width:5%;">11%</td>
+                <td style="width:5%;">45%</td>
+                <td style="width:5%;">0%</td>
+                <td style="width:5%;">20%</td>
+            </tr>
+            <tr>
+                <td style="width:9%;">Gabriel</td>
+                <td style="width:10%;">Klein</td>
+                <td style="width:7%;">Active</td>
+                <td style="width:7%;">67.4%</td>
+                <td style="width:7%;">434</td>
+                <td style="width:7%;">22.5</td>
+                <td style="width:7%;">75%</td>
+                <td style="width:5%;">&#10004;</td>
+                <td style="width:8%;">9:08am</td>
+                <td style="width:8%;">3:55pm</td>
+                <td style="width:5%;">24%</td>
+                <td style="width:5%;">11%</td>
+                <td style="width:5%;">45%</td>
+                <td style="width:5%;">0%</td>
+                <td style="width:5%;">20%</td>
+            </tr>
+            <tr>
+                <td style="width:9%;">Tamara</td>
+                <td style="width:10%;">Kochubey</td>
+                <td style="width:7%;">Active</td>
+                <td style="width:7%;">67.4%</td>
+                <td style="width:7%;">434</td>
+                <td style="width:7%;">22.5</td>
+                <td style="width:7%;">75%</td>
+                <td style="width:5%;">&#10004;</td>
+                <td style="width:8%;">9:08am</td>
+                <td style="width:8%;">3:55pm</td>
+                <td style="width:5%;">24%</td>
+                <td style="width:5%;">11%</td>
+                <td style="width:5%;">45%</td>
+                <td style="width:5%;">0%</td>
+                <td style="width:5%;">20%</td>
+            </tr>
+            <tr>
+                <td style="width:9%;">Harry</td>
+                <td style="width:10%;">Reid</td>
+                <td style="width:7%;">Active</td>
+                <td style="width:7%;">67.4%</td>
+                <td style="width:7%;">434</td>
+                <td style="width:7%;">22.5</td>
+                <td style="width:7%;">75%</td>
+                <td style="width:5%;">&#10004;</td>
+                <td style="width:8%;">9:08am</td>
+                <td style="width:8%;">3:55pm</td>
+                <td style="width:5%;">24%</td>
+                <td style="width:5%;">11%</td>
+                <td style="width:5%;">45%</td>
+                <td style="width:5%;">0%</td>
+                <td style="width:5%;">20%</td>
+            </tr>
+            <tr>
+                <td style="width:9%;">Beth</td>
+                <td style="width:10%;">Frye</td>
+                <td style="width:7%;">Inactive</td>
+                <td style="width:7%;">67.4%</td>
+                <td style="width:7%;">434</td>
+                <td style="width:7%;">22.5</td>
+                <td style="width:7%;">75%</td>
+                <td style="width:5%;">&#10004;</td>
+                <td style="width:8%;">9:08am</td>
+                <td style="width:8%;">3:55pm</td>
+                <td style="width:5%;">24%</td>
+                <td style="width:5%;">11%</td>
+                <td style="width:5%;">45%</td>
+                <td style="width:5%;">0%</td>
+                <td style="width:5%;">20%</td>
+            </tr>
+            <tr>
+                <td style="width:9%;">Kit</td>
+                <td style="width:10%;">Montgomery</td>
+                <td style="width:7%;">Inactive</td>
+                <td style="width:7%;">67.4%</td>
+                <td style="width:7%;">434</td>
+                <td style="width:7%;">22.5</td>
+                <td style="width:7%;">75%</td>
+                <td style="width:5%;">&#10004;</td>
+                <td style="width:8%;">9:08am</td>
+                <td style="width:8%;">3:55pm</td>
+                <td style="width:5%;">24%</td>
+                <td style="width:5%;">11%</td>
+                <td style="width:5%;">45%</td>
+                <td style="width:5%;">0%</td>
+                <td style="width:5%;">20%</td>
+            </tr>
+        </table>
+        </table>
+    </div>
+</div>
 </section>
 
 
