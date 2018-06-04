@@ -144,10 +144,15 @@ namespace _5051.Backend
         private void DataSetDefault()
         {
             DataSetClear();
-            Create(new StudentModel("Nancy", null));
-            Create(new StudentModel("Alvin", null));
-            Create(new StudentModel("Mina", null));
-            Create(new StudentModel("Tamara", null));
+            Create(new StudentModel("Nancy Thompson", AvatarBackend.Instance.GetAnAvatarId(1)));
+            Create(new StudentModel("Alvin Hopkins", AvatarBackend.Instance.GetAnAvatarId(2)));
+            Create(new StudentModel("Mina Chen", AvatarBackend.Instance.GetAnAvatarId(3)));
+            Create(new StudentModel("Tamara Kochubey", AvatarBackend.Instance.GetAnAvatarId(4)));
+            Create(new StudentModel("Verna Potter", AvatarBackend.Instance.GetAnAvatarId(5)));
+            Create(new StudentModel("Gabriel Klein", AvatarBackend.Instance.GetAnAvatarId(6)));
+            Create(new StudentModel("Harry Reid", AvatarBackend.Instance.GetAnAvatarId(7)));
+            Create(new StudentModel("Seth Berry", AvatarBackend.Instance.GetAnAvatarId(8)));
+            Create(new StudentModel("Bianca Blanco", AvatarBackend.Instance.GetAnAvatarId(9)));
         }
 
         /// <summary>

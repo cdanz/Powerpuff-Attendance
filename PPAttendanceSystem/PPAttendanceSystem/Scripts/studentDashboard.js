@@ -23,7 +23,7 @@ function checkedIn(imgSrc, stuID) {
     avatar.setAttribute("alt", "Student Avatar");
     avatar.setAttribute("class", "img-circle");
     var checkMark = document.createElement('img');
-    checkMark.setAttribute("src", "/Content/AvatarIcons/check-mark.jpg");
+    checkMark.setAttribute("src", "/Content/AvatarIcons/check.png");
     checkMark.setAttribute("alt", "Check Mark");
     checkMark.setAttribute("class", "img-circle");
 
