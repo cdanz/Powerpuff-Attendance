@@ -8,7 +8,7 @@ namespace _5051.Controllers
 {
     public class ProfileController : Controller
     {
-        // GET: Student profile edit page
+        // GET: Student profile home page
         public ActionResult StudentHome()
         {
             ViewBag.Message = "Student Home";
@@ -16,7 +16,7 @@ namespace _5051.Controllers
             return View();
         }
 
-        // GET: Student profile edit page
+        // GET: Student profile report page
         public ActionResult StudentReport()
         {
             ViewBag.Message = "Student Report";
