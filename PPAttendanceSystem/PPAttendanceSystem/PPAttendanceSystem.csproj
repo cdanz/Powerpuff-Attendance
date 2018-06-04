@@ -409,6 +409,7 @@
     <Content Include="Content\images\face4.png" />
     <Content Include="Content\images\face5.png" />
     <Content Include="Content\harvey.css" />
+    <Content Include="Content\Site.css" />
     <Content Include="Content\StudentDashBoard.css" />
     <Content Include="Content\Student\charticon.png" />
     <Content Include="Content\Student\profileicon.png" />
@@ -435,7 +436,6 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap-clockpicker.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -559,12 +559,12 @@
     <Content Include="Views\Admin\CustomReportResult.cshtml" />
     <Content Include="Views\Admin\CommunityHours.cshtml" />
     <Content Include="Views\Admin\SchoolCalendar.cshtml" />
+    <Content Include="Views\Admin\CustomReportIndividualResult.cshtml" />
     <Content Include="Views\Admin\AdminDashboard.cshtml" />
     <Content Include="Views\Admin\AdminDashboardm.cshtml" />
     <Content Include="Views\Admin\AdminDashboardp1.cshtml" />
     <Content Include="Views\Admin\AdminDashboardp2.cshtml" />
     <Content Include="Views\Admin\AdminDashboardw.cshtml" />
-    <Content Include="Views\Admin\CustomReportIndividualResult.cshtml" />
     <None Include="Views\Profile\StudentEditProfile.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">

@@ -6,18 +6,18 @@
 
 
 <div class="container-fluid RectangleBlck">
-	<div class="row-first">
-		<div class="col-md-10"><h2>Attendance</h2></div>
+    <div class="row-first">
+        <div class="col-md-10"><h2>Attendance</h2></div>
         <div class="col-md-2"><a href="@Url.Action("CustomReport", "Admin" )"><button class="btn btn-border-w btn-round" type="button">Custom Report</button></a></div>
-	</div>
-	<div class="row"></div>
-	    <div class="row">
-            <div class="col-md-2 col-md-push-6"></div>
-            <div class="col-md-2 col-md-push-6"><h4>Week of @weekList[weekIndex]</h4></div>
-            <div class="col-md-1 col-md-push-6"><a href="@Url.Action("AdminDashboardp2", "Admin" )" class="btn btn-border-w btn-round" role="button">Prev</a></div>
-            <div class="col-md-1 col-md-push-6"><a href="@Url.Action("AdminDashboard", "Admin" )" class="btn btn-border-w btn-round" role="button">Next</a></div>
-        </div>
-	<table cellspacing="50" style="width:100%;">
+    </div>
+    <div class="row"></div>
+    <div class="row">
+        <div class="col-md-2 col-md-push-6"></div>
+        <div class="col-md-2 col-md-push-6"><h4>Week of @weekList[weekIndex]</h4></div>
+        <div class="col-md-1 col-md-push-6"><a href="@Url.Action("AdminDashboardp2", "Admin" )" class="btn btn-border-w btn-round" role="button">Prev</a></div>
+        <div class="col-md-1 col-md-push-6"><a href="@Url.Action("AdminDashboard", "Admin" )" class="btn btn-border-w btn-round" role="button">Next</a></div>
+    </div>
+    <table cellspacing="50" style="width:100%;">
         <tr>
             <td style="width=20%"></td>
             <td style="width=80%">
@@ -25,288 +25,310 @@
                     <table cellspacing="50" style="width:100%;">
                         <tr>
                             <td style="width:90%;">WEDNESDAY&nbsp;&nbsp;<a href="@Url.Action("AdminDashboardp1", "Admin" )" class="btn btn-border-w btn-round admin_dayBtn" role="button">Week View</a></td>
-                            <td style="width:10%;"><div><h5>On Track</h5></div></td>
+                            <td class="admin_trendCell"><div><h5>On Track</h5></div></td>
+                            <td class="admin_trendCell"><div><h5>Well Being</h5></div></td>
                         </tr>
-					</table>
-				</div>
-			</td>
-		</tr>
-		<tr>
-			<td style="width:20%;">
-				<table cellspacing="50" style="width:100%;">
-					<tr><td height="20" style="margin:5px; padding: 5px;"><button type="button" class="btn btn-border-w btn-round admin_studentBtn">Seth Berry</button></td></tr>
-					<tr><td height="20" style="margin:5px; padding: 5px;"><button type="button" class="btn btn-border-w btn-round admin_studentBtn">Bianca Blanco</button></td></tr>
-					<tr><td height="20" style="margin:5px; padding: 5px;"><button type="button" class="btn btn-border-w btn-round admin_studentBtn">Mina Chen</button></td></tr>
-					<tr><td height="20" style="margin:5px; padding: 5px;"><button type="button" class="btn btn-border-w btn-round admin_studentBtn">Alvin Hopkins</button></td></tr>
-					<tr><td height="20" style="margin:5px; padding: 5px;"><button type="button" class="btn btn-border-w btn-round admin_studentBtn">Gabriel Klein</button></td></tr>
-					<tr><td height="20" style="margin:5px; padding: 5px;"><a href="@Url.Action("StudentReport", "Profile")" class="btn btn-border-w btn-round admin_studentBtn" role="button">Tamara Kochubey</a></td></tr>
-					<tr><td height="20" style="margin:5px; padding: 5px;"><button type="button" class="btn btn-border-w btn-round admin_studentBtn">Verna Potter</button></td></tr>
-					<tr><td height="20" style="margin:5px; padding: 5px;"><button type="button" class="btn btn-border-w btn-round admin_studentBtn">Harry Reid</button></td></tr>
-					<tr><td height="20" style="margin:5px; padding: 5px;"><button type="button" class="btn btn-border-w btn-round admin_studentBtn">Nancy Thomas</button></td></tr>
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:20%;">
+                <table cellspacing="50" style="width:100%;">
+                    <tr><td height="20" style="margin:5px; padding: 5px;"><button type="button" class="btn btn-border-w btn-round admin_studentBtn">Seth Berry</button></td></tr>
+                    <tr><td height="20" style="margin:5px; padding: 5px;"><button type="button" class="btn btn-border-w btn-round admin_studentBtn">Bianca Blanco</button></td></tr>
+                    <tr><td height="20" style="margin:5px; padding: 5px;"><button type="button" class="btn btn-border-w btn-round admin_studentBtn">Mina Chen</button></td></tr>
+                    <tr><td height="20" style="margin:5px; padding: 5px;"><button type="button" class="btn btn-border-w btn-round admin_studentBtn">Alvin Hopkins</button></td></tr>
+                    <tr><td height="20" style="margin:5px; padding: 5px;"><button type="button" class="btn btn-border-w btn-round admin_studentBtn">Gabriel Klein</button></td></tr>
+                    <tr><td height="20" style="margin:5px; padding: 5px;"><a href="@Url.Action("StudentReport", "Profile" )" class="btn btn-border-w btn-round admin_studentBtn" role="button">Tamara Kochubey</a></td></tr>
+                    <tr><td height="20" style="margin:5px; padding: 5px;"><button type="button" class="btn btn-border-w btn-round admin_studentBtn">Verna Potter</button></td></tr>
+                    <tr><td height="20" style="margin:5px; padding: 5px;"><button type="button" class="btn btn-border-w btn-round admin_studentBtn">Harry Reid</button></td></tr>
+                    <tr><td height="20" style="margin:5px; padding: 5px;"><button type="button" class="btn btn-border-w btn-round admin_studentBtn">Nancy Thomas</button></td></tr>
                     <!--Time Labels-->
                     <tr><td height="10" style="margin:5px; padding: 5px;"></td></tr>
-				</table>
-			</td>
+                </table>
+            </td>
 
-			<!--Week View Attendance display options
-				~There on time, left when excused
-					<button class="admin_atndbtn" id="admin_atndbtnS1" style="width:120px;padding-left:2px; padding-right:5px;"></button>
-				~Arrived on time, left early for first break, returned on time and stayed through day.
-					<button class="admin_atndbtn" id="admin_atndbtnS1" style="width:50px;padding-left:2px; padding-right:5px;"></button>
-					&nbsp;&nbsp;&#9200;&nbsp;&nbsp;
-					<button class="admin_atndbtn" id="admin_atndbtnS1" style="width:60px;padding-left:2px; padding-right:5px;"></button>
-				~Arrived Late, left early
-					&#9200;&nbsp;&nbsp;<button class="admin_atndbtn" id="admin_atndbtnS1" style="width:100px;padding-left:2px; padding-right:5px;"></button>&nbsp;&nbsp;&#9200;
+            <!--Week View Attendance display options
+                ~There on time, left when excused
+                    <button class="admin_atndbtn" id="admin_atndbtnS1" style="width:120px;padding-left:2px; padding-right:5px;"></button>
+                ~Arrived on time, left early for first break, returned on time and stayed through day.
+                    <button class="admin_atndbtn" id="admin_atndbtnS1" style="width:50px;padding-left:2px; padding-right:5px;"></button>
+                    &nbsp;&nbsp;&#9200;&nbsp;&nbsp;
+                    <button class="admin_atndbtn" id="admin_atndbtnS1" style="width:60px;padding-left:2px; padding-right:5px;"></button>
+                ~Arrived Late, left early
+                    &#9200;&nbsp;&nbsp;<button class="admin_atndbtn" id="admin_atndbtnS1" style="width:100px;padding-left:2px; padding-right:5px;"></button>&nbsp;&nbsp;&#9200;
 
-				-->
-			<td style="width:80%;">
-				<div id="admin_wkLog">
-					<table cellspacing="50" style="width:100%;">
+                -->
+            <td style="width:80%;">
+                <div id="admin_wkLog">
+                    <table cellspacing="50" style="width:100%;">
                         <tr style="width:100%; height:42px;">
                             <!--8-9-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;">  </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> </td>
                             <!--9-10-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"><button class="admin_atndbtnL" id="admin_atndbtnS1" style="width:90%;"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnL" id="admin_atndbtnS1" style="width:90%;"></button> </td>
                             <!--10-11-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS1"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS1"></button> </td>
                             <!--11-12-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnR" id="admin_atndbtnS1" style="width:100%;"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnR" id="admin_atndbtnS1" style="width:100%;"></button> </td>
                             <!--12-1-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnL" id="admin_atndbtnS1" style="width:10%;"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnL" id="admin_atndbtnS1" style="width:10%;"></button> </td>
                             <!--1-2-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS1"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS1"></button> </td>
                             <!--2-3-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS1"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS1"></button> </td>
                             <!--3-4-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS1"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS1"></button> </td>
                             <!--4-5-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnR" id="admin_atndbtnS1" style="width:50%;"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnR" id="admin_atndbtnS1" style="width:50%;"></button> </td>
                             <!--5-6 no line-->
-                            <td style="width:10%;"> </td>
+                            <td class="admin_hourCell"> </td>
                             <!--On Track-->
-                            <td style="width:10%;"><div class="admin_gdGoal">&#10004;</div></td>
+                            <td class="admin_trendCell"><div class="admin_gdGoal">&#10004;</div></td>
+                            <!--Well Being-->
+                            <td class="admin_trendCell"><div class="admin_gdGoal"><strong>&#8657;</strong></div></td>
                         </tr>
                         <tr style="width:100%; height:42px;">
                             <!--8-9-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"></td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"></td>
                             <!--9-10-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"></td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"></td>
                             <!--10-11-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"></td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"></td>
                             <!--11-12-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"></td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"></td>
                             <!--12-1-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"></td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"></td>
                             <!--1-2-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"></td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"></td>
                             <!--2-3-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"></td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"></td>
                             <!--3-4-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"></td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"></td>
                             <!--4-5-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"></td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"></td>
                             <!--5-6 no line-->
-                            <td style="width:10%;"></td>
+                            <td class="admin_hourCell"></td>
                             <!--On Track-->
-                            <td style="width:10%;"><div class="admin_bdGoal">&#10008;</div></td>
+                            <td class="admin_trendCell"><div class="admin_bdGoal">&#10008;</div></td>
+                            <!--Well Being-->
+                            <td class="admin_trendCell"><div><strong>&#8660;</strong></div></td>
                         </tr>
                         <tr style="width:100%; height:42px;">
                             <!--8-9-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnL" id="admin_atndbtnS3" style="width:3%;"></button></td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnL" id="admin_atndbtnS3" style="width:3%;"></button></td>
                             <!--9-10-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS3"></button></td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS3"></button></td>
                             <!--10-11-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS3"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS3"></button> </td>
                             <!--11-12-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnR" id="admin_atndbtnS3" style="width:100%;"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnR" id="admin_atndbtnS3" style="width:100%;"></button> </td>
                             <!--12-1-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> </td>
                             <!--1-2-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnL" id="admin_atndbtnS3" style="width:100%;"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnL" id="admin_atndbtnS3" style="width:100%;"></button> </td>
                             <!--2-3-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS3"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS3"></button> </td>
                             <!--3-4-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS3"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS3"></button> </td>
                             <!--4-5-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnR" id="admin_atndbtnS3" style="width:50%;"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnR" id="admin_atndbtnS3" style="width:50%;"></button> </td>
                             <!--5-6 no line-->
-                            <td style="width:10%;"></button> </td>
+                            <td class="admin_hourCell"> </td>
                             <!--On Track-->
-                            <td style="width:10%;"><div class="admin_gdGoal">&#10004;</div></td>
+                            <td class="admin_trendCell"><div class="admin_gdGoal">&#10004;</div></td>
+                            <!--Well Being-->
+                            <td class="admin_trendCell"><div class="admin_gdGoal"><strong>&#8657;</strong></div></td>
                         <tr style="width:100%; height:42px;">
                             <!--8-9-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;">  </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;">  </td>
                             <!--9-10-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"><button class="admin_atndbtnL" id="admin_atndbtnS4" style="width:85%;"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"><button class="admin_atndbtnL" id="admin_atndbtnS4" style="width:85%;"></button> </td>
                             <!--10-11-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS4"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS4"></button> </td>
                             <!--11-12-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnR" id="admin_atndbtnS4" style="width:100%;"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnR" id="admin_atndbtnS4" style="width:100%;"></button> </td>
                             <!--12-1-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnL" id="admin_atndbtnS4" style="width:10%;"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnL" id="admin_atndbtnS4" style="width:10%;"></button> </td>
                             <!--1-2-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS4"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS4"></button> </td>
                             <!--2-3-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS4"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS4"></button> </td>
                             <!--3-4-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS4"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS4"></button> </td>
                             <!--4-5-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnR" id="admin_atndbtnS4" style="width:50%;"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnR" id="admin_atndbtnS4" style="width:50%;"></button> </td>
                             <!--5-6 no line-->
-                            <td style="width:10%;"> </td>
+                            <td class="admin_hourCell"> </td>
                             <!--On Track-->
-                            <td style="width:10%;"><div class="admin_gdGoal">&#10004;</div></td>
+                            <td class="admin_trendCell"><div class="admin_gdGoal">&#10004;</div></td>
+                            <!--Well Being-->
+                            <td class="admin_trendCell"><div class="admin_bdGoal"><strong>&#8659;</strong></div></td>
+
                         </tr>
                         <tr style="width:100%; height:42px;">
                             <!--8-9-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnL" id="admin_atndbtnS5" style="width:15%;"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnL" id="admin_atndbtnS5" style="width:15%;"></button> </td>
                             <!--9-10-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"><button class="admin_atndbtnM" id="admin_atndbtnS5"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"><button class="admin_atndbtnM" id="admin_atndbtnS5"></button> </td>
                             <!--10-11-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS5"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS5"></button> </td>
                             <!--11-12-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnR" id="admin_atndbtnS5" style="width:100%;"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnR" id="admin_atndbtnS5" style="width:100%;"></button> </td>
                             <!--12-1-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> </td>
                             <!--1-2-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnL" id="admin_atndbtnS5" style="width:100%;"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnL" id="admin_atndbtnS5" style="width:100%;"></button> </td>
                             <!--2-3-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS5"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS5"></button> </td>
                             <!--3-4-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS5"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS5"></button> </td>
                             <!--4-5-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnR" id="admin_atndbtnS5" style="width:50%;"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnR" id="admin_atndbtnS5" style="width:50%;"></button> </td>
                             <!--5-6 no line-->
-                            <td style="width:10%;"></button> </td>
+                            <td class="admin_hourCell"> </td>
                             <!--On Track-->
-                            <td style="width:10%;"><div class="admin_gdGoal">&#10004;</div></td>
+                            <td class="admin_trendCell"><div class="admin_gdGoal">&#10004;</div></td>
+                            <!--Well Being-->
+                            <td class="admin_trendCell"><div class="admin_gdGoal"><strong>&#8657;</strong></div></td>
                         </tr>
                         <tr style="width:100%; height:42px;">
                             <!--8-9-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnL" id="admin_atndbtnS6" style="width:10%;"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnL" id="admin_atndbtnS6" style="width:10%;"></button> </td>
                             <!--9-10-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"><button class="admin_atndbtnM" id="admin_atndbtnS6"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"><button class="admin_atndbtnM" id="admin_atndbtnS6"></button> </td>
                             <!--10-11-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS6"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS6"></button> </td>
                             <!--11-12-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnR" id="admin_atndbtnS6" style="width:100%;"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnR" id="admin_atndbtnS6" style="width:100%;"></button> </td>
                             <!--12-1-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> </td>
                             <!--1-2-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnL" id="admin_atndbtnS6" style="width:100%;"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnL" id="admin_atndbtnS6" style="width:100%;"></button> </td>
                             <!--2-3-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS6"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS6"></button> </td>
                             <!--3-4-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS6"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS6"></button> </td>
                             <!--4-5-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnR" id="admin_atndbtnS6" style="width:50%;"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnR" id="admin_atndbtnS6" style="width:50%;"></button> </td>
                             <!--5-6 no line-->
-                            <td style="width:10%;"></button> </td>
+                            <td class="admin_hourCell"> </td>
                             <!--On Track-->
-                            <td style="width:10%;"><div class="admin_gdGoal">&#10004;</div></td>
+                            <td class="admin_trendCell"><div class="admin_gdGoal">&#10004;</div></td>
+                            <!--Well Being-->
+                            <td class="admin_trendCell"><div class="admin_gdGoal"><strong>&#8657;</strong></div></td>
                         </tr>
                         <tr style="width:100%; height:42px;">
                             <!--8-9-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> </td>
                             <!--9-10-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnL" id="admin_atndbtnS7" style="width:90%;"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnL" id="admin_atndbtnS7" style="width:90%;"></button> </td>
                             <!--10-11-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS7"></button></td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS7"></button></td>
                             <!--11-12-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnR" id="admin_atndbtnS7" style="width:100%;"></button></td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnR" id="admin_atndbtnS7" style="width:100%;"></button></td>
                             <!--12-1-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> </td>
                             <!--1-2-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> </td>
                             <!--2-3-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> </td>
                             <!--3-4-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> </td>
                             <!--4-5-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> </td>
                             <!--5-6 no line-->
-                            <td style="width:10%;"></td>
+                            <td class="admin_hourCell"></td>
                             <!--On Track-->
-                            <td style="width:10%;"><div class="admin_bdGoal">&#10008;</div></td>
+                            <td class="admin_trendCell"><div class="admin_bdGoal">&#10008;</div></td>
+                            <!--Well Being-->
+                            <td class="admin_trendCell"><div><strong>&#8660;</strong></div></td>
                         </tr>
                         <tr style="width:100%; height:42px;">
                             <!--8-9-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;">  </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;">  </td>
                             <!--9-10-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"><button class="admin_atndbtnL" id="admin_atndbtnS8" style="width:80%;"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"><button class="admin_atndbtnL" id="admin_atndbtnS8" style="width:80%;"></button> </td>
                             <!--10-11-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS8"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS8"></button> </td>
                             <!--11-12-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnR" id="admin_atndbtnS8" style="width:100%;"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnR" id="admin_atndbtnS8" style="width:100%;"></button> </td>
                             <!--12-1-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnL" id="admin_atndbtnS8" style="width:10%;"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnL" id="admin_atndbtnS8" style="width:10%;"></button> </td>
                             <!--1-2-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS8"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS8"></button> </td>
                             <!--2-3-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS8"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS8"></button> </td>
                             <!--3-4-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS8"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS8"></button> </td>
                             <!--4-5-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnR" id="admin_atndbtnS8" style="width:50%;"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnR" id="admin_atndbtnS8" style="width:50%;"></button> </td>
                             <!--5-6 no line-->
-                            <td style="width:10%;"> </td>
+                            <td class="admin_hourCell"> </td>
                             <!--On Track-->
-                            <td style="width:10%;"><div class="admin_gdGoal">&#10004;</div></td>
+                            <td class="admin_trendCell"><div class="admin_gdGoal">&#10004;</div></td>
+                            <!--Well Being-->
+                            <td class="admin_trendCell"><div class="admin_gdGoal"><strong>&#8657;</strong></div></td>
                         </tr>
                         <tr style="width:100%; height:42px;">
                             <!--8-9-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"><button class="admin_atndbtnL" id="admin_atndbtnS9" style="width:1%;"></button></td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"><button class="admin_atndbtnL" id="admin_atndbtnS9" style="width:1%;"></button></td>
                             <!--9-10-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"><button class="admin_atndbtnM" id="admin_atndbtnS9"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"><button class="admin_atndbtnM" id="admin_atndbtnS9"></button> </td>
                             <!--10-11-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS9"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS9"></button> </td>
                             <!--11-12-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnR" id="admin_atndbtnS9" style="width:100%;"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnR" id="admin_atndbtnS9" style="width:100%;"></button> </td>
                             <!--12-1-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> </td>
                             <!--1-2-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnL" id="admin_atndbtnS9" style="width:100%;"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnL" id="admin_atndbtnS9" style="width:100%;"></button> </td>
                             <!--2-3-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS9"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS9"></button> </td>
                             <!--3-4-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS9"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnM" id="admin_atndbtnS9"></button> </td>
                             <!--4-5-->
-                            <td style="width:10%; border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnR" id="admin_atndbtnS9" style="width:50%;"></button> </td>
+                            <td class="admin_hourCell" style="border-right:1px #fdfdfd solid;"> <button class="admin_atndbtnR" id="admin_atndbtnS9" style="width:50%;"></button> </td>
                             <!--5-6 no line-->
-                            <td style="width:10%;"></button> </td>
+                            <td class="admin_hourCell"> </td>
                             <!--On Track-->
-                            <td style="width:10%;"><div class="admin_gdGoal">&#10004;</div></td>
+                            <td class="admin_trendCell"><div class="admin_gdGoal">&#10004;</div></td>
+                            <!--Well Being-->
+                            <td class="admin_trendCell"><div class="admin_gdGoal"><strong>&#8657;</strong></div></td>
                         </tr>
                         <tr style="width:100%; height:20">
                             <!--8-9-->
-                            <td style="width:10%;"></td>
+                            <td class="admin_hourCell"></td>
                             <!--9-10-->
-                            <td style="width:10%;"><div class="alignleft">9:00am</div></td>
+                            <td class="admin_hourCell"><div class="alignleft">9:00am</div></td>
                             <!--10-11-->
-                            <td style="width:10%;"></td>
+                            <td class="admin_hourCell"></td>
                             <!--11-12-->
-                            <td style="width:10%;"></td>
+                            <td class="admin_hourCell"></td>
                             <!--12-1-->
-                            <td style="width:10%;"><div class="alignleft">12:00pm</div></td>
+                            <td class="admin_hourCell"><div class="alignleft">12:00pm</div></td>
                             <!--1-2-->
-                            <td style="width:10%;"></td>
+                            <td class="admin_hourCell"></td>
                             <!--2-3-->
-                            <td style="width:10%;"></td>
+                            <td class="admin_hourCell"></td>
                             <!--3-4-->
-                            <td style="width:10%;"></td>
+                            <td class="admin_hourCell"></td>
                             <!--4-5-->
-                            <td style="width:10%;"><div class="alignleft">4:00pm</div></td>
+                            <td class="admin_hourCell"><div class="alignleft">4:00pm</div></td>
                             <!--5-6 no line-->
-                            <td style="width:10%;"></td>
+                            <td class="admin_hourCell"></td>
                             <!--On Track-->
-                            <td style="width:10%;"></td>
+                            <td class="admin_trendCell"></td>
+                            <!--Well Being-->
+                            <td class="admin_trendCell"></td>
                         </tr>
-					</table>
-				</div>
+                    </table>
+                </div>
 
-			</td>
-		</tr>
-	</table>
+            </td>
+        </tr>
+    </table>
 </div>
 
 

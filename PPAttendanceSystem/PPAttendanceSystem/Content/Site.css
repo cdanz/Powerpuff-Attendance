@@ -14,7 +14,7 @@
 
 
 /*----------------------------------------------------------------
-	Add Student section formatting
+	Add Student formatting
 -----------------------------------------------------------------*/
 
 .profileimg {
@@ -26,26 +26,13 @@
     height: 100px;
 }
 
-#donutchart {
-	text-align: center;
-	font-size: 20px;
-	font-family: "Roboto Condensed", sans-serif;
-	letter-spacing: 2px;
-}
-
-#barchart_values {
-	text-align: center;
-	font-size: 20px;
-	font-family: "Roboto Condensed", sans-serif;
-	letter-spacing: 2px;
-}
-
 /*----------------------------------------------------------------
-	Add Admin section formatting
+	Add Admin formatting
 -----------------------------------------------------------------*/
+
 #admin-bg {
-	background-color: rgb(26, 117, 255);
-	background-image: none;
+    background-color: rgb(26, 117, 255);
+    background-image: none;
 }
 
 .beBold {
@@ -198,7 +185,7 @@ th, td {
 }
 
 .admin_dayBtn {
-    width: 150px;
+    width: 138px;
 }
 
 .admin_settingBtn {
@@ -255,6 +242,18 @@ th, td {
 
 #admin_atndbtnBlk {
     background: none;
+}
+
+.admin_dayCell{
+    width:18%;
+}
+
+.admin_hourCell {
+    width: 9%;
+}
+
+.admin_trendCell {
+    width:5%;
 }
 
 .alignleft {
