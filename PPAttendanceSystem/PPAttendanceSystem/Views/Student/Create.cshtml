@@ -4,45 +4,53 @@
 	ViewBag.Title = "Create";
 }
 
-<div class="container">
-	<div class="row">
-		<h2>Create Student</h2>
-		<br />
-		<br />
+<div class="col-md-12">
+	<div class="col-md-4 Rectangle-5">
+		<div class="text-register">Edit</div>
+		<hr class="divider-w mb-10">
 
 		@using (Html.BeginForm())
 		{
 			@Html.AntiForgeryToken()
 			@Html.HiddenFor(m => m.Id)
 
-			<div class="row">
-				<div class="col-sm-3 text-right">
-					@Html.DisplayNameFor(m => m.Name)
+			<div class="row align-center">
+				<div class="col-md-6 col-md-offset-2 font-alt">
+					Avatar choice
+					<br>
 				</div>
-				<div class="col-sm-2">
-					@Html.EditorFor(m => m.Name)
+				<div class="row align-center">
+					<div class="col-md-6 col-md-offset-2">
+						@Html.DropDownListFor(m => m.AvatarId, _5051.Backend.AvatarBackend.Instance.GetAvatarListItem(Model.AvatarId), null, new { @class = "form-control" } )
+						@Html.ValidationMessageFor(m => m.AvatarId)
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					@Html.EditorFor(m => m.Name, new { htmlAttributes = new { @data_minlength = "3", @class = "form-control", @placeholder = "Name", @required = "required", @id = "username" } })
 					@Html.ValidationMessageFor(m => m.Name)
+					<br>
 				</div>
 			</div>
 
 			<div class="row">
-				<div class="col-sm-3 text-right">
-					@Html.DisplayNameFor(m => m.AvatarId)
-				</div>
-				<div class="col-sm-2">
-					@Html.DropDownListFor(m => m.AvatarId, _5051.Backend.AvatarBackend.Instance.GetAvatarListItem(Model.AvatarId))
-					@Html.ValidationMessageFor(m => m.AvatarId)
+				<div class="form-group col-md-10 col-md-offset-1">
+					<input class="form-control" id="password" type="password" name="password" placeholder="Password" />
 				</div>
 			</div>
 
-			<br />
-			<br />
 			<div class="row">
-				<div class="col-sm-3 text-right">
+				<div class="form-group col-md-10 col-md-offset-1">
+					<input class="form-control" id="re-password" type="password" name="re-password" placeholder="Re-enter Password" />
 				</div>
-				<div class="col-sm-4">
-					@Html.ActionLink("Cancel", "Index", new { id = Model.Id }, new { @class = "btn btn-success" })
-					<input type="submit" value="Create" class="btn btn-primary">
+			</div>
+
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1 align-center">
+					@Html.ActionLink("Cancel", "Index", new { id = Model.Id }, new { @class = "btn" })
+					<input type="submit" value="Create" class="btn Rectangle">
 				</div>
 			</div>
 		}

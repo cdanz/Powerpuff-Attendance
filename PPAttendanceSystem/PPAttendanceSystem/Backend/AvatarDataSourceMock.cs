@@ -151,6 +151,7 @@ namespace _5051.Backend
             Create(new AvatarModel("../../Content/AvatarIcons/elephant-icon.png", "elephant", "elephant"));
             Create(new AvatarModel("../../Content/AvatarIcons/fox-icon.png", "fox", "fox"));
             Create(new AvatarModel("../../Content/AvatarIcons/frog-icon.png", "frog", "frog"));
+            Create(new AvatarModel("../../Content/AvatarIcons/penguin-icon.png", "penguin", "penguin"));
             Create(new AvatarModel("../../Content/AvatarIcons/rabbit-icon.png", "rabbit", "rabbit"));
             Create(new AvatarModel("../../Content/AvatarIcons/squirrel-icon.png", "squirrel", "squirrel"));
             Create(new AvatarModel("../../Content/AvatarIcons/swan-icon.png", "swan", "swan"));

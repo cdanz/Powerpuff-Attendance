@@ -600,7 +600,7 @@
     <Content Include="Views\Admin\ClassSettings.cshtml" />
     <Content Include="Views\Admin\CustomReport.cshtml" />
     <Content Include="Views\Kiosk\StudentNew.cshtml" />
-    <Content Include="Views\Kiosk\Puzzle.cshtml" />
+    <Content Include="Views\Student\Puzzle.cshtml" />
     <Content Include="Views\Profile\StudentReport.cshtml" />
     <Content Include="Views\Student\Update.cshtml" />
     <Content Include="Views\Profile\StudentHome.cshtml" />
