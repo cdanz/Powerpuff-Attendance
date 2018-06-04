@@ -147,6 +147,27 @@ namespace _5051.Backend
         }
 
         /// <summary>
+        /// Helper that returns an Avatar ID in the list, this will be used for creating new avatars by secifying a number
+        /// </summary>
+        /// <returns>Null, or Avatar ID of an avatar in the list.</returns>
+        public string GetAnAvatarId(int num)
+        {
+            string myReturn = null;
+            var myData = DataSource.Index().ToList().FirstOrDefault();
+
+            var size = DataSource.Index().ToList().Count();
+            if (num < size - 1) {
+                 myData = DataSource.Index().ToList()[num];
+            }
+            if (myData != null)
+            {
+                myReturn = myData.Id;
+            }
+
+            return myReturn;
+        }
+
+        /// <summary>
         /// Helper function that returns the Avatar Image URI
         /// </summary>
         /// <param name="data">The avatarId to look up</param>
