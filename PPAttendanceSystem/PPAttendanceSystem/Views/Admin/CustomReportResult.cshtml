@@ -3,11 +3,34 @@
 	ViewBag.Title = "Custom Reports";
 }
 <head>
-    <script>
-  $( function() {
-    $( "#datepicker" ).datepicker();
-  } );
-    </script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+
+            var data = google.visualization.arrayToDataTable([
+                ['Emotion Tracker', 'Frequency %'],
+                ['Very Sad', 24],
+                ['Sad', 11],
+                ['Indifferent', 45],
+                ['Happy', 10],
+                ['Very Happy', 10]
+            ]);
+
+            var options = {
+                title: 'Class Emotion Tracker',
+                backgroundColor: 'transparent'
+
+
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+            chart.draw(data, options);
+        }
+    </script>  
 </head>
 
 <div class="col-md-10 col-md-offset-1 RectangleBlck">
@@ -37,11 +60,7 @@
                 <td style="width:5%;">Goal Achieved</td>
                 <td style="width:8%;">Avg Check In</td>
                 <td style="width:8%;">Avg Check Out</td>
-                <td style="width:5%;">Very Sad</td>
-                <td style="width:5%;">Sad</td>
-                <td style="width:5%;">Indifferent</td>
-                <td style="width:5%;">Happy</td>
-                <td style="width:5%;">Very Happy</td>
+             
             </tr>
             <tr>
                 <td style="width:9%;">Alvin</td>
@@ -54,11 +73,7 @@
                 <td style="width:5%;">&#10008;</td>
                 <td style="width:8%;">9:08am</td>
                 <td style="width:8%;">3:55pm</td>
-                <td style="width:5%;">24%</td>
-                <td style="width:5%;">11%</td>
-                <td style="width:5%;">45%</td>
-                <td style="width:5%;">0%</td>
-                <td style="width:5%;">20%</td>
+             
             </tr>
             <tr>
                 <td style="width:9%;">Mina</td>
@@ -71,11 +86,7 @@
                 <td style="width:5%;">&#10004;</td>
                 <td style="width:8%;">9:08am</td>
                 <td style="width:8%;">3:55pm</td>
-                <td style="width:5%;">24%</td>
-                <td style="width:5%;">11%</td>
-                <td style="width:5%;">45%</td>
-                <td style="width:5%;">0%</td>
-                <td style="width:5%;">20%</td>
+              
             </tr>
             <tr>
                 <td style="width:9%;">Verna</td>
@@ -88,11 +99,7 @@
                 <td style="width:5%;">&#10004;</td>
                 <td style="width:8%;">9:08am</td>
                 <td style="width:8%;">3:55pm</td>
-                <td style="width:5%;">24%</td>
-                <td style="width:5%;">11%</td>
-                <td style="width:5%;">45%</td>
-                <td style="width:5%;">0%</td>
-                <td style="width:5%;">20%</td>
+               
             </tr>
             <tr>
                 <td style="width:9%;">Gabriel</td>
@@ -105,11 +112,7 @@
                 <td style="width:5%;">&#10004;</td>
                 <td style="width:8%;">9:08am</td>
                 <td style="width:8%;">3:55pm</td>
-                <td style="width:5%;">24%</td>
-                <td style="width:5%;">11%</td>
-                <td style="width:5%;">45%</td>
-                <td style="width:5%;">0%</td>
-                <td style="width:5%;">20%</td>
+               
             </tr>
             <tr>
                 <td style="width:9%;">Tamara</td>
@@ -122,11 +125,7 @@
                 <td style="width:5%;">&#10004;</td>
                 <td style="width:8%;">9:08am</td>
                 <td style="width:8%;">3:55pm</td>
-                <td style="width:5%;">24%</td>
-                <td style="width:5%;">11%</td>
-                <td style="width:5%;">45%</td>
-                <td style="width:5%;">0%</td>
-                <td style="width:5%;">20%</td>
+              
             </tr>
             <tr>
                 <td style="width:9%;">Harry</td>
@@ -139,11 +138,7 @@
                 <td style="width:5%;">&#10004;</td>
                 <td style="width:8%;">9:08am</td>
                 <td style="width:8%;">3:55pm</td>
-                <td style="width:5%;">24%</td>
-                <td style="width:5%;">11%</td>
-                <td style="width:5%;">45%</td>
-                <td style="width:5%;">0%</td>
-                <td style="width:5%;">20%</td>
+              
             </tr>
             <tr>
                 <td style="width:9%;">Beth</td>
@@ -156,11 +151,7 @@
                 <td style="width:5%;">&#10004;</td>
                 <td style="width:8%;">9:08am</td>
                 <td style="width:8%;">3:55pm</td>
-                <td style="width:5%;">24%</td>
-                <td style="width:5%;">11%</td>
-                <td style="width:5%;">45%</td>
-                <td style="width:5%;">0%</td>
-                <td style="width:5%;">20%</td>
+          
             </tr>
             <tr>
                 <td style="width:9%;">Kit</td>
@@ -173,13 +164,15 @@
                 <td style="width:5%;">&#10004;</td>
                 <td style="width:8%;">9:08am</td>
                 <td style="width:8%;">3:55pm</td>
-                <td style="width:5%;">24%</td>
-                <td style="width:5%;">11%</td>
-                <td style="width:5%;">45%</td>
-                <td style="width:5%;">0%</td>
-                <td style="width:5%;">20%</td>
+
             </tr>
         </table>
+
+        <div id="piechart" style="width:900px; height: 500px;"></div>
+
+        <div class="row align-center">
+            <button class="section-scroll btn btn-g btn-round" value="Print" onclick="window.print();return false;" />Print</button>
+        </div>
     </div>
 </div>
 
