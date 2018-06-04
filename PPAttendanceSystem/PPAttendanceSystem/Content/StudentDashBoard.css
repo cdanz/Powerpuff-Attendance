@@ -91,126 +91,14 @@ body {
 
 
 
-.emoticon1 {
+.emoticon1, .emoticon2, .emoticon3, .emoticon4, .emoticon5, .emoticon6, .emoticon7, .emoticon8, .emoticon9, .emoticon10, .emoticon11, .emoticon12, .emoticon13, .emoticon14 {
     display: none;
     text-align: center;
     padding-bottom: 10px;
     color: white;
 }
 
-.emoticon1.active {
-    display: block;
-    text-align: center;
-    padding-bottom: 10px;
-    color: white;
-}
-
-.emoticon2 {
-    display: none;
-    text-align: center;
-    padding-bottom: 10px;
-    color: white;
-}
-
-.emoticon2.active {
-    display: block;
-    text-align: center;
-    padding-bottom: 10px;
-    color: white;
-}
-
-.emoticon3 {
-    display: none;
-    text-align: center;
-    padding-bottom: 10px;
-    color: white;
-}
-
-.emoticon3.active {
-    display: block;
-    text-align: center;
-    padding-bottom: 10px;
-    color: white;
-}
-
-.emoticon4 {
-    display: none;
-    text-align: center;
-    padding-bottom: 10px;
-    color: white;
-}
-
-.emoticon4.active {
-    display: block;
-    text-align: center;
-    padding-bottom: 10px;
-    color: white;
-}
-
-.emoticon5 {
-    display: none;
-    text-align: center;
-    padding-bottom: 10px;
-    color: white;
-}
-
-.emoticon5.active {
-    display: block;
-    text-align: center;
-    padding-bottom: 10px;
-    color: white;
-}
-
-.emoticon6 {
-    display: none;
-    text-align: center;
-    padding-bottom: 10px;
-    color: white;
-}
-
-.emoticon6.active {
-    display: block;
-    text-align: center;
-    padding-bottom: 10px;
-    color: white;
-}
-
-.emoticon7 {
-    display: none;
-    text-align: center;
-    padding-bottom: 10px;
-    color: white;
-}
-
-.emoticon7.active {
-    display: block;
-    text-align: center;
-    padding-bottom: 10px;
-    color: white;
-}
-
-.emoticon8 {
-    display: none;
-    text-align: center;
-    padding-bottom: 10px;
-    color: white;
-}
-
-.emoticon8.active {
-    display: block;
-    text-align: center;
-    padding-bottom: 10px;
-    color: white;
-}
-
-.emoticon9 {
-    display: none;
-    text-align: center;
-    padding-bottom: 10px;
-    color: white;
-}
-
-.emoticon9.active {
+.emoticon1.active, .emoticon2.active, .emoticon3.active, .emoticon4.active, .emoticon5.active, .emoticon6.active, .emoticon7.active, .emoticon8.active, .emoticon9.active, .emoticon10.active, .emoticon11.active, .emoticon12.active, .emoticon13.active, .emoticon14.active {
     display: block;
     text-align: center;
     padding-bottom: 10px;
@@ -256,23 +144,26 @@ h3 {
 -----------------------------------------------------------------*/
 
 .puzzle-box {
-	background-image: url(Landing/puzzle-map.png);
-	background-size: 100%;
-	overflow: hidden;
-	margin-top: 100px;
-	margin-bottom: 50px;
-	padding-top: 170px;
-	padding-bottom: 170px;
-	color: #3671d1;
-	font-weight: bold;
-	text-align: center;
+    background-image: url(Landing/puzzle-map.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #E8DAAF;
+    background-size: contain;
+    overflow: hidden;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding-top: 170px;
+    padding-bottom: 170px;
+    color: #3671d1;
+    font-weight: bold;
+    text-align: center;
 }
 
-    .puzzle-box span {
-        background: url("~\Content\Landing\css\puzzle-map.png");
-        padding: 5px;
-        border-radius: 3px;
-    }
+.puzzle-box span {
+    background: url("~\Content\Landing\css\puzzle-map.png");
+    padding: 5px;
+    border-radius: 3px;
+}
 
 .puzzle-page {
 	background-image: url(Landing/puzzle-map.png);
