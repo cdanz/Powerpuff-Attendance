@@ -129,7 +129,7 @@
 		<section class="module-medium" id="begin" style="margin-top: 600px;">
 			<div class="container">
 				<div class="row multi-columns-row align-center">
-					<div class="col-md-4 col-sm-6 col-xs-12">
+					<div class="col-md-4">
 						<div class="card" style="width: 30rem;">
 							<img class="card-img-top" src="~/Content/Landing/map.png" alt="Course Kiosk" style="width:300px;height:170px;">
 							<div class="card-body">
@@ -141,7 +141,7 @@
 						</div>
 					</div>
 					<br>
-					<div class="col-md-4 col-sm-6 col-xs-12">
+					<div class="col-md-4">
 						<div class="card" style="width: 30rem;">
 							<img class="card-img-top" src="~/Content/Landing/pin.png" alt="Admin Portal" style="width:150px;height:150px;">
 							<div class="card-body">
@@ -151,7 +151,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4 col-sm-6 col-xs-12">
+					<div class="col-md-4">
 						<div class="card" style="width: 30rem;">
 							<img class="card-img-top" src="~/Content/Landing/route.png" alt="Student Portal" style="width:150px;height:150px;">
 							<div class="card-body">
@@ -176,10 +176,10 @@
 								<fieldset class="clearfix">
 									<lp><span class="fontawesome-user"></span><input type="text" value="Username" onBlur="if(this.value == '') this.value = 'Username'" onFocus="if(this.value == 'Username') this.value = ''" required></lp> <!-- JS because of IE support; better: placeholder="Username" -->
 									<lp><span class="fontawesome-lock"></span><input type="password" value="Password" onBlur="if(this.value == '') this.value = 'Password'" onFocus="if(this.value == 'Password') this.value = ''" required></lp> <!-- JS because of IE support; better: placeholder="Password" -->
-									<lp><a class="section-scroll btn btn-g btn-round" href="@Url.Action("StudentDashboard", "Kiosk")" style="font-size: 11px; line-height: 30px; padding: 8px 37px; width:280px; height:50px; margin: auto; font-weight: bold; margin-bottom: 2em; margin-top: 2em;">Sign In</a></lp>
+									<lp><a class="section-scroll btn btn-g btn-round" href="@Url.Action("Index", "Student")" style="font-size: 11px; line-height: 30px; padding: 8px 37px; width:280px; height:50px; margin: auto; font-weight: bold; margin-bottom: 2em; margin-top: 2em;">Sign In</a></lp>
 								</fieldset>
 							</form>
-							<p>Forgot password? <a href="@Url.Action("StudentDashboard", "Kiosk")" style="color:red">Reset it now </a><span class="fontawesome-arrow-right"></span></p>
+							<p>Forgot password? <a href="@Url.Action("Index", "Student")" style="color:red">Reset it now </a><span class="fontawesome-arrow-right"></span></p>
 						</div> <!-- end login -->
 					</div>
 				</div>
@@ -218,10 +218,10 @@
 								<fieldset class="clearfix">
 									<lp><span class="fontawesome-user"></span><input type="text" value="Username" onBlur="if(this.value == '') this.value = 'Username'" onFocus="if(this.value == 'Username') this.value = ''" required></lp> <!-- JS because of IE support; better: placeholder="Username" -->
 									<lp><span class="fontawesome-lock"></span><input type="password" value="Password" onBlur="if(this.value == '') this.value = 'Password'" onFocus="if(this.value == 'Password') this.value = ''" required></lp> <!-- JS because of IE support; better: placeholder="Password" -->
-									<lp><a class="section-scroll btn btn-g btn-round" href="@Url.Action("StudentHome", "Student")" style="font-size: 11px; line-height: 30px; padding: 8px 37px; width:280px; height:50px; margin: auto; font-weight: bold; margin-bottom: 2em; margin-top: 2em;">Sign In</a></lp>
+									<lp><a class="section-scroll btn btn-g btn-round" href="@Url.Action("StudentHome", "Profile")" style="font-size: 11px; line-height: 30px; padding: 8px 37px; width:280px; height:50px; margin: auto; font-weight: bold; margin-bottom: 2em; margin-top: 2em;">Sign In</a></lp>
 								</fieldset>
 							</form>
-							<p>Forgot password? <a href="@Url.Action("StudentHome", "Student")" style="color:red">Reset it now </a><span class="fontawesome-arrow-right"></span></p>
+							<p>Forgot password? <a href="@Url.Action("StudentHome", "Profile")" style="color:red">Reset it now </a><span class="fontawesome-arrow-right"></span></p>
 						</div> <!-- end login -->
 					</div>
 				</div>

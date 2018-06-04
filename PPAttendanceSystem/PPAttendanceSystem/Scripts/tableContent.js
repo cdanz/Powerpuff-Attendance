@@ -1,6 +1,6 @@
 ﻿function edit_row(no) {
-	document.getElementById("edit_button" + no).style.display = "section-scroll btn btn-border-w btn-round";
-	document.getElementById("save_button" + no).style.display = "section-scroll btn btn-border-w btn-round";
+	document.getElementById("edit_button" + no).style.display = "section-scroll btn btn-primary";
+	document.getElementById("save_button" + no).style.display = "section-scroll btn btn-primary";
 
     var fname = document.getElementById("fname_row" + no);
     var lname = document.getElementById("lname_row" + no);
@@ -24,8 +24,8 @@ function save_row(no) {
     document.getElementById("lname_row" + no).innerHTML = lname_val;
     document.getElementById("status_row" + no).innerHTML = status_val;
 
-	document.getElementById("edit_button" + no).style.display = "section-scroll btn btn-border-w btn-round";
-	document.getElementById("save_button" + no).style.display = "section-scroll btn btn-border-w btn-round";
+	document.getElementById("edit_button" + no).style.display = "section-scroll btn btn-primary";
+	document.getElementById("save_button" + no).style.display = "section-scroll btn btn-primary";
 }
 
 function delete_row(no) {
@@ -39,7 +39,7 @@ function add_row() {
 
     var table = document.getElementById("data_table");
     var table_len = (table.rows.length) - 1;
-	var row = table.insertRow(table_len).outerHTML = "<tr id='row" + table_len + "'><td id='fname_row" + table_len + "'>" + new_fname + "</td><td id='lname_row" + table_len + "'>" + new_lname + "</td><td id='status_row" + table_len + "'>" + new_status + "</td><td><input type='button' id='edit_button" + table_len + "' value='Edit' class='section-scroll btn btn-border-w btn-round' onclick='edit_row(" + table_len + ")'> <input type='button' id='save_button" + table_len + "' value='Save' class='section-scroll btn btn-border-w btn-round' onclick='save_row(" + table_len + ")'> <input type='button' value='Delete' class='section-scroll btn btn-border-w btn-round' onclick='delete_row(" + table_len + ")'></td></tr>";
+	var row = table.insertRow(table_len).outerHTML = "<tr id='row" + table_len + "'><td id='fname_row" + table_len + "'>" + new_fname + "</td><td id='lname_row" + table_len + "'>" + new_lname + "</td><td id='status_row" + table_len + "'>" + new_status + "</td><td><input type='button' id='edit_button" + table_len + "' value='Edit' class='section-scroll btn btn-primary' onclick='edit_row(" + table_len + ")'> <input type='button' id='save_button" + table_len + "' value='Save' class='section-scroll btn btn-primary' onclick='save_row(" + table_len + ")'> <input type='button' value='Delete' class='section-scroll btn btn-primary' onclick='delete_row(" + table_len + ")'></td></tr>";
 
     document.getElementById("new_fname").value = "";
     document.getElementById("new_lname").value = "";

@@ -2,7 +2,7 @@
 	ViewBag.Title = "Custom Individual Report";
 }
 
-<head>
+<head >
 	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 	<script type="text/javascript">
 		google.charts.load("current", { packages: ["corechart"] });
@@ -17,8 +17,8 @@
 
 			var options = {
 				pieHole: 0.4,
-				backgroundColor: 'transparent',
-				color: 'white',
+                color: 'white',
+                backgroundColor: 'transparent',
 				title: 'Community Hours Tracker'
 			};
 
@@ -41,10 +41,10 @@
 
             var options = {
                 title: 'Attendance Tracker',
-                backgroundColor: 'transparent',
                 vAxis: { title: 'Hours' },
                 hAxis: { title: 'Time' },
                 seriesType: 'bars',
+                backgroundColor: 'transparent',
                 series: { 5: { type: 'line' } }
             };
 
@@ -72,6 +72,7 @@
             var options = {
                 title: 'Emotions Tracker',
                 backgroundColor: 'transparent'
+
 
             };
 
@@ -106,7 +107,9 @@
             var options = {
                 title: 'Emotions. vs. Attendance',
                 curveType: 'function',
+                backgroundColor:'transparent',
                 legend: { position: 'bottom' }
+
             };
 
             var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
@@ -122,12 +125,28 @@
 
 
 		<!--Charts-->
-		<div class="row align-center">
-			<div id="donutchart" style="width: 900px; height: 500px;"></div>
-            <div id="chart_div" style="width: 900px; height: 500px;"></div>
-            <div id="curve_chart" style="width: 900px; height: 500px"></div>
-            <div id="piechart" style="width: 900px; height: 500px;"></div>
+<div class="col-md-10 col-md-offset-1 RectangleWhite">
+    <h2>CUSTOM REPORT: 5/21/2018 - 6/1/2018</h2>
 
-		</div>
-	
+    <div class="row align-center">
+        <div class="col-md-8 col-md-offset-2">
+            <img class="profileimg" src="~/Content/AvatarIcons/swan-icon.png" alt="SWAN">
+
+            <h3 class="features-title font-alt">Student Name: Tamara</h3>
+            <h3 class="features-title font-alt">Animal guide: swan</h3>
+            <h3 class="features-title font-alt">ID:w2714490</h3>
+        </div>
+    </div>
+
+    <div id="donutchart" style="width:900px; height: 500px;"></div>
+    <div id="chart_div" style="width: 900px; height: 500px;"></div>
+    <div id="curve_chart" style="width: 900px; height: 500px"></div>
+    <div id="piechart" style="width: 900px; height: 500px;"></div>
+
+
+    <div class="row align-center">
+        <button class="section-scroll btn btn-g btn-round" value="Print" onclick="window.print();return false;" />Print</button>
+    </div>
+
 </div>
+

@@ -206,6 +206,7 @@
     <Compile Include="Controllers\LandingController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\ProfileController.cs" />
     <Compile Include="Controllers\StudentController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -241,7 +242,6 @@
     <Content Include="Content\images\puzzle-preview.png" />
     <Content Include="Content\Landing\css\colors\default-rtl.css" />
     <Content Include="Content\Landing\css\colors\default.css" />
-    <Content Include="Content\Landing\css\puzzle-map.png" />
     <Content Include="Content\Landing\logo%402x.png" />
     <Content Include="Content\Landing\logo%403x.png" />
     <Content Include="Content\Landing\logo.png" />
@@ -565,7 +565,7 @@
     <Content Include="Views\Admin\AdminDashboardp2.cshtml" />
     <Content Include="Views\Admin\AdminDashboardw.cshtml" />
     <Content Include="Views\Admin\CustomReportIndividualResult.cshtml" />
-    <None Include="Views\Student\StudentEditProfile.cshtml" />
+    <None Include="Views\Profile\StudentEditProfile.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -601,10 +601,10 @@
     <Content Include="Views\Admin\ClassSettings.cshtml" />
     <Content Include="Views\Admin\CustomReport.cshtml" />
     <Content Include="Views\Kiosk\StudentNew.cshtml" />
-    <Content Include="Views\Kiosk\Puzzle.cshtml" />
-    <Content Include="Views\Student\StudentReport.cshtml" />
+    <Content Include="Views\Student\Puzzle.cshtml" />
+    <Content Include="Views\Profile\StudentReport.cshtml" />
     <Content Include="Views\Student\Update.cshtml" />
-    <Content Include="Views\Student\StudentHome.cshtml" />
+    <Content Include="Views\Profile\StudentHome.cshtml" />
     <Content Include="Views\Student\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_StudentLayout.cshtml" />
     <Content Include="Views\Admin\ClassRoster.cshtml" />
@@ -619,6 +619,7 @@
     <Content Include="Views\Student\Index.cshtml" />
     <Content Include="Views\Student\Read.cshtml" />
     <Content Include="Views\Student\Delete.cshtml" />
+    <Content Include="Views\Profile\_ViewStart.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

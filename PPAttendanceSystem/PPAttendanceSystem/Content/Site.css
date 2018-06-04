@@ -199,6 +199,9 @@ th, td {
     border-style: solid;
     height: 2rem;
 }
+.admin_field {
+    color: #2d2d2d;
+}
 
 #admin_atndbtnS1 {
     background-color: #FF5353;
