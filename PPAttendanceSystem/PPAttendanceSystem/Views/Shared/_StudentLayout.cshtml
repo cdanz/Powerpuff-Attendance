@@ -1,40 +1,41 @@
 ﻿<!DOCTYPE html>
 <html lang="en-US" dir="ltr">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--
-    Document Title
-    =============================================
-    -->
-    <title>Wayfinder | @ViewBag.Title</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--
+	Document Title
+	=============================================
+	-->
+	<link rel="shortcut icon" href="~/Content/Landing/wayfinder-icon.ico">
+	<title>Wayfinder | @ViewBag.Title</title>
 
-    <!--
-    Stylesheets
-    =============================================
-    -->
-    <link href="~/Content/Landing/css/style.css" rel="stylesheet">
-    <link href="~/assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="~/Content/Site.css" rel="stylesheet">
-    <link href="@Url.Content("~/Content/StudentDashBoard.css")" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+	<!--
+	Stylesheets
+	=============================================
+	-->
+	<link href="~/Content/Landing/css/style.css" rel="stylesheet">
+	<link href="~/assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="~/Content/Site.css" rel="stylesheet">
+	<link href="@Url.Content("~/Content/StudentDashBoard.css")" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 
 
-    <!-- navbar links-->
-    <div class="container-fluid shared-head">
-        <div class="row">
-            <div class="col-md-8">
-                <img src="~/Content/Landing/logo.png">
-            </div>
+	<!-- navbar links-->
+	<div class="container-fluid shared-head">
+		<div class="row">
+			<div class="col-md-8">
+				<img src="~/Content/Landing/logo.png">
+			</div>
 			<div class="col-md-4 menu">
 				<div class="col-md-3"><a class="btn btn-link head-btn" href="@Url.Action("Home", "Landing")">Home</a></div>
 				<div class="col-md-3"><a class="btn btn-link head-btn" href="@Url.Action("Home", "Landing")#kiosk">Kiosk</a></div>
 				<div class="col-md-3"><a class="btn btn-link head-btn" href="@Url.Action("Home", "Landing")#admin">Admin</a></div>
 				<div class="col-md-3"><a class="btn btn-link head-btn" href="@Url.Action("StudentHome", "Profile")">Student</a></div>
 			</div>
-        </div>
-    </div>
+		</div>
+	</div>
 </head>
 
 <body>

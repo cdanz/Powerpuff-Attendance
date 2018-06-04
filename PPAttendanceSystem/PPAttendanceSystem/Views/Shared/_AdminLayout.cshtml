@@ -8,6 +8,7 @@
 	Document Title
 	=============================================
 	-->
+	<link rel="shortcut icon" href="~/Content/Landing/wayfinder-icon.ico">
 	<title>Wayfinder | @ViewBag.Title</title>
 
 	<!--
@@ -15,49 +16,49 @@
 	=============================================
 	-->
 	<link href="~/Content/Landing/css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link href="~/assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link href="~/Content/Site.css" rel="stylesheet">
-    <link href="~/Content/dropbtn.css" rel="stylesheet">
+	<link href="~/Content/dropbtn.css" rel="stylesheet">
 	<link href="@Url.Content("~/Content/StudentDashBoard.css")" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script>
-        $(function () {
-            var dateFormat = "mm/dd/yy",
-                from = $("#from")
-                    .datepicker({
-                        defaultDate: "+1w",
-                        changeMonth: true,
-                        numberOfMonths: 3
-                    })
-                    .on("change", function () {
-                        to.datepicker("option", "minDate", getDate(this));
-                    }),
-                to = $("#to").datepicker({
-                    defaultDate: "+1w",
-                    changeMonth: true,
-                    numberOfMonths: 3
-                })
-                    .on("change", function () {
-                        from.datepicker("option", "maxDate", getDate(this));
-                    });
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script>
+		$(function () {
+			var dateFormat = "mm/dd/yy",
+				from = $("#from")
+					.datepicker({
+						defaultDate: "+1w",
+						changeMonth: true,
+						numberOfMonths: 3
+					})
+					.on("change", function () {
+						to.datepicker("option", "minDate", getDate(this));
+					}),
+				to = $("#to").datepicker({
+					defaultDate: "+1w",
+					changeMonth: true,
+					numberOfMonths: 3
+				})
+					.on("change", function () {
+						from.datepicker("option", "maxDate", getDate(this));
+					});
 
-            function getDate(element) {
-                var date;
-                try {
-                    date = $.datepicker.parseDate(dateFormat, element.value);
-                } catch (error) {
-                    date = null;
-                }
+			function getDate(element) {
+				var date;
+				try {
+					date = $.datepicker.parseDate(dateFormat, element.value);
+				} catch (error) {
+					date = null;
+				}
 
-                return date;
-            }
-        });
-    </script>
+				return date;
+			}
+		});
+	</script>
 
 	<!-- navbar links-->
 	<div class="container-fluid shared-head">
