@@ -2,13 +2,11 @@
 	ViewBag.Title = "Class Roster";
 }
 
-<head>
-
-</head>
-
 <div class="col-md-10 col-md-offset-1 RectangleBlck">
-
-    <h3>Student Roster</h3>
+    <div class="admin_container alignright">
+        @Html.ActionLink("Settings", "ClassSettings", "Admin", null, new { @class = "btn btn-primary" })
+    </div>
+    <h2>Class Roster</h2>
 
     <div id="wrapper">
         <table align='center' cellspacing=50 cellpadding=10 id="data_table" border=1">
