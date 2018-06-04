@@ -9,64 +9,74 @@
     <div class="admin_container">
         <table cellspacing="50" style="width:100%;">
             <tr>
-                <td style="width=15%">Date Range</td>
-                <td style="width=85%">
-                    <div class="form-group">
-                        <label for="from">From</label><input class="admin_field" type="text" id="from" name="from">
-                        <label for="to">to</label><input class="admin_field" type="text" id="to" name="to">
-                        <label for="student">Student</label>
-                        <select class="form-control" id="student" style="display:inline;">
-                            <option value="all" selected>All Students</option>
-                            <option value="s1">Seth Berry</option>
-                            <option value="s2">Bianca Blanco</option>
-                            <option value="s3">Mina Chen</option>
-
-                        </select>
-                        &nbsp;&nbsp;
-                        @Html.ActionLink("Submit", "CustomReportResult", "Admin", null, new { @class = "btn btn-border-w btn-round" })
-                        </div>
-</td>
+                <td style="width:15%">Date Range</td>
+                <td style="width:85%">
+                    <label for="from">From</label><input class="admin_field" type="text" id="from" name="from">
+                    <label for="to">to</label><input class="admin_field" type="text" id="to" name="to">
+                  
+                </td>
             </tr>
-            <tr>
-                <td style="width=15%"></td>
-                <td style="width=85%"><div class="admin_inputNeeded">Please select date range</div></td>
-            </tr>
-            <tr>
-                <td style="width=15%"></td>
-                <td style="width=85%"></td>
-            </tr>
-            <tr>
-                <td style="width=15%"></td>
-                <td style="width=85%"></td>
-            </tr>
-            <tr>
-                <td style="width=15%"></td>
-                <td style="width=85%"></td>
-            </tr>
-            <tr>
-                <td style="width=15%"></td>
-                <td style="width=85%"></td>
-            </tr>
-            <tr>
-                <td style="width=15%"></td>
-                <td style="width=85%"></td>
-            </tr>
-            <tr>
-                <td style="width=15%"></td>
-                <td style="width=85%"></td>
-            </tr>
-            <tr>
-                <td style="width=15%"></td>
-                <td style="width=85%"></td>
-            </tr>
-            <tr>
-                <td style="width=15%"></td>
-                <td style="width=85%"></td>
-            </tr>
-        </table>
+            </table>
     </div>
+    <div>
+    <table cellspacing="50" style="width:100%;">
+        <tr>
+        <td style="width:15%" align="center">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Select Student</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="@Url.Action("CustomReportResult", "Admin" )">All</a>
+                    <a href="@Url.Action("CustomReportIndividualResult", "Admin" )">Tamara Kochubey </a>
+                    <a href="@Url.Action("CustomReportIndividualResult", "Admin" )">Bianca Blanco </a>
+                    <a href="@Url.Action("CustomReportIndividualResult", "Admin" )">Mina Chen </a>
+                    <a href="@Url.Action("CustomReportIndividualResult", "Admin" )">Seth Berry </a>
+                    <a href="@Url.Action("CustomReportIndividualResult", "Admin" )">Alvan Hopkins </a>
+                    <a href="@Url.Action("CustomReportIndividualResult", "Admin" )">Gabriel Klein </a>
+                    <a href="@Url.Action("CustomReportIndividualResult", "Admin" )">Verna Potter </a>
+                    <a href="@Url.Action("CustomReportIndividualResult", "Admin" )">Harry Reid</a>
+                    <a href="@Url.Action("CustomReportIndividualResult", "Admin" )">Nancy Thomas</a>
+
+                </div>
+            </div>
+
+            <script>
+                /* When the user clicks on the button,
+                toggle between hiding and showing the dropdown content */
+                function myFunction() {
+                    document.getElementById("myDropdown").classList.toggle("show");
+                }
+
+                // Close the dropdown if the user clicks outside of it
+                window.onclick = function (event) {
+                    if (!event.target.matches('.dropbtn')) {
+
+                        var dropdowns = document.getElementsByClassName("dropdown-content");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                            var openDropdown = dropdowns[i];
+                            if (openDropdown.classList.contains('show')) {
+                                openDropdown.classList.remove('show');
+                            }
+                        }
+                    }
+                }
+            </script>
+            </table>
+
 </div>
-</section>
+    <div>
+        <table cellspacing="50" style="width:100%;">
+            <tr>
+            <td style="width=15%"></td>
+            <td style="width=85%"><div class="admin_inputNeeded">Please select date range</div></td>
+             </tr>
+         </table>
+    </div>
+   
+          
+    
+ </div>
+</div>
 
 
 
