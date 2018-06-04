@@ -227,6 +227,7 @@
   <ItemGroup>
     <Content Include="Content\AvatarIcons\cat-icon.png" />
     <Content Include="Content\AvatarIcons\check-mark.jpg" />
+    <Content Include="Content\AvatarIcons\check.png" />
     <Content Include="Content\AvatarIcons\dog-icon.png" />
     <Content Include="Content\AvatarIcons\elephant-icon.png" />
     <Content Include="Content\AvatarIcons\fox-icon.png" />
