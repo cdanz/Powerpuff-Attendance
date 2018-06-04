@@ -28,21 +28,35 @@
 			</script>
 		</p>
 	</div>
-	<div class="student-cards-row">
+	<div class="col-md-12 student-cards-row">
 		@{
 			if (Model.StudentList == null || !Model.StudentList.Any())
 			{
 				<br />
 				<p>No Students in the System</p>
 				<br />
-			}
-			else
-			{
-				var count = 1;
-				var randomColor = new Random();
-				foreach (var item in Model.StudentList)
-				{
-					<div class="col-md-4">
+            }
+            else
+            {
+                var count = 1; // Keeps tracks of the number of Items that has been accessed from student List
+                var StudentCount = Model.StudentList.Count();
+                var noOfRows = Math.Ceiling((double)StudentCount / 3); // Get number of bootstraps rows
+                var rowNo = noOfRows; // Create another variable to hold no of Rows
+                var randomColor = new Random();
+
+                // Keep track of which colum we are filling
+                bool column1 = false;
+                bool column2 = false;
+                foreach (var item in Model.StudentList)
+                {
+                    
+                    // Column 1 is not yet filled
+                    if (column1 == false) {
+                        // if row has not been created or a Column is filled up
+                        if(rowNo == noOfRows){
+                            @:<div class="col-md-4">
+                            @:<div class="row">
+                        }
 						<div class="check-in">
 							@{var stuID = "stu" + count;
 								var CardColor = String.Format("#{0:X6}", randomColor.Next(0x1000000));
@@ -65,10 +79,93 @@
 									<a class="btn-sm btn-default btn-circle" href="@Url.Action("Home", "Landing")#student" style="text-align:center">Details</a>
 								</div>
 							</div>
-						</div>
-					</div>
-					count++;
+						    </div>
+					    count++;
+                        rowNo--;
+                        if(rowNo == 0){
+                             @:</div>
+                             @:</div>
+                             rowNo = noOfRows;
+                             column1 = true;
+                        }
+                    }
+
+                    // Column 2 is not yet filled
+                    else if (column2 == false) {
+                        // if row has not been created or a Column is filled up
+                        if(rowNo == noOfRows){
+                            @:<div class="col-md-4">
+                            @:<div class="row">
+                        }
+						<div class="check-in">
+							@{var stuID = "stu" + count;
+								var CardColor = String.Format("#{0:X6}", randomColor.Next(0x1000000));
+							}
+
+							<div id="@stuID" class="student-card" style="background-color: @CardColor">
+								<img src="~/Content/img/@item.AvatarUri" class="img-circle avatar" alt="Student Avatar">
+								<span>@item.Name</span>
+								@{var emoticon = "emoticon" + count;}
+								<div class=@emoticon>
+									<hr>
+									<h3>How are you doing today?</h3><br>
+									<a href="javascript:checkedIn('/Content/img/@item.AvatarUri', '@stuID')"><img src="~/Content/images/face1.png" alt="Sad"></a>
+									<a href="javascript:checkedIn('/Content/img/@item.AvatarUri', '@stuID')"><img src="~/Content/images/face2.png" alt="Somewhat Sad"></a>
+									<a href="javascript:checkedIn('/Content/img/@item.AvatarUri', '@stuID')"><img src="~/Content/images/face3.png" alt="Okay"></a>
+									<a href="javascript:checkedIn('/Content/img/@item.AvatarUri', '@stuID')"><img src="~/Content/images/face4.png" alt="Somewhat Happy"></a>
+									<a href="javascript:checkedIn('/Content/img/@item.AvatarUri', '@stuID')"><img src="~/Content/images/face5.png" alt="Happy"></a><br><br>
+									<p>Select an emoticon to sign in</p>
+									<hr />
+									<a class="btn-sm btn-default btn-circle" href="@Url.Action("Home", "Landing")#student" style="text-align:center">Details</a>
+								</div>
+							</div>
+						    </div>
+					    count++;
+                        rowNo--;
+                        if(rowNo == 0){
+                             @:</div>
+                             @:</div>
+                             rowNo = noOfRows;
+                             column2 = true;
+                        }
+                    }
+
+                    // Column 3 is not yet filled
+                    else {
+                        // if row has not been created or a Column is filled up
+                        if(rowNo == noOfRows){
+                            @:<div class="col-md-4">
+                            @:<div class="row">
+                        }
+						<div class="check-in">
+							@{var stuID = "stu" + count;
+								var CardColor = String.Format("#{0:X6}", randomColor.Next(0x1000000));
+							}
+
+							<div id="@stuID" class="student-card" style="background-color: @CardColor">
+								<img src="~/Content/img/@item.AvatarUri" class="img-circle avatar" alt="Student Avatar">
+								<span>@item.Name</span>
+								@{var emoticon = "emoticon" + count;}
+								<div class=@emoticon>
+									<hr>
+									<h3>How are you doing today?</h3><br>
+									<a href="javascript:checkedIn('/Content/img/@item.AvatarUri', '@stuID')"><img src="~/Content/images/face1.png" alt="Sad"></a>
+									<a href="javascript:checkedIn('/Content/img/@item.AvatarUri', '@stuID')"><img src="~/Content/images/face2.png" alt="Somewhat Sad"></a>
+									<a href="javascript:checkedIn('/Content/img/@item.AvatarUri', '@stuID')"><img src="~/Content/images/face3.png" alt="Okay"></a>
+									<a href="javascript:checkedIn('/Content/img/@item.AvatarUri', '@stuID')"><img src="~/Content/images/face4.png" alt="Somewhat Happy"></a>
+									<a href="javascript:checkedIn('/Content/img/@item.AvatarUri', '@stuID')"><img src="~/Content/images/face5.png" alt="Happy"></a><br><br>
+									<p>Select an emoticon to sign in</p>
+									<hr />
+									<a class="btn-sm btn-default btn-circle" href="@Url.Action("Home", "Landing")#student" style="text-align:center">Details</a>
+								</div>
+							</div>
+						    </div>
+					    count++;
+                        rowNo--;
+                    }
 				}
+                @:</div>
+                @:</div>
 			}
 		}
 	</div>
