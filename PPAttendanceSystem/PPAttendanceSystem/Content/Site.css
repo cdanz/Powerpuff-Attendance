@@ -18,12 +18,12 @@
 -----------------------------------------------------------------*/
 
 .profileimg {
-	border-radius: 50%;
-	margin-bottom: 15px;
-	margin-top: 15px;
-	vertical-align: middle;
-	width: 100px;
-	height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
 }
 
 /*----------------------------------------------------------------
@@ -31,48 +31,48 @@
 -----------------------------------------------------------------*/
 
 #admin-bg {
-	background-color: rgb(26, 117, 255);
-	background-image: none;
+    background-color: rgb(26, 117, 255);
+    background-image: none;
 }
 
 .beBold {
-	font-weight: bold;
-	font-family: "SofiaPro", sans-serif;
-	text-align: center;
-	font-size: 16px;
+    font-weight: bold;
+    font-family: "SofiaPro", sans-serif;
+    text-align: center;
+    font-size: 16px;
 }
 
 table {
-	border: 1px;
-	margin-top: 20px;
+    border: 1px;
+    margin-top: 20px;
 }
 
 th, td {
-	padding: 1px;
-	text-align: center;
+    padding: 1px;
+    text-align: center;
 }
 
 .RectangleBlck {
-	position: relative;
-	padding: 20px 20px 20px 20px;
-	color: #fff;
-	background: rgba(2, 2, 2, 0.4);
-	margin-bottom: 50px;
-	margin-top: 0px;
+    position: relative;
+    padding: 20px 20px 20px 20px;
+    color: #fff;
+    background: rgba(2, 2, 2, 0.4);
+    margin-bottom: 50px;
+    margin-top: 0px;
 }
 
 .RectangleWhite {
-	position: relative;
-	padding: 20px 20px 20px 20px;
-	color: black;
-	background: rgba(255,255,255, 0.4);
-	margin-bottom: 50px;
-	margin-top: 0px;
+    position: relative;
+    padding: 20px 20px 20px 20px;
+    color: black;
+    background: rgba(255,255,255, 0.4);
+    margin-bottom: 50px;
+    margin-top: 0px;
 }
 
 .row-first {
-	height: 100%;
-	overflow: hidden;
+    height: 100%;
+    overflow: hidden;
 }
 
 .harvey {
@@ -178,17 +178,27 @@ th, td {
     float: left;
     height: 1rem;
 }
-.admin_studentBtn{
+
+.admin_studentBtn {
     display: block;
     width: 200px;
 }
+
 .admin_dayBtn {
     width: 150px;
 }
+
 .admin_settingBtn {
     width: 300px;
 }
 
+.admin_commBtn {
+    display: inline-block;
+    float: left;
+    border-width: 0;
+    border-style: solid;
+    height: 2rem;
+}
 
 #admin_atndbtnS1 {
     background-color: #FF5353;
@@ -231,11 +241,24 @@ th, td {
 }
 
 .alignleft {
-	float: left;
+    float: left;
 }
 
 .alignright {
-	float: right;
+    float: right;
+}
+
+.rangeCell {
+    height: 43px;
+    width: 100%;
+}
+
+.rangeDiv {
+    height: 2rem;
+    font-weight: 500;
+    text-align: left;
+    background-color: grey;
+    width: 100%;
 }
 
 /*----------------------------------------------------------------
@@ -243,43 +266,43 @@ th, td {
 -----------------------------------------------------------------*/
 
 .Rectangle {
-	width: 217.4px;
-	height: 51.6px;
-	border-radius: 5px;
-	background-image: linear-gradient(to right, #4690ff, #41dcec);
+    width: 217.4px;
+    height: 51.6px;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #4690ff, #41dcec);
 }
 
 .Rectangle-5 {
-	width: 390px;
-	height: 450px;
-	border-radius: 2px;
-	background-color: #fdfdfd;
+    width: 390px;
+    height: 450px;
+    border-radius: 2px;
+    background-color: #fdfdfd;
 }
 
 .text-register {
-	margin-top: 30px;
-	margin-bottom: 10px;
-	font-family: "SofiaPro", sans-serif;
-	width: 144.7px;
-	height: 43px;
-	font-size: 36px;
-	font-weight: 600;
-	font-style: normal;
-	font-stretch: normal;
-	line-height: normal;
-	letter-spacing: normal;
-	color: #2d2d2d;
-	color: var(--black);
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: "SofiaPro", sans-serif;
+    width: 144.7px;
+    height: 43px;
+    font-size: 36px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #2d2d2d;
+    color: var(--black);
 }
 
 /*----------------------------------------------------------------
 	D3.js formatting
 -----------------------------------------------------------------*/
 .chart div {
-	background-color: white;
-	text-align: right;
-	padding: 3px;
-	margin: 10px;
+    background-color: white;
+    text-align: right;
+    padding: 3px;
+    margin: 10px;
 }
 
 /*----------------------------------------------------------------
@@ -287,20 +310,20 @@ th, td {
 -----------------------------------------------------------------*/
 /* width */
 ::-webkit-scrollbar {
-	width: 10px;
+    width: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-	background: #f1f1f1;
+    background: #f1f1f1;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-	background: #888;
+    background: #888;
 }
 
-	/* Handle on hover */
-	::-webkit-scrollbar-thumb:hover {
-		background: #555;
-	}
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }

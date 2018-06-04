@@ -2,121 +2,109 @@
 	ViewBag.Title = "Community Hours";
 }
 
-
-<link href="~/Content/harvey.min.css" rel="stylesheet" type="text/css" />
-
-
-
-    <script>
-        $(".js-example-tags").select2({
-            tags: true
-        });</script>
-
-
-    <section class="bg-dark-30 showcase-page-header module parallax-bg"  >
-        <div class="titan-caption">
-            <div class="caption-content">
-                <div class="admin_container" style="float:right;">
-                    @Html.ActionLink("Settings", "ClassSettings", "Admin", null, new { @class = "btn btn-primary" })
-                </div>
-                <div class"row" style="width:100%;">
-                    <table style="width:100%;">
-                        <tr style="width:100%;">
-                            <td style="width:20%;"><h1>Community Hours</h1></td>
-                            <td style="width:80%;"></td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="admin_container">
-                    <table cellspacing="50" style="width:100%;">
-                        <tr>
-                            <td style="width=20%"></td>
-                            <td style="width=80%">
-                                <div id="admin_wkHeaders">
-                                    <table cellspacing="50" style="width:100%;">
-                                        <tr>
-                                            <td style="width:18%;">Goal - Percent of Available Week Hours Attended</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="width:10%;">
-                                <table cellspacing="50" style="width:100%;">
-                                    <tr><td height="20" style="margin:5px; padding: 5px;">@Html.ActionLink("Student 1", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</tdstyle="width:50%;"></tr>
-                                    <tr><td height="20" style="margin:5px; padding: 5px;">@Html.ActionLink("Student 2", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</td></tr>
-                                    <tr><td height="20" style="margin:5px; padding: 5px;">@Html.ActionLink("Student 3", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</td></tr>
-                                    <tr><td height="20" style="margin:5px; padding: 5px;">@Html.ActionLink("Student 4", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</td></tr>
-                                    <tr><td height="20" style="margin:5px; padding: 5px;">@Html.ActionLink("Student 5", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</td></tr>
-                                    <tr><td height="20" style="margin:5px; padding: 5px;">@Html.ActionLink("Student 6", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round" })</td></tr>
-                                </table>
-                            </td>
-                            <td style="width:90%;">
-                                <div class="admin_container">
-                                    <table cellspacing="50" style="width:100%;">
-                                        <tr>
-                                            <td height="43" style="margin:5px; padding: 5px;">
-                                                <div class="w3-grey w3-round">
-                                                    <div id="myBar" class="w3-container w3-green w3-round" style="width:20%">20%</div>
-                                        </tr></tdstyle="width:60%;">
-
-                                        <tr>
-                                            <td height="43" style="margin:5px; padding: 5px;">
-                                                <div class="w3-grey w3-round">
-                                                    <div id="myBar" class="w3-container w3-blue w3-round" style="width:50%">50%</div>
-                                        </tr></tdstyle="width:60%;">
-
-                                        <tr>
-                                            <td height="43" style="margin:5px; padding: 5px;">
-                                                <div class="w3-grey w3-round">
-                                                    <div id="myBar" class="w3-container w3-red w3-round" style="width:60%">60%</div>
-                                        </tr></tdstyle="width:60%;">
-
-                                        <tr>
-                                            <td height="43" style="margin:5px; padding: 5px;">
-                                                <div class="w3-grey w3-round">
-                                                    <div id="myBar" class="w3-container w3-purple w3-round" style="width:15%">15%</div>
-                                        </tr></tdstyle="width:60%;">
-
-                                        <tr>
-                                            <td height="43" style="margin:5px; padding: 5px;">
-                                                <div class="w3-grey w3-round">
-                                                    <div id="myBar" class="w3-container w3-orange w3-round" style="width:20%">20%</div>
-                                        </tr></tdstyle="width:60%;">
-
-                                        <tr>
-                                            <td height="43" style="margin:5px; padding: 5px;">
-                                                <div class="w3-grey w3-round">
-                                                    <div id="myBar" class="w3-container w3-pink w3-round" style="width:20%">20%</div>
-                                        </tr></tdstyle="width:60%;">
-
-
-                                    </table>
-                                </div>
-
-                            </td>
-                        </tr>
-                    </table>
-                    </td>
-                    </tr>
-                    </table>
-                </div>
-            </div>
-    </section>
-
-
-
-    <!-- Footer bar-->
-    <section class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 col-md-8 col-lg-12">
-                    <div class="callout-text font-alt">
-                        <p style="margin-bottom: 0px;" class="alignleft">2018 Team Powerpuff</p>
-                        <p style="margin-bottom: 0px;" class="alignright">Middle College High School</p>
+<div class="col-md-10 col-md-offset-1 RectangleBlck">
+    <div class="admin_container alignright">
+        @Html.ActionLink("Settings", "ClassSettings", "Admin", null, new { @class = "btn btn-primary" })
+    </div>
+    <div class"row">
+        <h2>Community Hours</h2>
+    </div>
+    <div class="admin_container">
+        <table cellspacing="50" style="width:100%;">
+            <tr>
+                <td style="width=20%"></td>
+                <td style="width=80%">
+                    <div id="admin_wkHeaders">
+                        <h4>Attendance Expectation</h4>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                </td>
+            </tr>
+            <tr>
+                <td style="width:20%;">
+                    <table cellspacing="50" style="width:100%;">
+                        <tr><td height="20" style="margin:5px; padding: 5px;"><button class="btn btn-border-w btn-round admin_studentBtn">Seth Berry</button></tdstyle="width:50%;"></tr>
+                        <tr><td height="20" style="margin:5px; padding: 5px;"><button class="btn btn-border-w btn-round admin_studentBtn">Bianca Blanco</button></td></tr>
+                        <tr><td height="20" style="margin:5px; padding: 5px;"><button class="btn btn-border-w btn-round admin_studentBtn">Mina Chen</button></td></tr>
+                        <tr><td height="20" style="margin:5px; padding: 5px;"><button class="btn btn-border-w btn-round admin_studentBtn">Alvin Hopkins</button></td></tr>
+                        <tr><td height="20" style="margin:5px; padding: 5px;"><button class="btn btn-border-w btn-round admin_studentBtn">Gabriel Klein</button></td></tr>
+                        <tr><td height="20" style="margin:5px; padding: 5px;">@Html.ActionLink("Tamara Kochubey", "StudentReport", "Student", null, new { @class = "btn btn-border-w btn-round admin_studentBtn" })</td></tr>
+                        <tr><td height="20" style="margin:5px; padding: 5px;"><button class="btn btn-border-w btn-round admin_studentBtn">Verna Potter</button></td></tr>
+                        <tr><td height="20" style="margin:5px; padding: 5px;"><button class="btn btn-border-w btn-round admin_studentBtn">Harry Reid</button></td></tr>
+                        <tr><td height="20" style="margin:5px; padding: 5px;"><button class="btn btn-border-w btn-round admin_studentBtn">Nancy Thomas</button></td></tr>
+                    </table>
+                </td>
+                <td style="width:80%;">
+                    <div class="admin_container">
+                        <table cellspacing="50" style="width:100%;">
+                            <tr>
+                                <td class="rangeCell">
+                                    <div class="rangeDiv">
+                                        <button class="admin_commBtn" id="admin_atndbtnS1" style="width:80%;"></button>&nbsp;80%
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="rangeCell">
+                                    <div class="rangeDiv">
+                                        <button class="admin_commBtn" id="admin_atndbtnS2" style="width:80%;"></button>&nbsp;80%
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="rangeCell">
+                                    <div class="rangeDiv">
+                                        <button class="admin_commBtn" id="admin_atndbtnS3" style="width:60%;"></button>&nbsp;60%
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="rangeCell">
+                                    <div class="rangeDiv">
+                                        <button class="admin_commBtn" id="admin_atndbtnS4" style="width:80%;"></button>&nbsp;80%
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="rangeCell">
+                                    <div class="rangeDiv">
+                                        <button class="admin_commBtn" id="admin_atndbtnS5" style="width:95%;"></button>&nbsp;95%
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="rangeCell">
+                                    <div class="rangeDiv">
+                                        <button class="admin_commBtn" id="admin_atndbtnS6" style="width:80%;"></button>&nbsp;80%
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="rangeCell">
+                                    <div class="rangeDiv">
+                                        <button class="admin_commBtn" id="admin_atndbtnS7" style="width:50%;"></button>&nbsp;50%
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="rangeCell">
+                                    <div class="rangeDiv">
+                                        <button class="admin_commBtn" id="admin_atndbtnS8" style="width:85%;"></button>&nbsp;85%
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="rangeCell">
+                                    <div class="rangeDiv">
+                                        <button class="admin_commBtn" id="admin_atndbtnS9" style="width:50%;"></button>&nbsp;50%
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
