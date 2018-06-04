@@ -26,6 +26,14 @@ namespace _5051.Controllers
             return View(StudentViewModel);
         }
 
+        // GET: Puzzle page
+        public ActionResult Puzzle()
+        {
+            ViewBag.Message = "Puzzle";
+
+            return View();
+        }
+
         /// <summary>
         /// Read information on a single Student
         /// </summary>

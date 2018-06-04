@@ -20,12 +20,5 @@ namespace _5051.Controllers
 
             return View();
         }
-
-        public ActionResult Puzzle()
-        {
-            ViewBag.Message = "Puzzle";
-
-            return View();
-        }
     }
 }
