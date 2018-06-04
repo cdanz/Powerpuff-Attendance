@@ -9,7 +9,7 @@
 		google.charts.load("current", { packages: ["corechart"] });
 		google.charts.setOnLoadCallback(drawChart);
 		function drawChart() {
-			var data = google.visualization.arrayToDataTable([
+			var data1 = google.visualization.arrayToDataTable([
 				['Attendance Type', 'Frequency %'],
 				['Excused', 10],
 				['Missed', 15],
@@ -17,7 +17,9 @@
 				['Full day', 35]
 			]);
 
-			var options = {
+			var options1 = {
+				width: 600,
+				height: 340,
 				pieHole: 0.4,
 				backgroundColor: 'transparent',
 				color: 'white',
@@ -25,7 +27,33 @@
 			};
 
 			var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
-			chart.draw(data, options);
+			chart.draw(data1, options1);
+		}
+	</script>
+
+	<script type="text/javascript">
+		google.charts.load("current", { packages: ["corechart"] });
+		google.charts.setOnLoadCallback(drawChart);
+		function drawChart() {
+			var data2 = google.visualization.arrayToDataTable([
+				['Mood', 'Frequency', { role: 'style' }],
+				['Sadder', 29, '#FFEA53'],         
+				['Neutral', 46, '#5378FF'],    
+				['Happier', 25, '#9453FF'],
+			]);
+
+			var options2 = {
+				title: "Mood Frequency (Annual)",
+				backgroundColor: 'transparent',
+				legend: { position: "none" },
+				titleTextStyle:
+					{
+						color: 'Black'
+					},
+			};
+
+			var chart = new google.visualization.BarChart(document.getElementById('barchart_values'));
+			chart.draw(data2, options2);
 		}
 	</script>
 </head>
@@ -89,7 +117,13 @@
 
 		<!-- Pie chart-->
 		<div class="row align-center">
-			<div id="donutchart" style="width: 900px; height: 500px;"></div>
+			<div class="col-md-10 col-md-offset-1">
+				<div id="donutchart"></div>
+			</div>
+		</div>
+
+		<div class="row align-center">
+			<div id="barchart_values"></div>
 		</div>
 	</div>
 </div>
