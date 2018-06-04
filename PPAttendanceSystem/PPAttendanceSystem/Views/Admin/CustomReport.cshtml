@@ -11,9 +11,21 @@
             <tr>
                 <td style="width=15%">Date Range</td>
                 <td style="width=85%">
-                    <label for="from">From</label><input class="admin_field" type="text" id="from" name="from">
-                    <label for="to">to</label><input class="admin_field" type="text" id="to" name="to">@Html.ActionLink("Submit", "CustomReportResult", "Admin", null, new { @class = "btn btn-border-w btn-round" })
-                </td>
+                    <div class="form-group">
+                        <label for="from">From</label><input class="admin_field" type="text" id="from" name="from">
+                        <label for="to">to</label><input class="admin_field" type="text" id="to" name="to">
+                        <label for="student">Student</label>
+                        <select class="form-control" id="student" style="display:inline;">
+                            <option value="all" selected>All Students</option>
+                            <option value="s1">Seth Berry</option>
+                            <option value="s2">Bianca Blanco</option>
+                            <option value="s3">Mina Chen</option>
+
+                        </select>
+                        &nbsp;&nbsp;
+                        @Html.ActionLink("Submit", "CustomReportResult", "Admin", null, new { @class = "btn btn-border-w btn-round" })
+                        </div>
+</td>
             </tr>
             <tr>
                 <td style="width=15%"></td>
