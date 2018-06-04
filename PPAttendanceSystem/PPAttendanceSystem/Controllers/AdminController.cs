@@ -16,7 +16,6 @@ namespace _5051.Controllers
             return View();
         }
 
-        // GET: Admin Dashboard landing page (different week view)
         public ActionResult AdminDashboardp1()
         {
             ViewBag.Message = "Admin Dashboard (-1wk)";
@@ -24,7 +23,6 @@ namespace _5051.Controllers
             return View();
         }
 
-        // GET: Admin Dashboard landing page (different week view)
         public ActionResult AdminDashboardp2()
         {
             ViewBag.Message = "Admin Dashboard (-2wk)";
@@ -32,7 +30,6 @@ namespace _5051.Controllers
             return View();
         }
 
-        // GET: Admin Dashboard landing page (different view specific to Monday)
         public ActionResult AdminDashboardm()
         {
             ViewBag.Message = "Admin Dashboard Monday";
@@ -40,7 +37,6 @@ namespace _5051.Controllers
             return View();
         }
 
-        // GET: Admin Dashboard landing page (different view specific to Wednesday)
         public ActionResult AdminDashboardw()
         {
             ViewBag.Message = "Admin Dashboard Wednesday";
@@ -55,23 +51,18 @@ namespace _5051.Controllers
 
             return View();
         }
-        
-        // GET: Admin report on class community hours goal
         public ActionResult CommunityHours()
         {
             ViewBag.Message = "Community Hours";
 
             return View();
         }
-        
-        // GET: Admin calendar
         public ActionResult SchoolCalendar()
         {
             ViewBag.Message = "School Calendar";
 
             return View();
         }
-        
         // GET: Custom Report
         public ActionResult CustomReport()
         {
@@ -79,27 +70,30 @@ namespace _5051.Controllers
 
             return View();
         }
-        
-        // GET: Admin custom report (all class)
         public ActionResult CustomReportResult()
         {
             ViewBag.Message = "Custom Report";
 
             return View();
         }
-        
-        // GET: Admin custom report (student specific)
         public ActionResult CustomReportIndividualResult()
         {
             ViewBag.Message = "Custom Individual Report";
 
             return View();
         }
-        
-        // GET: Class Settings page
+        // GET: Class Settings
         public ActionResult ClassSettings()
         {
             ViewBag.Message = "Class Settings";
+
+            return View();
+        }
+
+        // GET: Student Change Log
+        public ActionResult StudentChangeLog()
+        {
+            ViewBag.Message = "Student Change Log";
 
             return View();
         }
