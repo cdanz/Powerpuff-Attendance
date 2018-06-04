@@ -58,11 +58,8 @@
                             @:<div class="row">
                         }
 						<div class="check-in">
-							@{var stuID = "stu" + count;
-								var CardColor = String.Format("#{0:X6}", randomColor.Next(0x1000000));
-							}
-
-							<div id="@stuID" class="student-card" style="background-color: @CardColor">
+							@{var stuID = "stu" + count;}
+							<div id="@stuID" class="student-card">
 								<img src="~/Content/img/@item.AvatarUri" class="img-circle avatar" alt="Student Avatar">
 								<span>@item.Name</span>
 								@{var emoticon = "emoticon" + count;}
@@ -98,11 +95,8 @@
                             @:<div class="row">
                         }
 						<div class="check-in">
-							@{var stuID = "stu" + count;
-								var CardColor = String.Format("#{0:X6}", randomColor.Next(0x1000000));
-							}
-
-							<div id="@stuID" class="student-card" style="background-color: @CardColor">
+							@{var stuID = "stu" + count;}
+							<div id="@stuID" class="student-card">
 								<img src="~/Content/img/@item.AvatarUri" class="img-circle avatar" alt="Student Avatar">
 								<span>@item.Name</span>
 								@{var emoticon = "emoticon" + count;}
@@ -138,11 +132,9 @@
                             @:<div class="row">
                         }
 						<div class="check-in">
-							@{var stuID = "stu" + count;
-								var CardColor = String.Format("#{0:X6}", randomColor.Next(0x1000000));
-							}
+							@{var stuID = "stu" + count;}
 
-							<div id="@stuID" class="student-card" style="background-color: @CardColor">
+							<div id="@stuID" class="student-card">
 								<img src="~/Content/img/@item.AvatarUri" class="img-circle avatar" alt="Student Avatar">
 								<span>@item.Name</span>
 								@{var emoticon = "emoticon" + count;}
