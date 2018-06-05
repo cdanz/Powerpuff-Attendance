@@ -556,7 +556,6 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\studentDashboard.js" />
-    <Content Include="Views\Admin\CustomReportResult.cshtml" />
     <Content Include="Views\Admin\CommunityHours.cshtml" />
     <Content Include="Views\Admin\SchoolCalendar.cshtml" />
     <Content Include="Views\Admin\CustomReportIndividualResult.cshtml" />
@@ -621,6 +620,7 @@
     <Content Include="Views\Student\Read.cshtml" />
     <Content Include="Views\Student\Delete.cshtml" />
     <Content Include="Views\Profile\_ViewStart.cshtml" />
+    <Content Include="Views\Admin\CustomReportResult.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
