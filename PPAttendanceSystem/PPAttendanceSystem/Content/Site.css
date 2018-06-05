@@ -58,7 +58,7 @@ th, td {
     color: #fff;
     background: rgba(2, 2, 2, 0.4);
     margin-bottom: 50px;
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 .RectangleWhite {
@@ -67,7 +67,7 @@ th, td {
     color: black;
     background: rgba(255,255,255, 0.4);
     margin-bottom: 50px;
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 .row-first {
@@ -94,7 +94,6 @@ th, td {
     background-image: -webkit-linear-gradient(right,#FFA500,#FFA500 50.0%,#fff 50.0%);
     background-image: -moz-linear-gradient(right,#FFA500,#FFA500 50.0%,#fff 50.0%);
     background-image: -o-linear-gradient(right,#FFA500,#FFA500 50.0%,#fff 50.0%);
-    background-image: -ms-linear-gradient(right,#FFA500,#FFA500 50.0%,#fff 50.0%)
 }
 
 
@@ -117,8 +116,8 @@ th, td {
 }
 
 .admin_inputNeeded {
-    font-size: 2 rem;
-    font-color: #a1a2a3;
+    font-size: 2rem;
+    color: #a1a2a3;
     font-style: italic;
 }
 
@@ -282,10 +281,16 @@ th, td {
 -----------------------------------------------------------------*/
 
 .Rectangle {
-    width: 217.4px;
-    height: 51.6px;
-    border-radius: 5px;
-    background-image: linear-gradient(to right, #4690ff, #41dcec);
+	width: 217.4px;
+	height: 51.6px;
+	border-radius: 5px;
+	background-image: linear-gradient(to right, #4690ff, #41dcec);
+	vertical-align: middle;
+}
+
+.Rectangle-text {
+	text-align: center;
+	padding: 15px;
 }
 
 .Rectangle-5 {
