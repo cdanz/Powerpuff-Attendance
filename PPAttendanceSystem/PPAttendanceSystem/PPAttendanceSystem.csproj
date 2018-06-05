@@ -566,7 +566,7 @@
     <Content Include="Views\Admin\AdminDashboardp2.cshtml" />
     <Content Include="Views\Admin\AdminDashboardw.cshtml" />
     <Content Include="Views\Admin\StudentChangeLog.cshtml" />
-    <None Include="Views\Profile\StudentEditProfile.cshtml" />
+    <Content Include="Views\Profile\StudentEdit.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

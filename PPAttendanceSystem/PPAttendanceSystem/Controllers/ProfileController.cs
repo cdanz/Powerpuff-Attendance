@@ -25,9 +25,9 @@ namespace _5051.Controllers
         }
 
         // GET: Student profile edit page
-        public ActionResult StudentEditProfile()
+        public ActionResult StudentEdit()
         {
-            ViewBag.Message = "Student Edit Profile";
+            ViewBag.Message = "Student Edit";
 
             return View();
         }
