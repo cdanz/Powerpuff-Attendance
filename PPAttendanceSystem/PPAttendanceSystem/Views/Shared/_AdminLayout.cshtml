@@ -26,6 +26,9 @@
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+
 	<script>
 		$(function () {
 			var dateFormat = "mm/dd/yy",
@@ -59,6 +62,123 @@
 			}
 		});
 	</script>
+    <script type="text/javascript">
+        google.charts.load("current", { packages: ["corechart"] });
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Emotion Tracker', 'Frequency %'],
+                ['Completed', 60],
+                ['Remaining', 40],
+
+            ]);
+
+            var options = {
+                pieHole: 0.4,
+                color: 'white',
+                backgroundColor: 'transparent',
+                title: 'Community Hours Tracker'
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+            chart.draw(data, options);
+        }
+    </script>
+
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawVisualization);
+
+        function drawVisualization() {
+            var data = google.visualization.arrayToDataTable([
+                ['Time Frame', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+                ['5/21-25', 8, 6, 8, 4, 8],
+                ['5/28-6/1', 8, 5, 4, 8, 8]
+
+            ]);
+
+            var options = {
+                title: 'Attendance Tracker',
+                vAxis: { title: 'Hours' },
+                hAxis: { title: 'Time' },
+                seriesType: 'bars',
+                backgroundColor: 'transparent',
+                series: { 5: { type: 'line' } }
+            };
+
+            var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
+            chart.draw(data, options);
+        }
+    </script>
+
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+
+            var data = google.visualization.arrayToDataTable([
+                ['Emotion Tracker', 'Frequency %'],
+                ['Very Sad', 10],
+                ['Sad', 20],
+                ['Indifferent', 40],
+                ['Happy', 20],
+                ['Very Happy', 10]
+            ]);
+
+            var options = {
+                title: 'Emotions Tracker',
+                backgroundColor: 'transparent'
+
+
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+            chart.draw(data, options);
+        }
+    </script>
+
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+
+
+            var data = google.visualization.arrayToDataTable([
+                ['Time Frame', 'Attendance', 'Emotions'],
+                ['5/21', 8, 3],
+                ['5/22', 6, 3],
+                ['5/23', 8, 1],
+                ['5/24', 4, 2],
+                ['5/25', 8, 4,],
+                ['5/228', 8, 3],
+                ['5/29', 5, 3],
+                ['5/230', 4, 2],
+                ['5/31', 8, 5,],
+                ['6/1', 8, 4]
+            ]);
+
+
+            var options = {
+                title: 'Emotions. vs. Attendance',
+                curveType: 'function',
+                backgroundColor: 'transparent',
+                legend: { position: 'bottom' }
+
+            };
+
+            var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+            chart.draw(data, options);
+        }
+    </script>
+
+
+
+
+
 
 	<!-- navbar links-->
 	<div class="container-fluid shared-head">
