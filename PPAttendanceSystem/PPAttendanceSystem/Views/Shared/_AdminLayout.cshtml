@@ -62,6 +62,40 @@
 			}
 		});
 	</script>
+
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+
+            var data = google.visualization.arrayToDataTable([
+                ['Emotion Tracker', 'Frequency %'],
+                ['Very Sad', 24],
+                ['Sad', 11],
+                ['Indifferent', 45],
+                ['Happy', 10],
+                ['Very Happy', 10]
+            ]);
+
+            var options = {
+                title: 'Class Emotion Tracker',
+                backgroundColor: 'transparent'
+
+
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+            chart.draw(data, options);
+        }
+    </script>  
+
+
+
+
+
+
     <script type="text/javascript">
         google.charts.load("current", { packages: ["corechart"] });
         google.charts.setOnLoadCallback(drawChart);

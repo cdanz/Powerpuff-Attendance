@@ -2,36 +2,7 @@
 @{
 	ViewBag.Title = "Custom Reports";
 }
-<head>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-        google.charts.load('current', { 'packages': ['corechart'] });
-        google.charts.setOnLoadCallback(drawChart);
 
-        function drawChart() {
-
-            var data = google.visualization.arrayToDataTable([
-                ['Emotion Tracker', 'Frequency %'],
-                ['Very Sad', 24],
-                ['Sad', 11],
-                ['Indifferent', 45],
-                ['Happy', 10],
-                ['Very Happy', 10]
-            ]);
-
-            var options = {
-                title: 'Class Emotion Tracker',
-                backgroundColor: 'transparent'
-
-
-            };
-
-            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-
-            chart.draw(data, options);
-        }
-    </script>  
-</head>
 
 <div class="col-md-10 col-md-offset-1 RectangleBlck">
     <div class="admin_container alignright">
