@@ -1,7 +1,10 @@
 ﻿// JavaScript Code for the StudentDashboard page
+
+// Check-in & check-out notifications will hide after a period
 $('#check-out-alert').hide();
 $('#check-in-alert').hide();
 
+// Expands student profile card data on click
 window.onload = function () {
     var studentCards = document.getElementsByClassName('check-in');
     
@@ -16,7 +19,7 @@ window.onload = function () {
     }
 }
 
-
+// Green check mark replaces student avatar on check-in
 function checkedIn(imgSrc, stuID) {
     var avatar = document.createElement('img');
     avatar.setAttribute("src", imgSrc);
@@ -34,6 +37,7 @@ function checkedIn(imgSrc, stuID) {
     var imgSource = imgElement.getAttribute("src");
     var checkInTime = new Date().toLocaleTimeString();
 
+	// Check-in or check-out message will appear based on if profile was already checked in or not
     if (imgSrc === imgSource) {
         elementID.insertBefore(checkMark, elementID.firstChild);
         $(imgElement).remove();

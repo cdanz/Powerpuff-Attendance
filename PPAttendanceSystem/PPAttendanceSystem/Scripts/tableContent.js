@@ -1,4 +1,5 @@
-﻿function edit_row(no) {
+﻿// Allows editing of a table row's fields
+function edit_row(no) {
 	document.getElementById("edit_button" + no).style.display = "section-scroll btn btn-primary";
 	document.getElementById("save_button" + no).style.display = "section-scroll btn btn-primary";
 
@@ -15,6 +16,7 @@
 	status.innerHTML = "<input type='text' class='form-control' id='status_text" + no + "' value='" + status_data + "'>";
 }
 
+// Will locally store edited field data in given table row
 function save_row(no) {
     var fname_val = document.getElementById("fname_text" + no).value;
     var lname_val = document.getElementById("lname_text" + no).value;
@@ -28,10 +30,12 @@ function save_row(no) {
 	document.getElementById("save_button" + no).style.display = "section-scroll btn btn-primary";
 }
 
+// Deletes a given table row from local data
 function delete_row(no) {
     document.getElementById("row" + no + "").outerHTML = "";
 }
 
+// Adds a new row at the bottom in local data
 function add_row() {
     var new_fname = document.getElementById("new_fname").value;
     var new_lname = document.getElementById("new_lname").value;
